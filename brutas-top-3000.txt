@@ -752,11 +752,15 @@ adminroot
 adminTest
 admintest
 adminwww
+adobe
+adobe1
+adobe123
 adolf
 africa
 aikido
 alcatel
 alcohol
+alexander
 alfred
 alibaba
 alien
@@ -764,6 +768,7 @@ alien1
 alien123
 aliexpress
 alpha
+amanda
 america
 amiga
 amiga1
@@ -773,9 +778,13 @@ amigos
 amstaff
 amsterdam
 anarchy
+andrea
+andrew
 android
 angel
 angel1
+angela
+angels
 anonymous
 anthony
 anthony1
@@ -871,6 +880,7 @@ athlon
 athlon64
 attack
 aurora
+austin
 australia
 author
 auto
@@ -899,6 +909,7 @@ banana
 bandit
 bar123
 barcelona
+barney
 barracuda
 baseball
 baseball1
@@ -918,6 +929,7 @@ beat
 beats
 behemoth
 belinea
+benjamin
 berlin
 beta
 bethany
@@ -975,6 +987,7 @@ boston
 bot
 bot123
 botnet
+brandon
 brandy
 brasil
 bravo
@@ -986,6 +999,7 @@ brother
 bugatti
 bulldog
 bushido
+buster
 caesar
 calibra
 calibra1
@@ -1006,6 +1020,7 @@ carbon1
 carlos
 carlos1
 carmen
+caroline
 carpediem
 carrera
 carter
@@ -1032,11 +1047,14 @@ cheese
 chelsea
 chess
 chess1
+chester
 chicago
 chicken
 chicony
+chocolate
 chopper
 chris
+christian
 chrome
 cisco
 cisco123
@@ -1094,6 +1112,8 @@ daewoo
 daewoo1
 dakota
 danger
+daniel
+danielle
 dante
 dante1
 dark
@@ -1110,6 +1130,7 @@ dddddd
 death
 death666
 debian
+december
 ded
 ded123
 dede
@@ -1187,6 +1208,7 @@ eee
 eeeee
 eeeeee
 einstein
+elephant
 elvis
 elvis1
 email
@@ -1306,6 +1328,7 @@ fuckyou
 fuckyou1
 fuckyou2
 fujitsu
+gabriel
 galaxy
 galaxy12
 galaxy8
@@ -1398,6 +1421,7 @@ hacker2
 hacker3
 hakunamatata
 hammer
+hannah
 hannibal
 happy
 happysad
@@ -1408,6 +1432,7 @@ harry
 harry1
 harrypotter
 hayabusa
+heather
 heaven
 hehe1
 hehe12
@@ -1491,6 +1516,7 @@ jackson
 jamaica
 james007
 jamesbond
+jasmine
 jasper
 java
 jazz
@@ -1508,15 +1534,19 @@ jocker
 john
 johnny
 johnson
+jonathan
 jordan
 jordan1
 jordan123
 jordan23
+joseph
+joshua
 junior
 junior1
 junior12
 junior123
 jupiter
+justin
 kakashka
 karate
 kawasaki
@@ -1630,6 +1660,7 @@ m123456
 mac123
 macos
 macOS
+macromedia
 madison
 madmax
 madonna
@@ -1663,6 +1694,7 @@ mario12
 mario123
 marlboro
 marshall
+martin
 marvel
 marvin
 master
@@ -1676,6 +1708,7 @@ matrix2
 matrix21
 matrix22
 matrix3
+matthew
 maverick
 max
 max123
@@ -1702,6 +1735,7 @@ me123
 me2
 megadeth
 megasecret
+melissa
 memento
 mementomori
 memory
@@ -1730,6 +1764,7 @@ metoo
 mexico
 michael
 michael1
+michelle
 mickey
 mickeymouse
 microsoft
@@ -1763,6 +1798,7 @@ monkey1
 mono
 monster
 monster1
+morgan
 morpheus
 mortal
 mother
@@ -1799,6 +1835,7 @@ neworder
 newpassword
 newworld
 newyork
+nicholas
 nick
 nicole
 nicole1
@@ -1836,6 +1873,7 @@ norway
 nosferatu
 nostradamus
 nothing
+november
 null
 number1
 number2
@@ -1844,6 +1882,7 @@ o0o0i9i9u8u8
 oblivion
 office
 offspring
+oliver
 olivetti
 olympus
 omega
@@ -1901,6 +1940,7 @@ paradox
 paradox1
 paranoid
 paris
+parker
 parkour
 parkour1
 parkour12
@@ -1943,6 +1983,7 @@ password321
 password99
 password@123
 pasword
+patricia
 patrick
 peanut
 pearljam
@@ -1960,6 +2001,7 @@ phantom
 philips
 philips1
 phoenix
+photoshop
 pi
 pi314
 picasso
@@ -2270,6 +2312,7 @@ r00tr00t
 r123456
 r2d2c3po
 rabbit
+rachel
 radar
 radar1
 radeon
@@ -2304,6 +2347,7 @@ register
 rewq
 rfvtgb
 rich
+richard
 ripper
 robert
 robin
@@ -2345,11 +2389,14 @@ sagem
 sagem1
 salsa
 salsa1
+samantha
 samba
 samba1
 samsung
 samsung1
+samuel
 sandman
+sandra
 santiago
 sapassword
 sasa
@@ -2369,6 +2416,7 @@ scooter
 scorpion
 scotland
 secret
+security
 select
 senha
 senha1
@@ -2417,6 +2465,7 @@ snake1
 snickers
 sniper
 snoopy
+snoopy1
 snowboard
 soccer
 soccer1
@@ -2425,6 +2474,7 @@ solaris
 soldier
 sony
 sonyericsson
+sophie
 soprano
 soundblaster
 source
@@ -2468,11 +2518,13 @@ starwars
 steelers
 stella
 stereo
+steven
 street
 strike
 stuff
 subaru
 subaru1
+success
 summer
 sundance
 sunrise
@@ -2533,6 +2585,7 @@ thc123
 thcthc
 thedoors
 things
+thomas
 thomson
 thomson1
 thunder
@@ -2600,9 +2653,11 @@ vcxz
 vegas
 velvet
 verbatim
+veronica
 vfrcbv
 vgycft
 vicecity
+victor
 victoria
 victory
 viking
