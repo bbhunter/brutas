@@ -1065,7 +1065,6 @@ casillas
 casio
 casio1
 casper
-castorama
 cccccc
 cde34rfv
 cdxsza
@@ -1095,6 +1094,7 @@ christian
 chrome
 cisco
 cisco123
+Cisco
 citizen
 citroen
 claudia
