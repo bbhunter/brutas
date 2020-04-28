@@ -115,7 +115,9 @@ broadcast
 broadcasting
 broker
 browser
+bsd
 bugs
+bugzilla
 build
 builds
 business
@@ -167,6 +169,8 @@ chan
 change
 changes
 channel
+chart
+charts
 chat
 chatroom
 check
@@ -265,6 +269,7 @@ customerzone
 cv
 cvs
 cyber
+dash
 dashboard
 data
 datacenter
@@ -324,6 +329,7 @@ documents
 dojo
 domain
 domains
+domo
 dot
 dovecot
 download
@@ -481,6 +487,7 @@ healthcheck
 heatmap
 help
 helpdesk
+helpy
 hfs
 hg
 hive
@@ -631,6 +638,7 @@ login
 logout
 logs
 long
+looker
 loop
 lp
 lpt
@@ -650,15 +658,19 @@ mailout
 mailserver
 mailu
 main
+mamp
 man
 manage
 management
 manager
 manifest
+mantis
 manual
 manuals
 map
 maps
+maria
+mariadb
 marketing
 master
 mattermost
@@ -723,6 +735,7 @@ myaccount
 myadmin
 mybb
 mycloud
+mycollab
 mymind
 mysql
 mysqldb
@@ -789,6 +802,8 @@ orders
 origin
 osem
 ostel
+osticket
+otrs
 out
 outbound
 outlook
@@ -865,6 +880,8 @@ post
 postfix
 postgres
 postgresql
+power
+powerbi
 ppp
 prd
 pre
@@ -952,6 +969,7 @@ remote
 reply
 repo
 report
+reporting
 reports
 repository
 res
@@ -988,9 +1006,12 @@ sagem
 sakai
 saleor
 sales
+salesforce
 samba
 samples
 sandbox
+sap
+sas
 sat
 satellite
 scanner
@@ -1032,6 +1053,7 @@ signin
 signout
 signup
 sip
+sisense
 site
 sites
 skype
@@ -1133,7 +1155,9 @@ sys
 sysadmin
 sysop
 system
+tableau
 tagtool
+taiga
 tapir
 teacher
 teachers
@@ -1211,6 +1235,7 @@ usb
 user
 users
 utilities
+utils
 uwsgi
 vacancies
 vanilla
@@ -1227,6 +1252,7 @@ vhost
 video
 videos
 view
+views
 vip
 virt
 virtual
@@ -1241,6 +1267,7 @@ voip-phones
 vpn
 vps
 vsphere
+w-ww
 waf
 wagtail
 wallet
@@ -1285,6 +1312,7 @@ workspaces
 wp
 ws
 ww
+ww-w
 www
 www-test
 xen
