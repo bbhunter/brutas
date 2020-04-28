@@ -19,6 +19,14 @@
 !@#$%^&*()
 !@#$%^&*()_
 !@#$%^&*()_+
+!@#$5678
+!@#456
+!@#890
+!abc
+!abc123
+!abcd
+!abcd1234
+!hacker
 !QAZ2wsx
 !QAZwsx
 !qazWSX
@@ -28,6 +36,10 @@
 "
 #
 #@
+#abc
+#abc123
+#abcd
+#abcd1234
 $
 $#
 %
@@ -188,6 +200,8 @@ $#
 123
 123!@#
 123!@#qwe
+123$%^
+123*()
 123,123
 123,321
 123,456,789
@@ -210,6 +224,7 @@ $#
 1234
 1234!@#$
 1234!@#$qwer
+1234%^&*
 1234.1234
 12341
 12341234
@@ -591,6 +606,7 @@ $#
 232323
 23232323
 232345
+234%^&
 2345
 23456
 234567
@@ -887,6 +903,10 @@ $#
 @#$%^&*()_+!
 @#2345$%
 @%23$%25&
+@abc
+@abc123
+@abcd
+@abcd1234
 @dmin
 [
 [123456789]
@@ -972,10 +992,22 @@ abcabc
 ABCabc123
 abcabc123
 abcd
+abcd!
+Abcd!
+abcd#
+Abcd#
 abcd.1234
 abcd123
 abcd1234
 Abcd1234
+abcd1234!
+Abcd1234!
+abcd1234#
+Abcd1234#
+abcd1234@
+Abcd1234@
+abcd@
+Abcd@
 abcd@1234
 abcde
 abcde1
@@ -3484,6 +3516,7 @@ cobra
 cobra1
 cobra11
 cobras
+coca-cola
 cocacola
 cocacola1
 cocaine
@@ -4097,6 +4130,7 @@ deliver
 delivery
 Dell
 dell
+dell123
 delldell
 delmar
 delorean
@@ -4806,6 +4840,8 @@ euphoria
 eureka
 euro2008
 euro2012
+euro2016
+euro2020
 europa
 europa1
 europe
@@ -5909,6 +5945,10 @@ gwerty123
 gymnast
 gymnastics
 gypsy
+H$CK#R
+h@cker
+h@cker123
+h@cker123$%^
 habibi
 habitat
 hacienda
@@ -5924,6 +5964,8 @@ hacker123
 hacker13
 hacker2
 hacker3
+hacker@
+hackerone
 hackers
 hacking
 hackman
@@ -6396,6 +6438,8 @@ houston1
 howard
 howdy
 hp
+hp123
+htp
 http
 huawei
 hubbard
@@ -6459,6 +6503,7 @@ ib6ub9
 ibanez
 ibelieve
 ibm
+ibm123
 ibrahim
 icarus
 ice
@@ -7447,6 +7492,9 @@ lawton
 lawyer
 layla
 lazarus
+lcd
+lcd1
+lcd123
 leader
 leadership
 league
@@ -8615,6 +8663,7 @@ mitch
 mitchel
 mitchell
 mithrandir
+mitnick
 mitsubishi
 mittens
 mkonji
@@ -9088,6 +9137,7 @@ nightshade
 nightwing
 nightwish
 nike
+nike1
 nike12
 nike123
 nikenike
@@ -9158,6 +9208,7 @@ nonono
 nonsense
 nonstop
 noob
+noob1
 noob12
 noob123
 noob1234
@@ -9960,6 +10011,7 @@ playing
 playmate
 playoffs
 playstation
+playstation1
 playstation2
 playstation3
 playtime
@@ -10618,6 +10670,7 @@ rambo
 rambo1
 rambo123
 rambo2
+rambo3
 ramirez
 ramiro
 rammstein
@@ -13844,6 +13897,7 @@ xcountry
 xdxdxd
 xerxes
 xfiles
+xiaomi
 xiaoming
 xperia
 xsw21qaz

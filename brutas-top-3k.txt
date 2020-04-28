@@ -19,6 +19,14 @@
 !@#$%^&*()
 !@#$%^&*()_
 !@#$%^&*()_+
+!@#$5678
+!@#456
+!@#890
+!abc
+!abc123
+!abcd
+!abcd1234
+!hacker
 !QAZ2wsx
 !QAZwsx
 !qazWSX
@@ -28,6 +36,10 @@
 "
 #
 #@
+#abc
+#abc123
+#abcd
+#abcd1234
 $
 $#
 %
@@ -161,6 +173,8 @@ $#
 123
 123!@#
 123!@#qwe
+123$%^
+123*()
 123,123
 123,321
 123,456,789
@@ -179,6 +193,7 @@ $#
 1234
 1234!@#$
 1234!@#$qwer
+1234%^&*
 1234.1234
 12341
 12341234
@@ -476,6 +491,7 @@ $#
 2323
 232323
 232345
+234%^&
 2345
 23456
 234567
@@ -660,6 +676,10 @@ $#
 @#$%^&*()_+!
 @#2345$%
 @%23$%25&
+@abc
+@abc123
+@abcd
+@abcd1234
 @dmin
 [
 [123456789]
@@ -728,10 +748,22 @@ abcabc
 ABCabc123
 abcabc123
 abcd
+abcd!
+Abcd!
+abcd#
+Abcd#
 abcd.1234
 abcd123
 abcd1234
 Abcd1234
+abcd1234!
+Abcd1234!
+abcd1234#
+Abcd1234#
+abcd1234@
+Abcd1234@
+abcd@
+Abcd@
 abcd@1234
 abcde
 abcde1
@@ -1093,8 +1125,8 @@ chris
 christian
 chrome
 cisco
-cisco123
 Cisco
+cisco123
 citizen
 citroen
 claudia
@@ -1106,6 +1138,7 @@ cobain1994
 cobra
 cobra1
 cobra11
+coca-cola
 cocacola
 cocacola1
 coffee
@@ -1177,6 +1210,7 @@ deejay
 default
 Dell
 dell
+dell123
 delta
 delta1
 demo
@@ -1254,10 +1288,6 @@ elvis1
 email
 eminem
 eminem1
-eminem11
-eminem12
-eminem123
-eminem2
 emperor
 empire
 encore
@@ -1276,6 +1306,8 @@ escape
 escort
 euro2008
 euro2012
+euro2016
+euro2020
 europa
 europa1
 europe
@@ -1449,6 +1481,10 @@ guitar
 guru
 gwerty
 gwerty123
+H$CK#R
+h@cker
+h@cker123
+h@cker123$%^
 hacked123
 hacker
 Hacker
@@ -1459,6 +1495,9 @@ hacker123
 hacker13
 hacker2
 hacker3
+hacker@
+hackerone
+hackers
 hadoop
 hakunamatata
 hammer
@@ -1514,6 +1553,8 @@ hondacivic
 hondacrx
 house
 hp
+hp123
+htp
 http
 huawei
 hummer
@@ -1521,6 +1562,7 @@ hunter
 hyundai
 hyundai1
 ibm
+ibm123
 iceman
 idiot
 iiyama
@@ -1592,6 +1634,7 @@ justin
 kakashka
 karate
 kawasaki
+kevin
 killer
 kirill
 klaster
@@ -1612,6 +1655,9 @@ laptop1
 laptop123
 lasvegas
 lauren
+lcd
+lcd1
+lcd123
 lecter
 lenovo
 lenovo1
@@ -1624,7 +1670,6 @@ lexmark1
 liberty
 linkin
 linkin1
-linkin123
 linkinpark
 linkinpark1
 linux
@@ -1640,7 +1685,6 @@ login1
 login123
 logitech
 logitech1
-logitech12
 loki
 loki123
 lol
@@ -1745,12 +1789,7 @@ master
 matrix
 Matrix
 matrix1
-matrix11
-matrix12
-matrix123
 matrix2
-matrix21
-matrix22
 matrix3
 matthew
 maverick
@@ -1821,6 +1860,7 @@ Minecraft
 minecraft1
 minecraft123
 mini
+mitnick
 mitsubishi
 mkonji
 mmm
@@ -1887,8 +1927,7 @@ nicole
 nicole1
 nightmare
 nike
-nike12
-nike123
+nike1
 nikita
 ninja
 ninja1
@@ -1910,6 +1949,7 @@ nokia14
 nokia2
 noname
 noob
+noob1
 noob12
 noob123
 noob1234
@@ -1994,7 +2034,6 @@ paris
 parker
 parkour
 parkour1
-parkour12
 parol
 parole
 pas1
@@ -2068,6 +2107,7 @@ playboy
 player
 player1
 playstation
+playstation1
 playstation2
 playstation3
 please
@@ -2379,8 +2419,8 @@ rainbow
 rakesh
 rambo
 rambo1
-rambo123
 rambo2
+rambo3
 rammstein
 random
 ranger
@@ -2508,6 +2548,7 @@ skate1
 skate12
 skate123
 skateboard
+skating
 skyline
 skywalker
 slayer
@@ -2569,6 +2610,7 @@ ssssss
 ssssss1
 stalin
 stalker
+stallone
 stanley
 star
 starcraft
@@ -2843,7 +2885,7 @@ xavier
 xbox360
 xdxdxd
 xfiles
-xiaoming
+xiaomi
 xperia
 xsw21qaz
 xsw23edc
