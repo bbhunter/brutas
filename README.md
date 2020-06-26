@@ -10,13 +10,13 @@
 
 The order is also suggested workflow (approx. size):
 
-1. `brutas-passwords-3k.txt` - kept small so it runs fast enough - collection of most common passwords, typical close-keys combinations, bands, brands, games and movies characters etc. (3k)
-2. `brutas-passwords-10k.txt` - second shot after the 3k dictionary, contains data from leaks and some tops from other password lists (10k)
-3. `brutas-passwords-adminz.txt` - suitable for internal usage, `brutas-usernames.txt` with hax0r and years rules on top (10k)
-4. `brutas-passwords-3k-hax0r.txt` - hax0r/1337 style applied to the 3k list (170k)
-5. `brutas-passwords-3k-years.txt` - try appending 2000-2024 before anything else, keep things simple (80k)
-6. `brutas-passwords-10k-hax0r.txt` - applied to 10k (600k)
-7. `brutas-passwords-10k-years.txt` - applied to 10k (300k)
+1. `brutas-passwords-1.txt` - stage one - collection of most common passwords, typical close-keys combinations, bands, brands, games and movies characters etc. (7k)
+2. `brutas-passwords-2.txt` - second shot after the 1st stage dictionary, contains data from leaks and some top passwords from other lists (9k)
+3. `brutas-passwords-3.txt` - suitable for internal services, `brutas-usernames.txt` parsed with hax0r and years rules (12k)
+4. `brutas-passwords-1-years.txt` - try appending 2000-2024 before anything else, keep things simple (175k)
+5. `brutas-passwords-1-hax0r.txt` - hax0r/1337 style applied to the 1st stage list (350k)
+6. `brutas-passwords-2-years.txt` - applied to 2nd stage (215k)
+7. `brutas-passwords-2-hax0r.txt` - applied to 2nd stage (445k)
 
 ### Usernames
 
