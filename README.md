@@ -18,9 +18,11 @@ The order is also suggested workflow (approx. size):
 6. `brutas-passwords-2-years.txt` - applied to 2nd stage (215k)
 7. `brutas-passwords-2-hax0r.txt` - applied to 2nd stage (445k)
 
-### Usernames
+### Lists
 
-* `brutas-usernames.txt` - most common usernames, keeping low in number
+* `brutas-usernames.txt` - most common usernames
+* `brutas-extensions.txt` - extensions especially useful when combined with `brutas-http-paths.txt`
+* `brutas-http-paths.txt` - no path traversal or pseudo exploits to keep low profile, no subs (use recursion instead) - paths only
 
 ### Subdomains
 
