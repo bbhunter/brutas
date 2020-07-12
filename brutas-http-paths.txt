@@ -461,6 +461,7 @@ foo
 foobar
 form
 format
+formlogin
 formmail
 forum
 forums
@@ -495,6 +496,8 @@ globals
 glossary
 gnupg
 go
+goaction
+goform
 google
 gpg
 graph
@@ -607,6 +610,7 @@ journal
 journals
 jquery
 js
+jsbase
 jscript
 json
 jsp
@@ -666,6 +670,7 @@ logging
 login
 login-check
 login_check
+loginform
 logo
 logon
 logos
