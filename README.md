@@ -17,6 +17,7 @@ The order is also suggested workflow (approx. size):
 5. `brutas-passwords-1-hax0r.txt` - hax0r/1337 style applied to the 1st stage list (350k)
 6. `brutas-passwords-2-years.txt` - applied to 2nd stage (215k)
 7. `brutas-passwords-2-hax0r.txt` - applied to 2nd stage (445k)
+7. `brutas-passwords-combined.txt` - all password lists combined, probably to be used offline only (1200k)
 
 ### Lists
 
