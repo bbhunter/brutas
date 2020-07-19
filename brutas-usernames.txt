@@ -7,6 +7,7 @@ adminuser
 anonymous
 ansible
 apache
+apc
 author
 backup
 boss
@@ -28,6 +29,7 @@ db
 dba
 dbadmin
 debian
+debug
 default
 demo
 dev
@@ -35,6 +37,7 @@ develop
 developer
 devop
 devops
+diag
 docker
 expert
 files
@@ -46,6 +49,7 @@ fwadmin
 fwuser
 git
 guest
+halt
 help
 helpdesk
 http
@@ -64,14 +68,18 @@ linux
 local
 mail
 mailadmin
+maint
 maintainer
 manager
+manuf
 master
 moderator
+monitor
 mysql
 nagios
 nessus
 netadmin
+netman
 newuser
 nexpose
 nexus
@@ -89,6 +97,7 @@ postgres
 postmaster
 private
 proxy
+pubsub
 puppet
 pwadmin
 qradar
@@ -109,6 +118,7 @@ script
 scripts
 security
 service
+setup
 siteadmin
 smc
 sql
@@ -147,6 +157,7 @@ transfer
 unix
 upload
 uploader
+ups
 user
 username
 vagrant
@@ -155,6 +166,7 @@ vcloud
 viewer
 vm
 vmware
+vnc
 web
 webadmin
 webdb
