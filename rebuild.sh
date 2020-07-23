@@ -21,3 +21,7 @@ cat brutas-passwords-1-hax0r.txt \
     brutas-passwords-2-years.txt \
     brutas-passwords-2.txt \
     brutas-passwords-3.txt | sort -f  | uniq > brutas-passwords-combined.txt
+cat brutas-subdomains-keywords.txt > brutas-subdomains-3k.txt
+cat brutas-subdomains-extra.txt >> brutas-subdomains-3k.txt
+cat brutas-subdomains-3k.txt > brutas-subdomains-250k.txt
+hashcat -r ./brutas-subdomains-keywords.rules --stdout ./brutas-subdomains-keywords.txt >> brutas-subdomains-250k.txt

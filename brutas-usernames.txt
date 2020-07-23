@@ -78,7 +78,6 @@ maint
 maintainer
 manage
 manager
-manuf
 master
 moderator
 monitor

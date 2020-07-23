@@ -83,6 +83,7 @@ balancer
 bank
 banking
 barracuda
+batch
 bbpress
 bbs
 bcast
@@ -161,6 +162,7 @@ cdn
 center
 centos
 central
+certificates
 cfg
 cfp
 cgi
@@ -578,6 +580,7 @@ json
 jsxc
 juniper
 jupiter
+k8s
 kafka
 kaiwa
 kamailio
