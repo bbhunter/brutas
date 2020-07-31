@@ -1328,8 +1328,7 @@ zabbix
 zimbra
 zip
 zpush
-zulip
-a
+zulipa
 b
 c
 d

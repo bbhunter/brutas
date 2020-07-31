@@ -1328,8 +1328,7 @@ zabbix
 zimbra
 zip
 zpush
-zulip
-a
+zulipa
 b
 c
 d
@@ -2889,8 +2888,7 @@ ip-252
 ip-253
 ip-254
 ip-255
-ip-256
-e2fa
+ip-256e2fa
 2fa-dev
 2fa.dev
 2fadev

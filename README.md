@@ -4,24 +4,29 @@
 
 ## Descriptions
 
-**NOTE** These dictionaries are not sorted by probability. They are grouped instead.
+These dictionaries are based on real-life pentesting engagements both in small business and corporate network environments, leaks monitoring, honeypots, some friendly wargames etc. The build process is automated and handled by the script located in `./bin/rebuild.sh`. Check it out to understand what are the blocks and how I set the priorities (or in other words what is most probable in my opinion). You may want to *change that order depending on your target*.
 
 ### Passwords
 
-The order is also suggested workflow (approx. size):
+You can use the "top passwords" lists if you prefer and `brutas-passwords-10k.txt` seems to be most effective for general purpose and reasonably fast password bruteforcing. However, I recommend combining these lists, depending on the use case. For example, I'd use `brutas-passwords-closekeys.txt` combined with `brutas-passwords-classics.txt` for attacking local network services and accounts, and `brutas-passwords-keywords-*.txt` for normal user accounts (perhaps with an extra rule or two). On the other hand, company, file or domain name combined with `brutas-passwords-numbers.txt` turns out to be pretty effective on encrypted archives and wireless networks. As with everything, a little social engineering comes handy to understand the local approach to the password "policy".
 
-1. `brutas-passwords-1.txt` - stage one - collection of most common passwords, typical close-keys combinations, bands, brands, games and movies characters etc. (7k)
-2. `brutas-passwords-2.txt` - second shot after the 1st stage dictionary, contains data from leaks and some top passwords from other lists (9k)
-3. `brutas-passwords-3.txt` - suitable for internal services, `brutas-usernames.txt` parsed with hax0r and years rules (12k)
-4. `brutas-passwords-1-years.txt` - try appending 2000-2024 before anything else, keep things simple (175k)
-5. `brutas-passwords-1-hax0r.txt` - hax0r/1337 style applied to the 1st stage list (350k)
-6. `brutas-passwords-2-years.txt` - applied to 2nd stage (215k)
-7. `brutas-passwords-2-hax0r.txt` - applied to 2nd stage (445k)
-7. `brutas-passwords-combined.txt` - all password lists combined, probably to be used offline only (1200k)
+* `brutas-passwords-5k.txt`
+* `brutas-passwords-10k.txt`
+* `brutas-passwords-40k.txt`
+* `brutas-passwords-400k.txt`
+* `brutas-passwords-classics.txt`
+* `brutas-passwords-closekeys.txt`
+* `brutas-passwords-keywords-less-common.txt`
+* `brutas-passwords-keywords-more-common.txt`
+* `brutas-passwords-numbers.txt`
+* `brutas-passwords-tomcat.txt`
+* `brutas-passwords-unique.txt`
 
-### Lists
+### Other lists
 
 * `brutas-usernames.txt` - most common usernames
+* `brutas-usernames-small.txt` - a short list of usernames
+* `brutas-*-tomcat.txt` - ...guess ;)
 * `brutas-extensions.txt` - extensions especially useful when combined with `brutas-http-paths.txt`
 * `brutas-http-paths.txt` - no path traversal or pseudo exploits to keep low profile, no subs (use recursion instead) - paths only
 
@@ -30,3 +35,4 @@ The order is also suggested workflow (approx. size):
 * `brutas-subdomains-3k.txt` - a fairly reasonable list for host discovery composed of common conventions, self-hosted software etc.
 * `brutas-subdomains-250k.txt` - extended list with some extra pre-/postfixes like `host-srv`, `f.host` or `host10`
 * `brutas-subdomains-keywords.*` - keywords and rules used to generate lists for subdomains
+* `brutas-subdomains-extra.txt` - additional prefixes for subdomain discovery

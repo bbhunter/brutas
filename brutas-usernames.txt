@@ -68,6 +68,7 @@ integrator
 it
 itadmin
 jenkins
+k8s
 kubernetes
 linux
 local
