@@ -42,8 +42,8 @@ done
 echo "Building final lists..."
 cat b1.tmp b2.tmp b3.tmp > brutas-passwords-5k.txt
 cat brutas-passwords-5k.txt b4.tmp b7.tmp > brutas-passwords-10k.txt
-cat brutas-passwords-10k.txt b5.tmp b6.tmp b9.tmp b10.tmp b13.tmp > brutas-passwords-40k.txt
-cat brutas-passwords-40k.txt b14.tmp b8.tmp b11.tmp b12.tmp > brutas-passwords-400k.txt
+cat brutas-passwords-10k.txt b5.tmp b6.tmp b9.tmp b10.tmp b13.tmp > brutas-passwords-50k.txt
+cat brutas-passwords-50k.txt b14.tmp b8.tmp b11.tmp b12.tmp > brutas-passwords-400k.txt
 
 echo "Cleaning up..."
 rm *.tmp

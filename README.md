@@ -12,7 +12,7 @@ You can use the "top passwords" lists if you prefer and `brutas-passwords-10k.tx
 
 * `brutas-passwords-5k.txt`
 * `brutas-passwords-10k.txt`
-* `brutas-passwords-40k.txt`
+* `brutas-passwords-50k.txt`
 * `brutas-passwords-400k.txt`
 * `brutas-passwords-classics.txt`
 * `brutas-passwords-closekeys.txt`
