@@ -39,6 +39,7 @@ admin_login
 administrator
 adminlogin
 adminpanel
+admins
 adminweb
 adminwww
 admission
@@ -52,6 +53,7 @@ adverts
 adwords
 aes
 affiliate
+afs
 ajax
 alarm
 alarms
@@ -302,6 +304,7 @@ customerportal
 customers
 cvs
 d
+dashboard
 dat
 data
 databackup
@@ -326,6 +329,7 @@ debugger
 decrypted
 default
 delete
+deleted
 demo
 demos
 denied
@@ -338,6 +342,7 @@ deps
 description
 descriptions
 desktop
+desktops
 detail
 details
 dev
@@ -374,6 +379,7 @@ downtime
 drive
 driver
 drivers
+drives
 drop
 dropbox
 dtd
@@ -469,6 +475,7 @@ formmail
 forum
 forums
 forward
+found
 frame
 frames
 free
@@ -554,6 +561,8 @@ i
 ico
 icons
 id
+id_rsa
+id_rsa.pub
 identities
 identity
 iframe
@@ -693,6 +702,7 @@ mailing
 mailman
 main
 mainnav
+maintenance
 man
 manage
 management
@@ -792,6 +802,7 @@ off
 office
 offline
 old
+oldbackup
 on
 online
 onlinechat
@@ -825,11 +836,14 @@ packages
 page
 pages
 panel
+panel-admin
 papers
 parent
+part
 partition
 partner
 partners
+parts
 pass
 passwd
 password
@@ -865,6 +879,7 @@ phpmyadmin
 phpnuke
 picture
 pictures
+pilot
 pin
 ping
 pins
@@ -901,7 +916,9 @@ presentations
 press
 pressreleases
 pressroom
+prev
 preview
+previous
 print
 printenv
 printer
@@ -913,6 +930,7 @@ private
 private-keys-v1.d
 prod
 product
+production
 products
 profile
 profiles
@@ -969,6 +987,7 @@ release
 releases
 remote
 remove
+removed
 reply
 report
 reports
@@ -1005,6 +1024,7 @@ sa
 saas
 safety
 sam
+samba
 sample
 samples
 save
@@ -1074,8 +1094,10 @@ size
 skin
 slave
 small
+smb
 sms
 smtp
+snippet
 snippets
 soap
 soapxml
@@ -1266,6 +1288,8 @@ viewpage
 viewtopic
 virtualenv
 voip
+volume
+volumes
 vote
 votes
 voting
@@ -1278,6 +1302,7 @@ war
 warez
 wdav
 web
+web-console
 WEB-INF
 web_files
 web_images
@@ -1289,6 +1314,7 @@ webcache
 webcalendar
 webcast
 webcasts
+webconsole
 webdav
 webdb
 weblogs
