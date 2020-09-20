@@ -82,6 +82,7 @@ applet
 applets
 applications
 apply
+approve
 apps
 archive
 archived
@@ -201,6 +202,7 @@ channel
 channels
 chart
 charts
+chat
 check
 check-login
 checklogin
@@ -227,6 +229,8 @@ cms-js
 cmsfiles
 code
 codes
+collection
+collections
 command
 comment
 comments
@@ -472,6 +476,8 @@ form
 format
 formlogin
 formmail
+forms
+formtest
 forum
 forums
 forward
@@ -500,6 +506,7 @@ generic
 get
 gfx
 git
+gitrepository
 global
 global-protect
 globals
@@ -602,6 +609,7 @@ invisible
 invite
 invoice
 invoices
+io
 isapi
 iso
 issue
@@ -726,11 +734,13 @@ members
 membership
 menu
 menus
+mercurial
 messageboard
 messages
 meta
 META-INF
 metadata
+mg
 microsoft
 migrate
 migrated
@@ -991,6 +1001,7 @@ removed
 reply
 report
 reports
+repository
 request
 requests
 res
@@ -1086,6 +1097,7 @@ signon
 signout
 signup
 simple
+sip
 site
 site_map
 sitemap
@@ -1175,12 +1187,14 @@ t
 table
 tables
 tar
+tarballs
 task
 tasks
 team
 tech
 technical
 technology
+telemetry
 temp
 template
 templates
@@ -1191,10 +1205,12 @@ terms
 test
 test-cgi
 tester
+testform
 testing
 tests
 text
 texts
+tgz
 theme
 themes
 third_party
@@ -1262,8 +1278,10 @@ util
 utilities
 utility
 utils
+ux
 v
 vagrant
+validate
 validation
 var
 varia
@@ -1286,6 +1304,7 @@ viewarticle
 viewer
 viewpage
 viewtopic
+virtual
 virtualenv
 voip
 volume
@@ -1309,6 +1328,7 @@ web_images
 webaccess
 webadmin
 webalizer
+webapi
 webapp
 webcache
 webcalendar

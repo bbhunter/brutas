@@ -16,16 +16,16 @@ cat brutas-passwords-keywords-less-common.txt | sort -f > a5.tmp
 sort -f brutas-passwords-numbers.txt | sort -f > a6.tmp
 
 echo "Generating sets based on usernames..."
-hashcat -r ./src/brutas-passwords-extra.rule --stdout ./brutas-usernames-small.txt | sort -f | uniq  > a7.tmp
-hashcat -r ./src/brutas-passwords-years.rule --stdout ./brutas-usernames-small.txt | sort -f | uniq  > a8.tmp
-hashcat -r ./src/brutas-passwords-complex.rule --stdout ./brutas-usernames-small.txt | sort -f | uniq > a9.tmp
-hashcat -r ./src/brutas-passwords-hax0r.rule --stdout ./brutas-usernames-small.txt | sort -f | uniq > a10.tmp
+hashcat -r src/brutas-passwords-extra.rule --stdout brutas-usernames-small.txt | sort -f | uniq  > a7.tmp
+hashcat -r src/brutas-passwords-years.rule --stdout brutas-usernames-small.txt | sort -f | uniq  > a8.tmp
+hashcat -r src/brutas-passwords-complex.rule --stdout brutas-usernames-small.txt | sort -f | uniq > a9.tmp
+hashcat -r src/brutas-passwords-hax0r.rule --stdout brutas-usernames-small.txt | sort -f | uniq > a10.tmp
 
 echo "Parsing keywords with extra rules..."
-hashcat -r ./src/brutas-passwords-years.rule --stdout ./brutas-passwords-keywords-more-common.txt | sort -f | uniq  > a11.tmp
-hashcat -r ./src/brutas-passwords-years.rule --stdout ./brutas-passwords-keywords-less-common.txt | sort -f | uniq  > a12.tmp
-hashcat -r ./src/brutas-passwords-hax0r.rule --stdout ./brutas-passwords-keywords-more-common.txt | sort -f | uniq > a13.tmp
-hashcat -r ./src/brutas-passwords-hax0r.rule --stdout ./brutas-passwords-keywords-less-common.txt | sort -f | uniq > a14.tmp
+hashcat -r src/brutas-passwords-years.rule --stdout brutas-passwords-keywords-more-common.txt | sort -f | uniq  > a11.tmp
+hashcat -r src/brutas-passwords-years.rule --stdout brutas-passwords-keywords-less-common.txt | sort -f | uniq  > a12.tmp
+hashcat -r src/brutas-passwords-hax0r.rule --stdout brutas-passwords-keywords-more-common.txt | sort -f | uniq > a13.tmp
+hashcat -r src/brutas-passwords-hax0r.rule --stdout brutas-passwords-keywords-less-common.txt | sort -f | uniq > a14.tmp
 
 echo "Removing duplicates..."
 cp a1.tmp dict.tmp
@@ -52,6 +52,6 @@ echo "Generating subdomains..."
 cat brutas-subdomains-keywords.txt > brutas-subdomains-3k.txt
 cat brutas-subdomains-extra.txt >> brutas-subdomains-3k.txt
 cat brutas-subdomains-3k.txt > brutas-subdomains-250k.txt
-hashcat -r ./src/brutas-subdomains-keywords.rule --stdout ./brutas-subdomains-keywords.txt >> brutas-subdomains-250k.txt
+hashcat -r src/brutas-subdomains-keywords.rule --stdout brutas-subdomains-keywords.txt >> brutas-subdomains-250k.txt
 
 echo "Done!"

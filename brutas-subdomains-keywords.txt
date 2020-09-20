@@ -48,12 +48,14 @@ api
 app
 applications
 apply
+approve
 apps
 archive
 archivebox
 archivematica
 archives
 area
+ariel
 art
 articles
 as
@@ -132,6 +134,7 @@ caldav
 calendar
 calendars
 call
+callisto
 calls
 calypso
 cam
@@ -162,6 +165,7 @@ cdn
 center
 centos
 central
+ceres
 certificates
 cfg
 cfp
@@ -185,6 +189,7 @@ ciscovpn
 citadel
 citrix
 ckan
+classroom
 client
 clientaccess
 clientarea
@@ -213,6 +218,7 @@ collab
 collaboration
 collect
 collection
+collections
 collector
 com
 comm
@@ -220,6 +226,7 @@ commerce
 commits
 common
 community
+company
 concrete
 concrete5
 conf
@@ -252,6 +259,8 @@ cozy
 cozycloud
 cp
 cpanel
+cpcalendars
+cpcontacts
 cportal
 credentials
 crm
@@ -287,6 +296,7 @@ debug
 dec
 decoder
 default
+deimos
 dell
 demo
 department
@@ -347,11 +357,14 @@ dump
 dvd
 dyn
 dyndns
+e-invoice
 e-learn
 e-learning
 e-mail
+e-recruitment
 e2
 eap
+earth
 ec
 echo
 ecommerce
@@ -385,6 +398,7 @@ epayments
 epoch
 epochtalk
 epub
+eris
 erp
 errors
 escrow
@@ -396,6 +410,7 @@ etesync
 ether
 etherpad
 eu
+europa
 event
 events
 ex
@@ -415,6 +430,7 @@ fedora
 feed
 feedmixer
 feeds
+fg
 file
 filemanager
 files
@@ -429,7 +445,9 @@ forgot
 forgotten
 form
 forms
+formtest
 formtools
+forti
 forum
 forums
 frab
@@ -449,6 +467,7 @@ fw
 fwall
 galleries
 gallery
+game
 gate
 gateway
 getsimple
@@ -501,6 +520,7 @@ hosted
 hosting
 hosts
 hotdesks
+hotspots
 hp
 hq
 hr
@@ -509,6 +529,7 @@ http
 https
 huawei
 hub
+hyperion
 ibm
 ical
 ice
@@ -562,6 +583,7 @@ ircii
 iredmail
 iso
 it
+iwork
 jabber
 java
 jboss
@@ -655,6 +677,7 @@ mailer
 mailgate
 mailgw
 mailhost
+mailin
 mailing
 mailman
 mailout
@@ -675,6 +698,7 @@ maps
 maria
 mariadb
 marketing
+mars
 master
 mattermost
 mbox
@@ -694,6 +718,7 @@ members
 memcache
 memcached
 mercurial
+mercury
 message
 messages
 messaging
@@ -702,14 +727,19 @@ metabase
 metric
 metrics
 metronome
+mg
+mgmt
 mindmaps
 minio
+miranda
 mirror
 mirrors
 misp
 mm
 mobile
+mobileapps
 mobiles
+mobiletrading
 modem
 moderator
 modx
@@ -720,7 +750,9 @@ mongoose
 monitor
 monitoring
 moodle
+moon
 mq
+mr
 ms
 msadmin
 msg
@@ -733,6 +765,10 @@ munin
 music
 mwg
 mx
+mx1
+mx2
+mx3
+mx4
 my
 myaccount
 myadmin
@@ -746,8 +782,11 @@ nagios
 nas
 nat
 neos
+neptune
 net
+netbanking
 netgear
+nettrading
 network
 new
 news
@@ -769,6 +808,7 @@ notifier
 ns
 nsx
 ntp
+oberon
 objects
 ocs
 odoo
@@ -782,6 +822,9 @@ omega
 onboard
 onboarding
 online
+onlineaccount
+onlinebanking
+onlinetrading
 open
 openaccess
 openbsd
@@ -843,6 +886,7 @@ pentesters
 pentesting
 personal
 pfsense
+phobos
 phone
 phones
 photo
@@ -868,6 +912,7 @@ planet
 plans
 platform
 plume
+pluto
 pm
 pms
 podcast
@@ -914,6 +959,7 @@ promo
 prosody
 protected
 provider
+proxima
 proxmox
 proxy
 psd2
@@ -951,6 +997,7 @@ realtime
 recording
 recordings
 records
+recruitment
 red
 red-team
 redash
@@ -1017,6 +1064,7 @@ sap
 sas
 sat
 satellite
+saturn
 scanner
 school
 script
@@ -1030,8 +1078,10 @@ secure
 securemail
 security
 selenium
+selfservice
 seller
 sendmail
+sendsms
 sentry
 seo
 serials
@@ -1171,11 +1221,13 @@ technical
 technicalsupport
 techsupport
 tel
+telemetry
 temp
 term
 terminal
 terminals
 test
+testform
 testing
 tests
 textbooks
@@ -1193,6 +1245,8 @@ timesheet
 timesheets
 timezone
 timezones
+titan
+titania
 tls
 tmp
 tomcat
@@ -1208,12 +1262,14 @@ trac
 track
 tracker
 tracking
+trading
 training
 transaction
 transactions
 transfer
 translator
 trendmicro
+triton
 ts
 tun
 tunnel
@@ -1224,14 +1280,18 @@ tyk
 typo
 typo3
 ubuntu
+udemo
 ui
 uid
+uidemo
+umbriel
 unix
 update
 updates
 upload
 uploads
 uptime
+uranus
 url
 us
 usb
@@ -1240,7 +1300,10 @@ users
 utilities
 utils
 uwsgi
+ux
+uxdemo
 vacancies
+validate
 vanilla
 varnish
 vault
@@ -1250,6 +1313,8 @@ vda
 vdesk
 vdesktop
 vdi
+venus
+verify
 version
 vhost
 video
@@ -1264,10 +1329,12 @@ vlc
 vm
 vms
 vmware
+vod
 voip
 voip-phone
 voip-phones
 vpn
+vpnfg
 vps
 vsphere
 w-ww
@@ -1280,6 +1347,7 @@ warehouse
 wazo
 weaviate
 web
+webapi
 webapp
 webapps
 webcam
