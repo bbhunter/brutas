@@ -4,20 +4,23 @@
 
 ## Descriptions
 
-These dictionaries are based on real-life pentesting engagements both in small business and corporate network environments, leaks monitoring, honeypots, some friendly wargames etc. The build process is automated and handled by the script located in `./bin/rebuild.sh`. Check it out to understand what are the blocks and how I set the priorities (or in other words what is most probable in my opinion). You may want to *change that order depending on your target*.
+These dictionaries are based on real-life pentesting engagements both in small business and corporate network environments, leaks monitoring, honeypots, some friendly wargames etc. The build process is automated and handled by the script located in `./bin/rebuild.sh`. Check it out to understand what are the blocks and how I set the priorities (or in other words what is most probable in my opinion).
 
 ### Passwords
 
-You can use the "top passwords" lists if you prefer and `brutas-passwords-10k.txt` seems to be most effective for general purpose and reasonably fast password bruteforcing. However, I recommend combining these lists, depending on the use case. For example, I'd use `brutas-passwords-closekeys.txt` combined with `brutas-passwords-classics.txt` for attacking local network services and accounts, and `brutas-passwords-keywords-*.txt` for normal user accounts (perhaps with an extra rule or two). On the other hand, company, file or domain name combined with `brutas-passwords-numbers.txt` turns out to be pretty effective on encrypted archives and wireless networks. As with everything, a little social engineering comes handy to understand the local approach to the password "policy".
+The `brutas-passwords-10k.txt` list seems to be most effective for general purpose and reasonably fast password bruteforcing, while `brutas-passwords-1k.txt` is designed for a quick win in large networks. Somewhat balanced version of these two is `brutas-passwords-5k.txt` which is perfect for targeting local network services and admin accounts thanks to close keys combinations.
 
+However, I recommend experimenting on your own and rebuilding these sets depending on the target. You may want to incorporate your native language keywords, too. For example, file or a domain name combined with `brutas-passwords-numbers.txt` turns out to be pretty effective on encrypted archives and wireless networks. As with everything, a little social engineering comes handy to understand the local approach to the "password policy".
+
+* `brutas-passwords-1k.txt`
 * `brutas-passwords-5k.txt`
 * `brutas-passwords-10k.txt`
 * `brutas-passwords-50k.txt`
 * `brutas-passwords-400k.txt`
 * `brutas-passwords-classics.txt`
 * `brutas-passwords-closekeys.txt`
-* `brutas-passwords-keywords-less-common.txt`
-* `brutas-passwords-keywords-more-common.txt`
+* `brutas-passwords-keywords-en-less-common.txt`
+* `brutas-passwords-keywords-en-more-common.txt`
 * `brutas-passwords-numbers.txt`
 * `brutas-passwords-tomcat.txt`
 * `brutas-passwords-unique.txt`

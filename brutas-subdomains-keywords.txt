@@ -270,6 +270,7 @@ csupport
 ctv
 cups
 customer
+customer-api
 customeraccess
 customerarea
 customerftp
@@ -599,6 +600,8 @@ journal
 journals
 js
 json
+json-api
+jsonapi
 jsxc
 juniper
 jupiter
@@ -736,6 +739,7 @@ mirror
 mirrors
 misp
 mm
+mmail
 mobile
 mobileapps
 mobiles
@@ -1002,6 +1006,7 @@ red
 red-team
 redash
 redhat
+redir
 redirect
 redirected
 redirection
@@ -1127,7 +1132,9 @@ snapshots
 snmp
 snort
 soap
+soap-api
 soap-rpc
+soapapi
 soc
 social
 socialmedia
@@ -1318,6 +1325,7 @@ verify
 version
 vhost
 video
+videoconf
 videos
 view
 views
@@ -1388,7 +1396,9 @@ www
 www-test
 xen
 xml
+xml-api
 xml-rpc
+xmlapi
 xmlrpc
 xmpp
 xp
