@@ -4,19 +4,21 @@
 
 ## Passwords
 
-The `brutas-passwords-10k.txt` list seems to be most effective for general purpose and reasonably fast password bruteforcing, while `brutas-passwords-1k.txt` is designed for a quick win in large networks.
+The `brutas-passwords-2-small.txt` list seems to be most effective for general purpose and reasonably fast password bruteforcing, while `brutas-passwords-1-x-small.txt` is designed for a quick win in large networks.
 
 However, I recommend experimenting on your own and rebuilding these sets depending on the target. You may want to incorporate your native language keywords, too. For example, file or a domain name combined with `brutas-passwords-numbers.txt` turns out to be pretty effective on encrypted archives and wireless networks. As with everything, a little social engineering comes handy to understand the local approach to the "password policy".
 
-* `brutas-passwords-1k.txt`
-* `brutas-passwords-10k.txt`
-* `brutas-passwords-60k.txt`
-* `brutas-passwords-750k.txt`
-* `brutas-passwords-classics.txt`
-* `brutas-passwords-closekeys.txt`
-* `brutas-passwords-numbers.txt`
-* `brutas-passwords-tomcat.txt`
-* `brutas-passwords-unique.txt`
+* `brutas-passwords-1-x-small.txt` - a low profile list useful for attacking administrator and service accounts
+* `brutas-passwords-2-small.txt` - general purpose, could crack admin or regular user accounts, a mix of most popular passwords with some pseudo-complex combinations
+* `brutas-passwords-3-medium.txt` - probably the biggest one still reasonable for online bruteforcing
+* `brutas-passwords-4-large.txt` - apart from smallers lists contains common English words and variations of leetspeak coded usernames
+* `brutas-passwords-5-x-large.txt` - all rules applied, includes less common English words
+* `brutas-passwords-classics.txt` - typical admin passwords based on roles (test, admin), words (password, secret) or "funny" ones (like still beloved `letmein` or `trustno1`)
+* `brutas-passwords-closekeys.txt` - close key combinations or easy phrases (e.g. `abcd`) combined with capitalization, numbers, repetitions etc.
+* `brutas-passwords-top.txt` - currently 2k list composed of most popular user passwords found in leaks, doesn't contain close keys or any more sophisticated combinations than adding a number or two
+* `brutas-passwords-unique.txt` - passwords which are complex enough to be used as independent passwords and are rarely mixed with any extra characters, usually related to pop-culture or sports (e.g. `apollo13`, `9inchnails`, `ronaldo7`)
+* `brutas-passwords-numbers.txt` - a small list of numbers used in passwords (e.g. dates, math constants)
+* `brutas-passwords-tomcat.txt` - as the name suggests
 
 ## Other lists
 
@@ -25,12 +27,12 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 * `brutas-http-paths.txt` - no path traversal or pseudo exploits to keep low profile, no subs (use recursion instead) - paths only
 * `brutas-usernames.txt` - most common usernames
 * `brutas-usernames-small.txt` - a short list of usernames
-* `brutas-usernames-tomcat.txt` - ...guess ;)
+* `brutas-usernames-tomcat.txt` - as the name suggests
 
 ## Subdomains
 
-* `brutas-subdomains-3k.txt` - a fairly reasonable list for host discovery composed of common conventions, self-hosted software etc.
-* `brutas-subdomains-250k.txt` - extended list with some extra pre-/postfixes like `host-srv`, `f.host` or `host10`
+* `brutas-subdomains-1-small.txt` - a fairly reasonable list for host discovery composed of common conventions, self-hosted software etc.
+* `brutas-subdomains-2-large.txt` - extended list with some extra pre-/postfixes like `host-srv`, `f.host` or `host10`
 
 ## Keywords
 
