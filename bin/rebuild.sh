@@ -1,5 +1,7 @@
 #!/bin/bash
 
+TEMP_DIR=$(mktemp -d)
+
 echo "Preparing keyword lists..."
 sort -f keywords/brutas-en-common.txt > sorted1
 sort -f keywords/brutas-en-less.txt > sorted2
@@ -8,17 +10,19 @@ rm keywords/brutas-en-common.txt sorted2
 mv sorted1 keywords/brutas-en-common.txt
 
 echo "Generating sets based on usernames..."
-hashcat -r rules/brutas-passwords-extra.rule --stdout brutas-usernames-small.txt | sort -f | uniq  > usernames-small-extra.tmp
-hashcat -r rules/brutas-passwords-hax0r.rule --stdout brutas-usernames-small.txt | sort -f | uniq > usernames-small-hax0r.tmp
-hashcat -r rules/brutas-passwords-years.rule --stdout brutas-usernames.txt | sort -f | uniq  > usernames-years.tmp
-hashcat -r rules/brutas-passwords-extra.rule --stdout brutas-usernames.txt | sort -f | uniq > usernames-extra.tmp
-hashcat -r rules/brutas-passwords-hax0r.rule --stdout brutas-usernames.txt | sort -f | uniq > usernames-hax0r.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-extra.rule brutas-usernames-small.txt | sort -f | uniq > $TEMP_DIR/.usernames-small-extra.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-hax0r.rule brutas-usernames-small.txt | sort -f | uniq > $TEMP_DIR/.usernames-small-hax0r.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-years.rule brutas-usernames.txt | sort -f | uniq > $TEMP_DIR/.usernames-years.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-extra.rule brutas-usernames.txt | sort -f | uniq > $TEMP_DIR/.usernames-extra.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-hax0r.rule brutas-usernames.txt | sort -f | uniq > $TEMP_DIR/.usernames-hax0r.tmp
 
 echo "Parsing keywords with extra rules..."
-hashcat -r rules/brutas-passwords-years.rule --stdout keywords/brutas-en-common.txt | sort -f | uniq  > more-common-years.tmp
-hashcat -r rules/brutas-passwords-years.rule --stdout keywords/brutas-en-less.txt | sort -f | uniq  > less-common-years.tmp
-hashcat -r rules/brutas-passwords-hax0r.rule --stdout keywords/brutas-en-common.txt | sort -f | uniq > more-common-hax0r.tmp
-hashcat -r rules/brutas-passwords-hax0r.rule --stdout keywords/brutas-en-less.txt | sort -f | uniq > less-common-hax0r.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-years.rule keywords/brutas-en-common.txt | sort -f | uniq > $TEMP_DIR/.more-common-years.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-years.rule keywords/brutas-en-less.txt | sort -f | uniq > $TEMP_DIR/.less-common-years.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-extra.rule keywords/brutas-en-common.txt | sort -f | uniq > $TEMP_DIR/.more-common-extra.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-extra.rule keywords/brutas-en-less.txt | sort -f | uniq > $TEMP_DIR/.less-common-extra.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-hax0r.rule keywords/brutas-en-common.txt | sort -f | uniq > $TEMP_DIR/.more-common-hax0r.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-hax0r.rule keywords/brutas-en-less.txt | sort -f | uniq > $TEMP_DIR/.less-common-hax0r.tmp
 
 # Change the order here:
 
@@ -36,32 +40,34 @@ cat \
 cat \
     brutas-passwords-2-small.txt \
     brutas-passwords-numbers.txt \
-    usernames-years.tmp \
-    usernames-small-extra.tmp \
-    usernames-small-hax0r.tmp \
+    $TEMP_DIR/.usernames-years.tmp \
+    $TEMP_DIR/.usernames-small-extra.tmp \
+    $TEMP_DIR/.usernames-small-hax0r.tmp \
     | sort -f | uniq > brutas-passwords-3-medium.txt
 cat \
     brutas-passwords-3-medium.txt \
     keywords/brutas-en-common.txt \
-    usernames-extra.tmp \
-    usernames-hax0r.tmp \
+    $TEMP_DIR/.usernames-extra.tmp \
+    $TEMP_DIR/.usernames-hax0r.tmp \
     | sort -f | uniq > brutas-passwords-4-large.txt
 cat \
     brutas-passwords-4-large.txt \
     keywords/brutas-en-less.txt \
-    less-common-hax0r.tmp \
-    less-common-years.tmp \
-    more-common-hax0r.tmp \
-    more-common-years.tmp \
+    $TEMP_DIR/.less-common-extra.tmp \
+    $TEMP_DIR/.less-common-hax0r.tmp \
+    $TEMP_DIR/.less-common-years.tmp \
+    $TEMP_DIR/.more-common-extra.tmp \
+    $TEMP_DIR/.more-common-hax0r.tmp \
+    $TEMP_DIR/.more-common-years.tmp \
     | sort -f | uniq > brutas-passwords-5-x-large.txt
-
-echo "Cleaning up..."
-rm *.tmp
 
 echo "Generating subdomains..."
 cat keywords/brutas-subdomains.txt > brutas-subdomains-1-small.txt
 cat keywords/brutas-subdomains-extra.txt >> brutas-subdomains-1-small.txt
 cat brutas-subdomains-1-small.txt > brutas-subdomains-2-large.txt
-hashcat -r rules/brutas-subdomains.rule --stdout keywords/brutas-subdomains.txt >> brutas-subdomains-2-large.txt
+hashcat --stdout -r rules/brutas-subdomains.rule keywords/brutas-subdomains.txt >> brutas-subdomains-2-large.txt
+
+echo "Cleaning up..."
+rm -rf $TEMP_DIR
 
 echo "Done!"
