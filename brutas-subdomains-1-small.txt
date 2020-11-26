@@ -86,6 +86,7 @@ backdrop
 backend
 backstage
 backup
+backups
 balancer
 bank
 banking
@@ -197,6 +198,7 @@ cisco
 ciscovpn
 citadel
 citrix
+citrix-int
 ckan
 classroom
 client
@@ -252,6 +254,7 @@ connection
 connector
 console
 contact
+contacts
 container
 containers
 content
@@ -349,6 +352,7 @@ dht
 dialin
 dialup
 diaspora
+digikey
 dir
 directory
 dirs
@@ -705,11 +709,13 @@ logout
 logs
 long
 looker
+lookup
 loop
 lp
 lpt
 lync
 lyncdiscover
+m
 magento
 mahara
 mail
@@ -725,6 +731,7 @@ mailout
 mailserver
 mailu
 main
+maint
 mamp
 man
 manage
@@ -935,6 +942,7 @@ pdfs
 pentest
 pentesters
 pentesting
+performance
 personal
 pfsense
 phobos
@@ -1136,6 +1144,8 @@ search
 sec
 secondary
 secure
+secure-api
+secure-maint
 securemail
 security
 selenium
@@ -1146,6 +1156,7 @@ sendsms
 sentry
 seo
 serials
+serv
 server
 service
 services
@@ -1173,6 +1184,7 @@ sites
 skype
 slave
 slot
+smart
 smartphone
 smartphones
 smb
@@ -1405,6 +1417,7 @@ voip
 voip-phone
 voip-phones
 vpn
+vpn-int
 vpnfg
 vps
 vsphere
@@ -1458,6 +1471,7 @@ wordpress
 work
 workspace
 workspaces
+world
 wp
 ws
 wss
@@ -1490,7 +1504,6 @@ i
 j
 k
 l
-m
 n
 o
 p
