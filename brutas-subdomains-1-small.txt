@@ -13,6 +13,7 @@ adfs
 adhoc
 adm
 admin
+administrator
 admins
 ads
 adserver
@@ -33,6 +34,7 @@ alpha
 alt
 alternative
 alumni
+am
 amqp
 analysis
 analytics
@@ -58,11 +60,13 @@ area
 ariel
 art
 articles
+artifactory
 as
 asset
 assets
 asterisk
 astpp
+at
 atom
 attachment
 attachments
@@ -79,6 +83,7 @@ av
 aw
 awstats
 backdrop
+backend
 backstage
 backup
 balancer
@@ -95,6 +100,7 @@ beta
 bi
 bigbluebutton
 billing
+bin
 blog
 blogs
 blue
@@ -123,7 +129,9 @@ bugs
 bugzilla
 build
 builds
+bus
 business
+buy
 c2
 cache
 cachet
@@ -175,6 +183,7 @@ chan
 change
 changes
 channel
+channels
 chart
 charts
 chat
@@ -209,6 +218,7 @@ cloudstore
 cluster
 cm
 cms
+cn
 co
 cockpit
 cod
@@ -231,6 +241,7 @@ concrete
 concrete5
 conf
 conference
+config
 configurator
 configure
 confirm
@@ -241,8 +252,11 @@ connection
 connector
 console
 contact
+container
+containers
 content
 context
+contrib
 control
 converse
 core
@@ -284,13 +298,20 @@ cyber
 dash
 dashboard
 data
+database
+databases
 datacenter
 datadog
+dataset
+datasets
+datastream
 davis
 davros
 db
 dbms
+dbs
 dc
+de
 deb
 debian
 debug
@@ -312,11 +333,14 @@ desktop
 dev
 dev-net
 devel
+develop
 developer
 developers
 device
 devices
 devnet
+devop
+devops
 devs
 dfs
 dhcp
@@ -327,6 +351,7 @@ dialup
 diaspora
 dir
 directory
+dirs
 discourse
 discovery
 django
@@ -402,6 +427,7 @@ epub
 eris
 erp
 errors
+es
 escrow
 esmtp
 espocrm
@@ -451,6 +477,7 @@ formtools
 forti
 forum
 forums
+fr
 frab
 free
 freebsd
@@ -459,6 +486,7 @@ freepbx
 freeswitch
 friends
 front
+frontend
 frontoffice
 frontpage
 fs
@@ -471,6 +499,7 @@ gallery
 game
 gate
 gateway
+get
 getsimple
 ghost
 gis
@@ -485,6 +514,7 @@ global
 glossary
 gps
 grafana
+group
 groups
 groupware
 guest
@@ -507,6 +537,7 @@ head
 health
 healthcheck
 heatmap
+hello
 help
 helpdesk
 helpy
@@ -514,6 +545,7 @@ hfs
 hg
 hive
 home
+homepage
 homer
 honeypot
 host
@@ -522,6 +554,7 @@ hosting
 hosts
 hotdesks
 hotspots
+howto
 hp
 hq
 hr
@@ -587,6 +620,7 @@ it
 iwork
 jabber
 java
+javascript
 jboss
 jenkins
 jetty
@@ -619,6 +653,7 @@ key
 keybase
 keys
 kibana
+km
 knowledge
 kolab
 kontalk
@@ -630,6 +665,7 @@ labs
 lamp
 lan
 laptop
+lb
 ldap
 learn
 lecture
@@ -639,6 +675,7 @@ letters
 lib
 libervia
 library
+libs
 licenses
 licensing
 lighttpd
@@ -656,6 +693,7 @@ live
 ln
 lo
 load
+loadbalancer
 local
 localhost
 localnet
@@ -704,6 +742,7 @@ marketing
 mars
 master
 mattermost
+maven
 mbox
 mc
 mcafee
@@ -767,6 +806,7 @@ mta
 multicast
 munin
 music
+mvn
 mwg
 mx
 mx1
@@ -792,6 +832,8 @@ netbanking
 netgear
 nettrading
 network
+networking
+networks
 new
 news
 newsletter
@@ -809,6 +851,7 @@ notificaciones
 notification
 notifications
 notifier
+notify
 ns
 nsx
 ntp
@@ -844,11 +887,13 @@ openspace
 openstack
 openvas
 openvpn
+ops
 oracle
 orange
 orangehrm
 order
 orders
+org
 origin
 osem
 ostel
@@ -873,6 +918,8 @@ partner
 partners
 pass
 password
+passwordreset
+passwords
 paste
 pastebin
 pastes
@@ -908,6 +955,7 @@ pico
 pics
 pictures
 piler
+ping
 piwik
 pkg
 pkgs
@@ -950,6 +998,7 @@ preview
 primary
 printer
 printers
+priv
 private
 pro
 prod
@@ -968,6 +1017,7 @@ proxmox
 proxy
 psd2
 psql
+pt
 pub
 public
 publify
@@ -1010,9 +1060,11 @@ redir
 redirect
 redirected
 redirection
+redirector
 redis
 redmine
 redteam
+region
 register
 registration
 registry
@@ -1026,10 +1078,14 @@ repo
 report
 reporting
 reports
+repositories
 repository
+request
+requests
 res
 research
 reservations
+reset
 resources
 responder
 rest
@@ -1139,6 +1195,7 @@ soc
 social
 socialmedia
 socioboard
+sockets
 socks
 socks4
 socks5
@@ -1174,6 +1231,7 @@ staging
 start
 stat
 static
+staticfiles
 stats
 status
 stg
@@ -1203,6 +1261,7 @@ support
 survey
 svn
 sw
+swagger
 swap
 switch
 synapse
@@ -1219,6 +1278,8 @@ tableau
 tagtool
 taiga
 tapir
+task
+tasks
 teacher
 teachers
 team
@@ -1325,8 +1386,10 @@ verify
 version
 vhost
 video
+videochat
 videoconf
 videos
+videostream
 view
 views
 vip
@@ -1373,9 +1436,16 @@ webservices
 webshell
 webshop
 website
+websites
+websocket
+websockets
+webstats
 webstore
+webstream
 weechat
 wheel
+widget
+widgets
 wifi
 wiki
 wikisuite
@@ -1390,6 +1460,7 @@ workspace
 workspaces
 wp
 ws
+wss
 ww
 ww-w
 www
