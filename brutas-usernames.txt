@@ -29,6 +29,7 @@ database
 db
 dba
 dbadmin
+dbuser
 debian
 debug
 default
@@ -56,6 +57,8 @@ helpdesk
 http
 image
 images
+inet
+inetuser
 info
 init
 insight
@@ -113,6 +116,9 @@ quser
 recovery
 redhat
 remote
+report
+reports
+reportuser
 restore
 role
 root
@@ -131,6 +137,7 @@ setup
 siteadmin
 smc
 sql
+sqluser
 squid
 ssladmin
 staff
@@ -180,9 +187,11 @@ web
 webadmin
 webdb
 webmaster
+webuser
 wizard
 wpadmin
 wpsadmin
 www
 www-data
+wwwuser
 zabbix
