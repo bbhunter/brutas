@@ -1,4 +1,5 @@
 2fa
+a1
 about
 access
 account
@@ -10,19 +11,6 @@ ad
 address
 addressbook
 adfs
-wss
-webvpn
-webinar
-webcalendar
-webalizer
-webaccess
-proftpd
-ftp
-ftpd
-sftp
-scp
-messaging
-messages
 adhoc
 adm
 admin
@@ -43,6 +31,7 @@ air
 airwatch
 alarm
 alarms
+alfa
 alpha
 alt
 alternative
@@ -95,6 +84,7 @@ autodiscover
 av
 aw
 awstats
+b1
 backdrop
 backend
 backstage
@@ -146,6 +136,7 @@ builds
 bus
 business
 buy
+c1
 c2
 cache
 cachet
@@ -311,6 +302,7 @@ customerzone
 cv
 cvs
 cyber
+d1
 dash
 dashboard
 data
@@ -348,6 +340,8 @@ desk
 desktop
 dev
 dev-net
+dev1
+dev2
 devel
 develop
 developer
@@ -405,6 +399,7 @@ e-learn
 e-learning
 e-mail
 e-recruitment
+e1
 e2
 eap
 earth
@@ -466,6 +461,7 @@ explorer
 ext
 external
 extranet
+f1
 f5
 failure
 fallback
@@ -508,9 +504,11 @@ frontoffice
 frontpage
 fs
 ftp
+ftpd
 funds
 fw
 fwall
+g1
 galleries
 gallery
 game
@@ -542,6 +540,7 @@ guide
 guides
 gunicorn
 gw
+h1
 ha
 hadoop
 handbook
@@ -581,6 +580,7 @@ https
 huawei
 hub
 hyperion
+i1
 ibm
 ical
 ice
@@ -635,6 +635,7 @@ iredmail
 iso
 it
 iwork
+j1
 jabber
 java
 javascript
@@ -656,6 +657,7 @@ jsonapi
 jsxc
 juniper
 jupiter
+k1
 k8s
 kafka
 kaiwa
@@ -675,6 +677,7 @@ knowledge
 kolab
 kontalk
 kvm
+l1
 lab
 lab-net
 labnet
@@ -729,6 +732,7 @@ lpt
 lync
 lyncdiscover
 m
+m1
 magento
 mahara
 mail
@@ -842,6 +846,7 @@ mycollab
 mymind
 mysql
 mysqldb
+n1
 nagios
 nas
 nat
@@ -875,6 +880,7 @@ notify
 ns
 nsx
 ntp
+o1
 oberon
 objects
 ocs
@@ -926,6 +932,7 @@ ovpn
 owa
 owncloud
 owner
+p1
 package
 packages
 pagekit
@@ -1026,6 +1033,7 @@ prod
 production
 profile
 profiles
+proftpd
 project
 projects
 prometheus
@@ -1052,12 +1060,15 @@ push
 pydio
 python
 q
+q1
 qa
 qa-test
 qmail
 qnap
 queries
 query
+r1
+ra
 rabbit
 rabbitmq
 radio
@@ -1132,6 +1143,7 @@ rss
 rsync
 rt
 ruby
+s1
 sa
 saas
 sagem
@@ -1149,6 +1161,7 @@ satellite
 saturn
 scanner
 school
+scp
 script
 scripts
 scrum
@@ -1299,6 +1312,7 @@ sys
 sysadmin
 sysop
 system
+t1
 tableau
 tagtool
 taiga
@@ -1372,6 +1386,7 @@ txt
 tyk
 typo
 typo3
+u1
 ubuntu
 udemo
 ui
@@ -1395,6 +1410,7 @@ utils
 uwsgi
 ux
 uxdemo
+v1
 vacancies
 validate
 vanilla
@@ -1435,6 +1451,7 @@ vpnfg
 vps
 vsphere
 w-ww
+w1
 waf
 wagtail
 wallet
@@ -1444,9 +1461,12 @@ warehouse
 wazo
 weaviate
 web
+webaccess
+webalizer
 webapi
 webapp
 webapps
+webcalendar
 webcam
 webcams
 webconf
@@ -1470,6 +1490,7 @@ websockets
 webstats
 webstore
 webstream
+webvpn
 weechat
 wheel
 widget
@@ -1494,6 +1515,7 @@ ww
 ww-w
 www
 www-test
+x1
 xen
 xml
 xml-api
@@ -1502,6 +1524,8 @@ xmlapi
 xmlrpc
 xmpp
 xp
+y1
+z1
 zabbix
 zimbra
 zip
