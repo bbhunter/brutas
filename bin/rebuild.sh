@@ -36,12 +36,12 @@ cat \
     brutas-passwords-1-x-small.txt \
     brutas-passwords-top.txt \
     brutas-passwords-unique.txt \
+    $TEMP_DIR/usernames-small-extra.tmp \
     | sort -f | uniq > brutas-passwords-2-small.txt
 cat \
     brutas-passwords-2-small.txt \
     brutas-passwords-numbers.txt \
     $TEMP_DIR/usernames-years.tmp \
-    $TEMP_DIR/usernames-small-extra.tmp \
     $TEMP_DIR/usernames-small-hax0r.tmp \
     | sort -f | uniq > brutas-passwords-3-medium.txt
 cat \
