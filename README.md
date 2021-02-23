@@ -28,6 +28,9 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 * `brutas-usernames.txt` - most common usernames
 * `brutas-usernames-small.txt` - a short list of usernames
 * `brutas-usernames-tomcat.txt` - as the name suggests
+* `brutas-ports-tcp-http.txt` - common and not that obvious HTTP ports
+* `brutas-ports-tcp-internal.txt` - list of TCP services that may come up internally
+* `brutas-ports-tcp-public.txt` - list of public TCP ports, useful for host discovery
 
 ## Subdomains
 
