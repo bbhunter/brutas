@@ -534,7 +534,6 @@ azamat
 azazel
 azerty
 azrael
-b
 bababa
 babababa
 babette
@@ -1142,7 +1141,6 @@ buzzer
 byebye
 bypass
 byron
-c
 c64
 caballero
 cabernet
@@ -2296,8 +2294,6 @@ edmund
 education
 edwin
 edwina
-eeeeeee
-eeeeeeee
 effect
 egghead
 eggplant
@@ -3284,10 +3280,6 @@ hewlett
 heyman
 heythere
 hgfdsa
-hhhh
-hhhhh
-hhhhhhh
-hhhhhhhh
 hiawatha
 hibernia
 hibiscus
@@ -3435,7 +3427,6 @@ hybrid
 hyderabad
 hydrogen
 hysteria
-i
 iamcool
 iamgod
 iamthebest
@@ -3464,8 +3455,6 @@ ignatius
 ignition
 ignorant
 ihateu
-iiiiii
-iiiiiiii
 ikariam
 ilikepie
 illegal
@@ -3592,7 +3581,6 @@ ivanhoe
 ivanov
 ivanova
 iverson
-j
 jabber
 jabberwocky
 jackdaniels
@@ -3769,7 +3757,6 @@ justina
 justine
 justus
 juvenile
-k
 k45
 kaboom
 kabuki
@@ -3906,9 +3893,6 @@ kitties
 kittys
 kiwi
 kiwikiwi
-kkkkk
-kkkkkkk
-kkkkkkkk
 klapaucius
 klaus
 kleenex
@@ -4146,9 +4130,6 @@ lizzy
 llama
 llamas
 llcoolj
-lllll
-lllllll
-llllllll
 lloyd
 loader
 loading
@@ -4258,7 +4239,6 @@ lyndon
 lynette
 lynnette
 lysander
-m
 macaco
 macarena
 macaroni
@@ -4665,7 +4645,6 @@ mistake
 mistral
 mitchel
 mithrandir
-mmmmmmm
 mnemonic
 mobster
 mobydick
@@ -4959,8 +4938,6 @@ nitram
 nitro
 nitrogen
 nitrous
-nnnnnnn
-nnnnnnnn
 no
 noah
 nocturne
@@ -5072,7 +5049,6 @@ onepiece
 onetwo
 onions
 ontario
-oooooooo
 op
 opelascona
 opelastra
@@ -5154,7 +5130,6 @@ oxygen
 oxymoron
 oyster
 ozzy
-p
 pacers
 pacifica
 pacino
@@ -5594,12 +5569,10 @@ purity
 purpose
 puzzle
 pyramids
-q
 qiao
 qing
 qiong
 qlimax
-qqqqqqqqqq
 quack
 quagmire
 quaker
@@ -5619,7 +5592,6 @@ quiksilver
 quinn
 quintana
 quinton
-r
 rabbits
 raccoon
 race
@@ -5953,7 +5925,6 @@ roxane
 roxy
 royal
 royalty
-rrrrrrrr
 rtyuehe
 rubbish
 ruben
@@ -5973,7 +5944,6 @@ russel
 ruth
 ruthie
 ruthless
-s
 saber
 sable
 sabotage
@@ -6576,8 +6546,6 @@ squeaky
 squire
 squishy
 srilanka
-sssssss
-ssssssssss
 stacie
 stadium
 staff
@@ -6793,7 +6761,6 @@ syndrome
 synergy
 systems
 syzygy
-t
 tabasco
 tabatha
 tabby
@@ -7121,8 +7088,6 @@ trustme
 trustnoone
 truth
 tryagain
-ttttttt
-tttttttt
 tucson
 tugboat
 tugger
@@ -7189,8 +7154,6 @@ urchin
 ursula
 usuario
 utility
-uuuuuu
-uuuuuuuu
 uzumaki
 vacuum
 vagabond
@@ -7503,13 +7466,9 @@ wrigley
 wrinkles
 writing
 wtfwtf
-wwww
-wwwww
-wwwwwww
 wyoming
 wysiwyg
 wyvern
-x
 xander
 xcountry
 xerxes
@@ -7556,8 +7515,6 @@ yugioh
 yummy
 yvette
 yvonne
-yyyyyy
-yyyyyyyy
 zach
 zachary
 zack

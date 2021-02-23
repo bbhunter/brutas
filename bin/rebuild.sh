@@ -9,6 +9,14 @@ comm -13 $TEMP_DIR/en-sorted1 $TEMP_DIR/en-sorted2 > keywords/brutas-en-less.txt
 rm keywords/brutas-en-common.txt
 mv $TEMP_DIR/en-sorted1 keywords/brutas-en-common.txt
 
+echo "Generating variants of the most common passwords..."
+hashcat --stdout -r rules/brutas-passwords-multi.rule brutas-passwords-classics.txt | sort -f | uniq > $TEMP_DIR/classics-multi.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule brutas-passwords-unique.txt | sort -f | uniq > $TEMP_DIR/unique-multi.tmp
+
+echo "Generating even more complex variants of the most common passwords..."
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-extra.rule brutas-passwords-classics.txt | sort -f | uniq > $TEMP_DIR/classics-extra.tmp
+hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-extra.rule brutas-passwords-unique.txt | sort -f | uniq > $TEMP_DIR/unique-extra.tmp
+
 echo "Generating sets based on usernames..."
 hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-extra.rule brutas-usernames-small.txt | sort -f | uniq > $TEMP_DIR/usernames-small-extra.tmp
 hashcat --stdout -r rules/brutas-passwords-multi.rule -r rules/brutas-passwords-hax0r.rule brutas-usernames-small.txt | sort -f | uniq > $TEMP_DIR/usernames-small-hax0r.tmp
@@ -36,19 +44,23 @@ cat \
     brutas-passwords-1-x-small.txt \
     brutas-passwords-top.txt \
     brutas-passwords-unique.txt \
+    brutas-passwords-numbers.txt \
     $TEMP_DIR/usernames-small-extra.tmp \
+    $TEMP_DIR/usernames-small-hax0r.tmp \
+    $TEMP_DIR/classics-multi.tmp \
+    $TEMP_DIR/unique-multi.tmp \
+    $TEMP_DIR/usernames-years.tmp \
     | sort -f | uniq > brutas-passwords-2-small.txt
 cat \
     brutas-passwords-2-small.txt \
-    brutas-passwords-numbers.txt \
-    $TEMP_DIR/usernames-years.tmp \
-    $TEMP_DIR/usernames-small-hax0r.tmp \
+    $TEMP_DIR/usernames-extra.tmp \
+    $TEMP_DIR/usernames-hax0r.tmp \
     | sort -f | uniq > brutas-passwords-3-medium.txt
 cat \
     brutas-passwords-3-medium.txt \
     keywords/brutas-en-common.txt \
-    $TEMP_DIR/usernames-extra.tmp \
-    $TEMP_DIR/usernames-hax0r.tmp \
+    $TEMP_DIR/classics-extra.tmp \
+    $TEMP_DIR/unique-extra.tmp \
     | sort -f | uniq > brutas-passwords-4-large.txt
 cat \
     brutas-passwords-4-large.txt \
