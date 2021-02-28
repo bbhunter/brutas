@@ -1,9 +1,11 @@
 abc
 abuse
+account
 adm
 admin
 administrator
 adminuser
+agent
 anonymous
 ansible
 apache
@@ -34,6 +36,8 @@ debian
 debug
 default
 demo
+deploy
+deployment
 dev
 develop
 developer
@@ -132,6 +136,7 @@ scmadmin
 script
 scripts
 security
+server
 service
 setup
 siteadmin
