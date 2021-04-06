@@ -1,6 +1,17 @@
 0
 1
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
 2
+20
 3
 4
 5
@@ -434,6 +445,8 @@ embedded
 employees
 employment
 en
+en-uk
+en-us
 en_uk
 en_us
 encrypted
@@ -609,6 +622,7 @@ identity
 iframe
 iframes
 iis
+image
 images
 img
 imgs
@@ -659,6 +673,7 @@ items
 j
 java
 javadoc
+javascript
 jenkins
 jira
 jmx-console
@@ -906,6 +921,7 @@ parts
 pass
 passwd
 password
+password-reset
 passwords
 patch
 patches
@@ -936,7 +952,9 @@ phpinfo
 phpmanager
 phpmyadmin
 phpnuke
+pic
 picker
+pics
 picture
 pictures
 pilot
@@ -1058,8 +1076,11 @@ removed
 replies
 reply
 reply-form
+repo
 report
 reports
+repos
+repositories
 repository
 request
 requests
@@ -1067,6 +1088,8 @@ res
 research
 reservations
 reset
+reset-password
+resetpassword
 resource
 resources
 rest
@@ -1169,11 +1192,14 @@ sitemap
 sites
 size
 skin
+skins
 slave
 small
 smb
 sms
 smtp
+snapshot
+snapshots
 snippet
 snippets
 soap
@@ -1205,6 +1231,7 @@ ssh
 ssi
 ssl
 sslvpn
+sso
 staff
 staging
 start
@@ -1285,6 +1312,7 @@ threads
 thumb
 thumbnail
 thumbnails
+thumbs
 ticket
 tickets
 tiki
@@ -1347,6 +1375,10 @@ utility
 utils
 ux
 v
+v1
+v2
+v3
+v4
 vagrant
 validate
 validation
@@ -1487,6 +1519,7 @@ wwwstat
 wwwstats
 x
 xml
+xsl
 xxx
 xyz
 y
