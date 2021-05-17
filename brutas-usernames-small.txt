@@ -1,6 +1,4 @@
-abc
 admin
-administrator
 backup
 guest
 linux
@@ -8,11 +6,8 @@ manager
 root
 staff
 support
-sysadmin
-system
 test
 toor
 user
-webadmin
-webmaster
+web
 www
