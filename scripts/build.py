@@ -36,75 +36,84 @@ def wordlists_process():
         for wordlist in WORDLISTS:
             idx = wordlist.find('/')
             filename = rule + '-' + wordlist[idx + 1:].split('.txt')[0] + '.txt'
-            if not pathlib.Path(f'{tmp_dir}/{filename}').is_file():
+            if not pathlib.Path(f'{TMP_DIR}/{filename}').is_file():
                 print(f'\t - {filename}')
-                subprocess.run(f'hashcat --stdout -r rules/{rule}.rule {wordlist} > {tmp_dir}/{filename}', shell=True, stdout=subprocess.PIPE)
+                subprocess.run(f'hashcat --stdout -r rules/{rule}.rule {wordlist} > {TMP_DIR}/{filename}', shell=True, stdout=subprocess.PIPE)
 
 
 if 'TEMP_DIR' in os.environ:
-    tmp_dir = os.environ['TEMP_DIR']
+    TMP_DIR = os.environ['TEMP_DIR']
 else:
-    tmp_dir = tempfile.mkdtemp()
-cores_no = int(run_shell('sysctl -n hw.ncpu'))
+    TMP_DIR = tempfile.mkdtemp()
 
 
-print(f'Using temporary directory: {tmp_dir}')
+if 'COMBINATOR_BIN' in os.environ:
+    COMBINATOR_BIN = os.environ['COMBINATOR_BIN']
+else:
+    COMBINATOR_BIN = '/usr/lib/hashcat-utils/combinator.bin'
+
+CORES_NO = int(run_shell('nproc --all'))
+
+
+print(f'Using temporary directory: {TMP_DIR}')
 
 print('Generating subdomains')
 
-run_shell(f'cat keywords/brutas-subdomains.txt > brutas-subdomains-1-small.txt')
-run_shell(f'comm -13 keywords/brutas-subdomains.txt keywords/brutas-subdomains-extra.txt >> brutas-subdomains-1-small.txt')
+run_shell(f'sort keywords/brutas-subdomains.txt -o {TMP_DIR}/brutas-subdomains.txt')
+run_shell(f'sort keywords/brutas-subdomains-extra.txt -o {TMP_DIR}/brutas-subdomains-extra.txt')
+run_shell(f'cat {TMP_DIR}/brutas-subdomains.txt > brutas-subdomains-1-small.txt')
+run_shell(f'comm -13 {TMP_DIR}/brutas-subdomains.txt {TMP_DIR}/brutas-subdomains-extra.txt >> brutas-subdomains-1-small.txt')
 run_shell(f'cat brutas-subdomains-1-small.txt > brutas-subdomains-2-large.txt')
-run_shell(f'hashcat --stdout -r rules/subdomains.rule keywords/brutas-subdomains.txt >> brutas-subdomains-2-large.txt')
+run_shell(f'hashcat --stdout -r rules/subdomains.rule {TMP_DIR}/brutas-subdomains.txt >> brutas-subdomains-2-large.txt')
 
 print('Preparing keyword lists')
 
 # NOTE: Remove duplicates
-run_shell(f'sort --mergesort -T {tmp_dir} -f keywords/brutas-lang-int-common.txt > {tmp_dir}/brutas-lang-int-common.txt')
-run_shell(f'sort --mergesort -T {tmp_dir} -f keywords/brutas-lang-int-less.txt > {tmp_dir}/brutas-lang-int-less.txt')
-run_shell(f'comm -13 {tmp_dir}/brutas-lang-int-common.txt {tmp_dir}/brutas-lang-int-less.txt > keywords/brutas-lang-int-less.txt')
+run_shell(f'sort keywords/brutas-lang-int-common.txt -o {TMP_DIR}/brutas-lang-int-common.txt')
+run_shell(f'sort keywords/brutas-lang-int-less.txt -o {TMP_DIR}/brutas-lang-int-less.txt')
+run_shell(f'comm -13 {TMP_DIR}/brutas-lang-int-common.txt {TMP_DIR}/brutas-lang-int-less.txt > keywords/brutas-lang-int-less.txt')
 run_shell(f'rm keywords/brutas-lang-int-common.txt')
-run_shell(f'cp {tmp_dir}/brutas-lang-int-common.txt keywords/brutas-lang-int-common.txt')
+run_shell(f'cp {TMP_DIR}/brutas-lang-int-common.txt keywords/brutas-lang-int-common.txt')
 
-run_shell(f'sort --mergesort -T {tmp_dir} -f bits/extra-common.txt > {tmp_dir}/extra-sorted1')
-run_shell(f'sort --mergesort -T {tmp_dir} -f bits/extra-less.txt > {tmp_dir}/extra-sorted2')
-run_shell(f'comm -13 {tmp_dir}/extra-sorted1 {tmp_dir}/extra-sorted2 > bits/extra-less.txt')
+run_shell(f'sort bits/extra-common.txt -o {TMP_DIR}/extra-sorted1')
+run_shell(f'sort bits/extra-less.txt -o {TMP_DIR}/extra-sorted2')
+run_shell(f'comm -13 {TMP_DIR}/extra-sorted1 {TMP_DIR}/extra-sorted2 > bits/extra-less.txt')
 run_shell(f'rm bits/extra-common.txt')
-run_shell(f'mv {tmp_dir}/extra-sorted1 bits/extra-common.txt')
+run_shell(f'mv {TMP_DIR}/extra-sorted1 bits/extra-common.txt')
 
-run_shell(f'sort --mergesort -T {tmp_dir} -f bits/numbers-common.txt > {tmp_dir}/numbers-sorted1')
-run_shell(f'sort --mergesort -T {tmp_dir} -f bits/numbers-less.txt > {tmp_dir}/numbers-sorted2')
-run_shell(f'comm -13 {tmp_dir}/numbers-sorted1 {tmp_dir}/numbers-sorted2 > bits/numbers-less.txt')
+run_shell(f'sort bits/numbers-common.txt -o {TMP_DIR}/numbers-sorted1')
+run_shell(f'sort bits/numbers-less.txt -o {TMP_DIR}/numbers-sorted2')
+run_shell(f'comm -13 {TMP_DIR}/numbers-sorted1 {TMP_DIR}/numbers-sorted2 > bits/numbers-less.txt')
 run_shell(f'rm bits/numbers-common.txt')
-run_shell(f'mv {tmp_dir}/numbers-sorted1 bits/numbers-common.txt')
+run_shell(f'mv {TMP_DIR}/numbers-sorted1 bits/numbers-common.txt')
 
 # NOTE: Combine all languages
-run_shell(f'sort --mergesort -T {tmp_dir} -f keywords/brutas-lang-*.txt | uniq > {tmp_dir}/brutas-all-lang.txt')
+run_shell(f'sort keywords/brutas-lang-*.txt | uniq > {TMP_DIR}/brutas-all-lang.txt')
 run_shell(f'rm keywords/brutas-all-lang.txt')
-run_shell(f'cp {tmp_dir}/brutas-all-lang.txt keywords/brutas-all-lang.txt')
+run_shell(f'cp {TMP_DIR}/brutas-all-lang.txt keywords/brutas-all-lang.txt')
 
 
 def combine_right(wordlist, bits):
-    if not pathlib.Path(f'{tmp_dir}/{wordlist}+{bits}.txt').is_file():
+    if not pathlib.Path(f'{TMP_DIR}/{wordlist}+{bits}.txt').is_file():
         print(f'Combining {wordlist} with {bits}')
-        run_shell(f'combinator.bin {tmp_dir}/{wordlist}.txt bits/{bits}.txt > {tmp_dir}/{wordlist}+{bits}.txt')
-    return (f'{tmp_dir}/{wordlist}+{bits}.txt',)
+        run_shell(f'{COMBINATOR_BIN} {TMP_DIR}/{wordlist}.txt bits/{bits}.txt > {TMP_DIR}/{wordlist}+{bits}.txt')
+    return (f'{TMP_DIR}/{wordlist}+{bits}.txt',)
 
 
 def combine_left(wordlist, bits):
-    if not pathlib.Path(f'{tmp_dir}/{bits}+{wordlist}.txt').is_file():
+    if not pathlib.Path(f'{TMP_DIR}/{bits}+{wordlist}.txt').is_file():
         print(f'Combining {wordlist} with {bits}')
-        run_shell(f'combinator.bin bits/{bits}.txt {tmp_dir}/{wordlist}.txt > {tmp_dir}/{bits}+{wordlist}.txt')
-    return (f'{tmp_dir}/{bits}+{wordlist}.txt',)
+        run_shell(f'{COMBINATOR_BIN} bits/{bits}.txt {TMP_DIR}/{wordlist}.txt > {TMP_DIR}/{bits}+{wordlist}.txt')
+    return (f'{TMP_DIR}/{bits}+{wordlist}.txt',)
 
 
 def combine_both(wordlist, bits):
-    if not pathlib.Path(f'{tmp_dir}/{bits}+{wordlist}.txt').is_file():
-        run_shell(f'combinator.bin bits/{bits}.txt {tmp_dir}/{wordlist}.txt > {tmp_dir}/{bits}+{wordlist}.txt')
-    if not pathlib.Path(f'{tmp_dir}/{bits}+{wordlist}+{bits}.txt').is_file():
+    if not pathlib.Path(f'{TMP_DIR}/{bits}+{wordlist}.txt').is_file():
+        run_shell(f'{COMBINATOR_BIN} bits/{bits}.txt {TMP_DIR}/{wordlist}.txt > {TMP_DIR}/{bits}+{wordlist}.txt')
+    if not pathlib.Path(f'{TMP_DIR}/{bits}+{wordlist}+{bits}.txt').is_file():
         print(f'Combining {wordlist} with {bits}')
-        run_shell(f'combinator.bin {tmp_dir}/{bits}+{wordlist}.txt bits/{bits}.txt > {tmp_dir}/{bits}+{wordlist}+{bits}.txt')
-    return (f'{tmp_dir}/{bits}+{wordlist}+{bits}.txt',)
+        run_shell(f'{COMBINATOR_BIN} {TMP_DIR}/{bits}+{wordlist}.txt bits/{bits}.txt > {TMP_DIR}/{bits}+{wordlist}+{bits}.txt')
+    return (f'{TMP_DIR}/{bits}+{wordlist}+{bits}.txt',)
 
 
 def combine_all(wordlist, bits):
@@ -118,15 +127,15 @@ def combine_all(wordlist, bits):
 def merge(output, wordlists, prepend=None, compare=None):
     print(f'Merging: {output}')
     wordlists_arg = ' '.join([w for w in wordlists])
-    run_shell(f'cat {wordlists_arg} | sort --mergesort -T {tmp_dir} --compress-program=lzop --parallel {cores_no} -f | uniq > {tmp_dir}/{output}')
+    run_shell(f'cat {wordlists_arg} | sort -T {TMP_DIR} --compress-program=lzop --parallel {CORES_NO} -f | uniq > {TMP_DIR}/{output}')
     if prepend:
         run_shell(f'cat {prepend} > {output}')
     else:
         run_shell(f'cat /dev/null > {output}')
     if compare:
-        run_shell(f'comm -13 {compare} {tmp_dir}/{output} >> {output}')
+        run_shell(f'comm -13 {compare} {TMP_DIR}/{output} >> {output}')
     else:
-        run_shell(f'cat {tmp_dir}/{output} >> {output}')
+        run_shell(f'cat {TMP_DIR}/{output} >> {output}')
 
 
 # NOTE: Process keywords
@@ -171,13 +180,13 @@ merge(
         *combine_right('simple-brutas-usernames-small+separators', 'functional'),
         *combine_right('simple-brutas-usernames-small+separators', 'months'),
         *combine_right('simple-brutas-usernames-small+separators', 'years-current'),
-        f'{tmp_dir}/both-brutas-usernames-small.txt',
-        f'{tmp_dir}/hax0r-brutas-usernames-small.txt',
-        f'{tmp_dir}/repeat-brutas-usernames-small.txt',
-        f'{tmp_dir}/simple-brutas-passwords-classics.txt',
-        f'{tmp_dir}/simple-brutas-passwords-top.txt',
-        f'{tmp_dir}/simple-brutas-usernames-small.txt',
-        f'{tmp_dir}/simple-brutas-lang-int-common.txt',
+        f'{TMP_DIR}/both-brutas-usernames-small.txt',
+        f'{TMP_DIR}/hax0r-brutas-usernames-small.txt',
+        f'{TMP_DIR}/repeat-brutas-usernames-small.txt',
+        f'{TMP_DIR}/simple-brutas-passwords-classics.txt',
+        f'{TMP_DIR}/simple-brutas-passwords-top.txt',
+        f'{TMP_DIR}/simple-brutas-usernames-small.txt',
+        f'{TMP_DIR}/simple-brutas-lang-int-common.txt',
     ),
     compare='brutas-passwords-1-xxs.txt'
 )
@@ -196,8 +205,8 @@ merge(
         *combine_right('simple-brutas-usernames-small+extra-common', 'extra-common'),
         *combine_right('simple-brutas-usernames-small+numbers-common', 'extra-common'),
         *combine_right('simple-brutas-usernames-small+years-current', 'extra-common'),
-        f'{tmp_dir}/hax0r-brutas-passwords-classics.txt',
-        f'{tmp_dir}/hax0r-brutas-usernames.txt',
+        f'{TMP_DIR}/hax0r-brutas-passwords-classics.txt',
+        f'{TMP_DIR}/hax0r-brutas-usernames.txt',
     ),
     compare='brutas-passwords-2-xs.txt'
 )
@@ -224,10 +233,10 @@ merge(
         *combine_right('simple-brutas-usernames+separators', 'months'),
         *combine_right('simple-brutas-usernames+separators', 'years-current'),
         *combine_right('simple-brutas-usernames+years-all', 'extra-common'),
-        f'{tmp_dir}/hax0r-brutas-passwords-top.txt',
-        f'{tmp_dir}/both-brutas-usernames.txt',
-        f'{tmp_dir}/complex-brutas-usernames-small.txt',
-        f'{tmp_dir}/hax0r-brutas-passwords-unique.txt',
+        f'{TMP_DIR}/hax0r-brutas-passwords-top.txt',
+        f'{TMP_DIR}/both-brutas-usernames.txt',
+        f'{TMP_DIR}/complex-brutas-usernames-small.txt',
+        f'{TMP_DIR}/hax0r-brutas-passwords-unique.txt',
     ),
     compare='brutas-passwords-3-s.txt'
 )
@@ -258,11 +267,11 @@ merge(
         *combine_right('simple-brutas-usernames+separators', 'years-all'),
         *combine_right('simple-brutas-usernames-small+separators+months', 'years-current'),
         *combine_right('simple-brutas-usernames-small+years-all', 'extra-common'),
-        f'{tmp_dir}/complex-brutas-lang-int-common.txt',
-        f'{tmp_dir}/complex-brutas-passwords-classics.txt',
-        f'{tmp_dir}/complex-brutas-passwords-unique.txt',
-        f'{tmp_dir}/complex-brutas-usernames.txt',
-        f'{tmp_dir}/repeat-brutas-usernames.txt',
+        f'{TMP_DIR}/complex-brutas-lang-int-common.txt',
+        f'{TMP_DIR}/complex-brutas-passwords-classics.txt',
+        f'{TMP_DIR}/complex-brutas-passwords-unique.txt',
+        f'{TMP_DIR}/complex-brutas-usernames.txt',
+        f'{TMP_DIR}/repeat-brutas-usernames.txt',
     ),
     compare='brutas-passwords-4-m.txt'
 )
@@ -290,6 +299,7 @@ merge(
         *combine_right('simple-brutas-all-lang', 'months'),
         *combine_right('simple-brutas-all-lang', 'numbers-common'),
         *combine_right('simple-brutas-all-lang', 'numbers-less'),
+        *combine_right('simple-brutas-all-lang', 'separators'),
         *combine_right('simple-brutas-all-lang', 'years-all'),
         *combine_right('simple-brutas-all-lang+extra-common', 'years-all'),
         *combine_right('simple-brutas-all-lang+months', 'extra-common'),
@@ -313,14 +323,14 @@ merge(
         *combine_right('simple-brutas-usernames+numbers-less', 'extra-less'),
         *combine_right('simple-brutas-usernames+separators', 'extra-common'),
         *combine_right('simple-brutas-usernames+separators+months', 'years-all'),
-        f'{tmp_dir}/both-brutas-all-lang.txt',
-        f'{tmp_dir}/both-brutas-passwords-classics.txt',
-        f'{tmp_dir}/both-brutas-passwords-top.txt',
-        f'{tmp_dir}/both-brutas-passwords-unique.txt',
-        f'{tmp_dir}/complex-brutas-all-lang.txt',
-        f'{tmp_dir}/hax0r-brutas-all-lang.txt',
-        f'{tmp_dir}/repeat-brutas-all-lang.txt',
-        f'{tmp_dir}/simple-brutas-all-lang.txt',
+        f'{TMP_DIR}/both-brutas-all-lang.txt',
+        f'{TMP_DIR}/both-brutas-passwords-classics.txt',
+        f'{TMP_DIR}/both-brutas-passwords-top.txt',
+        f'{TMP_DIR}/both-brutas-passwords-unique.txt',
+        f'{TMP_DIR}/complex-brutas-all-lang.txt',
+        f'{TMP_DIR}/hax0r-brutas-all-lang.txt',
+        f'{TMP_DIR}/repeat-brutas-all-lang.txt',
+        f'{TMP_DIR}/simple-brutas-all-lang.txt',
     ),
     compare='brutas-passwords-5-l.txt'
 )
@@ -338,4 +348,4 @@ merge(
     )
 )
 
-print(f'Done! You may want to clean up the temporary directory yourself: {tmp_dir}')
+print(f'Done! You may want to clean up the temporary directory yourself: {TMP_DIR}')
