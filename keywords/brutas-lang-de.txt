@@ -59,6 +59,7 @@ arbeit
 arbeitslos
 argentinien
 arschkarte
+arschloch
 arschnase
 asombrosa
 asznjow
@@ -399,6 +400,7 @@ dekadenz
 delakiss
 delphin
 denkste
+dennis
 derder
 derdiedas
 derekmayer
@@ -635,6 +637,7 @@ fhrbbzp
 fhrqwgr
 fiatpunto
 fickdich
+ficken
 fikken
 finale
 finanzamt
@@ -866,6 +869,7 @@ haldern
 halleluja
 halligalli
 hallihallo
+hallo
 hallodu
 halloduda
 hallohallo
@@ -1218,6 +1222,7 @@ kikilucy
 kilian
 killefit
 killekille
+killer
 killroy
 kilmister
 kilokilo
@@ -1876,6 +1881,7 @@ pascha
 pasewalk
 passau
 passionata
+passwort
 passwrd
 passwrt
 pastapasta
@@ -2190,6 +2196,7 @@ schach
 schadow
 schaefchen
 schafe
+schalke
 schapka
 schatten
 schatzi
@@ -2378,6 +2385,7 @@ sohappy
 solarium
 soljanka
 solveig
+sommer
 sommernacht
 sommersonne
 sommertag

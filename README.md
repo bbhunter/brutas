@@ -9,7 +9,8 @@
 A brief introduction to `brutas-passwords-#` lists:
 * the number of passwords grows with the consecutive file number;
 * passwords are not sorted according to the probability, they are combined into groups of probability represented by separate files instead;
-* each list begins with passwords from the previous file.
+* each consecutive file **does not** contain passwords from the previous set;
+* `brutas-passwords-7-all.txt` is a merge of all sets, sorted by groups, so the most probable ones are at the beginning.
 
 **NOTE: Due to Github limits, only `xxs`, `x` and `s` lists are precompiled.** You need to run `./scripts/build.py` locally to generate the whole set.
 
@@ -25,6 +26,7 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 * `brutas-passwords-4-m.txt` - apart from smallers lists contains more complex combinations of words parsed with leetspeak, dates and mixed case
 * `brutas-passwords-5-l.txt` - most rules applied, includes i.a. words from all supported languages
 * `brutas-passwords-6-xl.txt` - everything above plus words from all supported languages parsed with all rules
+* `brutas-passwords-7-all.txt` - all sets combined, happy cracking
 * `brutas-passwords-classics.txt` - typical admin passwords based on roles (test, admin), words (password, secret) or "funny" ones (like `letmein` or `trustno1`)
 * `brutas-passwords-closekeys.txt` - close key combinations or easy phrases (e.g. `abcd`) combined with capitalization, numbers, repetitions etc.
 * `brutas-passwords-top.txt` - currently 2k list composed of most popular user passwords found in leaks, doesn't contain close keys or any more sophisticated combinations than adding a number or two

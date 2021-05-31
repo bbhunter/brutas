@@ -1,13 +1,5 @@
 admin
-backup
 guest
-linux
-manager
 root
-staff
-support
 test
-toor
 user
-web
-www

@@ -3,6 +3,7 @@
 abakus
 abecadlo
 aborygen
+abw
 acid
 aciddrinkers
 acocieto
@@ -134,7 +135,6 @@ alleluja
 alltubeall
 alltubeani
 alltubemar
-almera
 alo
 alpaga
 alperen
@@ -390,6 +390,7 @@ banany
 bandyta
 bandzior
 bania
+bank
 bankrut
 baqbaq
 barabasz
@@ -463,7 +464,9 @@ beemka
 behemot
 beijingmar
 bejbe
+beki
 bel
+belka
 belzebub
 benek
 benekben
@@ -529,7 +532,6 @@ blondyna
 bloodmoon
 blowek
 blu
-bmwe
 bmwei
 bobas
 bobasek
@@ -546,6 +548,7 @@ boczek
 boczus
 bod
 bodek
+bodnar
 bodzio
 bog
 bogdanbog
@@ -812,6 +815,7 @@ czoper
 czort
 czosnek
 cztery
+czujnik
 czupakabra
 dac
 daf
@@ -979,6 +983,7 @@ domis
 doniadon
 dor
 dora
+doradca
 dorador
 dorcia
 dorciador
@@ -1001,7 +1006,6 @@ dramat
 dratewka
 dressta
 drexler
-drftng
 drogba
 dropsik
 dropsikmar
@@ -1011,7 +1015,6 @@ druid
 drukarka
 drzewko
 drzewo
-dsdar
 duchduc
 duda
 dudek
@@ -1151,7 +1154,6 @@ elwis
 elzbieta
 elzbietaelz
 elzbietka
-emachines
 emanuela
 eme
 emen
@@ -1179,7 +1181,6 @@ endriuend
 enemy
 enzo
 epidemia
-equilibrium
 eren
 erni
 eryczek
@@ -1359,7 +1360,6 @@ gadugadu
 gaga
 gahan
 gajewski
-galaxys
 gambol
 gammadion
 gandal
@@ -2066,6 +2066,7 @@ karinakar
 karinka
 karinkakar
 karkar
+karla
 karlos
 karmazyn
 karmelek
@@ -2581,6 +2582,7 @@ ksawery
 ksenia
 ksiadz
 ksp
+ksw
 ksz
 kszo
 kszysiek
@@ -3495,8 +3497,6 @@ mmarcus
 mmmar
 mmmzzz
 mmn
-mnb
-mnbvcxzqwe
 mocarz
 modecom
 mojamama
@@ -3548,6 +3548,7 @@ mortician
 morus
 morusek
 morwa
+morze
 mosdx
 moskwa
 moszna
@@ -3615,6 +3616,7 @@ nadzieja
 naimad
 nalewka
 namor
+narka
 nasa
 nasharch
 nat
@@ -3701,6 +3703,7 @@ nightwishizk
 nik
 nika
 nikanik
+nikita
 nikitagal
 nikitanik
 niko
@@ -3745,7 +3748,6 @@ njp
 nocka
 noise
 nokiaada
-nokiac
 nokiajar
 nokiamar
 nokianok
@@ -3778,6 +3780,7 @@ nuka
 nuna
 nutka
 oakdene
+obajtek
 ocet
 ochrona
 oczko
@@ -3911,6 +3914,7 @@ pajacyk
 pajak
 pajonk
 pakamera
+pakiet
 pakopak
 paktofonika
 pakula
@@ -4364,17 +4368,12 @@ qazwsxgie
 qazwsxjag
 qazwsxkam
 qazwsxmar
-qazwsxqa
-qazwsxqaz
 qazwsxrob
 qazwsxtom
 qazwsxwal
 qazx
-qazxcvbnmlp
 qazxswedd
 qazxswmat
-qazxswqa
-qazxswqaz
 qba
 qdor
 qmat
@@ -4383,7 +4382,6 @@ qpa
 qpaqpa
 qpwo
 qqqqqqqqjan
-qqww
 qrwa
 quovadisadz
 qwa
@@ -4391,8 +4389,6 @@ qwaqwakry
 qwasz
 qweaga
 qweaha
-qweasdaf
-qweasdzxcada
 qwekac
 qwekol
 qwekon
@@ -4701,6 +4697,7 @@ sikorka
 sikorsik
 sikorski
 sil
+silnik
 silnoreki
 silownia
 sim
@@ -5008,7 +5005,6 @@ ter
 terefere
 teresater
 tereska
-terminatorher
 terrorym
 testosteron
 testowanie
@@ -5100,7 +5096,6 @@ traper
 trawa
 tre
 trebron
-trewq
 tri
 trilux
 trimaran
@@ -5117,7 +5112,6 @@ trudnehaslo
 trusia
 truskawka
 truskawkadar
-trustno
 trz
 trzaslo
 trzeszkowice
@@ -5138,7 +5132,6 @@ twity
 two
 twojamama
 twojastara
-twojastarapaw
 twojstary
 tyc
 tychuju
@@ -5146,7 +5139,6 @@ tychy
 tyghbn
 tygrys
 tygrysek
-tygryslil
 tygrystyg
 tylkoja
 tymbark
@@ -5190,7 +5182,6 @@ vaz
 vectrasos
 vectravec
 vertez
-vfrtgb
 vigo
 viki
 vikisim
@@ -5204,16 +5195,13 @@ viv
 vodo
 vol
 volvos
-volvoxc
 wacek
 wacio
 waclaw
-waderafac
 wafel
 waga
 wagina
 wakacje
-wakacjejus
 wal
 waldek
 waldekwal
@@ -5225,10 +5213,8 @@ walsie
 wampir
 wampirek
 wan
-wandawan
 wanesa
-wanessamar
-wapiti
+wanessa
 war
 warhammerk
 wariat
@@ -5239,15 +5225,14 @@ warszawski
 was
 wasik
 waski
-waspwas
 wasyl
 wasylek
 wasze
 waszka
 wawawa
 wawer
-wee
 wegaweg
+wege
 wejscie
 wenek
 wenus
@@ -5264,8 +5249,6 @@ weronka
 werwerwer
 werwolf
 wesele
-wfamut
-whi
 wiadro
 wiatrak
 wicher
@@ -5277,7 +5260,6 @@ widzewiak
 widzewlodz
 widzewrts
 widzewwid
-wie
 wieczorek
 wiedzmin
 wielkanoc
@@ -5304,7 +5286,6 @@ wiko
 wiktor
 wiktorek
 wiktoria
-wiktorrob
 wiktorwik
 wiktorynka
 wikunia
@@ -5312,7 +5293,6 @@ wikuniawik
 wikusia
 wikusiawik
 wilczek
-wildorchid
 wilk
 wilkolak
 wilku
@@ -5375,20 +5355,15 @@ wojtas
 wojtaswoj
 wojtaszek
 wojtek
-wojtekj
 wojtekwoj
 wojtus
 wola
 wolnosc
 wolska
 woltan
-wons
-wonsz
 woodson
-woofercez
 wookiewoo
 worek
-wowawow
 wpisy
 wrobel
 wroclaw
@@ -5396,12 +5371,13 @@ wronawro
 wronka
 wrota
 wrzesien
+wrzos
+wrzutka
 wsk
 wszechswiat
 wujtowicz
 wulkan
 wwe
-wweraw
 wydra
 wymiatacz
 wypierdalac
@@ -5409,15 +5385,10 @@ wypierdalaj
 xantia
 xardas
 xena
-xla
-xmen
-xperianie
 xpower
-xswedcpau
 yamahamt
 yankes
 yogi
-yoloswag
 zab
 zaba
 zabawa
@@ -5436,6 +5407,7 @@ zajaczek
 zajebiscie
 zakochana
 zakochany
+zakop
 zakopane
 zalewski
 zaloguj
@@ -5447,12 +5419,11 @@ zanetazan
 zanetka
 zapalniczka
 zapiekanka
-zaqjul
 zaqwas
 zaraza
 zareba
 zasada
-zastosujgrz
+zastosuj
 zawiercie
 zawisza
 zawodowiec
@@ -5510,7 +5481,6 @@ ziomalek
 ziomalzio
 ziomeczek
 ziomek
-ziomekben
 ziomekzio
 ziomp
 ziomus
@@ -5536,11 +5506,11 @@ zonka
 zonki
 zordon
 zosia
-zosiajac
 zosiazos
 zozole
 zuber
 zuczek
+zula
 zulus
 zurek
 zuz

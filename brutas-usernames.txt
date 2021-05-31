@@ -107,9 +107,11 @@ operator
 oracle
 pamadmin
 pi
+policy
 postgres
 postmaster
 private
+prod
 proxy
 public
 pubsub
@@ -139,6 +141,7 @@ security
 server
 service
 setup
+site
 siteadmin
 smc
 sql
@@ -148,6 +151,7 @@ ssladmin
 staff
 stats
 status
+student
 su
 super
 superadmin
@@ -188,11 +192,13 @@ viewer
 vm
 vmware
 vnc
+vpn
 web
 webadmin
 webdb
 webmaster
 webuser
+windows
 wizard
 wpadmin
 wpsadmin

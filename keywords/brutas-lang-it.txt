@@ -4,7 +4,6 @@ aba
 abab
 abacab
 abb
-abcdefghilmnopqrstuvz
 abd
 abdul
 abramo
@@ -141,6 +140,7 @@ alessandr
 alessandraamoroso
 alessandria
 alessandrino
+alessandro
 alessia
 alessiatiamo
 alessietta
@@ -343,6 +343,7 @@ antonellina
 antonello
 antonietta
 antonino
+antonio
 anubi
 ape
 apemaia
@@ -359,7 +360,6 @@ aqswde
 aquile
 aquilone
 aquilotto
-aqwzsx
 ara
 arabafenice
 aragosta
@@ -772,7 +772,6 @@ blu
 blublu
 bluvertigo
 bmwd
-bnm
 bnn
 boateng
 bobba
@@ -1274,6 +1273,7 @@ ciaoatutti
 ciaobella
 ciaobelli
 ciaobello
+ciaociao
 ciaociaociao
 ciaocmva
 ciaocomestai
@@ -2154,6 +2154,8 @@ feder
 federer
 federi
 federic
+federica
+federico
 federicolopo
 federika
 federiko
@@ -2322,8 +2324,10 @@ fran
 franc
 franca
 francesc
+francesca
 franceschina
 franceschino
+francesco
 francescototti
 francese
 franchino
@@ -2648,6 +2652,7 @@ giova
 giovane
 giovani
 giovann
+giovanni
 giovannino
 giove
 giovi
@@ -2681,6 +2686,7 @@ giurisprudenza
 gius
 giuse
 giuseppa
+giuseppe
 giuseppina
 giuseppino
 giusi
@@ -3108,6 +3114,7 @@ juvemerda
 juvenelcuore
 juventina
 juventino
+juventus
 juventusever
 juventusfc
 jzanetti
@@ -3459,6 +3466,7 @@ lore
 lorella
 lorenza
 lorenzino
+lorenzo
 loreto
 loris
 lory
@@ -3825,6 +3833,7 @@ marte
 martedi
 martello
 marti
+martina
 martinatiamo
 martinelli
 martolina
@@ -5285,12 +5294,7 @@ puzzona
 puzzone
 pwd
 pwrd
-qaws
-qazplm
-qazw
 qbsfgq
-qpwoeiruty
-qqww
 quaderno
 quadrifoglio
 quadro
@@ -5308,10 +5312,6 @@ quetzal
 quindici
 quinto
 quiquoqua
-qweiop
-qwepoi
-qwertyasd
-qwertyuiopasdfghjklzxcvbnm
 rachele
 radu
 raf
@@ -6634,6 +6634,7 @@ valefede
 valen
 valent
 valente
+valentina
 valentinorossi
 valeri
 valeriana
@@ -6906,7 +6907,6 @@ ypsilon
 ysflpx
 yuantuo
 yugiho
-yuiop
 yuma
 yuna
 yunalesca
