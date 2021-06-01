@@ -4,11 +4,17 @@
 
 **A pretty comprehensive set of password dictionaries and wordlists designed for quick wins in realistic scenarios.**
 
+## Downloads
+
+You can download the latest releases of the "big" set from the following URLs:
+
+* `brutas-passwords-7-all.tar.gz` - https://mega.nz/file/VCQ2HJCT#c59lQ4rqddJnbz_oRlMmQsEfLEmDQX3k9t2aSc0uIEc (pending upload)
+
 ## Passwords
 
 A brief introduction to `brutas-passwords-#` lists:
 * the number of passwords grows with the consecutive file number;
-* passwords are not sorted according to the probability, they are combined into groups of probability represented by separate files instead;
+* passwords are not sorted according to the probability, they are combined into groups of probability instead;
 * each consecutive file **does not** contain passwords from the previous set;
 * `brutas-passwords-7-all.txt` is a merge of all sets, sorted by groups, so the most probable ones are at the beginning.
 
@@ -53,7 +59,7 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 
 * `keywords/brutas-lang-int-common.txt` - set of most frequent English (and not only) words used in passwords internationally (also from literature, pop culture etc)
 * `keywords/brutas-lang-int-less.txt` - less frequent English words used in passwords by native speakers
-* `keywords/brutas-*` - other languages, keywords not present in English lists, based mostly on leaks
+* `keywords/brutas-lang-*` - other languages, keywords not present in English lists, based mostly on leaks
 * `keywords/brutas-all-lang.txt` - all languages combined
 * `keywords/brutas-subdomains.txt` - keywords and rules used to generate lists for subdomains
 * `keywords/brutas-subdomains-extra.txt` - additional prefixes for subdomain discovery
@@ -63,97 +69,43 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 
 The build process is automated and handled by the script located in `./scripts/build.py`. Check it out to understand what are the blocks and how I set the priorities (or in other words what is most probable in my opinion).
 
+### Arguments
+
+```
+usage: build.py [-h] [-p PATH] [-c COMBINATOR_PATH] [-t TEMPORARY_DIR] [--debug]
+
+Brutas build script
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -p PATH, --path PATH  Class path
+  -c COMBINATOR_PATH, --combinator-path COMBINATOR_PATH
+                        Hashcat combinator.bin path
+  -t TEMPORARY_DIR, --temporary-dir TEMPORARY_DIR
+                        Temporary directory path
+  --debug               Enable debug level logging
+```
+
+#### Class path options
+
+* **`main.Basic`** - builds everything _and_ password lists 1-3
+* **`main.Extended`** - builds everything _and_ password lists 1-6 (**NOTE**: requires proper resources)
+* **`main.MergeAll`** - merges passwords lists 1-6 into a single `brutas-passwords-7-all.txt` file
+
 ### Typical log output
 
 ```
-Using temporary directory: /tmp/tmpmzpy1bcn
-Generating subdomains
-Preparing keyword lists
-Processing wordlists with rules "repeat"
-     - repeat-brutas-passwords-classics.txt
-     - repeat-brutas-passwords-unique.txt
-     - repeat-brutas-usernames-small.txt
-     - repeat-brutas-usernames.txt
-     - repeat-brutas-all-lang.txt
-     - repeat-brutas-lang-int-common.txt
-     - repeat-brutas-lang-int-less.txt
-Processing wordlists with rules "simple"
-     - simple-brutas-passwords-classics.txt
-     - simple-brutas-passwords-unique.txt
-     - simple-brutas-usernames-small.txt
-     - simple-brutas-usernames.txt
-     - simple-brutas-all-lang.txt
-     - simple-brutas-lang-int-common.txt
-     - simple-brutas-lang-int-less.txt
-Processing wordlists with rules "complex"
-     - complex-brutas-passwords-classics.txt
-     - complex-brutas-passwords-unique.txt
-     - complex-brutas-usernames-small.txt
-     - complex-brutas-usernames.txt
-     - complex-brutas-all-lang.txt
-     - complex-brutas-lang-int-common.txt
-     - complex-brutas-lang-int-less.txt
-Processing wordlists with rules "hax0r"
-     - hax0r-brutas-passwords-classics.txt
-     - hax0r-brutas-passwords-unique.txt
-     - hax0r-brutas-usernames-small.txt
-     - hax0r-brutas-usernames.txt
-     - hax0r-brutas-all-lang.txt
-     - hax0r-brutas-lang-int-common.txt
-     - hax0r-brutas-lang-int-less.txt
-Processing wordlists with rules "both"
-     - both-brutas-passwords-classics.txt
-     - both-brutas-passwords-unique.txt
-     - both-brutas-usernames-small.txt
-     - both-brutas-usernames.txt
-     - both-brutas-all-lang.txt
-     - both-brutas-lang-int-common.txt
-     - both-brutas-lang-int-less.txt
-Combining simple-brutas-usernames with separators
-Combining simple-brutas-usernames-small with separators
-Combining simple-brutas-usernames with separators
-Combining simple-brutas-usernames-small with separators
-Combining simple-brutas-usernames with numbers-less
-Combining simple-brutas-usernames-small with extra-common
-Combining simple-brutas-usernames-small+separators with years-current
-Merging: brutas-passwords-1-xxs.txt
-Combining simple-brutas-usernames-small with extra-common
-Combining simple-brutas-usernames-small with numbers-common
-Combining simple-brutas-usernames-small with functional
-Combining simple-brutas-usernames-small with numbers-common
-Combining simple-brutas-usernames-small+separators with functional
-Merging: brutas-passwords-2-xs.txt
-Combining simple-brutas-usernames with extra-common
-Combining simple-brutas-usernames with numbers-common
-Combining simple-brutas-usernames-small with extra-less
-Combining hax0r-brutas-usernames-small with extra-common
-Combining simple-brutas-usernames with functional
-Combining simple-brutas-usernames with numbers-common
-Combining simple-brutas-usernames+separators with functional
-Combining simple-brutas-usernames-small+numbers-common with extra-common
-Combining simple-brutas-usernames-small+separators with months
-Merging: brutas-passwords-3-s.txt
-Combining separators+simple-brutas-usernames-small with functional
-Combining separators+simple-brutas-usernames-small with years-current
-Combining simple-brutas-usernames with extra-less
-Combining simple-brutas-usernames with functional
-Combining simple-brutas-usernames with numbers-less
-Combining hax0r-brutas-usernames with extra-common
-Combining hax0r-brutas-usernames with extra-less
-Combining numbers-common+simple-brutas-usernames with extra-common
-Combining simple-brutas-usernames with extra-common
-Combining simple-brutas-usernames+numbers-common with extra-common
-Combining simple-brutas-usernames+separators with months
-Combining simple-brutas-usernames+separators with years-all
-Combining simple-brutas-usernames-small+separators+months with years-current
-Merging: brutas-passwords-4-m.txt
-Combining repeat-brutas-usernames with extra-common
-Combining numbers-less+simple-brutas-usernames with extra-common
-Combining simple-brutas-usernames+numbers-less with extra-common
-Merging: brutas-passwords-5-l.txt
-Combining repeat-brutas-usernames with extra-less
-Combining simple-brutas-usernames+separators+months with years-all
-Merging: brutas-passwords-6-xl.txt
-Cleaning up...
-Done!
+[2021-01-01 20:51:38,216] Processing with class: Basic
+[2021-01-01 20:51:38,216] Using temporary directory: /tmp/tmpojpa7d2m
+[2021-01-01 20:51:38,216] Generating subdomains
+[2021-01-01 20:52:01,729] Preparing keyword lists
+[2021-01-01 20:52:01,928] Processing wordlists with rules "repeat"
+[2021-01-01 20:52:01,929] Processing wordlists with rules "simple"
+[2021-01-01 20:52:01,929] Processing wordlists with rules "complex"
+[2021-01-01 20:52:01,929] Processing wordlists with rules "hax0r"
+[2021-01-01 20:52:01,930] Processing wordlists with rules "both"
+[2021-01-01 20:52:01,930] Merging: brutas-passwords-1-xxs.txt
+[2021-01-01 20:52:01,955] Merging: brutas-passwords-2-xs.txt
+[2021-01-01 20:52:02,031] Merging: brutas-passwords-3-s.txt
+[2021-01-01 20:52:03,089] Done! You may want to clean up the temporary directory yourself: /tmp/tmpojpa7d2m
 ```
