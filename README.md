@@ -2,13 +2,13 @@
 
     ░▒▓ brutas ▓▒░ Wordlists and passwords handcrafted with ♥
 
-**A pretty comprehensive set of password dictionaries and wordlists designed for quick wins in realistic scenarios.**
+**A pretty comprehensive set of password dictionaries and wordlists (and a framework) designed for quick wins in realistic scenarios.**
 
 ## Downloads
 
 You can download the latest releases of the "big" set from the following URLs:
 
-* `brutas-passwords-7-all.tar.gz` - https://mega.nz/file/VCQ2HJCT#c59lQ4rqddJnbz_oRlMmQsEfLEmDQX3k9t2aSc0uIEc (pending upload)
+* `brutas-passwords-4-7.tar.gz` - https://mega.nz/file/VCQ2HJCT#c59lQ4rqddJnbz_oRlMmQsEfLEmDQX3k9t2aSc0uIEc (pending upload)
 
 ## Passwords
 
@@ -18,7 +18,7 @@ A brief introduction to `brutas-passwords-#` lists:
 * each consecutive file **does not** contain passwords from the previous set;
 * `brutas-passwords-7-all.txt` is a merge of all sets, sorted by groups, so the most probable ones are at the beginning.
 
-**NOTE: Due to Github limits, only `xxs`, `x` and `s` lists are precompiled.** You need to run `./scripts/build.py` locally to generate the whole set.
+**NOTE: Due to Github limits, only `xxs`, `x` and `s` lists are precompiled.** You need to run `./scripts/build.py` locally to generate the whole set, or you can download from the link above.
 
 ### Details
 

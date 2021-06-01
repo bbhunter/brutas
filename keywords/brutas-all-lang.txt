@@ -21248,6 +21248,7 @@ fuchsbau
 fuchur
 fucile
 fuck
+fuck_inside
 fuckall
 fuckboy
 fuckeah
@@ -21295,7 +21296,6 @@ fuckyoubitch
 fuckyouhacker
 fuckyouu
 fuckyu
-fuck_inside
 fudbol
 fudge
 fuego
@@ -47638,6 +47638,7 @@ ogurek
 oguz
 oguzhan
 oh
+oh^toxtf
 ohad
 ohana
 ohayo
@@ -47671,7 +47672,6 @@ ohuban
 ohubap
 ohwtf
 ohyeah
-oh^toxtf
 oi
 oibaf
 oicangi

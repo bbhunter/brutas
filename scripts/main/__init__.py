@@ -25,12 +25,13 @@ class Combinator:
         self.rules = rules
         self.wordlists = wordlists
         self.tmp_dir = tmp_dir
+        self.top_dir = top_dir
+        self.compress_program = '--compress-program=lzop' if self.run_shell('which lzop') else ''
         if pathlib.Path.exists(pathlib.Path(combinator_path)):
             self.combinator_path = combinator_path
         else:
             logger.error(f'Hashcat `combinator.bin` not found at {combinator_path}')
             sys.exit(1)
-        self.top_dir = top_dir
         self.cores_no = int(self.run_shell('nproc --all'))
 
     def run_shell(self, cmd):
@@ -76,11 +77,11 @@ class Combinator:
     def merge(self, output, wordlists, prepend=None, compare=None):
         logger.info(f'Merging: {output}')
         wordlists_arg = ' '.join([w for w in wordlists])
-        self.run_shell(f'cat {wordlists_arg} | sort -T {self.tmp_dir} --compress-program=lzop --parallel {self.cores_no} -f | uniq > {self.tmp_dir}/{output}')
+        self.run_shell(f'sort -T {self.tmp_dir} {self.compress_program} --parallel {self.cores_no} -f {wordlists_arg} | uniq > {self.tmp_dir}/{output}')
         if prepend:
-            self.run_shell(f'cat {prepend} > {output}')
+            self.run_shell(f'cp {prepend} {output}')
         else:
-            self.run_shell(f'cat /dev/null > {output}')
+            self.run_shell(f'rm {output}')
         if compare:
             self.run_shell(f'comm -13 {compare} {self.tmp_dir}/{output} >> {output}')
         else:
@@ -102,9 +103,9 @@ class Basic(Combinator):
         logger.info('Generating subdomains')
         self.run_shell(f'sort keywords/brutas-subdomains.txt -o {self.tmp_dir}/brutas-subdomains.txt')
         self.run_shell(f'sort keywords/brutas-subdomains-extra.txt -o {self.tmp_dir}/brutas-subdomains-extra.txt')
-        self.run_shell(f'cat {self.tmp_dir}/brutas-subdomains.txt > brutas-subdomains-1-small.txt')
+        self.run_shell(f'cp {self.tmp_dir}/brutas-subdomains.txt brutas-subdomains-1-small.txt')
         self.run_shell(f'comm -13 {self.tmp_dir}/brutas-subdomains.txt {self.tmp_dir}/brutas-subdomains-extra.txt >> brutas-subdomains-1-small.txt')
-        self.run_shell(f'cat brutas-subdomains-1-small.txt > brutas-subdomains-2-large.txt')
+        self.run_shell(f'cp brutas-subdomains-1-small.txt brutas-subdomains-2-large.txt')
         self.run_shell(f'hashcat --stdout -r rules/subdomains.rule {self.tmp_dir}/brutas-subdomains.txt >> brutas-subdomains-2-large.txt')
 
         logger.info('Preparing keyword lists')
@@ -185,7 +186,6 @@ class Basic(Combinator):
         self.merge(
             'brutas-passwords-3-s.txt',
             (
-                'keywords/brutas-lang-int-common.txt',
                 *self.combine_left('separators+simple-brutas-usernames-small', 'functional'),
                 *self.combine_left('separators+simple-brutas-usernames-small', 'years-current'),
                 *self.combine_right('simple-brutas-passwords-closekeys', 'months'),
@@ -210,7 +210,6 @@ class Extended(Basic):
         self.merge(
             'brutas-passwords-4-m.txt',
             (
-                'keywords/brutas-lang-int-less.txt',
                 *self.combine_left('simple-brutas-usernames', 'extra-common'),
                 *self.combine_left('simple-brutas-usernames', 'functional'),
                 *self.combine_left('simple-brutas-usernames', 'numbers-common'),
@@ -228,10 +227,11 @@ class Extended(Basic):
                 *self.combine_right('simple-brutas-usernames+separators', 'months'),
                 *self.combine_right('simple-brutas-usernames+separators', 'years-current'),
                 *self.combine_right('simple-brutas-usernames+years-all', 'extra-common'),
-                f'{self.tmp_dir}/hax0r-brutas-passwords-top.txt',
                 f'{self.tmp_dir}/both-brutas-usernames.txt',
                 f'{self.tmp_dir}/complex-brutas-usernames-small.txt',
+                f'{self.tmp_dir}/hax0r-brutas-passwords-top.txt',
                 f'{self.tmp_dir}/hax0r-brutas-passwords-unique.txt',
+                f'{self.tmp_dir}/simple-brutas-lang-int-less.txt',
             ),
             compare='brutas-passwords-3-s.txt'
         )
@@ -239,7 +239,6 @@ class Extended(Basic):
         self.merge(
             'brutas-passwords-5-l.txt',
             (
-                'keywords/brutas-all-lang.txt',
                 *self.combine_both('repeat-brutas-usernames', 'extra-common'),
                 *self.combine_left('simple-brutas-usernames', 'extra-less'),
                 *self.combine_left('simple-brutas-usernames', 'numbers-less'),
