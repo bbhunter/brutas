@@ -17,3 +17,6 @@ RULES = [
     'hax0r',
     'both',
 ]
+
+COMBINATOR_PATH = '/usr/lib/hashcat-utils/combinator.bin'
+RLI2_PATH = '/usr/lib/hashcat-utils/rli2.bin'

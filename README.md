@@ -69,18 +69,21 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 
 The build process is automated and handled by the script located in `./scripts/build.py`. Check it out to understand what are the blocks and how I set the priorities (or in other words what is most probable in my opinion).
 
+Requirements:
+* Python 3.x
+* hashcat-utils
+* lzop (recommended)
+
 ### Arguments
 
 ```
-usage: build.py [-h] [-p PATH] [-c COMBINATOR_PATH] [-t TEMPORARY_DIR] [--debug]
+usage: build.py [-h] [-p PATH] [-t TEMPORARY_DIR] [--debug]
 
 Brutas build script
 
 optional arguments:
   -h, --help            show this help message and exit
   -p PATH, --path PATH  Class path
-  -c COMBINATOR_PATH, --combinator-path COMBINATOR_PATH
-                        Hashcat combinator.bin path
   -t TEMPORARY_DIR, --temporary-dir TEMPORARY_DIR
                         Temporary directory path
   --debug               Enable debug level logging

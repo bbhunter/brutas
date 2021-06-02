@@ -21,7 +21,7 @@ def init_logger(loglevel):
 
 class Combinator:
 
-    def __init__(self, rules, wordlists, combinator_path, tmp_dir, top_dir):
+    def __init__(self, rules, wordlists, combinator_path, rli2_path, tmp_dir, top_dir):
         self.rules = rules
         self.wordlists = wordlists
         self.tmp_dir = tmp_dir
@@ -30,7 +30,12 @@ class Combinator:
         if pathlib.Path.exists(pathlib.Path(combinator_path)):
             self.combinator_path = combinator_path
         else:
-            logger.error(f'Hashcat `combinator.bin` not found at {combinator_path}')
+            logger.error(f'Hashcat `combinator` not found at {combinator_path}')
+            sys.exit(1)
+        if pathlib.Path.exists(pathlib.Path(rli2_path)):
+            self.rli2_path = rli2_path
+        else:
+            logger.error(f'Hashcat `rli2` not found at {rli2_path}')
             sys.exit(1)
         self.cores_no = int(self.run_shell('nproc --all'))
 
@@ -77,13 +82,13 @@ class Combinator:
     def merge(self, output, wordlists, prepend=None, compare=None):
         logger.info(f'Merging: {output}')
         wordlists_arg = ' '.join([w for w in wordlists])
-        self.run_shell(f'sort -T {self.tmp_dir} {self.compress_program} --parallel {self.cores_no} -f {wordlists_arg} | uniq > {self.tmp_dir}/{output}')
+        self.run_shell(f'sort -u -T {self.tmp_dir} {self.compress_program} --parallel {self.cores_no} {wordlists_arg} -o {self.tmp_dir}/{output}')
         if prepend:
             self.run_shell(f'cp {prepend} {output}')
         else:
             self.run_shell(f'rm {output}')
         if compare:
-            self.run_shell(f'comm -13 {compare} {self.tmp_dir}/{output} >> {output}')
+            self.run_shell(f'{self.rli2_path} {self.tmp_dir}/{output} {compare} >> {output}')
         else:
             self.run_shell(f'cat {self.tmp_dir}/{output} >> {output}')
 
@@ -128,7 +133,7 @@ class Basic(Combinator):
         self.run_shell(f'mv {self.tmp_dir}/numbers-sorted1 bits/numbers-common.txt')
 
         # NOTE: Combine all languages
-        self.run_shell(f'sort keywords/brutas-lang-*.txt | uniq > {self.tmp_dir}/brutas-all-lang.txt')
+        self.run_shell(f'sort -u keywords/brutas-lang-*.txt -o {self.tmp_dir}/brutas-all-lang.txt')
         self.run_shell(f'rm keywords/brutas-all-lang.txt')
         self.run_shell(f'cp {self.tmp_dir}/brutas-all-lang.txt keywords/brutas-all-lang.txt')
 
