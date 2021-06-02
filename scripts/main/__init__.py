@@ -336,14 +336,12 @@ class Extended(Basic):
 class MergeAll(Combinator):
 
     def process(self):
-        self.merge(
-            'brutas-passwords-7-all.txt',
-            (
-                'brutas-passwords-1-xxs.txt',
-                'brutas-passwords-2-xs.txt',
-                'brutas-passwords-3-s.txt',
-                'brutas-passwords-4-m.txt',
-                'brutas-passwords-5-l.txt',
-                'brutas-passwords-6-xl.txt',
-            )
-        )
+        dicts = ' '.join((
+            'brutas-passwords-1-xxs.txt',
+            'brutas-passwords-2-xs.txt',
+            'brutas-passwords-3-s.txt',
+            'brutas-passwords-4-m.txt',
+            'brutas-passwords-5-l.txt',
+            'brutas-passwords-6-xl.txt',
+        ))
+        self.run_shell(f'cat {dicts} > brutas-passwords-7-all.txt')
