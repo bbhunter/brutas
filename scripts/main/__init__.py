@@ -40,6 +40,7 @@ class Combinator:
         self.cores_no = int(self.run_shell('nproc --all'))
 
     def run_shell(self, cmd):
+        logger.debug(cmd)
         return subprocess.run(cmd, shell=True, stdout=subprocess.PIPE, cwd=self.top_dir).stdout
 
     def wordlists_process(self):
@@ -92,6 +93,13 @@ class Combinator:
         else:
             self.run_shell(f'cat {self.tmp_dir}/{output} >> {output}')
 
+    def concat(self, output, wordlists):
+        logger.info(f'Concatenating: {output}')
+        self.run_shell(f'rm {self.tmp_dir}/{output}')
+        for wordlist in wordlists:
+            self.run_shell(f'cat {wordlist} >> {self.tmp_dir}/{output}')
+        self.run_shell(f'mv {self.tmp_dir}/{output} {output}')
+
     def run(self):
         logger.info(f'Processing with class: {self.__class__.__name__}')
         logger.info(f'Using temporary directory: {self.tmp_dir}')
@@ -143,11 +151,6 @@ class Basic(Combinator):
         # NOTE: Prepare some lists beforehand
         self.combine_left('simple-brutas-usernames', 'separators')
         self.combine_left('simple-brutas-usernames-small', 'separators')
-        self.combine_left('brutas-all-lang', 'numbers-common')
-        self.combine_left('brutas-all-lang', 'numbers-less')
-        self.combine_right('brutas-all-lang', 'separators')
-        self.combine_right('brutas-lang-int-common', 'separators')
-        self.combine_right('simple-brutas-usernames', 'numbers-less')
         self.combine_right('simple-brutas-usernames', 'separators')
         self.combine_right('simple-brutas-usernames-small', 'separators')
 
@@ -218,7 +221,7 @@ class Extended(Basic):
                 *self.combine_left('simple-brutas-usernames', 'extra-common'),
                 *self.combine_left('simple-brutas-usernames', 'functional'),
                 *self.combine_left('simple-brutas-usernames', 'numbers-common'),
-                *self.combine_right('brutas-lang-int-common', 'extra-common'),
+                *self.combine_right('simple-brutas-lang-int-common', 'extra-common'),
                 *self.combine_right('extra-common+simple-brutas-usernames', 'months'),
                 *self.combine_right('extra-common+simple-brutas-usernames', 'years-current'),
                 *self.combine_right('simple-brutas-passwords-closekeys', 'numbers-less'),
@@ -249,16 +252,17 @@ class Extended(Basic):
                 *self.combine_left('simple-brutas-usernames', 'numbers-less'),
                 *self.combine_left('simple-brutas-usernames-small', 'extra-less'),
                 *self.combine_left('simple-brutas-usernames-small', 'numbers-common'),
-                *self.combine_right('brutas-lang-int-common', 'months'),
-                *self.combine_right('brutas-lang-int-less', 'extra-common'),
                 *self.combine_right('extra-common+simple-brutas-usernames', 'years-all'),
                 *self.combine_right('hax0r-brutas-usernames', 'extra-common'),
                 *self.combine_right('simple-brutas-lang-int-common', 'extra-common'),
+                *self.combine_right('simple-brutas-lang-int-common', 'months'),
+                *self.combine_right('simple-brutas-lang-int-less', 'extra-common'),
                 *self.combine_right('simple-brutas-passwords-closekeys', 'separators'),
                 *self.combine_right('simple-brutas-passwords-closekeys+separators', 'numbers-common'),
                 *self.combine_right('simple-brutas-passwords-closekeys+separators', 'numbers-less'),
                 *self.combine_right('simple-brutas-passwords-closekeys+separators', 'years-all'),
                 *self.combine_right('simple-brutas-usernames', 'extra-less'),
+                *self.combine_right('simple-brutas-usernames', 'numbers-less'),
                 *self.combine_right('simple-brutas-usernames+extra-common', 'extra-common'),
                 *self.combine_right('simple-brutas-usernames+extra-common', 'years-all'),
                 *self.combine_right('simple-brutas-usernames+numbers-common', 'extra-common'),
@@ -274,9 +278,22 @@ class Extended(Basic):
             compare='brutas-passwords-4-m.txt'
         )
 
-        self.merge(
+        # NOTE: Generate here, don't include in merge
+        self.combine_right('simple-brutas-all-lang', 'separators')
+        self.combine_right('simple-brutas-all-lang', 'months')
+        self.combine_right('simple-brutas-all-lang+months', 'separators')
+
+        self.concat(
             'brutas-passwords-6-xl.txt',
             (
+                f'{self.tmp_dir}/both-brutas-all-lang.txt',
+                f'{self.tmp_dir}/both-brutas-passwords-classics.txt',
+                f'{self.tmp_dir}/both-brutas-passwords-top.txt',
+                f'{self.tmp_dir}/both-brutas-passwords-unique.txt',
+                f'{self.tmp_dir}/complex-brutas-all-lang.txt',
+                f'{self.tmp_dir}/hax0r-brutas-all-lang.txt',
+                f'{self.tmp_dir}/repeat-brutas-all-lang.txt',
+                f'{self.tmp_dir}/simple-brutas-all-lang.txt',
                 *self.combine_both('repeat-brutas-usernames', 'extra-less'),
                 *self.combine_left('simple-brutas-all-lang', 'extra-common'),
                 *self.combine_left('simple-brutas-all-lang', 'extra-less'),
@@ -296,13 +313,13 @@ class Extended(Basic):
                 *self.combine_right('simple-brutas-all-lang', 'months'),
                 *self.combine_right('simple-brutas-all-lang', 'numbers-common'),
                 *self.combine_right('simple-brutas-all-lang', 'numbers-less'),
-                *self.combine_right('simple-brutas-all-lang', 'separators'),
                 *self.combine_right('simple-brutas-all-lang', 'years-all'),
+                *self.combine_right('simple-brutas-all-lang+extra-common', 'months'),
                 *self.combine_right('simple-brutas-all-lang+extra-common', 'years-all'),
+                *self.combine_right('simple-brutas-all-lang+extra-less', 'months'),
+                *self.combine_right('simple-brutas-all-lang+extra-less', 'years-all'),
                 *self.combine_right('simple-brutas-all-lang+months', 'extra-common'),
                 *self.combine_right('simple-brutas-all-lang+months', 'extra-less'),
-                *self.combine_right('simple-brutas-all-lang+months', 'separators'),
-                *self.combine_right('simple-brutas-all-lang+months+separators', 'years-all'),
                 *self.combine_right('simple-brutas-all-lang+numbers-common', 'extra-common'),
                 *self.combine_right('simple-brutas-all-lang+numbers-common', 'extra-less'),
                 *self.combine_right('simple-brutas-all-lang+numbers-less', 'extra-common'),
@@ -310,41 +327,24 @@ class Extended(Basic):
                 *self.combine_right('simple-brutas-all-lang+separators', 'functional'),
                 *self.combine_right('simple-brutas-all-lang+separators', 'months'),
                 *self.combine_right('simple-brutas-all-lang+separators', 'years-all'),
-                *self.combine_right('simple-brutas-all-lang+separators+months', 'years-all'),
-                *self.combine_right('simple-brutas-all-lang+separators+years-all', 'months'),
                 *self.combine_right('simple-brutas-all-lang+years-all', 'extra-common'),
-                *self.combine_right('simple-brutas-all-lang+years-all', 'separators'),
-                *self.combine_right('simple-brutas-all-lang+years-all+separators', 'months'),
+                *self.combine_right('simple-brutas-all-lang+years-all', 'months'),
                 *self.combine_right('simple-brutas-usernames+numbers-common', 'extra-less'),
                 *self.combine_right('simple-brutas-usernames+numbers-less', 'extra-common'),
                 *self.combine_right('simple-brutas-usernames+numbers-less', 'extra-less'),
                 *self.combine_right('simple-brutas-usernames+separators', 'extra-common'),
+                *self.combine_right('simple-brutas-usernames+separators+months', 'separators'),
                 *self.combine_right('simple-brutas-usernames+separators+months', 'years-all'),
-                f'{self.tmp_dir}/both-brutas-all-lang.txt',
-                f'{self.tmp_dir}/both-brutas-passwords-classics.txt',
-                f'{self.tmp_dir}/both-brutas-passwords-top.txt',
-                f'{self.tmp_dir}/both-brutas-passwords-unique.txt',
-                f'{self.tmp_dir}/complex-brutas-all-lang.txt',
-                f'{self.tmp_dir}/hax0r-brutas-all-lang.txt',
-                f'{self.tmp_dir}/repeat-brutas-all-lang.txt',
-                f'{self.tmp_dir}/simple-brutas-all-lang.txt',
-            ),
-            compare='brutas-passwords-5-l.txt'
+                *self.combine_right('simple-brutas-usernames+separators+months+separators', 'years-all'),
+            )
         )
-        self.run_shell('gzip brutas-passwords-4-m.txt')
-        self.run_shell('gzip brutas-passwords-5-l.txt')
-        self.run_shell('gzip brutas-passwords-6-xl.txt')
 
-
-class MergeAll(Combinator):
-
-    def process(self):
-        dicts = ' '.join((
-            'brutas-passwords-1-xxs.txt',
-            'brutas-passwords-2-xs.txt',
-            'brutas-passwords-3-s.txt',
-            'brutas-passwords-4-m.txt',
-            'brutas-passwords-5-l.txt',
-            'brutas-passwords-6-xl.txt',
-        ))
-        self.run_shell(f'cat {dicts} > brutas-passwords-7-all.txt')
+        self.concat(
+            'brutas-passwords-7-xxl.txt',
+            (
+                *self.combine_right('simple-brutas-all-lang+months+separators', 'years-all'),
+                *self.combine_right('simple-brutas-all-lang+separators+months', 'years-all'),
+                *self.combine_right('simple-brutas-all-lang+separators+years-all', 'months'),
+                *self.combine_right('simple-brutas-all-lang+years-all+separators', 'months'),
+            )
+        )
