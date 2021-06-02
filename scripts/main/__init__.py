@@ -331,6 +331,9 @@ class Extended(Basic):
             ),
             compare='brutas-passwords-5-l.txt'
         )
+        self.run_shell('gzip brutas-passwords-4-m.txt')
+        self.run_shell('gzip brutas-passwords-5-l.txt')
+        self.run_shell('gzip brutas-passwords-6-xl.txt')
 
 
 class MergeAll(Combinator):
