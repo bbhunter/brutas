@@ -4,21 +4,15 @@
 
 **A pretty comprehensive set of password dictionaries and wordlists (and a framework) designed for quick wins in realistic scenarios.**
 
-## Downloads
-
-You can download the latest releases of the "big" sets from the following URLs:
-
-* (pending upload)
-
 ## Passwords
 
 A brief introduction to `brutas-passwords-#` lists:
 * the number of passwords grows with the consecutive file number;
 * passwords are not sorted according to the probability, they are combined into groups of probability instead;
-* each consecutive file **does not** contain passwords from the previous set;
-* passwords in `brutas-passwords-6-xl.txt` **may not** be unique to some degree, still trying to figure out the best way to do it; however, since a cracking rig would be used in this case anyway the issue is not that significant.
+* each consecutive file **does not** contain passwords from the previous set.
 
-**NOTE: Due to Github limits, only {1,2,3} lists are precompiled.** You need to run `./scripts/build.py -p main.Extended` locally to generate the whole set, or you can download from the links above.
+**NOTE: Due to Github limits, only lists 1-3 are precompiled.** You need to run `./scripts/build.py -p main.Extended` locally to generate the whole set, or you can download from the following link:
+* (pending upload)
 
 ### Details
 
@@ -26,7 +20,7 @@ The `brutas-passwords-2-xs.txt` list seems to be most effective for general purp
 
 However, I recommend experimenting on your own and rebuilding these sets depending on the target. You may want to incorporate your native language keywords, too. For example, file or a domain name combined with `brutas-passwords-numbers.txt` turns out to be pretty effective on encrypted archives and wireless networks. As with everything, a little social engineering comes handy to understand the local approach to the "password policy".
 
-* `brutas-passwords-{1,2,3,4,5,6,7}-*.txt` - wordlists combined with passwords generated using keywords, hashcat rules and string partials
+* `brutas-passwords-{1,2,3,4,5,6}-*.txt` - wordlists combined with passwords generated using keywords, hashcat rules and string partials (see `brutas/scripts/main/__init__.py` for details)
 * `brutas-passwords-classics.txt` - typical admin passwords based on roles (test, admin), words (password, secret) or "funny" ones (like `letmein` or `trustno1`)
 * `brutas-passwords-closekeys.txt` - close key combinations or easy phrases (e.g. `abcd`) combined with capitalization, numbers, repetitions etc.
 * `brutas-passwords-top.txt` - currently 2k list composed of most popular user passwords found in leaks, doesn't contain close keys or any more sophisticated combinations than adding a number or two
@@ -68,10 +62,14 @@ Requirements:
 * hashcat-utils
 * lzop (recommended)
 
+Example:
+
+`./scripts/build.py -p main.Extended -t /media/user/External/tmp -o /media/user/External`
+
 ### Arguments
 
 ```
-usage: build.py [-h] [-p PATH] [-t TEMPORARY_DIR] [--debug]
+usage: build.py [-h] [-p PATH] [-t TEMPORARY_DIR] [-o OUTPUT_DIR] [--debug]
 
 Brutas build script
 
@@ -80,13 +78,16 @@ optional arguments:
   -p PATH, --path PATH  Class path
   -t TEMPORARY_DIR, --temporary-dir TEMPORARY_DIR
                         Temporary directory path
+  -o OUTPUT_DIR, --output-dir OUTPUT_DIR
+                        Output directory path
   --debug               Enable debug level logging
 ```
 
 #### Class path options
 
 * **`main.Basic`** - builds everything _and_ password lists 1-3
-* **`main.Extended`** - builds everything _and_ password lists 1-7 (**NOTE**: significant resources required and at least 1TB of free disk)
+* **`main.Extended`** - extends `main.Basic` with lists 4-6
+* **`main.MergeAll`** - concatenates lists 1-6 into a single file `brutas-passwords-all.txt`
 
 ### Typical log output
 

@@ -21,25 +21,23 @@ def init_logger(loglevel):
 
 class Combinator:
 
-    def __init__(self, rules, wordlists, combinator_path, rli2_path, tmp_dir, top_dir, output_dir, split_lines):
-        self.rules = rules
-        self.wordlists = wordlists
+    def __init__(self, config, tmp_dir, top_dir, output_dir):
+        self.rules = config.RULES
+        self.wordlists = config.WORDLISTS
         self.tmp_dir = str(pathlib.Path(tmp_dir).resolve())
         self.top_dir = str(pathlib.Path(top_dir).resolve())
         self.output_dir = str(pathlib.Path(output_dir).resolve())
-        self.split_lines = split_lines
         self.compress_program = '--compress-program=lzop' if self.run_shell('which lzop') else ''
-        if pathlib.Path.exists(pathlib.Path(combinator_path)):
-            self.combinator_path = combinator_path
+        if pathlib.Path.exists(pathlib.Path(config.COMBINATOR_PATH)):
+            self.combinator_path = config.COMBINATOR_PATH
         else:
-            logger.error(f'Hashcat `combinator` not found at {combinator_path}')
+            logger.error(f'Hashcat `combinator` not found at {config.COMBINATOR_PATH}')
             sys.exit(1)
-        if pathlib.Path.exists(pathlib.Path(rli2_path)):
-            self.rli2_path = rli2_path
+        if pathlib.Path.exists(pathlib.Path(config.RLI2_PATH)):
+            self.rli2_path = config.RLI2_PATH
         else:
-            logger.error(f'Hashcat `rli2` not found at {rli2_path}')
+            logger.error(f'Hashcat `rli2` not found at {config.RLI2_PATH}')
             sys.exit(1)
-        self.cores_no = int(self.run_shell('nproc --all'))
 
     def run_shell(self, cmd):
         logger.debug(cmd)
@@ -84,19 +82,9 @@ class Combinator:
 
     def merge(self, output, wordlists, prepend=None, compare=None):
         logger.info(f'Merging: {self.output_dir}/{output}')
-        wordlists_todos = list()
-        for wordlist in wordlists:
-            wordlist_name = pathlib.Path(wordlist).name
-            wordlists_todos.append(wordlist_name)
-            self.run_shell(f'split -l{self.split_lines} {wordlist} {self.tmp_dir}/{wordlist_name}_s')
-            for smallbit in pathlib.Path(self.tmp_dir).glob(wordlist_name + '_s*'):
-                self.run_shell(f'sort -T {self.tmp_dir} {self.compress_program} --parallel {self.cores_no} {self.tmp_dir}/{smallbit.name} -o {self.tmp_dir}/done_{smallbit.name}')
-                self.run_shell(f'rm {self.tmp_dir}/{smallbit.name}')
-            self.run_shell(f'sort -um -T {self.tmp_dir} {self.tmp_dir}/done_{smallbit.name}* -o {self.tmp_dir}/{wordlist_name}_sorted')
-            self.run_shell(f'rm {self.tmp_dir}/done_{smallbit.name}*')
-        wordlists_arg = ' '.join([self.tmp_dir + '/' + w + '_sorted' for w in wordlists_todos])
-        self.run_shell(f'sort -um -T {self.tmp_dir} {self.compress_program} --parallel {self.cores_no} {wordlists_arg} -o {self.tmp_dir}/{output}')
-        self.run_shell(f'rm {wordlists_arg}')
+        wordlists_arg = ' '.join(wordlists)
+        # NOTE: Passing too many big files to sort directly leads to random segfault.
+        self.run_shell(f'cat {wordlists_arg} | sort -u -T {self.tmp_dir} {self.compress_program} -o {self.tmp_dir}/{output}')
         if prepend:
             self.run_shell(f'cp {prepend} {self.output_dir}/{output}')
         else:
@@ -223,6 +211,17 @@ class Basic(Combinator):
             compare=self.output_dir + '/brutas-passwords-2-xs.txt'
         )
 
+
+class Extended(Basic):
+
+    def process(self):
+        super().process()
+
+        # NOTE: Generate here, don't include in merge
+        self.combine_right('simple-brutas-lang-int-common', 'separators')
+        self.combine_right('simple-brutas-lang-int-common+months', 'separators')
+        self.combine_right('simple-brutas-lang-int-common+years-all', 'separators')
+
         self.merge(
             'brutas-passwords-4-m.txt',
             (
@@ -288,17 +287,6 @@ class Basic(Combinator):
             compare=self.output_dir + '/brutas-passwords-4-m.txt'
         )
 
-
-class Extended(Basic):
-
-    def process(self):
-        super().process()
-
-        # NOTE: Generate here, don't include in merge
-        self.combine_right('simple-brutas-lang-int-common', 'separators')
-        self.combine_right('simple-brutas-lang-int-common+months', 'separators')
-        self.combine_right('simple-brutas-lang-int-common+years-all', 'separators')
-
         self.merge(
             'brutas-passwords-6-xl.txt',
             (
@@ -355,17 +343,18 @@ class Extended(Basic):
         )
 
 
-class MergeBasic(Combinator):
+class MergeAll(Combinator):
 
     def process(self):
 
         self.concat(
-            'brutas-passwords-1-5-all.txt',
+            'brutas-passwords-all.txt',
             (
                 'brutas-passwords-1-xxs.txt',
                 'brutas-passwords-2-xs.txt',
                 'brutas-passwords-3-s.txt',
                 'brutas-passwords-4-m.txt',
                 'brutas-passwords-5-l.txt',
+                'brutas-passwords-6-xl.txt',
             )
         )
