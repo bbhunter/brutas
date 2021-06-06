@@ -11,8 +11,10 @@ A brief introduction to `brutas-passwords-#` lists:
 * passwords are not sorted according to the probability, they are combined into groups of probability instead;
 * each consecutive file **does not** contain passwords from the previous set.
 
-**NOTE: Due to Github limits, only lists 1-3 are precompiled.** You need to run `./scripts/build.py -p main.Extended` locally to generate the whole set, or you can download from the following link:
-* (pending upload)
+**NOTE: Due to Github limits, only lists 1-3 are precompiled.** You need to run `./scripts/build.py -p main.Extended` locally to generate the whole set, or you can download from the links below:
+* [brutas-passwords-4-m.txt.zip](https://mega.nz/file/seIxRCza#fSuQpl3EtRiVMQRrD_yEiUoV5-5o1nvEebVxxWtcPQM) (195MB / 37.6MB compressed)
+* [brutas-passwords-5-l.txt.zip](https://mega.nz/file/QPZDiQqD#Trk-6Hauz3hblleWNXNv_wHSeuE_qpDJrduyyA-MgQw) (1.15GB / 190.5MB compressed)
+* [brutas-passwords-6-xl.txt.zip](https://mega.nz/file/QDoixSJA#KLUzokWtIPEW4gF1HI7t_KAb5tTZdGfqZhB6PxTvJCk) (100GB / 16.38GB compressed)
 
 ### Details
 
@@ -23,7 +25,7 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 * `brutas-passwords-{1,2,3,4,5,6}-*.txt` - wordlists combined with passwords generated using keywords, hashcat rules and string partials (see `brutas/scripts/main/__init__.py` for details)
 * `brutas-passwords-classics.txt` - typical admin passwords based on roles (test, admin), words (password, secret) or "funny" ones (like `letmein` or `trustno1`)
 * `brutas-passwords-closekeys.txt` - close key combinations or easy phrases (e.g. `abcd`) combined with capitalization, numbers, repetitions etc.
-* `brutas-passwords-top.txt` - currently 2k list composed of most popular user passwords found in leaks, doesn't contain close keys or any more sophisticated combinations than adding a number or two
+* `brutas-passwords-top.txt` - is a list composed of most popular user passwords found in leaks, doesn't contain close keys or any more sophisticated combinations
 * `brutas-passwords-unique.txt` - passwords which are complex enough to be used as independent passwords and are rarely mixed with any extra characters, usually related to pop-culture or sports (e.g. `apollo13`, `9inchnails`, `ronaldo7`)
 * `brutas-passwords-numbers.txt` - a small list of numbers used in passwords (e.g. dates, math constants)
 
