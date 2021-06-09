@@ -169,6 +169,7 @@ anastradamus
 anatol
 andariel
 andreand
+andrzej
 andrzejand
 andrzejandrzej
 andyand
@@ -1463,6 +1464,7 @@ grepolis
 gri
 grisza
 grom
+grosze
 groszek
 groszekmar
 groszy
@@ -2657,6 +2659,7 @@ kurakur
 kuravp
 kurczaczek
 kurczak
+kurczaki
 kurczakmar
 kurcze
 kurde
@@ -4806,6 +4809,7 @@ speedfreak
 spiderek
 spidi
 spierdalaj
+spirala
 spirytus
 spodnie
 spojnia
@@ -5512,6 +5516,7 @@ zuber
 zuczek
 zula
 zulus
+zupa
 zurek
 zuz
 zuza
@@ -5529,3 +5534,4 @@ zychu
 zygi
 zygmunt
 zyrafa
+zywiec

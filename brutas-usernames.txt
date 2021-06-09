@@ -78,6 +78,7 @@ jenkins
 k8s
 kubernetes
 linux
+linuxadmin
 local
 login
 mail
@@ -168,6 +169,7 @@ sysop
 sysopr
 system
 system_admin
+sysunix
 teacher
 tech
 technician
@@ -180,6 +182,7 @@ tomcat
 toor
 transfer
 unix
+unixadmin
 upload
 uploader
 ups

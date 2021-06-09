@@ -52,7 +52,7 @@ class Combinator:
                 filename = rule + '-' + wordlist[idx + 1:].split('.txt')[0] + '.txt'
                 if not pathlib.Path(f'{self.tmp_dir}/{filename}').is_file():
                     logger.info(f'\t - {filename}')
-                    subprocess.run(f'hashcat --stdout -r rules/{rule}.rule {wordlist} > {self.tmp_dir}/{filename}', shell=True, stdout=subprocess.PIPE)
+                    subprocess.run(f'hashcat --stdout -r rules/{rule}.rule {wordlist} | sort -u > {self.tmp_dir}/{filename}', shell=True, stdout=subprocess.PIPE)
 
     def combine_right(self, wordlist, bits):
         if not pathlib.Path(f'{self.tmp_dir}/{wordlist}+{bits}.txt').is_file():

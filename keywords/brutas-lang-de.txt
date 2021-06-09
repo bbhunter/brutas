@@ -764,12 +764,14 @@ gauner
 gbdwca
 geburtstag
 gedeon
+geheim
 geheimecode
 geheimnis
 geissbock
 gekhiqf
 gekyufa
 gembird
+gemutlich
 generationx
 geolino
 georgette
@@ -2798,6 +2800,7 @@ wandlitz
 wartburg
 waschbaer
 wasdenn
+wasistdas
 wasserbett
 wasserfall
 wassermann
@@ -2820,6 +2823,7 @@ werbung
 werdas
 werden
 werter
+werther
 wertlos
 wertvoll
 wertzu
@@ -2839,6 +2843,7 @@ wiesbaden
 wiesel
 wihhjyy
 wikiko
+wilde
 wilfried
 willli
 willywuff
@@ -2903,6 +2908,7 @@ zugang
 zugspitze
 zuhause
 zukunft
+zwanzig
 zwerge
 zwergnase
 zwickau
