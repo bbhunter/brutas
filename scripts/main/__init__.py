@@ -219,6 +219,8 @@ class Extended(Basic):
         super().process()
 
         # NOTE: Generate here, don't include in merge
+        self.combine_right('simple-brutas-lang-int-common', 'months')
+        self.combine_right('simple-brutas-lang-int-common', 'years-all')
         self.combine_right('simple-brutas-lang-int-common', 'separators')
         self.combine_right('simple-brutas-lang-int-common+months', 'separators')
         self.combine_right('simple-brutas-lang-int-common+years-all', 'separators')
