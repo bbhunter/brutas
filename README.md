@@ -12,9 +12,9 @@ A brief introduction to `brutas-passwords-#` lists:
 * each consecutive file **does not** contain passwords from the previous set.
 
 **NOTE: Due to Github limits, only lists 1-3 are precompiled.** You need to run `./scripts/build.py -p main.Extended` locally to generate the whole set, or you can download from the links below:
-* [brutas-passwords-4-m.txt.zip](https://mega.nz/file/seIxRCza#fSuQpl3EtRiVMQRrD_yEiUoV5-5o1nvEebVxxWtcPQM) (195MB / 37.6MB compressed)
-* [brutas-passwords-5-l.txt.zip](https://mega.nz/file/QPZDiQqD#Trk-6Hauz3hblleWNXNv_wHSeuE_qpDJrduyyA-MgQw) (1.15GB / 190.5MB compressed)
-* [brutas-passwords-6-xl.txt.zip](https://mega.nz/file/QDoixSJA#KLUzokWtIPEW4gF1HI7t_KAb5tTZdGfqZhB6PxTvJCk) (100GB / 16.38GB compressed)
+* [brutas-passwords-4-m-1.0.zip](https://mega.nz/file/EeBlXSrR#MDPZaZ5TJUGiFJ69KjzFOETRNtSSecn-E6gX_ZHWTgs) (249MB / 49.9MB compressed)
+* [brutas-passwords-5-l-1.0.zip](https://mega.nz/file/dKBjEKJJ#BWD60-bQQtEayteOhb9P-2CcvkjvCuuiQCI2MxrvKv4) (1.54GB / 264.1MB compressed)
+* [brutas-passwords-6-xl-1.0.zip](https://mega.nz/file/9WRXWCyR#J6lY8DH0YoblZ5jfRp3DvD_i_07RK2ezHbAwu040x0c) (110.54GB / 18.38GB compressed)
 
 ### Details
 
