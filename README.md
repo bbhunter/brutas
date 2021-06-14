@@ -91,6 +91,10 @@ optional arguments:
 * **`main.Extended`** - extends `main.Basic` with lists 4-6
 * **`main.MergeAll`** - concatenates lists 1-6 into a single file `brutas-passwords-all.txt`
 
+### Configuration
+
+You can store your local configuration in `scripts/local_config.py`.
+
 ### Typical log output
 
 ```

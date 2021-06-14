@@ -20,3 +20,9 @@ RULES = [
 
 COMBINATOR_PATH = '/usr/lib/hashcat-utils/combinator.bin'
 RLI2_PATH = '/usr/lib/hashcat-utils/rli2.bin'
+
+
+try:
+    from local_config import *  # noqa
+except ImportError:
+    pass
