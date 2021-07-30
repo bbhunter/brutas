@@ -171,6 +171,7 @@ accept
 acces
 access
 accesso
+accesspoint
 acciaio
 accident
 accidenti
@@ -552,6 +553,7 @@ aggies
 aggroberlin
 agha
 agiagi
+agile
 agish
 agmeh
 agnello
@@ -5982,6 +5984,7 @@ bigcock
 bigd
 bigdaddy
 bigdan
+bigdata
 bigdave
 bigdawg
 bigdeal
@@ -6212,6 +6215,7 @@ biologiamar
 biologico
 biology
 biomed
+biometrics
 bionda
 biondina
 biondino
@@ -9138,6 +9142,7 @@ capt
 captain
 captainamerica
 captains
+captcha
 captin
 captiva
 capture
@@ -11439,6 +11444,7 @@ classified
 classlease
 classmate
 classof
+classroom
 classy
 clau
 clauclau
@@ -12061,6 +12067,7 @@ computadora
 compute
 computer
 computers
+computing
 comrade
 comrades
 comsats
@@ -13950,6 +13957,7 @@ dat
 data
 databank
 database
+datacenter
 datacolour
 datadinascita
 dataentry
@@ -15202,6 +15210,7 @@ digio
 digit
 digital
 digitale
+digitalocean
 digitals
 digo
 digons
@@ -15494,6 +15503,7 @@ disorder
 dispatch
 display
 displays
+disrupt
 dissidia
 distance
 district
@@ -16496,6 +16506,7 @@ droog
 droops
 droopy
 drop
+dropbox
 dropdead
 drope
 dropkick
@@ -17055,6 +17066,7 @@ ebtihal
 ebubekir
 eburator
 ec
+ec2
 eca
 ecacb
 ecafracs
@@ -17527,6 +17539,7 @@ ele
 elea
 eleana
 eleanor
+elearning
 elect
 elected
 election
@@ -22147,6 +22160,7 @@ gcb
 gcc
 gce
 gcm
+gcp
 gcr
 gcs
 gct
@@ -25048,6 +25062,7 @@ handle
 handmaid
 hands
 handschuh
+handshake
 handsome
 handson
 handstand
@@ -26722,6 +26737,7 @@ hostclub
 hostel
 hostile
 hostin
+hosting
 hostread
 hot
 hota
@@ -27190,6 +27206,8 @@ hypercool
 hyperhyper
 hyperion
 hyperman
+hypertext
+hypervisor
 hypno
 hypnosis
 hypsos
@@ -27924,6 +27942,7 @@ imanali
 imane
 imani
 imantra
+imap
 imapotato
 imar
 imark
@@ -29487,6 +29506,7 @@ java
 javaid
 javajava
 javali
+javascript
 jave
 javed
 javedkhan
@@ -31476,6 +31496,7 @@ kamaro
 kamarovo
 kamaruddin
 kamasutra
+kamatera
 kamaz
 kambal
 kambing
@@ -36754,6 +36775,7 @@ linn
 linne
 lino
 linoa
+linode
 linokaa
 linolino
 linou
@@ -39784,6 +39806,7 @@ maplestory
 mapo
 mapoule
 mappamondo
+mapreduce
 mapsguru
 mapshcftw
 mapshclon
@@ -41813,6 +41836,7 @@ mesvrais
 met
 meta
 metacafe
+metadata
 metaknight
 metal
 metalcore
@@ -45151,6 +45175,7 @@ namaste
 name
 nameless
 nameneve
+nameserver
 namfon
 nami
 namibia
@@ -47154,6 +47179,7 @@ noslen
 nosok
 noson
 nospam
+nosql
 nossnoss
 nostale
 nostalgia
@@ -47592,6 +47618,7 @@ obie
 obinna
 obiwan
 obiwon
+object
 objectif
 objer
 oblivion
@@ -48362,6 +48389,7 @@ openopen
 openplease
 opensays
 opensesame
+opensouce
 opensource
 opentech
 openup
@@ -48858,6 +48886,8 @@ overtop
 overture
 ovetto
 ovfntps
+ovh
+ovhcloud
 ovi
 ovid
 ovidiu
@@ -50048,6 +50078,7 @@ pchelka
 pcjdcue
 pck
 pcl
+pcloud
 pcm
 pcmwmc
 pcnidcs
@@ -53844,6 +53875,7 @@ queque
 quercia
 querer
 querida
+query
 quesada
 quesito
 quess
@@ -54112,6 +54144,7 @@ racing
 rack
 racker
 racket
+rackspace
 racoon
 raczek
 rad
@@ -55180,6 +55213,7 @@ registra
 registration
 registrazione
 registro
+registry
 regliss
 reglisse
 rego
@@ -57636,6 +57670,7 @@ salerne
 salernitana
 salerno
 sales
+salesforce
 salesiani
 salesman
 salford
@@ -59670,6 +59705,7 @@ servant
 servax
 serve
 server
+serverspace
 service
 serviced
 services
@@ -60086,6 +60122,7 @@ share
 sharee
 shareman
 shares
+shareware
 sharhan
 shari
 sharif
@@ -61675,6 +61712,7 @@ smsngc
 smst
 smsung
 smt
+smtp
 smudge
 smuggler
 smulan
@@ -63457,6 +63495,7 @@ strd
 streak
 stream
 streamer
+streaming
 street
 streetball
 streetbob
@@ -65502,6 +65541,7 @@ tensas
 tensazangetsu
 tenshi
 tension
+tensorflow
 tent
 tentation
 tenten
@@ -70148,6 +70188,7 @@ virgos
 virgule
 viridiana
 virtual
+virtualization
 virtue
 virtus
 virtys
@@ -70185,6 +70226,7 @@ vista
 vistes
 visual
 visualbasic
+visualization
 visufo
 vit
 vita
@@ -70536,6 +70578,7 @@ voyous
 vozeori
 vp
 vpf
+vpn
 vpower
 vps
 vq
@@ -72178,6 +72221,7 @@ workman
 workout
 works
 workshop
+workstation
 world
 worldcup
 worlds

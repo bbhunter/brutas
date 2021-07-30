@@ -1,8 +1,8 @@
 # brutas
 
-    ░▒▓ brutas ▓▒░ Wordlists and passwords handcrafted with ♥
+> Wordlists and passwords handcrafted with ♥
 
-**A pretty comprehensive set of password dictionaries and wordlists (and a framework) designed for quick wins in realistic scenarios.**
+A pretty comprehensive set of password dictionaries and wordlists (and a framework) designed for quick wins in realistic scenarios.
 
 ## Passwords
 
@@ -11,10 +11,12 @@ A brief introduction to `brutas-passwords-#` lists:
 * passwords are not sorted according to the probability, they are combined into groups of probability instead;
 * each consecutive file **does not** contain passwords from the previous set.
 
-**NOTE: Due to Github limits, only lists 1-3 are precompiled.** You need to run `./scripts/build.py -p main.Extended` locally to generate the whole set, or you can download from the links below:
-* [brutas-passwords-4-m-1.0.zip](https://mega.nz/file/EeBlXSrR#MDPZaZ5TJUGiFJ69KjzFOETRNtSSecn-E6gX_ZHWTgs) (249MB / 49.9MB compressed)
-* [brutas-passwords-5-l-1.0.zip](https://mega.nz/file/dKBjEKJJ#BWD60-bQQtEayteOhb9P-2CcvkjvCuuiQCI2MxrvKv4) (1.54GB / 264.1MB compressed)
-* [brutas-passwords-6-xl-1.0.zip](https://mega.nz/file/9WRXWCyR#J6lY8DH0YoblZ5jfRp3DvD_i_07RK2ezHbAwu040x0c) (110.54GB / 18.38GB compressed)
+**NOTE: Due to Github limits, only lists 1-3 are precompiled.** You need to run `./scripts/build.py -p main.Extended` to generate the complete set:
+* brutas-passwords-4-m.txt (250MB)
+* brutas-passwords-5-l.txt (1.6GB)
+* brutas-passwords-6-xl.txt (112GB)
+
+The whole operation takes roughly five hours on a 2,6 GHz Intel Core i7 with 16GB of RAM and currently requires 160GB of free disk space.
 
 ### Details
 
