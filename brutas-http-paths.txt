@@ -32,6 +32,7 @@ accept
 accepted
 access
 access_log
+accesslogs
 account
 account-login
 account_login
@@ -180,12 +181,14 @@ browsers
 bug
 bugs
 build
+builds
 bundle
 bundles
 business
 bye
 c
 cache
+cached
 cactus
 calendar
 calendars
@@ -280,6 +283,7 @@ conf
 conference
 conferences
 config
+Config
 configs
 configuration
 configure
@@ -440,11 +444,13 @@ ecommerce
 edit
 editor
 edms
+eggs
 email
 embed
 embedded
 employees
 employment
+empty
 en
 en-uk
 en-us
@@ -462,6 +468,7 @@ environ
 environment
 error
 error_log
+errorlogs
 errors
 etc
 event
@@ -489,6 +496,7 @@ fail
 failure
 faq
 faqs
+fav
 favicon
 fcgi
 fcgi-bin
@@ -504,6 +512,8 @@ fileadmin
 filemanager
 filemgmt
 files
+files-private
+files-public
 filez
 finances
 financial
@@ -548,6 +558,7 @@ gallery
 gate
 gateway
 general
+generated
 generic
 get
 gfx
@@ -675,6 +686,7 @@ j
 java
 javadoc
 javascript
+jbossweb-standalone
 jenkins
 jira
 jmx-console
@@ -804,6 +816,7 @@ microsoft
 migrate
 migrated
 migration
+minimal
 mirror
 mirrors
 misc
@@ -860,6 +873,7 @@ next
 nfs
 nobody
 node
+node_modules
 note
 notes
 notice
@@ -939,7 +953,9 @@ people
 perf
 perl
 perl5
+persistent
 personal
+pgadmin
 pgp
 pgsql
 photo
@@ -958,6 +974,8 @@ picker
 pics
 picture
 pictures
+pid
+pids
 pilot
 pin
 ping
@@ -971,6 +989,7 @@ player
 plugin
 plugins
 pma
+pmyadmin
 poi
 policy
 poll
@@ -1130,6 +1149,7 @@ saved
 scgi-bin
 schedule
 scheduler
+schema
 screencast
 screencasts
 screens
@@ -1235,6 +1255,8 @@ sslvpn
 sso
 staff
 staging
+standalone
+standard
 start
 static
 statistics
@@ -1269,11 +1291,15 @@ survey
 surveys
 svn
 symfony
+symphony
 sync
 syndication
 sys
 sysadm
 sysadmin
+sysadmins
+sysbackup
+syslog
 system
 systems
 sysuser
@@ -1348,6 +1374,7 @@ tunnel
 tutorial
 tutorials
 txt
+typo3conf
 u
 ui
 uncategorized
@@ -1358,6 +1385,7 @@ updates
 upgrade
 upgrades
 upload
+upload_backup
 uploader
 uploads
 uptime
@@ -1367,6 +1395,7 @@ user
 user-login
 user-profile
 user_login
+user_upload
 userprofile
 users
 usr

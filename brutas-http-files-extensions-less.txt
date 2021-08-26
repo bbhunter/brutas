@@ -14,8 +14,10 @@
 .cfg
 .cfm
 .cgi
+.class
 .conf
 .config
+.csproj
 .css
 .csv
 .dat
@@ -24,6 +26,7 @@
 .deb
 .default
 .desktop
+.dist
 .dll
 .do
 .doc
@@ -36,12 +39,15 @@
 .dsa
 .example
 .exe
+.fcgi
+.gem
 .gif
 .go
 .gpg
 .gz
 .gzip
 .htm
+.HTM
 .html
 .inc
 .inc.php
@@ -49,6 +55,7 @@
 .jar
 .java
 .jhtml
+.jks
 .jpeg
 .jpg
 .js
@@ -59,11 +66,14 @@
 .kbx
 .kdb
 .kdbx
+.keystore
 .lnk
 .log
 .lst
 .lua
+.md
 .mdb
+.min.js
 .nsf
 .numbers
 .odf
@@ -72,6 +82,7 @@
 .odt
 .old
 .one
+.ori
 .orig
 .ost
 .ovpn
@@ -82,6 +93,7 @@
 .pdf
 .pem
 .ph_
+.phar
 .php
 .php.bak
 .php2
@@ -113,6 +125,7 @@
 .pyc
 .rar
 .rb
+.rbc
 .reg
 .rpm
 .rsa
@@ -129,6 +142,7 @@
 .sqlite3
 .src
 .swf
+.swp
 .tar
 .tar.gz
 .tgz
