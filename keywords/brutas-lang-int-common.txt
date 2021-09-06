@@ -2395,7 +2395,11 @@ gal
 gala
 galatasaray
 galaxy
+galaxya
+galaxyas
 galaxynote
+galaxys
+galaxysultra
 galina
 gambit
 game
@@ -2565,6 +2569,7 @@ goodtime
 goodtimes
 goofy
 google
+googlepixel
 goose
 gopher
 gopro
@@ -2963,6 +2968,10 @@ htp
 http
 huang
 huawei
+huaweimate
+huaweimatepro
+huaweip
+huaweippro
 hub
 hubert
 huda
@@ -3097,6 +3106,11 @@ iomega
 ios
 ip
 iphone
+iphoneplus
+iphonepro
+iphonepromax
+iphonese
+iphonex
 ipod
 ireland
 irene
@@ -5149,6 +5163,7 @@ openup
 opera
 operator
 ophelie
+oppo
 optimus
 opus
 or
@@ -5460,6 +5475,7 @@ pistache
 pistol
 pitbull
 pitt
+pixel
 pixie
 pizza
 pizzas
@@ -5872,6 +5888,8 @@ redhead
 redhot
 redline
 redman
+redminote
+redminotepro
 redneck
 redred
 redrose
@@ -7877,6 +7895,7 @@ xeon
 xfiles
 xiao
 xiaomi
+xiaomiredmi
 xiaoxiao
 xl
 xm
