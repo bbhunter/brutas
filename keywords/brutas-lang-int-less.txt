@@ -12981,7 +12981,6 @@ galatina
 galaxi
 galaxie
 galaxyace
-galaxys
 gale
 galeano
 galen
@@ -28602,7 +28601,6 @@ opor
 opossum
 opp
 oppa
-oppo
 opportunity
 opposite
 opteron
@@ -30226,7 +30224,6 @@ pituska
 pity
 pivert
 pivoine
-pixel
 pixiedust
 pixies
 piyade

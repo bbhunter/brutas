@@ -21731,9 +21731,12 @@ galatina
 galaxi
 galaxie
 galaxy
+galaxya
 galaxyace
+galaxyas
 galaxynote
 galaxys
+galaxysultra
 galdenis
 gale
 galeano
@@ -23594,6 +23597,7 @@ google
 googlecom
 googleearth
 googlemail
+googlepixel
 googleqwe
 googleru
 googleseo
@@ -26948,6 +26952,10 @@ huang
 huangyan
 huangyi
 huawei
+huaweimate
+huaweimatepro
+huaweip
+huaweippro
 hub
 hubabuba
 hubal
@@ -28458,7 +28466,12 @@ iphone
 iphonec
 iphoneg
 iphonegs
+iphoneplus
+iphonepro
+iphonepromax
 iphones
+iphonese
+iphonex
 ipixseo
 ipizot
 ipl
@@ -55091,6 +55104,8 @@ redlion
 redlove
 redman
 redmen
+redminote
+redminotepro
 redmist
 redmond
 redmoon
@@ -72622,6 +72637,7 @@ xiaohui
 xiaomage
 xiaomi
 xiaoming
+xiaomiredmi
 xiaowei
 xiaoxiao
 xiaoxin
