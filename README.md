@@ -12,11 +12,11 @@ A brief introduction to `brutas-passwords-#` lists:
 * each consecutive file **does not** contain passwords from the previous set.
 
 **NOTE: Due to Github limits, only lists 1-3 are precompiled.** You need to run `./scripts/build.py -p main.Extended` to generate the complete set:
-* brutas-passwords-4-m.txt (250MB)
-* brutas-passwords-5-l.txt (1.6GB)
-* brutas-passwords-6-xl.txt (112GB)
+* brutas-passwords-4-m.txt (390MB)
+* brutas-passwords-5-l.txt (2.3GB)
+* brutas-passwords-6-xl.txt (120GB)
 
-The whole operation takes roughly five hours on a 2,6 GHz Intel Core i7 with 16GB of RAM and currently requires 160GB of free disk space.
+The whole operation takes roughly six hours on a 2,6 GHz Intel Core i7 with 16GB of RAM and currently requires 160GB of free disk space to store the final results plus roughly 280GB for temporary files, SSD highly recommended.
 
 ### Details
 
@@ -91,6 +91,7 @@ optional arguments:
 
 * **`main.Basic`** - builds everything _and_ password lists 1-3
 * **`main.Extended`** - extends `main.Basic` with lists 4-6
+* **`main.Custom`** - takes the keywords listed in `keywords/brutas-custom.txt` and parses with all available rules plus some extra combinations, ordering etc. Warning: 2-3 keywords will produce several gigabytes of data
 * **`main.MergeAll`** - concatenates lists 1-6 into a single file `brutas-passwords-all.txt`
 
 ### Configuration
