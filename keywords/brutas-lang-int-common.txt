@@ -346,6 +346,7 @@ atari
 athena
 athlon
 ati
+atkinson
 atlanta
 atlantic
 atlantis
@@ -739,6 +740,7 @@ boeing
 bogart
 bogdan
 bollocks
+bolt
 bomb
 bombay
 bomber
@@ -1115,6 +1117,7 @@ changemenow
 changes
 chantal
 chaos
+chapman
 charger
 chargers
 charity
@@ -1485,7 +1488,6 @@ cyclops
 cynthia
 cypress
 cyril
-d-link
 da
 dad
 dada
@@ -1593,6 +1595,7 @@ debbie
 debian
 deborah
 debug
+debussy
 dec
 dece
 december
@@ -1717,6 +1720,7 @@ discover
 disney
 disrupt
 dive
+diver
 divine
 divya
 dixie
@@ -1727,6 +1731,7 @@ dji
 dk
 dkssud
 dl
+d-link
 dlink
 dm
 dms
@@ -1880,6 +1885,7 @@ eatme
 eatpussy
 eatshit
 eb
+ebony
 ec
 ec2
 echo
@@ -2167,6 +2173,7 @@ fg
 fh
 fiat
 ficken
+fiddle
 fierce
 fiesta
 fifa
@@ -3647,6 +3654,7 @@ ko
 koala
 kobe
 kobra
+kodak
 kodiak
 koji
 koki
@@ -4006,6 +4014,7 @@ lotus
 lou
 louane
 louie
+louigi
 louis
 louisa
 louise
@@ -4125,6 +4134,7 @@ magic
 magical
 magick
 magicman
+magnetic
 magnolia
 magnum
 magnus
@@ -4361,6 +4371,7 @@ maud
 maureen
 maurice
 maverick
+mavericks
 max
 maxell
 maxence
@@ -4449,6 +4460,7 @@ mendoza
 meowmeow
 mer
 mercedes
+mercedes-benz
 mercury
 merde
 meredith
@@ -5882,6 +5894,7 @@ redbull
 reddog
 reddy
 redfish
+redford
 redfox
 redhat
 redhead
@@ -6618,6 +6631,7 @@ sleepy
 slick
 slider
 slim
+slingshot
 slipknot
 slovakia
 slut
@@ -6995,6 +7009,7 @@ svoboda
 sw
 swallow
 swat
+swatch
 swati
 sweden
 sweet
@@ -7201,6 +7216,7 @@ thuglife
 thumbs
 thumper
 thunder
+thunderbolt
 thursday
 thx
 ti
@@ -7837,6 +7853,7 @@ won
 wonder
 wong
 wood
+woods
 woodstock
 woody
 woofwoof
