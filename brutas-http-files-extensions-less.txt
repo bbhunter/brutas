@@ -122,6 +122,7 @@
 .pub
 .pwd
 .py
+.py.bak
 .pyc
 .rar
 .rb

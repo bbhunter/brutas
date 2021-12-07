@@ -18,6 +18,7 @@
 .min.js
 .pdf
 .php
+.php.bak
 .png
 .py
 .rar
@@ -33,3 +34,4 @@
 .war
 .xml
 .zip
+_inc.php
