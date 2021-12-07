@@ -1488,6 +1488,7 @@ cyclops
 cynthia
 cypress
 cyril
+d-link
 da
 dad
 dada
@@ -1731,7 +1732,6 @@ dji
 dk
 dkssud
 dl
-d-link
 dlink
 dm
 dms
