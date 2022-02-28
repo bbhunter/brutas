@@ -22,6 +22,7 @@ def entry_point():
     parser.add_argument('-t', '--temporary-dir', default=None, help='Temporary directory path. [Default: auto]')
     parser.add_argument('-o', '--output-dir', default='.', help='Output directory path. [Default: .]')
     parser.add_argument('--cores', default=None, help='Number of cores to be used for sorting. [Default: auto]')
+    parser.add_argument('--memory', default='80%', help='Percentage of memory to be used for sorting. [Default: 80%%]')
     parser.add_argument('--debug', action='store_const', dest='loglevel', const=logging.DEBUG, default=logging.INFO, help='Enable debug level logging')
     args = parser.parse_args()
     clss = imports.class_import(args.path)
@@ -32,7 +33,9 @@ def entry_point():
         else:
             args.temporary_dir = tempfile.mkdtemp()
     if args.cores is None:
-        args.cores = str(multiprocessing.cpu_count())
+        cpu_count = multiprocessing.cpu_count()
+        if cpu_count > 1:
+            args.cores = str(cpu_count - 1)
     combinator = clss(config, args)
     combinator.run()
 

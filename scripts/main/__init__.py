@@ -34,7 +34,8 @@ class Combinator:
         self.top_dir = str(pathlib.Path(__file__).parent.parent.parent.absolute())
         self.output_dir = str(pathlib.Path(args.output_dir).resolve())
         self.compress_program = '--compress-program=lzop' if self.run_shell('which lzop') else ''
-        self.cores = '--parallel=' + args.cores
+        self.cores = '' if args.cores is None else '--parallel=' + args.cores
+        self.memory = '-S ' + args.memory
         if pathlib.Path.exists(pathlib.Path(config.COMBINATOR_PATH)):
             self.combinator_path = config.COMBINATOR_PATH
         else:
@@ -61,7 +62,7 @@ class Combinator:
         filename = rule + '-' + pathlib.Path(wordlist).name
         if not pathlib.Path(f'{self.tmp_dir}/{filename}').is_file():
             logger.info(f'Processing {wordlist} with rule "{rule}"')
-            subprocess.run(f'hashcat --stdout -r rules/{rule}.rule {wordlist} | sort -u {self.cores} > {self.tmp_dir}/{filename}', shell=True, stdout=subprocess.PIPE)
+            self.run_shell(f'hashcat --stdout -r rules/{rule}.rule {wordlist} | sort {self.cores} {self.memory} | uniq > {self.tmp_dir}/{filename}')
         return (f'{self.tmp_dir}/{filename}',)
 
     def combine_right(self, wordlist, bits):
@@ -95,7 +96,7 @@ class Combinator:
         logger.info(f'Merging: {self.output_dir}/{output}')
         wordlists_arg = ' '.join(wordlists)
         # NOTE: Passing too many big files to sort directly leads to random segfault.
-        self.run_shell(f'cat {wordlists_arg} | sort -u -T {self.tmp_dir} {self.compress_program} {self.cores} -o {self.tmp_dir}/{output}')
+        self.run_shell(f'cat {wordlists_arg} | sort -T {self.tmp_dir} {self.compress_program} {self.cores} {self.memory} | uniq > {self.tmp_dir}/{output}')
         if prepend:
             self.run_shell(f'cp {prepend} {self.output_dir}/{output}')
         else:
