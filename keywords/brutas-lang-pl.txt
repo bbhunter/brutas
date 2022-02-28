@@ -489,6 +489,7 @@ bet
 beti
 beton
 bialas
+bialy
 bialybia
 bianka
 bie
@@ -1421,6 +1422,7 @@ goliatgol
 gollob
 golota
 golum
+goly
 gondor
 gonera
 gonia
@@ -1851,6 +1853,7 @@ jozek
 jozekjoz
 jpgmd
 juba
+juby
 judasz
 judyta
 juhusek
@@ -1896,6 +1899,7 @@ juras
 jureczek
 jurek
 jurekewa
+jurus
 jus
 justa
 justajus
@@ -2527,6 +2531,7 @@ kret
 kretyn
 krewetka
 kri
+kris
 kriskri
 kriss
 kristof
@@ -2932,6 +2937,7 @@ lusja
 lutek
 luty
 lutymar
+lysy
 macias
 maciasmac
 maciej
@@ -3153,6 +3159,7 @@ marikamar
 marilynmar
 marimar
 marinamar
+mario
 mariola
 mariolamar
 mariolkamar
@@ -4501,6 +4508,7 @@ robertrob
 robi
 robokop
 roborob
+robson
 robsonrob
 robus
 rocatoca
@@ -4545,11 +4553,13 @@ rozyczkaroz
 rubikon
 rubin
 rubinek
+ruby
 rubykodama
 ruch
 rud
 rudamar
 rudarud
+rudy
 rudyrud
 rudyrudy
 rudzia
@@ -4711,6 +4721,7 @@ sisi
 sisior
 sitek
 siu
+siwa
 siwers
 siwusek
 siwy
@@ -4753,12 +4764,14 @@ slawo
 slawomir
 slawsko
 sle
+slepy
 slimak
 slo
 slonce
 sloneczko
 sloneczkoslo
 slonikjac
+sloniu
 slonko
 smalec
 smerfetka

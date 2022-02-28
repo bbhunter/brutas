@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import multiprocessing
 import os
 import pathlib
 import tempfile
@@ -30,6 +31,8 @@ def entry_point():
             args.temporary_dir = os.environ['TMP_DIR']
         else:
             args.temporary_dir = tempfile.mkdtemp()
+    if args.cores is None:
+        args.cores = str(multiprocessing.cpu_count())
     combinator = clss(config, args)
     combinator.run()
 

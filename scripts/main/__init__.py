@@ -34,7 +34,7 @@ class Combinator:
         self.top_dir = str(pathlib.Path(__file__).parent.parent.parent.absolute())
         self.output_dir = str(pathlib.Path(args.output_dir).resolve())
         self.compress_program = '--compress-program=lzop' if self.run_shell('which lzop') else ''
-        self.cores = '' if args.cores is None else '--parallel=' + args.cores
+        self.cores = '--parallel=' + args.cores
         if pathlib.Path.exists(pathlib.Path(config.COMBINATOR_PATH)):
             self.combinator_path = config.COMBINATOR_PATH
         else:
@@ -61,7 +61,7 @@ class Combinator:
         filename = rule + '-' + pathlib.Path(wordlist).name
         if not pathlib.Path(f'{self.tmp_dir}/{filename}').is_file():
             logger.info(f'Processing {wordlist} with rule "{rule}"')
-            subprocess.run(f'hashcat --stdout -r rules/{rule}.rule {wordlist} | sort -u > {self.tmp_dir}/{filename}', shell=True, stdout=subprocess.PIPE)
+            subprocess.run(f'hashcat --stdout -r rules/{rule}.rule {wordlist} | sort -u {self.cores} > {self.tmp_dir}/{filename}', shell=True, stdout=subprocess.PIPE)
         return (f'{self.tmp_dir}/{filename}',)
 
     def combine_right(self, wordlist, bits):
@@ -99,7 +99,7 @@ class Combinator:
         if prepend:
             self.run_shell(f'cp {prepend} {self.output_dir}/{output}')
         else:
-            self.run_shell(f'rm {self.output_dir}/{output}')
+            self.run_shell(f'rm {self.output_dir}/{output} || true')
         if compare:
             self.run_shell(f'{self.rli2_path} {self.tmp_dir}/{output} {compare} >> {self.output_dir}/{output}')
         else:
@@ -107,7 +107,7 @@ class Combinator:
 
     def concat(self, output, wordlists):
         logger.info(f'Concatenating: {output}')
-        self.run_shell(f'rm {self.tmp_dir}/{output}')
+        self.run_shell(f'rm {self.tmp_dir}/{output} || true')
         for wordlist in wordlists:
             self.run_shell(f'cat {wordlist} >> {self.tmp_dir}/{output}')
         self.run_shell(f'mv {self.tmp_dir}/{output} {self.output_dir}/{output}')
