@@ -62,7 +62,7 @@ class Combinator:
         filename = rule + '-' + pathlib.Path(wordlist).name
         if not pathlib.Path(f'{self.tmp_dir}/{filename}').is_file():
             logger.info(f'Processing {wordlist} with rule "{rule}"')
-            self.run_shell(f'hashcat --stdout -r rules/{rule}.rule {wordlist} | sort {self.cores} {self.memory} | uniq > {self.tmp_dir}/{filename}')
+            self.run_shell(f'(export LC_ALL=C; hashcat --stdout -r rules/{rule}.rule {wordlist} | sort {self.cores} {self.memory} | uniq > {self.tmp_dir}/{filename})')
         return (f'{self.tmp_dir}/{filename}',)
 
     def combine_right(self, wordlist, bits):
@@ -96,7 +96,7 @@ class Combinator:
         logger.info(f'Merging: {self.output_dir}/{output}')
         wordlists_arg = ' '.join(wordlists)
         # NOTE: Passing too many big files to sort directly leads to random segfault.
-        self.run_shell(f'cat {wordlists_arg} | sort -T {self.tmp_dir} {self.compress_program} {self.cores} {self.memory} | uniq > {self.tmp_dir}/{output}')
+        self.run_shell(f'(export LC_ALL=C; cat {wordlists_arg} | sort -T {self.tmp_dir} {self.compress_program} {self.cores} {self.memory} | uniq > {self.tmp_dir}/{output})')
         if prepend:
             self.run_shell(f'cp {prepend} {self.output_dir}/{output}')
         else:
@@ -189,9 +189,6 @@ class Basic(Prepare):
             (
                 'brutas-passwords-classics.txt',
                 'brutas-passwords-closekeys.txt',
-                'brutas-passwords-numbers.txt',
-                'brutas-passwords-top.txt',
-                'brutas-passwords-unique.txt',
                 'brutas-usernames.txt',
             )
         )
@@ -199,23 +196,21 @@ class Basic(Prepare):
         self.merge(
             'brutas-passwords-2-xs.txt',
             (
+                'brutas-passwords-top.txt',
+                'brutas-passwords-unique.txt',
+                'brutas-passwords-numbers.txt',
                 *self.combine_left('simple-brutas-usernames-small', 'extra-common'),
                 *self.combine_left('simple-brutas-usernames-small', 'functional'),
                 *self.combine_right('simple-brutas-usernames-small', 'extra-common'),
-                *self.combine_right('simple-brutas-usernames-small', 'extra-less'),
                 *self.combine_right('simple-brutas-usernames-small', 'numbers-common'),
                 *self.combine_right('simple-brutas-usernames-small', 'years-current'),
                 *self.combine_right('simple-brutas-usernames-small+extra-common', 'years-current'),
                 *self.combine_right('simple-brutas-usernames-small+separators', 'functional'),
                 *self.combine_right('simple-brutas-usernames-small+separators', 'months'),
                 *self.combine_right('simple-brutas-usernames-small+separators', 'years-current'),
-                f'{self.tmp_dir}/both-brutas-usernames-small.txt',
-                f'{self.tmp_dir}/hax0r-brutas-usernames-small.txt',
-                f'{self.tmp_dir}/repeat-brutas-usernames-small.txt',
                 f'{self.tmp_dir}/simple-brutas-passwords-classics.txt',
                 f'{self.tmp_dir}/simple-brutas-passwords-top.txt',
                 f'{self.tmp_dir}/simple-brutas-usernames-small.txt',
-                f'{self.tmp_dir}/simple-brutas-lang-int-common.txt',
             ),
             compare=self.output_dir + '/brutas-passwords-1-xxs.txt'
         )
@@ -223,6 +218,7 @@ class Basic(Prepare):
         self.merge(
             'brutas-passwords-3-s.txt',
             (
+                *self.combine_right('simple-brutas-usernames-small', 'extra-less'),
                 *self.combine_left('separators+simple-brutas-usernames-small', 'functional'),
                 *self.combine_left('separators+simple-brutas-usernames-small', 'years-current'),
                 *self.combine_right('simple-brutas-passwords-closekeys', 'months'),
@@ -232,6 +228,10 @@ class Basic(Prepare):
                 *self.combine_right('simple-brutas-usernames-small+extra-common', 'extra-common'),
                 *self.combine_right('simple-brutas-usernames-small+numbers-common', 'extra-common'),
                 *self.combine_right('simple-brutas-usernames-small+years-current', 'extra-common'),
+                f'{self.tmp_dir}/simple-brutas-lang-int-common.txt',
+                f'{self.tmp_dir}/both-brutas-usernames-small.txt',
+                f'{self.tmp_dir}/repeat-brutas-usernames-small.txt',
+                f'{self.tmp_dir}/hax0r-brutas-usernames-small.txt',
                 f'{self.tmp_dir}/hax0r-brutas-passwords-classics.txt',
                 f'{self.tmp_dir}/hax0r-brutas-usernames.txt',
             ),

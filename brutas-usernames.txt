@@ -5,7 +5,12 @@ adm
 admin
 adminftp
 administrator
+adminroot
+adminserver
+admintest
 adminuser
+adminweb
+adminwww
 adsl
 agent
 anonymous
@@ -37,12 +42,14 @@ catalog
 cgadmin
 ci
 cisco
+ciscoadmin
 clamav
 cli
 client
 cloud
 cluster
 cmp
+console
 core
 cpanel
 crm
@@ -139,6 +146,7 @@ ldap
 linux
 linuxadmin
 local
+localadmin
 log
 login
 mail
@@ -267,6 +275,7 @@ subversion
 super
 superadmin
 superdba
+supermaster
 superuser
 supervisor
 support
@@ -320,6 +329,7 @@ vbox
 vcloud
 viewer
 vm
+vmadmin
 vmware
 vnc
 vpn
