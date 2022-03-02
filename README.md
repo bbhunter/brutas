@@ -71,7 +71,10 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 
 ### Other lists
 
-* `brutas-extensions.txt` - extensions especially useful when combined with `brutas-http-paths.txt`
+* `brutas-http-files-extensions-common.txt` - common file extensions
+* `brutas-http-files-extensions-less.txt` - less common extensions
+* `brutas-http-files-generic.txt` - generic file names for automated discovery
+* `brutas-http-files-unique.txt` - unique file names e.g. `.bash_history`, `WEB-INF/web.xml`
 * `brutas-http-params.txt` - simplistic and realistic approach to HTTP parameters
 * `brutas-http-paths.txt` - no path traversal or pseudo exploits to keep low profile, no subs (use recursion instead) - paths only
 * `brutas-usernames.txt` - most common usernames
@@ -94,6 +97,7 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 * `keywords/brutas-subdomains.txt` - keywords and rules used to generate lists for subdomains
 * `keywords/brutas-subdomains-extra.txt` - additional prefixes for subdomain discovery
 * `keywords/brutas-wifi.txt` - bits and pieces useful in generating passwords for wireless networks
+* `keywords/brutas-custom.txt` - file used with `main.Custom` generator
 
 ## Building
 
@@ -122,92 +126,5 @@ optional arguments:
 
 * **`main.Basic`** - builds everything _and_ password lists 1-3
 * **`main.Extended`** - extends `main.Basic` with lists 4-6
-* **`main.Custom`** - takes the keywords listed in `keywords/brutas-custom.txt` and parses with all available rules plus some extra combinations, ordering etc. Warning: 2-3 keywords will produce several gigabytes of data
+* **`main.Custom`** - parses `keywords/brutas-custom.txt` with all available rules plus some extra combinations, ordering etc.
 * **`main.MergeAll`** - concatenates lists 1-6 into a single file `brutas-passwords-all.txt`
-
-## Typical log output
-
-```
-% ./scripts/build.py
-[1911-01-01 26:00:35,314] Processing with class: Basic
-[1911-01-01 26:00:35,314] Using temporary directory: /tmp/tmpojpa7d2m
-[1911-01-01 26:00:35,314] Generating subdomains
-[1911-01-01 26:00:40,215] Preparing keyword lists
-[1911-01-01 26:00:40,407] Processing wordlists with rules "repeat"
-[1911-01-01 26:00:40,407]    - repeat-brutas-passwords-classics.txt
-[1911-01-01 26:00:43,904]    - repeat-brutas-passwords-closekeys.txt
-[1911-01-01 26:00:47,445]    - repeat-brutas-passwords-top.txt
-[1911-01-01 26:00:50,931]    - repeat-brutas-passwords-unique.txt
-[1911-01-01 26:00:54,503]    - repeat-brutas-usernames-small.txt
-[1911-01-01 26:00:58,067]    - repeat-brutas-usernames.txt
-[1911-01-01 26:00:01,347]    - repeat-brutas-all-lang.txt
-[1911-01-01 26:00:04,956]    - repeat-brutas-lang-int-common.txt
-[1911-01-01 26:00:08,560]    - repeat-brutas-lang-int-less.txt
-[1911-01-01 26:00:12,215] Processing wordlists with rules "simple"
-[1911-01-01 26:00:12,215]    - simple-brutas-passwords-classics.txt
-[1911-01-01 26:00:15,860]    - simple-brutas-passwords-closekeys.txt
-[1911-01-01 26:00:19,461]    - simple-brutas-passwords-top.txt
-[1911-01-01 26:00:22,832]    - simple-brutas-passwords-unique.txt
-[1911-01-01 26:00:26,665]    - simple-brutas-usernames-small.txt
-[1911-01-01 26:00:30,516]    - simple-brutas-usernames.txt
-[1911-01-01 26:00:34,200]    - simple-brutas-all-lang.txt
-[1911-01-01 26:00:37,865]    - simple-brutas-lang-int-common.txt
-[1911-01-01 26:00:41,870]    - simple-brutas-lang-int-less.txt
-[1911-01-01 26:00:46,893] Processing wordlists with rules "complex"
-[1911-01-01 26:00:46,893]    - complex-brutas-passwords-classics.txt
-[1911-01-01 26:00:52,209]    - complex-brutas-passwords-closekeys.txt
-[1911-01-01 26:00:57,195]    - complex-brutas-passwords-top.txt
-[1911-01-01 26:00:01,055]    - complex-brutas-passwords-unique.txt
-[1911-01-01 26:00:04,807]    - complex-brutas-usernames-small.txt
-[1911-01-01 26:00:08,705]    - complex-brutas-usernames.txt
-[1911-01-01 26:00:12,507]    - complex-brutas-all-lang.txt
-[1911-01-01 26:00:16,608]    - complex-brutas-lang-int-common.txt
-[1911-01-01 26:00:20,584]    - complex-brutas-lang-int-less.txt
-[1911-01-01 26:00:24,785] Processing wordlists with rules "hax0r"
-[1911-01-01 26:00:24,786]    - hax0r-brutas-passwords-classics.txt
-[1911-01-01 26:00:28,836]    - hax0r-brutas-passwords-closekeys.txt
-[1911-01-01 26:00:33,075]    - hax0r-brutas-passwords-top.txt
-[1911-01-01 26:00:37,330]    - hax0r-brutas-passwords-unique.txt
-[1911-01-01 26:00:41,496]    - hax0r-brutas-usernames-small.txt
-[1911-01-01 26:00:45,923]    - hax0r-brutas-usernames.txt
-[1911-01-01 26:00:50,519]    - hax0r-brutas-all-lang.txt
-[1911-01-01 26:00:55,995]    - hax0r-brutas-lang-int-common.txt
-[1911-01-01 26:00:01,100]    - hax0r-brutas-lang-int-less.txt
-[1911-01-01 26:00:07,421] Processing wordlists with rules "both"
-[1911-01-01 26:00:07,421]    - both-brutas-passwords-classics.txt
-[1911-01-01 26:00:12,316]    - both-brutas-passwords-closekeys.txt
-[1911-01-01 26:00:18,391]    - both-brutas-passwords-top.txt
-[1911-01-01 26:00:22,593]    - both-brutas-passwords-unique.txt
-[1911-01-01 26:00:26,589]    - both-brutas-usernames-small.txt
-[1911-01-01 26:00:29,995]    - both-brutas-usernames.txt
-[1911-01-01 26:00:33,404]    - both-brutas-all-lang.txt
-[1911-01-01 26:00:37,141]    - both-brutas-lang-int-common.txt
-[1911-01-01 26:00:40,999]    - both-brutas-lang-int-less.txt
-[1911-01-01 26:00:44,805] Combining simple-brutas-usernames with separators
-[1911-01-01 26:00:44,820] Combining simple-brutas-usernames-small with separators
-[1911-01-01 26:00:44,828] Combining simple-brutas-usernames with separators
-[1911-01-01 26:00:44,837] Combining simple-brutas-usernames-small with separators
-[1911-01-01 26:00:44,844] Merging: brutas-passwords-1-xxs.txt
-[1911-01-01 26:00:44,870] Combining simple-brutas-usernames-small with extra-common
-[1911-01-01 26:00:44,878] Combining simple-brutas-usernames-small with functional
-[1911-01-01 26:00:44,887] Combining simple-brutas-usernames-small with extra-common
-[1911-01-01 26:00:44,895] Combining simple-brutas-usernames-small with extra-less
-[1911-01-01 26:00:44,903] Combining simple-brutas-usernames-small with numbers-common
-[1911-01-01 26:00:44,911] Combining simple-brutas-usernames-small with years-current
-[1911-01-01 26:00:44,919] Combining simple-brutas-usernames-small+extra-common with years-current
-[1911-01-01 26:00:44,931] Combining simple-brutas-usernames-small+separators with functional
-[1911-01-01 26:00:44,939] Combining simple-brutas-usernames-small+separators with months
-[1911-01-01 26:00:44,947] Combining simple-brutas-usernames-small+separators with years-current
-[1911-01-01 26:00:44,955] Merging: brutas-passwords-2-xs.txt
-[1911-01-01 26:00:45,000] Combining separators+simple-brutas-usernames-small with functional
-[1911-01-01 26:00:45,008] Combining separators+simple-brutas-usernames-small with years-current
-[1911-01-01 26:00:45,016] Combining simple-brutas-passwords-closekeys with months
-[1911-01-01 26:00:45,061] Combining simple-brutas-passwords-closekeys with numbers-common
-[1911-01-01 26:00:45,123] Combining simple-brutas-passwords-closekeys with years-current
-[1911-01-01 26:00:45,153] Combining simple-brutas-usernames-small with years-all
-[1911-01-01 26:00:45,161] Combining simple-brutas-usernames-small+extra-common with extra-common
-[1911-01-01 26:00:45,184] Combining simple-brutas-usernames-small+numbers-common with extra-common
-[1911-01-01 26:00:45,198] Combining simple-brutas-usernames-small+years-current with extra-common
-[1911-01-01 26:00:45,207] Merging: brutas-passwords-3-s.txt
-[1911-01-01 26:00:00,360] Done! You may want to clean up the temporary directory yourself: /tmp/tmpojpa7d2m
-```
