@@ -1,3 +1,6 @@
+import pathlib
+
+
 WORDLISTS = [
     'brutas-passwords-classics.txt',
     'brutas-passwords-closekeys.txt',
@@ -17,6 +20,8 @@ RULES = [
     'hax0r',
     'both',
 ]
+
+BASE_DIR = str(pathlib.Path(__file__).parent.parent.absolute())
 
 COMBINATOR_PATH = '/usr/lib/hashcat-utils/combinator.bin'
 RLI2_PATH = '/usr/lib/hashcat-utils/rli2.bin'
