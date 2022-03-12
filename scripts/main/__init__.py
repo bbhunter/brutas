@@ -457,7 +457,7 @@ class Custom(Prepare):
                 self.combine_right('extra-all+simple-brutas-custom', 'years-current'),
                 self.combine_right('hax0r-brutas-custom', 'extra-all'),
                 self.combine_right('hax0r-brutas-custom', 'months'),
-                self.combine_right('hax0r-brutas-custom', 'numbers-all'),
+                self.combine_right('hax0r-brutas-custom', 'numbers-common'),
                 self.combine_right('hax0r-brutas-custom', 'separators'),
                 self.combine_right('hax0r-brutas-custom', 'years-current'),
                 self.combine_right('hax0r-brutas-custom+extra-all', 'months'),
