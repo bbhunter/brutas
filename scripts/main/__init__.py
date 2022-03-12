@@ -102,7 +102,7 @@ class Combinator:
     def get_output_temp(self, output):
         return pathlib.Path(self.tmp_dir, output)
 
-    def merge(self, output, wordlists, prepend=None, compare=None):
+    def merge(self, output, wordlists, compare=None):
         output_file = self.get_output_file(output)
         output_temp = self.get_output_temp(output)
         logger.info(f'Merging: {output_file}')
@@ -115,15 +115,13 @@ class Combinator:
             wordlists_arg.append(wordlist)
         wordlists_arg = ' '.join(wordlists_arg)
         # NOTE: Passing too many big files to sort directly leads to random segfault.
-        self.run_shell(f'(export LC_ALL=C; cat {wordlists_arg} | sort -T {self.tmp_dir} {self.compress_program} {self.cores} {self.memory} | uniq > {output_temp})')
-        if prepend:
-            self.run_shell(f'cp {prepend} {output_file}')
-        else:
-            pathlib.Path.unlink(output_file, missing_ok=True)
+        pathlib.Path.unlink(output_file, missing_ok=True)
+        sort_cmd = f'(export LC_ALL=C; cat {wordlists_arg} | sort -T {self.tmp_dir} {self.compress_program} {self.cores} {self.memory} | uniq > '
         if compare:
+            self.run_shell(sort_cmd + str(output_temp) + ')')
             self.run_shell(f'{self.rli2_path} {output_temp} {compare} >> {output_file}')
         else:
-            self.run_shell(f'cat {output_temp} >> {output_file}')
+            self.run_shell(sort_cmd + str(output_file) + ')')
 
     def concat(self, output, wordlists):
         output_file = self.get_output_file(output)
