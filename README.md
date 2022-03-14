@@ -16,12 +16,7 @@ A brief introduction to `brutas-passwords-#` lists:
 * passwords are not sorted according to the probability, they are combined into groups of probability instead;
 * each consecutive file **does not** contain passwords from the previous set.
 
-**NOTE: Due to Github limits, only lists 1-3 are precompiled.** You need to run `./scripts/build.py -p main.Extended` to generate the complete set (see the tutorial below):
-* brutas-passwords-4-m.txt (~400MB)
-* brutas-passwords-5-l.txt (~2.5GB)
-* brutas-passwords-6-xl.txt (~130GB)
-
-The whole operation takes roughly six hours on a 2,6 GHz Intel Core i7 with 16GB of RAM and currently requires 160GB of free disk space to store the final results plus roughly 280GB for temporary files, SSD highly recommended.
+**NOTE: Due to Github limits, only lists 1-3 are precompiled.** You need to run `./scripts/build.py -p main.Extended` to generate the complete set (see the tutorial below).
 
 ## Tutorial
 
@@ -55,6 +50,15 @@ You can store your local configuration in `scripts/local_config.py`. For example
 * hashcat-utils
 * lzop (recommended)
 * Bash
+
+### Some stats and hints
+
+* The `main.Extended` generator takes roughly six hours to complete on a 2.6 GHz Intel Core i7 with 16GB of RAM and currently requires 130GB of free disk space to store the final results plus roughly 300GB for temporary files, SSD highly recommended.
+* File sizes for `main.Extended`:
+    * brutas-passwords-4-m.txt (~400MB)
+    * brutas-passwords-5-l.txt (~2.5GB)
+    * brutas-passwords-6-xl.txt (~130GB)
+* Building password list with `main.Custom` and `keywords/brutas-custom.txt` containing 5.5k of lines generates approx. 560GB of data and requires around 680GB for temporary files (an extra drive is recommended due to heavy I/O).
 
 ## Detailed description
 
