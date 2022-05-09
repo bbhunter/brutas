@@ -3,7 +3,7 @@ import pathlib
 
 WORDLISTS = [
     'brutas-passwords-classics.txt',
-    'brutas-passwords-closekeys.txt',
+    'brutas-passwords-patterns.txt',
     'brutas-passwords-top.txt',
     'brutas-passwords-unique.txt',
     'brutas-usernames-small.txt',

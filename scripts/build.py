@@ -21,6 +21,7 @@ def entry_point():
     parser.add_argument('-p', '--path', default='main.Basic', help='Class path. [Default: main.Basic]')
     parser.add_argument('-t', '--temporary-dir', default=None, help='Temporary directory path. [Default: auto]')
     parser.add_argument('-o', '--output-dir', default=config.BASE_DIR, help=f'Output directory path. [Default: {config.BASE_DIR}]')
+    parser.add_argument('--min-length', default=4, help='Minimal length for a password when merging lists. [Default: 4]')
     parser.add_argument('--cores', default=None, help='Number of cores to be used for sorting. [Default: auto]')
     parser.add_argument('--memory', default='80%', help='Percentage of memory to be used for sorting. [Default: 80%%]')
     parser.add_argument('--debug', action='store_const', dest='loglevel', const=logging.DEBUG, default=logging.INFO, help='Enable debug level logging')
