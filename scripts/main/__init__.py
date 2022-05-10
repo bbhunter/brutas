@@ -33,9 +33,14 @@ class Combinator:
         self.tmp_dir = str(pathlib.Path(args.temporary_dir).resolve())
         self.base_dir = config.BASE_DIR
         self.output_dir = str(pathlib.Path(args.output_dir).resolve())
-        self.compress_program = '--compress-program=lzop' if self.run_shell('which lzop') else ''
         self.cores = '' if args.cores is None else '--parallel=' + args.cores
         self.memory = '-S ' + args.memory
+        # NOTE: This is commented out as a decision rationale: it seems that
+        #       sort's --compress-program ignores environment variables, leading to
+        #       duplicates. To be resolved after looking into sort internals.
+        # self.compress_program = '--compress-program=lzop' if self.run_shell('which lzop') else ''
+        # self.sort_snippet = f'sort -T {self.tmp_dir} {self.compress_program} {self.cores} {self.memory}'
+        self.sort_snippet = f'sort -T {self.tmp_dir} {self.cores} {self.memory}'
         self.args = args
         if pathlib.Path.exists(pathlib.Path(config.COMBINATOR_PATH)):
             self.combinator_path = config.COMBINATOR_PATH
@@ -50,7 +55,7 @@ class Combinator:
 
     def run_shell(self, cmd):
         logger.debug(cmd)
-        return subprocess.run(cmd, shell=True, stdout=subprocess.PIPE).stdout
+        return subprocess.run(f'(export LC_ALL=C; {cmd})', shell=True, stdout=subprocess.PIPE).stdout
 
     def wordlists_process(self):
         for rule in self.rules:
@@ -70,7 +75,7 @@ class Combinator:
         filename = rule + '-' + pathlib.Path(wordlist).name
         if not pathlib.Path(f'{self.tmp_dir}/{filename}').is_file():
             logger.info(f'Processing `{wordlist}` with rule `{rule}`')
-            self.run_shell(f'(export LC_ALL=C; hashcat --stdout -r {self.base_dir}/rules/{rule}.rule {wordlist} | sort {self.cores} {self.memory} | uniq > {self.tmp_dir}/{filename})')
+            self.run_shell(f'hashcat --stdout -r {self.base_dir}/rules/{rule}.rule {wordlist} | {self.sort_snippet} | uniq > {self.tmp_dir}/{filename}')
         return f'{self.tmp_dir}/{filename}'
 
     def combine_right(self, wordlist, bits):
@@ -116,14 +121,14 @@ class Combinator:
         wordlists_arg = ' '.join(wordlists_arg)
         # NOTE: Passing too many big files to sort directly leads to random segfault.
         pathlib.Path.unlink(output_file, missing_ok=True)
-        sort_cmd = f'(export LC_ALL=C; cat {wordlists_arg} | awk "length >= {self.args.min_length}" | sort -T {self.tmp_dir} {self.compress_program} {self.cores} {self.memory} | uniq > '
+        sort_cmd = f'awk "length >= {self.args.min_length}" {wordlists_arg} | {self.sort_snippet} | uniq > '
         if compare:
-            self.run_shell(f'{sort_cmd} {output_temp})')
+            self.run_shell(f'{sort_cmd} {output_temp}')
             self.run_shell(f'{self.rli2_path} {output_temp} {self.tmp_dir}/brutas-passwords-compare.txt >> {output_file}')
             self.run_shell(f'cat {output_file} >> {self.tmp_dir}/brutas-passwords-compare.txt')
-            self.run_shell(f'LC_ALL=C sort -o {self.tmp_dir}/brutas-passwords-compare.txt {self.tmp_dir}/brutas-passwords-compare.txt')
+            self.run_shell(f'{self.sort_snippet} -o {self.tmp_dir}/brutas-passwords-compare.txt {self.tmp_dir}/brutas-passwords-compare.txt')
         else:
-            self.run_shell(f'{sort_cmd} {output_file})')
+            self.run_shell(f'{sort_cmd} {output_file}')
 
     def concat(self, output, wordlists):
         output_file = self.get_output_file(output)
@@ -157,15 +162,15 @@ class Prepare(Combinator):
 
         logger.info('Preparing bits')
 
-        self.run_shell(f'sort {self.base_dir}/bits/extra-common.txt -o {self.tmp_dir}/extra-sorted1')
-        self.run_shell(f'sort {self.base_dir}/bits/extra-less.txt -o {self.tmp_dir}/extra-sorted2')
+        self.run_shell(f'{self.sort_snippet} {self.base_dir}/bits/extra-common.txt -o {self.tmp_dir}/extra-sorted1')
+        self.run_shell(f'{self.sort_snippet} {self.base_dir}/bits/extra-less.txt -o {self.tmp_dir}/extra-sorted2')
         self.run_shell(f'comm -13 {self.tmp_dir}/extra-sorted1 {self.tmp_dir}/extra-sorted2 > {self.base_dir}/bits/extra-less.txt')
         self.run_shell(f'rm {self.base_dir}/bits/extra-common.txt')
         self.run_shell(f'mv {self.tmp_dir}/extra-sorted1 {self.base_dir}/bits/extra-common.txt')
         self.run_shell(f'cat {self.base_dir}/bits/extra-common.txt {self.base_dir}/bits/extra-less.txt > {self.base_dir}/bits/extra-all.txt')
 
-        self.run_shell(f'sort {self.base_dir}/bits/numbers-common.txt -o {self.tmp_dir}/numbers-sorted1')
-        self.run_shell(f'sort {self.base_dir}/bits/numbers-less.txt -o {self.tmp_dir}/numbers-sorted2')
+        self.run_shell(f'{self.sort_snippet} {self.base_dir}/bits/numbers-common.txt -o {self.tmp_dir}/numbers-sorted1')
+        self.run_shell(f'{self.sort_snippet} {self.base_dir}/bits/numbers-less.txt -o {self.tmp_dir}/numbers-sorted2')
         self.run_shell(f'comm -13 {self.tmp_dir}/numbers-sorted1 {self.tmp_dir}/numbers-sorted2 > {self.base_dir}/bits/numbers-less.txt')
         self.run_shell(f'rm {self.base_dir}/bits/numbers-common.txt')
         self.run_shell(f'mv {self.tmp_dir}/numbers-sorted1 {self.base_dir}/bits/numbers-common.txt')
@@ -179,27 +184,27 @@ class Basic(Prepare):
         super().process()
 
         logger.info('Generating subdomains')
-        self.run_shell(f'sort {self.base_dir}/keywords/brutas-subdomains.txt -o {self.tmp_dir}/brutas-subdomains.txt')
-        self.run_shell(f'sort {self.base_dir}/keywords/brutas-subdomains-extra.txt -o {self.tmp_dir}/brutas-subdomains-extra.txt')
+        self.run_shell(f'{self.sort_snippet} {self.base_dir}/keywords/brutas-subdomains.txt -o {self.tmp_dir}/brutas-subdomains.txt')
+        self.run_shell(f'{self.sort_snippet} {self.base_dir}/keywords/brutas-subdomains-extra.txt -o {self.tmp_dir}/brutas-subdomains-extra.txt')
         self.run_shell(f'cp {self.tmp_dir}/brutas-subdomains.txt {self.base_dir}/brutas-subdomains-1-small.txt')
         self.run_shell(f'comm -13 {self.tmp_dir}/brutas-subdomains.txt {self.tmp_dir}/brutas-subdomains-extra.txt >> {self.base_dir}/brutas-subdomains-1-small.txt')
         self.run_shell(f'cp {self.base_dir}/brutas-subdomains-1-small.txt {self.base_dir}/brutas-subdomains-2-large.txt')
         self.run_shell(f'hashcat --stdout -r {self.base_dir}/rules/subdomains.rule {self.tmp_dir}/brutas-subdomains.txt >> {self.base_dir}/brutas-subdomains-2-large.txt')
 
         logger.info('Preparing keyword lists')
-        self.run_shell(f'sort {self.base_dir}/keywords/brutas-lang-int-common.txt -o {self.tmp_dir}/brutas-lang-int-common.txt')
-        self.run_shell(f'sort {self.base_dir}/keywords/brutas-lang-int-less.txt -o {self.tmp_dir}/brutas-lang-int-less.txt')
+        self.run_shell(f'{self.sort_snippet} {self.base_dir}/keywords/brutas-lang-int-common.txt -o {self.tmp_dir}/brutas-lang-int-common.txt')
+        self.run_shell(f'{self.sort_snippet} {self.base_dir}/keywords/brutas-lang-int-less.txt -o {self.tmp_dir}/brutas-lang-int-less.txt')
         self.run_shell(f'comm -13 {self.tmp_dir}/brutas-lang-int-common.txt {self.tmp_dir}/brutas-lang-int-less.txt > {self.base_dir}/keywords/brutas-lang-int-less.txt')
         self.run_shell(f'rm {self.base_dir}/keywords/brutas-lang-int-common.txt')
         self.run_shell(f'cp {self.tmp_dir}/brutas-lang-int-common.txt {self.base_dir}/keywords/brutas-lang-int-common.txt')
 
         # NOTE: Combine all languages
-        self.run_shell(f'sort -u {self.base_dir}/keywords/brutas-lang-*.txt -o {self.tmp_dir}/brutas-all-lang.txt')
+        self.run_shell(f'{self.sort_snippet} -u {self.base_dir}/keywords/brutas-lang-*.txt -o {self.tmp_dir}/brutas-all-lang.txt')
         self.run_shell(f'rm {self.base_dir}/keywords/brutas-all-lang.txt')
         self.run_shell(f'cp {self.tmp_dir}/brutas-all-lang.txt {self.base_dir}/keywords/brutas-all-lang.txt')
 
         # NOTE: Initialize lookup/compare set
-        self.run_shell(f'LC_ALL=C sort {self.base_dir}/brutas-passwords-1-xxs.txt > {self.tmp_dir}/brutas-passwords-compare.txt')
+        self.run_shell(f'{self.sort_snippet} {self.base_dir}/brutas-passwords-1-xxs.txt > {self.tmp_dir}/brutas-passwords-compare.txt')
 
         # NOTE: Process keywords
         self.wordlists_process()
