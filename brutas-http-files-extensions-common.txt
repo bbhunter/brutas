@@ -1,5 +1,8 @@
+.ashx
+.asmx
 .asp
 .aspx
+.axd
 .bak
 .cgi
 .css

@@ -17,8 +17,9 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
 def entry_point():
+    class_paths = ', '.join(['main.' + cls for cls in main.__available__])
     parser = argparse.ArgumentParser(description='Brutas build script')
-    parser.add_argument('-p', '--path', default='main.Basic', help='Class path. [Default: main.Basic]')
+    parser.add_argument('-p', '--path', required=True, help=f'Class path. [Choices: {class_paths}]')
     parser.add_argument('-t', '--temporary-dir', default=None, help='Temporary directory path. [Default: auto]')
     parser.add_argument('-o', '--output-dir', default=config.BASE_DIR, help=f'Output directory path. [Default: {config.BASE_DIR}]')
     parser.add_argument('--min-length', default=4, help='Minimal length for a password when merging lists. [Default: 4]')

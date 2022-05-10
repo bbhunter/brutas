@@ -3,4 +3,6 @@
 brutas-passwords-5-l.txt
 brutas-passwords-6-xl.txt
 brutas-passwords-7-xxl.txt
+brutas-passwords-all.txt
+brutas-http-words-suffixes-*.txt
 scripts/local_config.py
