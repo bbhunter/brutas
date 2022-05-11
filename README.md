@@ -2,13 +2,11 @@
 
 > Wordlists and passwords handcrafted with ♥
 
-A pretty comprehensive set of password dictionaries and wordlists designed for quick wins in red teaming scenarios. Why is it different? The goal here is not to crack every password possible, it is to move forward inside a network. And if cracking is really needed then the bigger lists can be used, however, the assumption here is that it will be done in a reasonable time span and with limited resources (like a VM, hijacked host etc).
-
-A few facts:
-* The rulesets, keywords and password combinations are based on analysis of roughly 400GB of pure data and dozens of peer-reviewed scientific articles.
-* It is not an ordinary dump of all things available. All wordlists and rules were processed manually.
+A pretty comprehensive set of password dictionaries and wordlists designed for quick wins in red teaming scenarios or general blackbox pentesting.
 
 ## Introduction
+
+Why these password lists are different? The goal here is not to crack every password possible, it is to move forward inside a network. And if cracking is really needed then the bigger lists can be used, however, the assumption here is that it will be done in a reasonable time span and with limited resources (like a VM, hijacked host etc).
 
 A brief introduction to `brutas-passwords-#` lists:
 * the number of passwords grows with the consecutive file number;
