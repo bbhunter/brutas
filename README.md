@@ -110,7 +110,9 @@ You can store your local configuration in `scripts/local_config.py`. For example
 ### Building all password lists using external drive for temporary files and output
 
 `% ./scripts/build.py -p main.BasicPasswords -t /media/user/External/tmp -o /media/user/External`
+
 `% ./scripts/build.py -p main.ExtendedPasswords -t /media/user/External/tmp -o /media/user/External`
+
 `% ./scripts/build.py -p main.BigPasswords -t /media/user/External/tmp -o /media/user/External`
 
 ### Generating password list using custom keywords
