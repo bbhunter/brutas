@@ -19,6 +19,48 @@ A brief introduction to `brutas-passwords-#` lists:
 - [brutas-passwords-7-xxl.txt.zip](https://www.dropbox.com/s/28at76rfcjyylog/brutas-passwords-7-xxl.txt.zip?dl=0)
 - [brutas-http-words-suffixes.zip](https://www.dropbox.com/s/26j38e9my274xaf/brutas-http-words-suffixes.zip?dl=0)
 
+## Statistics
+
+Based on leaks in two categories (social networks and technical forums), the current (2022/05/20) effectiveness is:
+
+|                                      | No. of passwords | Social networks (~1M) | Technical forums (~450K) |
+| ------------------------------------ | ---------------- | --------------------- | ------------------------ |
+| brutas-passwords-1-xxs.txt (*)       |             100  |       2.16%           |          2.75%           |
+| brutas-passwords-2-xs.txt (*)        |           6,549  |       3.05%           |          3.63%           |
+| brutas-passwords-3-s.txt (*)         |          24,805  |       3.99%           |          4.32%           |
+| brutas-passwords-4-m.txt             |         922,624  |       3.59%           |          5.05%           |
+| brutas-passwords-5-l.txt             |      33,278,126  |      13.91%           |         17.10%           |
+| brutas-passwords-6-xl.txt            |     162,843,765  |       6.93%           |          9.24%           |
+| brutas-passwords-7-xxl.txt           |  10,051,549,134  |      26.08%           |         34.21%           |
+| Suitable for online bruteforcing (*) |                  |       9.20% (99,197)  |         10.70% (48,885)  |
+| To be used for offline cracking      |                  |      50.51% (544,617) |         65.64% (299,699) |
+| TOTAL                                |                  |      59.71% (643,891) |         76.34% (348,757) |
+
+
+So, the basic three lists (~31K passwords) provide 10% success on average with these fairly diverse and big samples. From my experience, password spraying with the top 100 is guaranteed to yield interesting results. And most often a couple accounts is enough to move forward in almost any network.
+
+### How does it compare to `rockyou.txt`?
+
+The famous `rockyou.txt` dictionary contains 14,344,392 passwords (at least in the Kali Linux "edition"). Against the same sets the results are:
+
+|                                      | No. of passwords | Social networks (~1M) | Technical forums (~450K) |
+| ------------------------------------ | ---------------- | --------------------- | ------------------------ |
+| rockyou.txt                          |      14,344,392  |      34.99% (377384)  |         39.55% (180665)  |
+
+It seems that with half of the passwords from the first five groups the `rockyou.txt` dictionary is much more effective. How come? Let's see what happens if we mix them:
+
+|                                      | No. of passwords | Social networks (~1M) | Technical forums (~450K) |
+| ------------------------------------ | ---------------- | --------------------- | ------------------------ |
+| rockyou.txt + brutas-1-3.txt         |      14,375,845  |      44.19% (476578)  |         50.25% (229550)  |
+| rockyou.txt + brutas-1-5.txt         |      48,576,595  |      61.90% (667459)  |         72.94% (333231)  |
+
+* 44.19% (social networks) - 34.99% (rockyou) = 9.20% (= 9.20%, brutas-1-3)
+* 50.25% (technical forums) - 39.55% (rockyou) = 10.70% (= 10.70%, brutas-1-3)
+* 61.90% (social networks) - 34.99% (rockyou) = 26.91% (~= 26.70%, brutas-1-5)
+* 72.94% (technical forums) - 39.55% (rockyou) = 33.39% (~= 32.85%, brutas-1-5)
+
+The answer is clear: these sets are somewhat complementary, or rather `brutas-passwords-*` was designed with a different goal in mind than what you would find in the leaks from popular sites. For example, `rockyou.txt` is missing 23,246 passwords from the `brutas-1-3.txt` combo (which is 31,453 in total). To name just a few: `P$SSW)RD`, `Admin123!` or `!root!`. So, if you want to bruteforce or spray in a more corporate environment (i.e. with password policies in place), use `brutas`. For best results in general cracking, combine it with typical leaks. And with the bigger `brutas` lists the "predictable sophistication" grows significantly.
+
 ## Basic usage
 
 The combined lists `brutas-passwords-{1,2,3,4}-*.txt` seem to be most effective for general purpose and reasonably fast password cracking. Start with the smallest one and move forward. The lists `brutas-passwords-{1,2}-*.txt` are designed for a quick win in large networks. If you need something really minimalistic, try using `brutas-passwords-1-xxs.txt` solely - my highly opinionated view of the top 100. 
