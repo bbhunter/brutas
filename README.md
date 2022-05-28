@@ -14,10 +14,10 @@ A brief introduction to `brutas-passwords-#` lists:
 * each consecutive file **does not** contain passwords from any of the previous sets.
 
 **NOTE: Due to Github limits not all lists are precompiled.** You need to run `main.ExtendedPasswords`, `main.BigPasswords` and `main.HttpWordsSuffixes` yourself to generate the complete set (see the tutorial below). The compiled sets are also hosted here (may not be up to date):
-- [brutas-passwords-5-l.txt.zip](https://www.dropbox.com/s/uaiw78vhw3ss0qw/brutas-passwords-5-l.txt.zip?dl=0)
-- [brutas-passwords-6-xl.txt.zip](https://www.dropbox.com/s/m774fiz5id7ob4r/brutas-passwords-6-xl.txt.zip?dl=0)
-- [brutas-passwords-7-xxl.txt.zip](https://www.dropbox.com/s/28at76rfcjyylog/brutas-passwords-7-xxl.txt.zip?dl=0)
-- [brutas-http-words-suffixes.zip](https://www.dropbox.com/s/26j38e9my274xaf/brutas-http-words-suffixes.zip?dl=0)
+- [brutas-passwords-5-l.txt.zip](https://drive.proton.me/urls/CH1E3ZHRY8#2YA0lvpqsrmZ)
+- [brutas-passwords-6-xl.txt.zip](https://drive.proton.me/urls/X7Q9ANEF4G#NlYmJ4tl8zU4)
+- [brutas-passwords-7-xxl.txt.zip](https://drive.proton.me/urls/D9V07Y7V1W#y84WykHKRI5t)
+- [brutas-http-words-suffixes.zip](https://drive.proton.me/urls/8JH9NAF42C#UghAWLMx0mrF)
 
 ## Statistics
 
