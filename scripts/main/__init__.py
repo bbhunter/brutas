@@ -22,7 +22,7 @@ def init_logger(loglevel):
     handler.setFormatter(formatter[loglevel])
 
 
-__available__ = ('Subdomains', 'HttpWords', 'HttpWordsSuffixes', 'BasicPasswords', 'ExtendedPasswords', 'BigPasswords', 'CustomPasswords', 'MergeAll')
+__available__ = ('Subdomains', 'BasicPasswords', 'ExtendedPasswords', 'BigPasswords', 'CustomPasswords', 'MergeAll', 'HttpWordsPlainCommon', 'HttpWordsSuffixesCommon', 'HttpWordsDoubleCommon', 'HttpWordsPlainAll', 'HttpWordsSuffixesAll', 'HttpWordsDoubleAll')
 
 
 class Combinator:
@@ -187,9 +187,9 @@ class Combinator:
         output_temp = self.temp(destination.name)
         wordlists_arg = list()
         for wordlist in wordlists:
-            wordlist_path = str(wordlist.path)
             if wordlist is None:
                 continue
+            wordlist_path = str(wordlist.path)
             if not pathlib.Path(wordlist_path).is_file():
                 wordlist_path = str(pathlib.Path(self.root_dir, wordlist_path))
             wordlists_arg.append(wordlist_path)
@@ -252,146 +252,283 @@ class HttpWords(Combinator):
         # NOTE: Process keywords
         self.wordlists_process()
 
-        pass_verbs = self.temp('pass-brutas-http-verbs')
-        pass_words = self.temp('pass-brutas-http-words')
+        lists = {
+            'brutas-http-adj-adv-det': ('brutas-http-adj-adv-det-common', 'brutas-http-adj-adv-det-less'),
+            'brutas-http-nouns': ('brutas-http-nouns-common', 'brutas-http-nouns-less'),
+            'brutas-http-verbs': ('brutas-http-verbs-common', 'brutas-http-verbs-less'),
+        }
 
-        # NOTE: lowercase paths
-        self.merge(
-            self.output('brutas-http-words-lowercase'),
-            (
-                self.keywords('brutas-http-verbs'),
-                self.keywords('brutas-http-words'),
-                self.right(pass_verbs, pass_words),
-                self.right(pass_words, pass_verbs),
-                self.right(pass_words, pass_words),
-            )
-        )
-
-        verbs_sep = self.right(pass_verbs, self.bits('separators-dash'))
-        words_sep = self.right(pass_words, self.bits('separators-dash'))
-
-        # NOTE: dash-case paths
-        self.merge(
-            self.output('brutas-http-words-dash'),
-            (
-                self.keywords('brutas-http-verbs'),
-                self.keywords('brutas-http-words'),
-                self.right(verbs_sep, pass_words),
-                self.right(words_sep, pass_verbs),
-                self.right(words_sep, pass_words),
-            )
-        )
-
-        verbs_sep = self.right(pass_verbs, self.bits('separators-underscore'))
-        words_sep = self.right(pass_words, self.bits('separators-underscore'))
-
-        # NOTE: snake_case paths
-        self.merge(
-            self.output('brutas-http-words-underscore'),
-            (
-                self.keywords('brutas-http-verbs'),
-                self.keywords('brutas-http-words'),
-                self.right(verbs_sep, pass_words),
-                self.right(words_sep, pass_verbs),
-                self.right(words_sep, pass_words),
-            )
-        )
-
-        capitalize_verbs = self.temp('capitalize-brutas-http-verbs')
-        capitalize_words = self.temp('capitalize-brutas-http-words')
-
-        # NOTE: CamelCase paths
-        self.merge(
-            self.output('brutas-http-words-camelcase'),
-            (
-                capitalize_verbs,
-                capitalize_words,
-                self.right(capitalize_verbs, capitalize_words),
-                self.right(capitalize_words, capitalize_verbs),
-                self.right(capitalize_words, capitalize_words),
-            )
-        )
-
-        # NOTE: lowerCamelCase paths
-        self.merge(
-            self.output('brutas-http-words-lowercamelcase'),
-            (
-                pass_verbs,
-                pass_words,
-                self.right(pass_verbs, capitalize_words),
-                self.right(pass_words, capitalize_verbs),
-                self.right(pass_words, capitalize_words),
-            )
-        )
+        for lst, val in lists.items():
+            common = self.keywords(val[0])
+            less = self.keywords(val[1])
+            self.sort(common, self.temp(f'{lst}-sorted1'))
+            self.sort(less, self.temp(f'{lst}-sorted2'))
+            self.compare(self.temp(f'{lst}-sorted1'), self.temp(f'{lst}-sorted2'), less)
+            self.delete(common)
+            self.move(self.temp(f'{lst}-sorted1'), common)
+            self.concat(self.keywords(f'{lst}-all'), [common, less])
 
 
-class HttpWordsSuffixes(Combinator):
-
-    config_name = 'http-words'
+class HttpWordsPlain(HttpWords):
 
     def process(self):
 
-        logger.info('Generating HTTP paths/params')
+        super().process()
 
-        # NOTE: Process keywords
-        self.wordlists_process()
-
-        pass_words = self.temp('pass-brutas-http-words')
-        pass_suffixes = self.temp('pass-brutas-http-suffixes')
-        words_double = self.right(pass_words, pass_words)
+        lowercase_verbs = self.temp(f'lowercase-brutas-http-verbs-{self.group_name}')
+        lowercase_nouns = self.temp(f'lowercase-brutas-http-nouns-{self.group_name}')
+        lowercase_aads = self.temp(f'lowercase-brutas-http-adj-adv-det-{self.group_name}')
 
         # NOTE: lowercase paths
         self.merge(
-            self.output('brutas-http-words-suffixes-lowercase'),
+            self.output(f'brutas-http-discovery-plain-lowercase-{self.group_name}'),
             (
-                self.right(words_double, pass_suffixes),
+                lowercase_verbs,
+                lowercase_nouns,
+                lowercase_aads,
+                self.right(lowercase_verbs, lowercase_nouns),
+                self.right(lowercase_nouns, lowercase_verbs),
+                self.right(lowercase_aads, lowercase_nouns),
+                self.right(lowercase_verbs, lowercase_aads),
+                self.right(lowercase_nouns, lowercase_aads),
             )
         )
 
-        words_sep = self.right(pass_words, self.bits('separators-dash'))
-        words_sep_double = self.right(words_sep, words_sep)
+        verbs_sep = self.right(lowercase_verbs, self.bits('separators-dash'))
+        nouns_sep = self.right(lowercase_nouns, self.bits('separators-dash'))
+        aads_sep = self.right(lowercase_aads, self.bits('separators-dash'))
 
         # NOTE: dash-case paths
         self.merge(
-            self.output('brutas-http-words-suffixes-dash'),
+            self.output(f'brutas-http-discovery-plain-dash-{self.group_name}'),
             (
-                self.right(words_sep_double, pass_suffixes),
+                lowercase_verbs,
+                lowercase_nouns,
+                lowercase_aads,
+                self.right(verbs_sep, lowercase_nouns),
+                self.right(nouns_sep, lowercase_verbs),
+                self.right(aads_sep, lowercase_nouns),
+                self.right(verbs_sep, lowercase_aads),
+                self.right(nouns_sep, lowercase_aads),
             )
         )
 
-        words_sep = self.right(pass_words, self.bits('separators-underscore'))
-        words_sep_double = self.right(words_sep, words_sep)
+        verbs_sep = self.right(lowercase_verbs, self.bits('separators-underscore'))
+        nouns_sep = self.right(lowercase_nouns, self.bits('separators-underscore'))
+        aads_sep = self.right(lowercase_aads, self.bits('separators-underscore'))
 
         # NOTE: snake_case paths
         self.merge(
-            self.output('brutas-http-words-suffixes-underscore'),
+            self.output(f'brutas-http-discovery-plain-underscore-{self.group_name}'),
             (
-                self.right(words_sep_double, pass_suffixes),
+                lowercase_verbs,
+                lowercase_nouns,
+                lowercase_aads,
+                self.right(verbs_sep, lowercase_nouns),
+                self.right(nouns_sep, lowercase_verbs),
+                self.right(aads_sep, lowercase_nouns),
+                self.right(verbs_sep, lowercase_aads),
+                self.right(nouns_sep, lowercase_aads),
             )
         )
 
-        capitalize_words = self.temp('capitalize-brutas-http-words')
-        capitalize_suffixes = self.temp('capitalize-brutas-http-suffixes')
-        words_double = self.right(capitalize_words, capitalize_words)
+        capitalize_verbs = self.temp(f'capitalize-brutas-http-verbs-{self.group_name}')
+        capitalize_nouns = self.temp(f'capitalize-brutas-http-nouns-{self.group_name}')
+        capitalize_aads = self.temp(f'capitalize-brutas-http-adj-adv-det-{self.group_name}')
 
         # NOTE: CamelCase paths
         self.merge(
-            self.output('brutas-http-words-suffixes-camelcase'),
+            self.output(f'brutas-http-discovery-plain-camelcase-{self.group_name}'),
             (
-                self.right(words_double, capitalize_suffixes),
+                capitalize_verbs,
+                capitalize_nouns,
+                capitalize_aads,
+                self.right(capitalize_verbs, capitalize_nouns),
+                self.right(capitalize_nouns, capitalize_verbs),
+                self.right(capitalize_aads, capitalize_nouns),
+                self.right(capitalize_verbs, capitalize_aads),
+                self.right(capitalize_nouns, capitalize_aads),
             )
         )
-
-        words_double = self.right(pass_words, capitalize_words)
 
         # NOTE: lowerCamelCase paths
         self.merge(
-            self.output('brutas-http-words-suffixes-lowercamelcase'),
+            self.output(f'brutas-http-discovery-plain-lowercamelcase-{self.group_name}'),
             (
-                self.right(words_double, capitalize_suffixes),
+                lowercase_verbs,
+                lowercase_nouns,
+                lowercase_aads,
+                self.right(lowercase_verbs, capitalize_nouns),
+                self.right(lowercase_nouns, capitalize_verbs),
+                self.right(lowercase_aads, capitalize_nouns),
+                self.right(lowercase_verbs, capitalize_aads),
+                self.right(lowercase_nouns, capitalize_aads),
             )
         )
 
+
+class HttpWordsSuffixes(HttpWords):
+
+    def process(self):
+
+        super().process()
+
+        lowercase_nouns = self.temp(f'lowercase-brutas-http-nouns-{self.group_name}')
+        lowercase_aads = self.temp(f'lowercase-brutas-http-adj-adv-det-{self.group_name}')
+        lowercase_suffixes = self.temp('lowercase-brutas-http-suffixes')
+        aads_nouns = self.right(lowercase_aads, lowercase_nouns)
+
+        # NOTE: lowercase paths
+        self.merge(
+            self.output(f'brutas-http-discovery-suffixes-lowercase-{self.group_name}'),
+            (
+                self.right(aads_nouns, lowercase_suffixes),
+            )
+        )
+
+        nouns_sep = self.right(lowercase_nouns, self.bits('separators-dash'))
+        aads_sep = self.right(lowercase_aads, self.bits('separators-dash'))
+        aads_nouns_sep = self.right(aads_sep, nouns_sep)
+
+        # NOTE: dash-case paths
+        self.merge(
+            self.output(f'brutas-http-discovery-suffixes-dash-{self.group_name}'),
+            (
+                self.right(aads_nouns_sep, lowercase_suffixes),
+            )
+        )
+
+        nouns_sep = self.right(lowercase_nouns, self.bits('separators-underscore'))
+        aads_sep = self.right(lowercase_aads, self.bits('separators-underscore'))
+        aads_nouns_sep = self.right(aads_sep, nouns_sep)
+
+        # NOTE: snake_case paths
+        self.merge(
+            self.output(f'brutas-http-discovery-suffixes-underscore-{self.group_name}'),
+            (
+                self.right(aads_nouns_sep, lowercase_suffixes),
+            )
+        )
+
+        capitalize_nouns = self.temp(f'capitalize-brutas-http-nouns-{self.group_name}')
+        capitalize_aads = self.temp(f'capitalize-brutas-http-adj-adv-det-{self.group_name}')
+        capitalize_suffixes = self.temp('capitalize-brutas-http-suffixes')
+        aads_nouns = self.right(capitalize_aads, capitalize_nouns)
+
+        # NOTE: CamelCase paths
+        self.merge(
+            self.output(f'brutas-http-discovery-suffixes-camelcase-{self.group_name}'),
+            (
+                self.right(aads_nouns, capitalize_suffixes),
+            )
+        )
+
+        aads_nouns = self.right(lowercase_aads, capitalize_nouns)
+
+        # NOTE: lowerCamelCase paths
+        self.merge(
+            self.output(f'brutas-http-discovery-suffixes-lowercamelcase-{self.group_name}'),
+            (
+                self.right(aads_nouns, capitalize_suffixes),
+            )
+        )
+
+
+class HttpWordsDouble(HttpWords):
+
+    def process(self):
+
+        super().process()
+
+        lowercase_verbs = self.temp(f'lowercase-brutas-http-verbs-{self.group_name}')
+        lowercase_nouns = self.temp(f'lowercase-brutas-http-nouns-{self.group_name}')
+        lowercase_aads = self.temp(f'lowercase-brutas-http-adj-adv-det-{self.group_name}')
+        aads_nouns = self.right(lowercase_aads, lowercase_nouns)
+
+        # NOTE: lowercase paths
+        self.merge(
+            self.output(f'brutas-http-discovery-double-lowercase-{self.group_name}'),
+            (
+                self.right(lowercase_verbs, aads_nouns),
+            )
+        )
+
+        verbs_sep = self.right(lowercase_verbs, self.bits('separators-dash'))
+        nouns_sep = self.right(lowercase_nouns, self.bits('separators-dash'))
+        aads_sep = self.right(lowercase_aads, self.bits('separators-dash'))
+        aads_nouns = self.right(aads_sep, lowercase_nouns)
+
+        # NOTE: dash-case paths
+        self.merge(
+            self.output(f'brutas-http-discovery-double-dash-{self.group_name}'),
+            (
+                self.right(verbs_sep, aads_nouns),
+            )
+        )
+
+        verbs_sep = self.right(lowercase_verbs, self.bits('separators-underscore'))
+        nouns_sep = self.right(lowercase_nouns, self.bits('separators-underscore'))
+        aads_sep = self.right(lowercase_aads, self.bits('separators-underscore'))
+        aads_nouns = self.right(aads_sep, lowercase_nouns)
+
+        # NOTE: snake_case paths
+        self.merge(
+            self.output(f'brutas-http-discovery-double-underscore-{self.group_name}'),
+            (
+                self.right(verbs_sep, aads_nouns),
+            )
+        )
+
+        capitalize_verbs = self.temp(f'capitalize-brutas-http-verbs-{self.group_name}')
+        capitalize_nouns = self.temp(f'capitalize-brutas-http-nouns-{self.group_name}')
+        capitalize_aads = self.temp(f'capitalize-brutas-http-adj-adv-det-{self.group_name}')
+        aads_nouns = self.right(capitalize_aads, capitalize_nouns)
+
+        # NOTE: CamelCase paths
+        self.merge(
+            self.output(f'brutas-http-discovery-double-camelcase-{self.group_name}'),
+            (
+                self.right(capitalize_verbs, aads_nouns),
+            )
+        )
+
+        # NOTE: lowerCamelCase paths
+        self.merge(
+            self.output(f'brutas-http-discovery-double-lowercamelcase-{self.group_name}'),
+            (
+                self.right(lowercase_verbs, aads_nouns),
+            )
+        )
+
+
+class HttpWordsPlainCommon(HttpWordsPlain):
+
+    group_name = 'common'
+
+
+class HttpWordsSuffixesCommon(HttpWordsSuffixes):
+
+    group_name = 'common'
+
+
+class HttpWordsDoubleCommon(HttpWordsDouble):
+
+    group_name = 'common'
+
+
+class HttpWordsPlainAll(HttpWordsPlain):
+
+    group_name = 'all'
+
+
+class HttpWordsSuffixesAll(HttpWordsSuffixes):
+
+    group_name = 'all'
+
+
+class HttpWordsDoubleAll(HttpWordsDouble):
+
+    group_name = 'all'
 
 
 class Passwords(Combinator):
@@ -422,16 +559,16 @@ class Passwords(Combinator):
 
         common = self.keywords('brutas-lang-int-common')
         less = self.keywords('brutas-lang-int-less')
-        self.sort(common, self.temp('brutas-lang-int-common'))
-        self.sort(less, self.temp('brutas-lang-int-less'))
-        self.compare(self.temp('brutas-lang-int-common'), self.temp('brutas-lang-int-less'), less)
+        self.sort(common, self.temp('lowercase-brutas-lang-int-common'))
+        self.sort(less, self.temp('lowercase-brutas-lang-int-less'))
+        self.compare(self.temp('lowercase-brutas-lang-int-common'), self.temp('lowercase-brutas-lang-int-less'), less)
         self.delete(common)
-        self.copy(self.temp('brutas-lang-int-common'), common)
+        self.copy(self.temp('lowercase-brutas-lang-int-common'), common)
 
         # NOTE: Combine all languages
-        self.sort(self.keywords('brutas-lang-*'), self.temp('brutas-all-lang'), unique=True)
+        self.sort(self.keywords('brutas-lang-*'), self.temp('lowercase-brutas-all-lang'), unique=True)
         self.delete(self.keywords('brutas-all-lang'))
-        self.copy(self.temp('brutas-all-lang'), self.keywords('brutas-all-lang'))
+        self.copy(self.temp('lowercase-brutas-all-lang'), self.keywords('brutas-all-lang'))
 
         # NOTE: Initialize lookup/compare set
         self.sort(self.root('brutas-passwords-1-xxs'), self.temp(self.passwords_all))

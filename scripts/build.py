@@ -34,6 +34,9 @@ def entry_point():
             args.temporary_dir = os.environ['TMP_DIR']
         else:
             args.temporary_dir = tempfile.mkdtemp()
+    elif not pathlib.Path.exists(pathlib.Path(args.temporary_dir)):
+        print(f'Temporary directory `{args.temporary_dir}` does not exist!')
+        exit(1)
     if args.cores is None:
         cpu_count = multiprocessing.cpu_count()
         if cpu_count > 1:

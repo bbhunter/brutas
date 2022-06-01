@@ -14,8 +14,12 @@ WORDLISTS = {
         'keywords/brutas-lang-int-less.txt',
     ],
     'http-words': [
-        'keywords/brutas-http-verbs.txt',
-        'keywords/brutas-http-words.txt',
+        'keywords/brutas-http-adj-adv-det-all.txt',
+        'keywords/brutas-http-adj-adv-det-common.txt',
+        'keywords/brutas-http-nouns-all.txt',
+        'keywords/brutas-http-nouns-common.txt',
+        'keywords/brutas-http-verbs-all.txt',
+        'keywords/brutas-http-verbs-common.txt',
         'keywords/brutas-http-suffixes.txt',
     ],
     'custom': [
@@ -25,22 +29,22 @@ WORDLISTS = {
 
 RULES = {
     'passwords': [
-        'repeat',
-        'simple',
+        'both',
         'complex',
         'hax0r',
-        'both',
+        'repeat',
+        'simple',
     ],
     'custom': [
-        'repeat',
-        'simple',
+        'both',
         'complex',
         'hax0r',
-        'both',
+        'repeat',
+        'simple',
     ],
     'http-words': [
+        'lowercase',
         'capitalize',
-        'pass',
     ],
 }
 

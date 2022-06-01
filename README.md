@@ -13,11 +13,11 @@ A brief introduction to `brutas-passwords-#` lists:
 * passwords are not sorted according to the probability, they are combined into groups of probability instead;
 * each consecutive file **does not** contain passwords from any of the previous sets.
 
-**NOTE: Due to Github limits not all lists are precompiled.** You need to run `main.ExtendedPasswords`, `main.BigPasswords` and `main.HttpWordsSuffixes` yourself to generate the complete set (see the tutorial below). The compiled sets are also hosted here (may not be up to date):
-- [brutas-passwords-5-l.txt.zip](https://drive.proton.me/urls/CH1E3ZHRY8#2YA0lvpqsrmZ)
-- [brutas-passwords-6-xl.txt.zip](https://drive.proton.me/urls/X7Q9ANEF4G#NlYmJ4tl8zU4)
-- [brutas-passwords-7-xxl.txt.zip](https://drive.proton.me/urls/D9V07Y7V1W#y84WykHKRI5t)
-- [brutas-http-words-suffixes.zip](https://drive.proton.me/urls/8JH9NAF42C#UghAWLMx0mrF)
+**NOTE: Due to Github limits not all lists are precompiled.** You need to run `main.ExtendedPasswords`, `main.BigPasswords` and `main.HttpWords{Plain, Suffixes, Double}All` yourself to generate the complete set (see the tutorial below). The compiled sets are also hosted here (may not be up to date):
+- [brutas-passwords-5-l.txt.zip](https://drive.proton.me/urls/CH1E3ZHRY8#2YA0lvpqsrmZ) [updated 2022/06/08]
+- [brutas-passwords-6-xl.txt.zip](https://drive.proton.me/urls/X7Q9ANEF4G#NlYmJ4tl8zU4) [updated 2022/06/08]
+- [brutas-passwords-7-xxl.txt.zip](https://drive.proton.me/urls/D9V07Y7V1W#y84WykHKRI5t) [updated 2022/05/25]
+- [brutas-http-discovery-all.zip](https://drive.proton.me/urls/A2SVZARYA4#YI4jvW8EfMX9) [updated 2022/06/08]
 
 ## Statistics
 
@@ -81,8 +81,7 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 
 * `brutas-http-files-extensions-common.txt` - common file extensions
 * `brutas-http-files-extensions-less.txt` - less common extensions
-* `brutas-http-words-*.txt` - HTTP paths/params useful in fuzzing Web applications, generated with `main.HttpWords` *)
-* `brutas-http-words-suffixes-*.txt` - HTTP paths/params double words extended with common suffixes (e.g. `VisibleContentId`, `hidden-content-ref`) *)
+* `brutas-http-discovery-*.txt` - HTTP paths/params useful in fuzzing Web applications, generated with subclasses of `main.HttpWords` *)
 * `brutas-ports-tcp-http.txt` - common and not that obvious HTTP ports
 * `brutas-ports-tcp-internal.txt` - list of TCP services that may come up internally
 * `brutas-ports-tcp-public.txt` - list of public TCP ports, useful for host discovery
@@ -103,7 +102,7 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 * `keywords/brutas-subdomains-extra.txt` - additional prefixes for subdomain discovery
 * `keywords/brutas-wifi.txt` - bits and pieces useful in generating passwords for wireless networks
 * `keywords/brutas-custom.txt` - file used with `main.Custom` generator
-* `keywords/brutas-http-{words, verbs}.txt` - files used with `main.HttpWords` and `main.HttpWordsSuffixes` generators, might be used standalone
+* `keywords/brutas-http-{nouns, verbs, adj-adv-det}-{common, less}.txt` - files used with `main.HttpWords`-based generators, might be used standalone
 
 ### Bits
 
@@ -120,7 +119,7 @@ Brutas build script
 
 options:
   -h, --help            show this help message and exit
-  -p PATH, --path PATH  Class path. [Choices: main.Subdomains, main.HttpWords, main.HttpWordsSuffixes, main.BasicPasswords, main.ExtendedPasswords, main.BigPasswords, main.CustomPasswords, main.MergeAll]
+  -p PATH, --path PATH  Class path. [Choices: main.Subdomains, main.BasicPasswords, main.ExtendedPasswords, main.BigPasswords, main.CustomPasswords, main.MergeAll, main.HttpWordsPlainCommon,main.HttpWordsSuffixesCommon, main.HttpWordsDoubleCommon, main.HttpWordsPlainAll, main.HttpWordsSuffixesAll, main.HttpWordsDoubleAll]
   -t TEMPORARY_DIR, --temporary-dir TEMPORARY_DIR
                         Temporary directory path. [Default: auto]
   -o OUTPUT_DIR, --output-dir OUTPUT_DIR
