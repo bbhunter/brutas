@@ -1,4 +1,3 @@
-API
 CSRF
 CSS
 CSV
@@ -312,6 +311,7 @@ explorer
 exports
 extension
 extensions
+externals
 fail
 failure
 faq
@@ -475,7 +475,6 @@ metric
 metrics
 mgmt
 middle
-mobile
 mod
 modal
 mode
@@ -561,6 +560,7 @@ parameters
 params
 parent
 parents
+parm
 part
 partner
 partners
@@ -726,7 +726,6 @@ sender
 separator
 server
 servers
-service
 services
 sess
 sessions
@@ -810,6 +809,7 @@ surveys
 sync
 syndication
 syntax
+sysparm
 systems
 tab
 tables
@@ -859,7 +859,6 @@ topic
 topics
 total
 tracking
-transaction
 transfer
 trash
 tree

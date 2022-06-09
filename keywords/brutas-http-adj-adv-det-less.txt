@@ -91,6 +91,7 @@ logout
 long
 lower
 lowercase
+managed
 mandatory
 many
 max
@@ -134,6 +135,7 @@ required
 restricted
 safe
 saved
+scope
 second
 secondary
 secure

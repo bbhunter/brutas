@@ -18,6 +18,7 @@ find
 get
 import
 include
+includes
 is
 list
 load
@@ -43,6 +44,7 @@ start
 stop
 store
 submit
+test
 update
 upload
 validate

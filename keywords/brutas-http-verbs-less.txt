@@ -159,10 +159,10 @@ skip
 sleep
 split
 subscribe
+substitute
 sum
 sync
 synchronize
-test
 toggle
 track
 transfer
