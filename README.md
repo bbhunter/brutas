@@ -119,7 +119,7 @@ Brutas build script
 
 options:
   -h, --help            show this help message and exit
-  -p PATH, --path PATH  Class path. [Choices: main.Subdomains, main.BasicPasswords, main.ExtendedPasswords, main.BigPasswords, main.CustomPasswords, main.MergeAll, main.HttpWordsPlainCommon,main.HttpWordsSuffixesCommon, main.HttpWordsDoubleCommon, main.HttpWordsPlainAll, main.HttpWordsSuffixesAll, main.HttpWordsDoubleAll]
+  -p PATH, --path PATH  Class path. [Choices: main.Subdomains, main.Extensions, main.BasicPasswords, main.ExtendedPasswords, main.BigPasswords, main.CustomPasswords, main.MergeAll, main.HttpWordsPlainCommon,main.HttpWordsSuffixesCommon, main.HttpWordsDoubleCommon, main.HttpWordsPlainAll, main.HttpWordsSuffixesAll, main.HttpWordsDoubleAll]
   -t TEMPORARY_DIR, --temporary-dir TEMPORARY_DIR
                         Temporary directory path. [Default: auto]
   -o OUTPUT_DIR, --output-dir OUTPUT_DIR

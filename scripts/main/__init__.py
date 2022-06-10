@@ -22,7 +22,7 @@ def init_logger(loglevel):
     handler.setFormatter(formatter[loglevel])
 
 
-__available__ = ('Subdomains', 'BasicPasswords', 'ExtendedPasswords', 'BigPasswords', 'CustomPasswords', 'MergeAll', 'HttpWordsPlainCommon', 'HttpWordsSuffixesCommon', 'HttpWordsDoubleCommon', 'HttpWordsPlainAll', 'HttpWordsSuffixesAll', 'HttpWordsDoubleAll')
+__available__ = ('Subdomains', 'Extensions', 'BasicPasswords', 'ExtendedPasswords', 'BigPasswords', 'CustomPasswords', 'MergeAll', 'HttpWordsPlainCommon', 'HttpWordsSuffixesCommon', 'HttpWordsDoubleCommon', 'HttpWordsPlainAll', 'HttpWordsSuffixesAll', 'HttpWordsDoubleAll')
 
 
 class Combinator:
@@ -53,8 +53,8 @@ class Combinator:
         #       sort's --compress-program ignores environment variables, leading to
         #       duplicates. To be resolved after looking into sort internals.
         # self.compress_program = '--compress-program=lzop' if self.run_shell('which lzop') else ''
-        # self.sort_snippet = f'sort -T {self.temp_dir} {self.compress_program} {self.cores} {self.memory}'
-        self.sort_snippet = f'sort -T {self.temp_dir} {self.cores} {self.memory}'
+        # self.sort_snippet = f'sort -f -T {self.temp_dir} {self.compress_program} {self.cores} {self.memory}'
+        self.sort_snippet = f'sort -f -T {self.temp_dir} {self.cores} {self.memory}'
         self.args = args
         if pathlib.Path.exists(pathlib.Path(self.config.COMBINATOR_PATH)):
             self.combinator_path = self.config.COMBINATOR_PATH
@@ -211,6 +211,17 @@ class Combinator:
         for wordlist in wordlists:
             self.append(wordlist, destination)
 
+    def sort_common_less(self, path_method, list_prefix):
+        common = path_method(f'{list_prefix}-common')
+        less = path_method(f'{list_prefix}-less')
+        self.sort(common, self.temp(f'{list_prefix}-sorted1'))
+        self.sort(less, self.temp(f'{list_prefix}-sorted2'))
+        self.compare(self.temp(f'{list_prefix}-sorted1'), self.temp(f'{list_prefix}-sorted2'), less)
+        self.delete(common)
+        self.move(self.temp(f'{list_prefix}-sorted1'), common)
+        self.concat(path_method(f'{list_prefix}-all'), [common, less])
+        self.sort(path_method(f'{list_prefix}-all'))
+
     def run(self):
         time_start = datetime.datetime.now()
         logger.info(f'Processing with class: {self.__class__.__name__}')
@@ -241,6 +252,13 @@ class Subdomains(Combinator):
         self.run_shell(f'hashcat --stdout -r {self.root_dir}/rules/subdomains.rule {self.temp_dir}/brutas-subdomains.txt >> {self.root_dir}/brutas-subdomains-2-large.txt')
 
 
+class Extensions(Combinator):
+
+    def process(self):
+
+        self.sort_common_less(self.root, 'brutas-http-files-extensions')
+
+
 class HttpWords(Combinator):
 
     config_name = 'http-words'
@@ -252,21 +270,8 @@ class HttpWords(Combinator):
         # NOTE: Process keywords
         self.wordlists_process()
 
-        lists = {
-            'brutas-http-adj-adv-det': ('brutas-http-adj-adv-det-common', 'brutas-http-adj-adv-det-less'),
-            'brutas-http-nouns': ('brutas-http-nouns-common', 'brutas-http-nouns-less'),
-            'brutas-http-verbs': ('brutas-http-verbs-common', 'brutas-http-verbs-less'),
-        }
-
-        for lst, val in lists.items():
-            common = self.keywords(val[0])
-            less = self.keywords(val[1])
-            self.sort(common, self.temp(f'{lst}-sorted1'))
-            self.sort(less, self.temp(f'{lst}-sorted2'))
-            self.compare(self.temp(f'{lst}-sorted1'), self.temp(f'{lst}-sorted2'), less)
-            self.delete(common)
-            self.move(self.temp(f'{lst}-sorted1'), common)
-            self.concat(self.keywords(f'{lst}-all'), [common, less])
+        for lst in ['brutas-http-adj-adv-det', 'brutas-http-nouns', 'brutas-http-verbs']:
+            self.sort_common_less(self.keywords, lst)
 
 
 class HttpWordsPlain(HttpWords):
@@ -540,20 +545,8 @@ class Passwords(Combinator):
 
         logger.info('Preparing bits')
 
-        lists = {
-            'extra': ('extra-common', 'extra-less'),
-            'numbers': ('numbers-common', 'numbers-less'),
-        }
-
-        for lst, val in lists.items():
-            common = self.bits(val[0])
-            less = self.bits(val[1])
-            self.sort(common, self.temp(f'{lst}-sorted1'))
-            self.sort(less, self.temp(f'{lst}-sorted2'))
-            self.compare(self.temp(f'{lst}-sorted1'), self.temp(f'{lst}-sorted2'), less)
-            self.delete(common)
-            self.move(self.temp(f'{lst}-sorted1'), common)
-            self.concat(self.bits(f'{lst}-all'), [common, less])
+        for lst in ['extra', 'numbers']:
+            self.sort_common_less(self.bits, lst)
 
         logger.info('Preparing keyword lists')
 
