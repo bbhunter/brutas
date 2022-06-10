@@ -161,6 +161,7 @@ split
 subscribe
 substitute
 sum
+switch
 sync
 synchronize
 toggle

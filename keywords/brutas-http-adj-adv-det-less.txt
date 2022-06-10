@@ -5,7 +5,7 @@ advanced
 aligned
 allowed
 anonymous
-api
+API
 approved
 archived
 asc
