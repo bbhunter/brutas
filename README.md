@@ -92,10 +92,10 @@ A brief introduction to `brutas-passwords-#` lists:
 * each consecutive file **does not** contain passwords from any of the previous sets.
 
 **NOTE: Due to Github limits not all lists are precompiled.** You need to run `main.ExtendedPasswords`, `main.BigPasswords` and `main.HttpWords{Plain, Suffixes, Double}All` yourself to generate the complete set (see the tutorial below). The compiled sets are also hosted here (may not be up to date):
-- [brutas-passwords-5-l.txt.zip](https://drive.proton.me/urls/CH1E3ZHRY8#2YA0lvpqsrmZ) [updated 2022/06/08]
-- [brutas-passwords-6-xl.txt.zip](https://drive.proton.me/urls/X7Q9ANEF4G#NlYmJ4tl8zU4) [updated 2022/06/08]
+- [brutas-passwords-5-l.txt.zip](https://drive.proton.me/urls/CH1E3ZHRY8#2YA0lvpqsrmZ) [updated 2022/06/11]
+- [brutas-passwords-6-xl.txt.zip](https://drive.proton.me/urls/X7Q9ANEF4G#NlYmJ4tl8zU4) [updated 2022/06/11]
 - [brutas-passwords-7-xxl.txt.zip](https://drive.proton.me/urls/D9V07Y7V1W#y84WykHKRI5t) [updated 2022/05/25]
-- [brutas-http-discovery-all.zip](https://drive.proton.me/urls/A2SVZARYA4#YI4jvW8EfMX9) [updated 2022/06/08]
+- [brutas-http-discovery-all.zip](https://drive.proton.me/urls/A2SVZARYA4#YI4jvW8EfMX9) [updated 2022/06/11]
 
 ### Basic usage
 
