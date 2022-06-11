@@ -6,68 +6,7 @@ A pretty comprehensive set of password dictionaries and wordlists designed for q
 
 ## Introduction
 
-Why these password lists are different? The goal here is not to crack every password possible, it is to move forward inside a network. And if cracking is really needed then the bigger lists can be used, however, the assumption here is that it will be done in a reasonable time span and with limited resources (like a VM, hijacked host etc).
-
-A brief introduction to `brutas-passwords-#` lists:
-* the number of passwords grows with the consecutive file number;
-* passwords are not sorted according to the probability, they are combined into groups of probability instead;
-* each consecutive file **does not** contain passwords from any of the previous sets.
-
-**NOTE: Due to Github limits not all lists are precompiled.** You need to run `main.ExtendedPasswords`, `main.BigPasswords` and `main.HttpWords{Plain, Suffixes, Double}All` yourself to generate the complete set (see the tutorial below). The compiled sets are also hosted here (may not be up to date):
-- [brutas-passwords-5-l.txt.zip](https://drive.proton.me/urls/CH1E3ZHRY8#2YA0lvpqsrmZ) [updated 2022/06/08]
-- [brutas-passwords-6-xl.txt.zip](https://drive.proton.me/urls/X7Q9ANEF4G#NlYmJ4tl8zU4) [updated 2022/06/08]
-- [brutas-passwords-7-xxl.txt.zip](https://drive.proton.me/urls/D9V07Y7V1W#y84WykHKRI5t) [updated 2022/05/25]
-- [brutas-http-discovery-all.zip](https://drive.proton.me/urls/A2SVZARYA4#YI4jvW8EfMX9) [updated 2022/06/08]
-
-## Statistics
-
-Based on leaks in two categories (social networks and technical forums), the current (2022/05/20) effectiveness is:
-
-|                                      | No. of passwords | Social networks (~1M) | Technical forums (~450K) |
-| ------------------------------------ | ---------------- | --------------------- | ------------------------ |
-| brutas-passwords-1-xxs.txt (*)       |             100  |       2.16%           |          2.75%           |
-| brutas-passwords-2-xs.txt (*)        |           6,549  |       3.05%           |          3.63%           |
-| brutas-passwords-3-s.txt (*)         |          24,805  |       3.99%           |          4.32%           |
-| brutas-passwords-4-m.txt             |         922,624  |       3.59%           |          5.05%           |
-| brutas-passwords-5-l.txt             |      33,278,126  |      13.91%           |         17.10%           |
-| brutas-passwords-6-xl.txt            |     162,843,765  |       6.93%           |          9.24%           |
-| brutas-passwords-7-xxl.txt           |  10,051,549,134  |      26.08%           |         34.21%           |
-| Suitable for online bruteforcing (*) |                  |       9.20% (99,197)  |         10.70% (48,885)  |
-| To be used for offline cracking      |                  |      50.51% (544,617) |         65.64% (299,699) |
-| TOTAL                                |                  |      59.71% (643,891) |         76.34% (348,757) |
-
-
-So, the basic three lists (~31K passwords) provide 10% success on average with these fairly diverse and big samples. From my experience, password spraying with the top 100 is guaranteed to yield interesting results. And most often a couple accounts is enough to move forward in almost any network.
-
-### How does it compare to `rockyou.txt`?
-
-The famous `rockyou.txt` dictionary contains 14,344,392 passwords (at least in the Kali Linux "edition"). Against the same sets the results are:
-
-|                                      | No. of passwords | Social networks (~1M) | Technical forums (~450K) |
-| ------------------------------------ | ---------------- | --------------------- | ------------------------ |
-| rockyou.txt                          |      14,344,392  |      34.99% (377384)  |         39.55% (180665)  |
-
-It seems that with half of the passwords from the first five groups the `rockyou.txt` dictionary is much more effective. How come? Let's see what happens if we mix them:
-
-|                                      | No. of passwords | Social networks (~1M) | Technical forums (~450K) |
-| ------------------------------------ | ---------------- | --------------------- | ------------------------ |
-| rockyou.txt + brutas-1-3.txt         |      14,375,845  |      44.19% (476578)  |         50.25% (229550)  |
-| rockyou.txt + brutas-1-5.txt         |      48,576,595  |      61.90% (667459)  |         72.94% (333231)  |
-
-* 44.19% (social networks) - 34.99% (rockyou) = 9.20% (= 9.20%, brutas-1-3)
-* 50.25% (technical forums) - 39.55% (rockyou) = 10.70% (= 10.70%, brutas-1-3)
-* 61.90% (social networks) - 34.99% (rockyou) = 26.91% (~= 26.70%, brutas-1-5)
-* 72.94% (technical forums) - 39.55% (rockyou) = 33.39% (~= 32.85%, brutas-1-5)
-
-The answer is clear: these sets are somewhat complementary, or rather `brutas-passwords-*` was designed with a different goal in mind than what you would find in the leaks from popular sites. For example, `rockyou.txt` is missing 23,246 passwords from the `brutas-1-3.txt` combo (which is 31,453 in total). To name just a few: `P$SSW)RD`, `Admin123!` or `!root!`. So, if you want to bruteforce or spray in a more corporate environment (i.e. with password policies in place), use `brutas`. For best results in general cracking, combine it with typical leaks. And with the bigger `brutas` lists the "predictable sophistication" grows significantly.
-
-## Basic usage
-
-The combined lists `brutas-passwords-{1,2,3,4}-*.txt` seem to be most effective for general purpose and reasonably fast password cracking. Start with the smallest one and move forward. The lists `brutas-passwords-{1,2}-*.txt` are designed for a quick win in large networks. If you need something really minimalistic, try using `brutas-passwords-1-xxs.txt` solely - my highly opinionated view of the top 100. 
-
-However, I recommend experimenting on your own and rebuilding these sets depending on the target. You may want to incorporate your native language keywords, too. For example, file or a domain name combined with `brutas-passwords-numbers.txt` turns out to be pretty effective on encrypted archives and wireless networks. As with everything, a little social engineering comes handy to understand the local approach to the "password policy".
-
-### Password lists
+### Passwords
 
 * `brutas-passwords-*.txt` - wordlists combined with passwords generated using keywords, hashcat rules and string partials (see `brutas/scripts/main/__init__.py` for details)
 * `brutas-passwords-classics.txt` - typical admin passwords based on roles (test, admin), words (password, secret) or "funny" ones (like `letmein` or `trustno1`)
@@ -81,6 +20,7 @@ However, I recommend experimenting on your own and rebuilding these sets dependi
 
 * `brutas-http-files-extensions-common.txt` - common file extensions
 * `brutas-http-files-extensions-less.txt` - less common extensions
+* `brutas-http-files-bigquery-github-*.csv` - file names that might be helpful e.g. in IIS short name enumeration, cleaned up of obvious uniques and garbage to reduce file size, in case of JSON, YML and XML at least two occurrences, otherwise untouched
 * `brutas-http-discovery-*.txt` - HTTP paths/params useful in fuzzing Web applications, generated with subclasses of `main.HttpWords` *)
 * `brutas-ports-tcp-http.txt` - common and not that obvious HTTP ports
 * `brutas-ports-tcp-internal.txt` - list of TCP services that may come up internally
@@ -142,11 +82,76 @@ options:
 
 You can store your local configuration in `scripts/local_config.py`. For example, you may want to disable some rules (or add your own?), or change paths to `hashcat-utils` binaries.
 
-### Rebuilding the basic lists
+## Passwords
+
+Why these password lists are different? The goal here is not to crack every password possible, it is to move forward inside a network. And if cracking is really needed then the bigger lists can be used, however, the assumption here is that it will be done in a reasonable time span and with limited resources (like a VM, hijacked host etc).
+
+A brief introduction to `brutas-passwords-#` lists:
+* the number of passwords grows with the consecutive file number;
+* passwords are not sorted according to the probability, they are combined into groups of probability instead;
+* each consecutive file **does not** contain passwords from any of the previous sets.
+
+**NOTE: Due to Github limits not all lists are precompiled.** You need to run `main.ExtendedPasswords`, `main.BigPasswords` and `main.HttpWords{Plain, Suffixes, Double}All` yourself to generate the complete set (see the tutorial below). The compiled sets are also hosted here (may not be up to date):
+- [brutas-passwords-5-l.txt.zip](https://drive.proton.me/urls/CH1E3ZHRY8#2YA0lvpqsrmZ) [updated 2022/06/08]
+- [brutas-passwords-6-xl.txt.zip](https://drive.proton.me/urls/X7Q9ANEF4G#NlYmJ4tl8zU4) [updated 2022/06/08]
+- [brutas-passwords-7-xxl.txt.zip](https://drive.proton.me/urls/D9V07Y7V1W#y84WykHKRI5t) [updated 2022/05/25]
+- [brutas-http-discovery-all.zip](https://drive.proton.me/urls/A2SVZARYA4#YI4jvW8EfMX9) [updated 2022/06/08]
+
+### Basic usage
+
+The combined lists `brutas-passwords-{1,2,3,4}-*.txt` seem to be most effective for general purpose and reasonably fast password cracking. Start with the smallest one and move forward. The lists `brutas-passwords-{1,2}-*.txt` are designed for a quick win in large networks. If you need something really minimalistic, try using `brutas-passwords-1-xxs.txt` solely - my highly opinionated view of the top 100. 
+
+However, I recommend experimenting on your own and rebuilding these sets depending on the target. You may want to incorporate your native language keywords, too. For example, file or a domain name combined with `brutas-passwords-numbers.txt` turns out to be pretty effective on encrypted archives and wireless networks. As with everything, a little social engineering comes handy to understand the local approach to the "password policy".
+
+### Statistics
+
+Based on leaks in two categories (social networks and technical forums), the current (2022/05/20) effectiveness is:
+
+|                                      | No. of passwords | Social networks (~1M) | Technical forums (~450K) |
+| ------------------------------------ | ---------------- | --------------------- | ------------------------ |
+| brutas-passwords-1-xxs.txt (*)       |             100  |       2.16%           |          2.75%           |
+| brutas-passwords-2-xs.txt (*)        |           6,549  |       3.05%           |          3.63%           |
+| brutas-passwords-3-s.txt (*)         |          24,805  |       3.99%           |          4.32%           |
+| brutas-passwords-4-m.txt             |         922,624  |       3.59%           |          5.05%           |
+| brutas-passwords-5-l.txt             |      33,278,126  |      13.91%           |         17.10%           |
+| brutas-passwords-6-xl.txt            |     162,843,765  |       6.93%           |          9.24%           |
+| brutas-passwords-7-xxl.txt           |  10,051,549,134  |      26.08%           |         34.21%           |
+| Suitable for online bruteforcing (*) |                  |       9.20% (99,197)  |         10.70% (48,885)  |
+| To be used for offline cracking      |                  |      50.51% (544,617) |         65.64% (299,699) |
+| TOTAL                                |                  |      59.71% (643,891) |         76.34% (348,757) |
+
+
+So, the basic three lists (~31K passwords) provide 10% success on average with these fairly diverse and big samples. From my experience, password spraying with the top 100 is guaranteed to yield interesting results. And most often a couple accounts is enough to move forward in almost any network.
+
+### How does it compare to `rockyou.txt`?
+
+The famous `rockyou.txt` dictionary contains 14,344,392 passwords (at least in the Kali Linux "edition"). Against the same sets the results are:
+
+|                                      | No. of passwords | Social networks (~1M) | Technical forums (~450K) |
+| ------------------------------------ | ---------------- | --------------------- | ------------------------ |
+| rockyou.txt                          |      14,344,392  |      34.99% (377384)  |         39.55% (180665)  |
+
+It seems that with half of the passwords from the first five groups the `rockyou.txt` dictionary is much more effective. How come? Let's see what happens if we mix them:
+
+|                                      | No. of passwords | Social networks (~1M) | Technical forums (~450K) |
+| ------------------------------------ | ---------------- | --------------------- | ------------------------ |
+| rockyou.txt + brutas-1-3.txt         |      14,375,845  |      44.19% (476578)  |         50.25% (229550)  |
+| rockyou.txt + brutas-1-5.txt         |      48,576,595  |      61.90% (667459)  |         72.94% (333231)  |
+
+* 44.19% (social networks) - 34.99% (rockyou) = 9.20% (= 9.20%, brutas-1-3)
+* 50.25% (technical forums) - 39.55% (rockyou) = 10.70% (= 10.70%, brutas-1-3)
+* 61.90% (social networks) - 34.99% (rockyou) = 26.91% (~= 26.70%, brutas-1-5)
+* 72.94% (technical forums) - 39.55% (rockyou) = 33.39% (~= 32.85%, brutas-1-5)
+
+The answer is clear: these sets are somewhat complementary, or rather `brutas-passwords-*` was designed with a different goal in mind than what you would find in the leaks from popular sites. For example, `rockyou.txt` is missing 23,246 passwords from the `brutas-1-3.txt` combo (which is 31,453 in total). To name just a few: `P$SSW)RD`, `Admin123!` or `!root!`. So, if you want to bruteforce or spray in a more corporate environment (i.e. with password policies in place), use `brutas`. For best results in general cracking, combine it with typical leaks. And with the bigger `brutas` lists the "predictable sophistication" grows significantly.
+
+### Building
+
+#### Rebuilding the basic lists
 
 `% ./scripts/build.py -p main.BasicPasswords`
 
-### Building all password lists using external drive for temporary files and output
+#### Building all password lists using external drive for temporary files and output
 
 `% ./scripts/build.py -p main.BasicPasswords -t /media/user/External/tmp -o /media/user/External`
 
@@ -154,11 +159,11 @@ You can store your local configuration in `scripts/local_config.py`. For example
 
 `% ./scripts/build.py -p main.BigPasswords -t /media/user/External/tmp -o /media/user/External`
 
-### Generating password list using custom keywords
+#### Generating password list using custom keywords
 
 `% ./scripts/build.py -p main.CustomPasswords`
 
-### Using specific language
+#### Using specific language
 
 There are two options:
 1) either overwrite `brutas-lang-int-*.txt` files;
@@ -166,7 +171,7 @@ There are two options:
 
 The first one would cause the build to use the specific language as the base, while other languages would still be used (starting with `brutas-passwords-6-xl.txt` list). The second option would ignore the normal build process and use the full set of rules on the `keywords/brutas-custom.txt` file. You should expect a massive output in that case.
 
-### Some stats and hints
+#### Some stats and hints
 
 Setup:
 - 2.6 GHz Intel Core i7
