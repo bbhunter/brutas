@@ -50,8 +50,9 @@ RULES = {
 
 BASE_DIR = str(pathlib.Path(__file__).parent.parent.absolute())
 
-COMBINATOR_PATH = '/usr/lib/hashcat-utils/combinator.bin'
-RLI2_PATH = '/usr/lib/hashcat-utils/rli2.bin'
+HASHCAT_PATH = 'hashcat'
+COMBINATOR_PATH = 'combinator.bin'
+RLI2_PATH = 'rli2.bin'
 
 
 try:

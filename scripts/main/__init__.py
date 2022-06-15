@@ -56,15 +56,20 @@ class Combinator:
         # self.sort_snippet = f'sort -f -T {self.temp_dir} {self.compress_program} {self.cores} {self.memory}'
         self.sort_snippet = f'sort -f -T {self.temp_dir} {self.cores} {self.memory}'
         self.args = args
-        if pathlib.Path.exists(pathlib.Path(self.config.COMBINATOR_PATH)):
+        if shutil.which(pathlib.Path(self.config.HASHCAT_PATH)):
+            self.hashcat_path = self.config.HASHCAT_PATH
+        else:
+            logger.error(f'`hashcat` not found at {self.config.HASHCAT_PATH} - consider adding to $PATH environment variable or adjust `HASHCAT_PATH` in your local_config.py')
+            sys.exit(1)
+        if shutil.which(pathlib.Path(self.config.COMBINATOR_PATH)):
             self.combinator_path = self.config.COMBINATOR_PATH
         else:
-            logger.error(f'Hashcat `combinator` not found at {self.config.COMBINATOR_PATH}')
+            logger.error(f'Hashcat `combinator` not found at {self.config.COMBINATOR_PATH} - consider adding to $PATH environment variable or adjust `COMBINATOR_PATH` in your local_config.py')
             sys.exit(1)
-        if pathlib.Path.exists(pathlib.Path(self.config.RLI2_PATH)):
+        if shutil.which(pathlib.Path(self.config.RLI2_PATH)):
             self.rli2_path = self.config.RLI2_PATH
         else:
-            logger.error(f'Hashcat `rli2` not found at {self.config.RLI2_PATH}')
+            logger.error(f'Hashcat `rli2` not found at {self.config.RLI2_PATH} - consider adding to $PATH environment variable or adjust `COMBINATOR_PATH` in your local_config.py')
             sys.exit(1)
 
     def run_shell(self, cmd):
@@ -89,7 +94,7 @@ class Combinator:
         filename = rule + '-' + pathlib.Path(str(wordlist)).name
         if not pathlib.Path(self.temp_dir, filename).is_file():
             logger.info(f'Processing `{wordlist}` with rule `{rule}`')
-            self.run_shell(f'hashcat --stdout -r {self.root_dir}/rules/{rule}.rule {wordlist} | {self.sort_snippet} | uniq > {self.temp_dir}/{filename}')
+            self.run_shell(f'{self.hashcat_path} --stdout -r {self.root_dir}/rules/{rule}.rule {wordlist} | {self.sort_snippet} | uniq > {self.temp_dir}/{filename}')
         return self.Wordlist(filename, f'{self.temp_dir}/{filename}')
 
     def sort(self, source, output=None, unique=False):
@@ -249,7 +254,7 @@ class Subdomains(Combinator):
         self.copy(self.temp('brutas-subdomains'), self.root('brutas-subdomains-1-small'))
         self.compare(self.temp('brutas-subdomains'), self.temp('brutas-subdomains-extra'), self.root('brutas-subdomains-1-small'), append=True)
         self.copy(self.root('brutas-subdomains-1-small'), self.root('brutas-subdomains-2-large'))
-        self.run_shell(f'hashcat --stdout -r {self.root_dir}/rules/subdomains.rule {self.temp_dir}/brutas-subdomains.txt >> {self.root_dir}/brutas-subdomains-2-large.txt')
+        self.run_shell(f'{self.hashcat_path} --stdout -r {self.root_dir}/rules/subdomains.rule {self.temp_dir}/brutas-subdomains.txt >> {self.root_dir}/brutas-subdomains-2-large.txt')
 
 
 class Extensions(Combinator):
