@@ -1,3 +1,0 @@
-HASHCAT_PATH = '/home/user/bin/hashcat'
-COMBINATOR_PATH = '/home/user/bin/combinator.bin'
-RLI2_PATH = '/home/user/bin/rli2.bin'
