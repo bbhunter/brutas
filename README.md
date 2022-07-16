@@ -36,7 +36,7 @@ The compiled sets are also hosted here (may not be up to date):
 - [brutas-http-paths-all.zip](https://drive.proton.me/urls/FKQVMNNQK0#uofhr9x4pDlA) [updated 2022/07/16]
 
 Requirements:
-* Python 3.10 (tested)
+* Python 3.9, 3.10
 * `hashcat`
 * `hashcat-utils`
 * GNU tools: `cat`, `awk`, `comm`, `sort`, `uniq`
