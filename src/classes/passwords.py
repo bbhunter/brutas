@@ -96,6 +96,7 @@ class BasicPasswords(Passwords):
                 self.temp('simple-passwords-classics.txt'),
                 self.temp('simple-passwords-top.txt'),
                 self.temp('simple-usernames-basic.txt'),
+                self.rule(self.base('wordlists/usernames/basic.txt'), self.base('src/rules/overkill.rule')),
             ),
             compare=self.temp(self.passwords_all)
         )
@@ -116,6 +117,7 @@ class BasicPasswords(Passwords):
                 self.right(self.temp('simple-lang-int-basic.txt'), self.base('src/bits/extra-top.txt')),
                 self.temp('simple-lang-int-basic.txt'),
                 self.temp('both-passwords-classics.txt'),
+                self.temp('both-usernames-all.txt'),
                 self.temp('both-passwords-patterns.txt'),
                 self.temp('hax0r-usernames-all.txt'),
                 self.temp('repeat-usernames-basic.txt'),
@@ -174,6 +176,7 @@ class ExtendedPasswords(Passwords):
                     self.rule(self.base('wordlists/usernames/all.txt'), self.base('src/rules/repeat.rule')),
                     self.base('src/rules/both.rule')
                 ),
+                self.rule(self.base('wordlists/usernames/all.txt'), self.base('src/rules/overkill.rule')),
             ),
             compare=self.temp(self.passwords_all)
         )
@@ -207,6 +210,7 @@ class ExtendedPasswords(Passwords):
                 self.temp('hax0r-lang-all.txt'),
                 self.temp('repeat-usernames-all.txt'),
                 self.temp('simple-lang-all.txt'),
+                self.rule(self.base('src/keywords/lang/int-basic.txt'), self.base('src/rules/overkill.rule')),
             ),
             compare=self.temp(self.passwords_all)
         )
@@ -273,6 +277,7 @@ class BigPasswords(Passwords):
                 self.temp('both-lang-int-extended.txt'),
                 self.temp('hax0r-lang-int-basic.txt'),
                 self.temp('hax0r-lang-int-extended.txt'),
+                self.rule(self.base('src/keywords/lang/int-extended.txt'), self.base('src/rules/overkill.rule')),
             ),
             compare=self.temp(self.passwords_all)
         )
@@ -289,6 +294,7 @@ class CustomPasswords(Passwords):
         'src/rules/hax0r.rule',
         'src/rules/repeat.rule',
         'src/rules/simple.rule',
+        'src/rules/overkill.rule',
     )
 
     def process(self):
@@ -404,6 +410,7 @@ class CustomPasswords(Passwords):
                 self.temp('simple-keywords-custom.txt'),
                 self.temp('hax0r-keywords-custom.txt'),
                 self.temp('repeat-keywords-custom.txt'),
+                self.temp('overkill-keywords-custom.txt'),
             )
         )
 

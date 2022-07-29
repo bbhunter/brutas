@@ -9,6 +9,7 @@
 !!@@##$$%%^^&&**((
 !!QQ@@WW
 !#$123
+!123123
 !1234
 !12345
 !123456
@@ -658,6 +659,7 @@ $RFVbgt5
 1233123
 12332
 123321
+123321!
 123321.
 12332100
 1233211
@@ -748,6 +750,7 @@ $RFVbgt5
 12345677
 12345677654321
 12345678
+12345678!
 123456780
 1234567800
 1234567809
@@ -823,6 +826,7 @@ $RFVbgt5
 123456789zxc
 12345678@
 12345678a
+12345678A
 12345678d
 12345678i
 12345678q
@@ -833,6 +837,7 @@ $RFVbgt5
 123456798
 1234567@
 1234567a
+1234567A
 1234567d
 1234567k
 1234567p
@@ -1201,6 +1206,7 @@ $RFVbgt5
 125125
 128
 128500
+12a34b56c
 12qw09po
 12qw12
 12qw12qw
@@ -1421,8 +1427,8 @@ $RFVbgt5
 1qayxsw2
 1QAYxsw2
 1qaz
-1Qaz
 1QAZ
+1Qaz
 1qaz!@#
 1Qaz!@#
 1QAZ!@#
@@ -1572,11 +1578,11 @@ $RFVbgt5
 1qaz890
 1Qaz890
 1QAZ890
-1qaz@wsx
 1qaz@WSX
+1QAZ@wsx
+1qaz@wsx
 1Qaz@wsx
 1Qaz@WSX
-1QAZ@wsx
 1QAZ@WSX
 1qaz@WSX#EDC
 1Qaz@WSX#EDC
@@ -2393,6 +2399,8 @@ $RFVbgt5
 =[;.lo9
 >
 ?
+??????
+???????
 ????????
 @
 @!
@@ -2560,6 +2568,7 @@ abcd#
 Abcd#
 abcd.1234
 abcd1
+abcd11
 abcd12
 abcd123
 abcd1234
@@ -2592,6 +2601,7 @@ abcdefg1
 abcdefg123
 abcdefgh
 abcdefghi
+abcdefghilmnopqrstuvz
 abcdxyz
 abcxyz
 abcXYZ123
@@ -3372,6 +3382,7 @@ fylhtq
 fytxrf
 g
 g123456
+g1234567
 gbpltw
 gfhjkm
 gg
@@ -4780,8 +4791,10 @@ r
 r123456
 r4e3w2q1
 r4r4r4
+rewq
 rfvb
 Rfvb
+rfvtgb
 rr
 rrr
 rrrr
@@ -4946,6 +4959,7 @@ w
 w123456
 W123456w
 w2w2w2
+waqas
 wasd
 wasd123
 wasd1234

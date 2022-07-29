@@ -39,6 +39,7 @@ cactiuser
 camera
 cassandra
 catalog
+centos
 cgadmin
 ci
 cisco
@@ -63,6 +64,7 @@ daemon
 data
 database
 db
+db2admin
 dba
 dbadmin
 dbuser

@@ -12,6 +12,7 @@ $upp0rt
 1passwor
 1Passwor
 1twothree
+205gti
 288GTO
 288gto
 2bfree
@@ -81,8 +82,13 @@ Amiga500+
 amiga500plus
 Amiga500plus
 apollo11
+Apollo11
 apollo13
+Apollo13
 apollo21
+Apollo21
+apollo8
+Apollo8
 apple1
 Apple2
 apple2
@@ -109,6 +115,8 @@ audia4
 AudiA4
 audia6
 AudiA6
+audia7
+AudiA7
 audia8
 AudiA8
 audir8
@@ -151,6 +159,8 @@ bmw520
 BMW520
 bmw525
 BMW525
+bmw528
+bmw535
 bmwe28
 BMWE28
 bmwe30
@@ -169,11 +179,13 @@ BMWZ3
 bond007
 Bond007
 c0mputer
+camaro68
 CamaroZ28
 camaroz28
 canon1
 CapriRS3100
 caprirs3100
+cbr1000rr
 cbr600
 cbr600rr
 cbr900
@@ -190,6 +202,7 @@ CorradoVR6
 corradovr6
 CorvetteZR-1
 corvettezr-1
+covid19
 d-link
 death666
 demon666
@@ -199,6 +212,7 @@ diablo666
 dont4get
 doom1
 doom2
+dr.house
 dragon666
 driv3r
 ducati996
@@ -231,6 +245,7 @@ fifa2002
 fifa2005
 final7
 FireWire
+five5star
 FOOBAR
 fordf150
 FordRS200Evolution
@@ -403,6 +418,8 @@ messi19
 metal666
 milan1899
 mk1234
+mr.robot
+mustang68
 n/a
 n1nja
 nascar24
@@ -512,10 +529,12 @@ nokiae52
 Nokiae52
 nokiae65
 Nokiae65
+nokian70
 nokian95
 Nokian95
 NULL
 number1
+october69
 Office2016
 office2016
 Office2019
@@ -610,6 +629,7 @@ tibia123
 toshiba1
 tp-link
 trojan123
+trustme1
 trustno1
 trustNO1
 trustno2

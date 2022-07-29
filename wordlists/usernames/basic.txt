@@ -1,6 +1,6 @@
 admin
 administrator
-root
 guest
+root
 test
 user
