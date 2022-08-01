@@ -1,3 +1,15 @@
+ Admin 
+ admin 
+ Administrator 
+ administrator 
+ Guest 
+ guest 
+ Root 
+ root 
+ Test 
+ test 
+ User 
+ user 
 !!!Admin
 !!!admin
 !!!Administrator
@@ -1846,6 +1858,7 @@ $user
 55Test55
 55User55
 5element
+5sharks
 6!Admin
 6!admin
 6!Administrator
@@ -1871,6 +1884,7 @@ $user
 666test
 666User
 666user
+69sex
 6waves
 6^Admin
 6^admin
@@ -9680,7 +9694,6 @@ babylon5
 Babylove
 babylove
 Backend
-backend
 Badass
 badass
 Badboy
@@ -10236,6 +10249,7 @@ Chang3m3
 Change
 Changeme@123
 Changemenow
+Changepassword
 Changethis
 Change_on_install
 Chantal
@@ -10473,6 +10487,7 @@ Cristina
 cristina
 cRoot
 croot
+cross8
 Crossfire
 crossfire
 Crystal
@@ -10648,11 +10663,13 @@ devAdmin
 devadmin
 devAdministrator
 devadministrator
+Developer
 devGuest
 devguest
 Devil1
 devil1
 devil666
+Devops
 devRoot
 devroot
 devTest
@@ -11132,7 +11149,9 @@ fRoot
 froot
 fTest
 ftest
+Ftpdata
 Ftpftp
+Ftpuser
 Fuck
 fuck
 Fuck123
@@ -11325,6 +11344,7 @@ Gloria
 gloria
 Gmail
 gmail
+go4it
 Goddess
 goddess
 Godfather
@@ -15122,6 +15142,7 @@ Horny
 horny
 Horses
 horses
+Hosting
 Hotdog
 hotdog
 Hotmail
@@ -16706,6 +16727,7 @@ oceane
 October
 october
 october69
+Office
 Office2016
 office2016
 Office2019
@@ -16715,6 +16737,8 @@ oguest
 oicu812
 Oksana
 oksana
+Oldpass
+Oldpassword
 Oliver
 oliver
 Oliver1
@@ -16871,6 +16895,7 @@ Passwort
 Passwort1
 passwort1
 Passwrod
+Pasword
 Patches
 patches
 Patches1
@@ -20978,6 +21003,7 @@ S3cr3t
 S3cr3t!
 S3cret
 saab9000
+Saadmin
 SaaS
 Sabina
 sabina
@@ -21293,6 +21319,7 @@ slipknot1
 slipknot666
 Slut
 slut
+Smcadmin
 Smile
 smile
 Smiles
@@ -21601,6 +21628,7 @@ swordfish
 Sydney
 sydney
 syncmaster959
+Sysadm
 Sysadmin123
 System
 system32
@@ -29030,6 +29058,7 @@ Wallace
 wallace
 Walter
 walter
+Wampp
 Warcraft
 warcraft
 Warcraft1
@@ -29053,6 +29082,8 @@ Watermelon
 watermelon
 Wdtnjxtr
 wdtnjxtr
+Webadmin
+Webuser
 Webweb
 Welcome!1
 Welcome!@
@@ -29158,10 +29189,13 @@ wTest
 wtest
 wUser
 wuser
+Wwwadmin
+Wwwdata
 xAdmin
 xadmin
 xAdministrator
 xadministrator
+Xampp
 Xavier
 xavier
 Xbox360

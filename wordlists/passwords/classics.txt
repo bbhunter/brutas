@@ -42,6 +42,7 @@ ABC123
 access
 adm1n
 Adm1n
+admin
 Admin
 ADMIN
 admin!
@@ -241,6 +242,7 @@ adminqwe
 adminroot
 admins
 adminxxx
+backend
 Ch4ng3m3
 ch4ng3m3
 Ch4ng3m3!
@@ -256,10 +258,14 @@ changeme123
 changeme@123
 Changeme_123
 changemenow
+changepassword
 changethis
 default
 DEFAULT
 demodemo
+dev
+developer
+devops
 Fall2019
 fall2019
 Fall2019!
@@ -284,7 +290,10 @@ Fall2022!
 fall2022!
 Fall2022@
 fall2022@
+ftp
+ftpdata
 ftpftp
+ftpuser
 gpadmin
 guest
 GUEST
@@ -294,6 +303,7 @@ guest123
 Guest123
 guestguest
 hello
+hosting
 iamroot
 iloveu
 iloveyou
@@ -319,7 +329,10 @@ newroot
 none
 nopass
 nopassword
+office
 old
+oldpass
+oldpassword
 p$ss
 P$ss
 P$SSW)RD
@@ -767,11 +780,13 @@ Password@123
 password@123
 passwort
 passwrod
+pasword
 ps55w0rd
 R))T
 r00t
 r00t!
 r00tr00t
+root
 root!
 root!!
 root!!!
@@ -997,6 +1012,7 @@ s#cr#t
 s3cr3t
 s3cr3t!
 s3cret
+saadmin
 secret
 secret!
 secret1
@@ -1004,6 +1020,7 @@ secret12
 secret123
 server
 server_admin
+smcadmin
 Spring2019
 spring2019
 Spring2019!
@@ -1053,6 +1070,7 @@ Summer2022!
 summer2022!
 Summer2022@
 summer2022@
+sysadm
 sysadmin123
 t00r
 t00rt00r
@@ -1141,6 +1159,10 @@ W1ndoWs
 W1ndows
 w1ndoWs
 w1ndows
+wampp
+web
+webadmin
+webuser
 webweb
 welc0me
 Welc0me
@@ -1208,3 +1230,7 @@ Winter2022!
 winter2022!
 Winter2022@
 winter2022@
+www
+wwwadmin
+wwwdata
+xampp

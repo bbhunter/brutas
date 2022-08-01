@@ -160,8 +160,10 @@ mailman
 maint
 maintainer
 manage
+management
 manager
 master
+mgmt
 mgr
 microsoft
 mikrotik

@@ -46,8 +46,8 @@ pass!               | 00!integration      | Viper               | guest3422!
 **NOTE: Due to Github limits not all lists are precompiled.** You need to run the build scripts yourself to generate the complete set (`compile.sh` and `huge.sh`).
 
 The compiled sets are also hosted here (may not be up to date):
-- [brutas-passwords-5-l.zip](https://drive.proton.me/urls/5ESDFTKQVC#pTokh18bYyfN) [updated 2022/07/30] (34,257,125 lines - 393MB decompressed)
-- [brutas-passwords-6-xl.zip](https://drive.proton.me/urls/Z586VGA1BW#k2mwYceQIJYA) [updated 2022/07/30] (168,825,384 lines - 2.2GB decompressed)
+- [brutas-passwords-5-l.zip](https://drive.proton.me/urls/5ESDFTKQVC#pTokh18bYyfN) [updated 2022/08/31] (37,011,021 lines - 419M decompressed)
+- [brutas-passwords-6-xl.zip](https://drive.proton.me/urls/Z586VGA1BW#k2mwYceQIJYA) [updated 2022/08/31] (172,460,416 lines - 2.3GB decompressed)
 - [brutas-passwords-7-xxl.zip](https://drive.proton.me/urls/HP5SGW9YEC#ZfdCr6PItCyP) [updated 2022/07/30] (9,048,350,542 lines - 114GB decompressed)
 - [brutas-http-paths-all.zip](https://drive.proton.me/urls/FKQVMNNQK0#uofhr9x4pDlA) [updated 2022/07/16]
 
@@ -64,7 +64,7 @@ You need to install `wordz` first (what used to be the `scripts` part of this pr
 % pip install wordz
 ```
 
-The build process is automated and handled by the script located in the root of the project. The following will produce `1-6-*.txt` passwords, as well as subdomains and basic HTTP lists:
+The build process is automated and handled by the script located in the root of the project. You may want to keep the temporary files, sometimes they work pretty well on their own, so you don't have to launch the full attack. The following will produce `1-6-*.txt` passwords, as well as subdomains and basic HTTP lists:
 
 ```
 ~/brutas:% ./compile.sh
