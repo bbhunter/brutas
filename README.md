@@ -35,7 +35,7 @@ pass!               | 00!integration      | Viper               | guest3422!
 * `wordlists/dns` - a fairly reasonable list for host discovery composed of common conventions, self-hosted software etc.
 * `wordlists/http/paths` - HTTP paths/params useful in fuzzing Web applications, generated with subclasses of `HttpWords` *)
 * `wordlists/http/files/extensions` - file extensions useful in HTTP discovery
-* `wordlists/http/files/biggquery/github` - file names that might be helpful e.g. in IIS short name enumeration, cleaned up of obvious uniques and garbage to reduce file size, in case of JSON, YML and XML at least two occurrences, otherwise untouched
+* `wordlists/http/files/biggquery/github` - file names that might be helpful e.g. in IIS short name enumeration, fairly cleaned up of obvious uniques, series and garbage (like MD5 hashes) to reduce file size, maximum 40 chars, a minimum of two occurrences required in case of the bigger files (unless uniques make sense, see `class.csv`), otherwise untouched
 * `wordlists/ports` - personal choice of ports used both for scanning internal networks and public services, used instead of nmap's top list
 * `wordlists/usernames` - most common usernames, the short, and the long version
 
