@@ -779,9 +779,15 @@ password@1
 Password@123
 password@123
 passwort
+passwrd
 passwrod
 pasword
+pawrd
 ps55w0rd
+pssword
+psswrd
+pwn
+pwrd
 R))T
 r00t
 r00t!

@@ -239,7 +239,6 @@ agha
 agile
 agnes
 agni
-agnieszka
 agony
 agora
 agostino
@@ -607,7 +606,6 @@ amari
 amarillo
 amarok
 amas
-amaterasu
 amateur
 amaury
 amaya
@@ -745,6 +743,7 @@ anchal
 anchor
 ancient
 and
+andante
 ande
 anderlecht
 anders
@@ -1088,7 +1087,6 @@ arlington
 arma
 armaan
 armada
-armadillo
 armageddon
 arman
 armand
@@ -1112,7 +1110,6 @@ around
 arpeggio
 arpit
 arpita
-arquitectura
 arrow
 arrowhead
 arrows
@@ -2172,6 +2169,7 @@ bernie
 bernstein
 berries
 berry
+berserker
 bert
 bertha
 bertie
@@ -2276,6 +2274,7 @@ bitcoins
 bite
 bitte
 bitter
+biturbo
 bizarre
 blabla
 blablabla
@@ -2687,10 +2686,9 @@ buzzer
 bypass
 byron
 bytes
-caballero
-caballo
 cabbage
 cabelo
+cabernet
 cabeza
 cabin
 cabinet
@@ -2713,7 +2711,6 @@ caffelatte
 cage
 cain
 cairo
-caitlin
 caja
 cake
 cakes
@@ -3418,10 +3415,7 @@ complicated
 compose
 composer
 compound
-compras
 comprehensive
-computador
-computadora
 compute
 computer
 computers
@@ -3900,6 +3894,8 @@ delle
 delphi
 delphine
 delta
+deltaforce
+deltorro
 deluxe
 demain
 demand
@@ -3964,6 +3960,7 @@ desktop
 desmond
 despair
 desperado
+desperados
 desperate
 dessa
 dessert
@@ -3980,7 +3977,6 @@ detroit
 deus
 deutsch
 deutsche
-deutscher
 deutschland
 dev
 develop
@@ -4030,6 +4026,7 @@ dickhead
 dickinson
 dicks
 dictionary
+die
 diego
 diehard
 diesel
@@ -4062,6 +4059,7 @@ dine
 dinero
 ding
 dingdong
+dingo
 dinheiro
 dinner
 dino
@@ -4140,6 +4138,7 @@ document
 documents
 docusign
 dodge
+dodgecharger
 dodger
 dodgeram
 dodgers
@@ -4152,6 +4151,7 @@ doggie
 doggies
 doggy
 doghouse
+dogma
 dogman
 dogs
 doha
@@ -4182,12 +4182,14 @@ dominic
 dominican
 dominion
 dominique
+dominium
 domino
 domy
 don
 dona
 donald
 donaldduck
+donaldtrump
 done
 doner
 dong
@@ -4217,6 +4219,7 @@ dorothy
 dortmund
 dost
 dota
+dotnet
 double
 doubled
 douche
@@ -4272,6 +4275,7 @@ drops
 drpepper
 drug
 drugs
+druid
 drum
 drummer
 drums
@@ -4293,6 +4297,7 @@ dudes
 duff
 duffy
 duke
+dukenukem
 dulce
 dull
 dumbass
@@ -4312,9 +4317,11 @@ duplo
 dupont
 dura
 durable
+duracel
 duran
 durango
 durant
+durex
 durham
 duro
 dust
@@ -4347,6 +4354,7 @@ eatpussy
 eatshit
 ebay
 eben
+ebola
 ebony
 echo
 echoes
@@ -4443,6 +4451,8 @@ ellie
 elliot
 elliott
 ellis
+elon
+elonmusk
 elsa
 elsewhere
 elton
@@ -4594,8 +4604,6 @@ esther
 estrada
 estrela
 estrella
-estrellas
-estudiantes
 estudio
 eternal
 eternity
@@ -4762,6 +4770,7 @@ fastfurious
 fatal
 fatass
 fatboy
+fatboyslim
 fate
 father
 fatih
@@ -4781,10 +4790,6 @@ fearless
 feather
 feathers
 feb
-febbraio
-febrero
-februar
-februari
 february
 federal
 federation
@@ -4833,6 +4838,7 @@ ferry
 fertig
 fertility
 festival
+feta
 fetish
 fever
 fiance
@@ -4911,11 +4917,13 @@ fisher
 fishes
 fishing
 fisica
+fiskars
 fisting
 fitness
 fitzgerald
 five
 fivestar
+fix
 fixer
 flag
 flair
@@ -4946,6 +4954,7 @@ flick
 flickr
 flight
 flint
+flintstones
 flip
 flipper
 flirt
@@ -5224,6 +5233,7 @@ galileo
 gallagher
 gallery
 gallo
+galveston
 gama
 gambit
 gamble
@@ -5278,6 +5288,7 @@ gatsby
 gautam
 gavin
 gawker
+gay
 gaya
 gazette
 gcp
@@ -5293,7 +5304,6 @@ gender
 gene
 genel
 general
-generale
 generation
 generator
 generic
@@ -5805,6 +5815,7 @@ hazard
 haze
 hazel
 haziran
+hbomax
 head
 headache
 header
@@ -6289,6 +6300,7 @@ installer
 instant
 instinct
 institute
+instragram
 insulin
 insurance
 integra
@@ -6553,6 +6565,7 @@ jock
 jockey
 jodi
 joe
+joebiden
 joel
 joey
 johan
@@ -6916,7 +6929,6 @@ kolkata
 koma
 kombat
 kompas
-komputer
 konami
 kong
 konrad
@@ -7098,7 +7110,6 @@ leadership
 leads
 leaf
 league
-leagueoflegends
 leah
 lean
 leana
@@ -7251,7 +7262,6 @@ lindos
 lindsay
 lindsey
 line
-lineage
 linear
 linen
 liners
@@ -7676,7 +7686,6 @@ manu
 manual
 manuel
 manuela
-manusia
 many
 mao
 map
@@ -7897,7 +7906,6 @@ mcdonald
 mcdonalds
 mcgill
 mcgrady
-mcgregor
 mchammer
 mckenzie
 mclaren
@@ -8023,7 +8031,6 @@ metadata
 metal
 metalage
 metalgear
-metalgearsolid
 metallic
 metallica
 metals
@@ -8151,7 +8158,6 @@ minion
 minions
 minis
 minister
-ministro
 ministry
 mink
 minnesota
@@ -8197,6 +8203,7 @@ mitnick
 mito
 mitsubishi
 mittens
+mix
 mixer
 miya
 miyu
@@ -8376,6 +8383,7 @@ mozilla
 mrc
 mrrobot
 mrscruff
+msi
 msn
 mss
 much
@@ -8500,7 +8508,6 @@ nas
 nasa
 nasal
 nascar
-nascimento
 nasdaq
 naseem
 naseer
@@ -8536,7 +8543,6 @@ naughty
 navarro
 navi
 navidad
-navigateur
 navigator
 navy
 nawal
@@ -8674,6 +8680,7 @@ niklas
 niko
 nikola
 nikolas
+nikolatesla
 nikon
 nil
 nile
@@ -8783,10 +8790,7 @@ nove
 novel
 novell
 november
-novembre
-novembro
 novice
-noviembre
 novo
 noway
 nowhere
@@ -8941,6 +8945,7 @@ orden
 ordenador
 order
 ordinateur
+oregano
 oregon
 oreo
 organic
@@ -9278,7 +9283,6 @@ peri
 period
 perkins
 perl
-perla
 permanent
 permis
 permit
@@ -9667,17 +9671,13 @@ premier
 premiere
 premio
 premium
-prentice
-prepaid
 pres
 presa
 presence
 present
-presente
 presents
 presiden
 president
-presidente
 presley
 press
 pressure
@@ -9749,7 +9749,6 @@ products
 prof
 profesional
 profesor
-profession
 professional
 professor
 profil
@@ -10657,6 +10656,8 @@ sample
 sampson
 samson
 samsung
+samsungg
+samsunggalaxy
 samu
 samuel
 samurai
@@ -10921,8 +10922,6 @@ seoul
 sep
 sept
 september
-septembre
-septiembre
 sepultura
 sequence
 ser
@@ -10934,12 +10933,8 @@ serega
 serena
 serene
 serenity
-serge
 sergeant
-sergei
-sergey
 sergio
-serhat
 seri
 serial
 serie
@@ -11124,7 +11119,6 @@ sicher
 sicilia
 sick
 sickness
-sicurezza
 sid
 sidewalk
 sideways
@@ -12249,6 +12243,7 @@ timeless
 timeout
 timer
 times
+timex
 timmy
 timo
 timor
@@ -12383,9 +12378,6 @@ totti
 touch
 touche
 tough
-touhou
-toujours
-toulouse
 tour
 touring
 tourism
@@ -12595,7 +12587,6 @@ uchiha
 ucla
 ufo
 ugur
-ukraina
 ukraine
 ulrich
 ultima
@@ -12642,8 +12633,6 @@ unity
 univers
 universal
 universe
-universidad
-universitario
 university
 universo
 unix
@@ -12839,6 +12828,7 @@ view
 viewsonic
 vijay
 vikas
+viki
 viking
 vikings
 vikram
@@ -13347,7 +13337,6 @@ yoda
 yoga
 yogesh
 yogurt
-yogyakarta
 yohann
 yoko
 yokohama
@@ -13359,8 +13348,6 @@ yorkshire
 yosemite
 yoshi
 yoshida
-yoshis
-yoshisisland
 you
 younes
 young
@@ -13394,8 +13381,6 @@ yuuki
 yuya
 yuyu
 yuzu
-yves
-yvonne
 zabbix
 zach
 zachary
@@ -13422,19 +13407,13 @@ zeppelin
 zero
 zeta
 zeus
-zeynep
-zhang
 zhao
-zheng
-zhong
-zhou
 zico
 zidane
 ziggy
 zigzag
 ziko
 zilan
-zildjian
 zima
 zimbabwe
 zimmer
@@ -13443,10 +13422,8 @@ zion
 zipper
 zippo
 zizou
-zlatan
 zodiac
 zoe
-zoey
 zombie
 zombies
 zona

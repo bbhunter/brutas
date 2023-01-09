@@ -16894,6 +16894,7 @@ Password@1
 Passwort
 Passwort1
 passwort1
+Passwrd
 Passwrod
 Pasword
 Patches
@@ -16914,6 +16915,7 @@ Pauline
 pauline
 Pavilion
 pavilion
+Pawrd
 Peace
 peace
 Peaches
@@ -17167,6 +17169,8 @@ pRoot
 proot
 Proxmox
 Ps55w0rd
+Pssword
+Psswrd
 Psycho
 psycho
 pTest
@@ -17194,6 +17198,7 @@ pussy1
 pussy69
 Pussycat
 pussycat
+Pwrd
 qaAdmin
 qaadmin
 qaAdministrator

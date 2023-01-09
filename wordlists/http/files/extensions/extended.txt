@@ -1,6 +1,9 @@
 .7z
 .7zip
 .action
+.ashx
+.asmx
+.axd
 .backup
 .bat
 .bmp
@@ -11,9 +14,9 @@
 .cfg
 .cfm
 .class
-.conf
 .config
 .csproj
+.css
 .dat
 .data
 .db
@@ -45,6 +48,7 @@
 .jhtml
 .jks
 .jpeg
+.jpg
 .jsa
 .jsx
 .kbx
@@ -72,6 +76,7 @@
 .pages
 .password
 .pcap
+.pdf
 .pem
 .phar
 .php2
@@ -85,6 +90,7 @@
 .phtml
 .ph_
 .pl
+.png
 .pot
 .potm
 .potx
@@ -115,6 +121,7 @@
 .source
 .sqlite3
 .src
+.swf
 .swp
 .tif
 .tiff
@@ -133,4 +140,3 @@
 .xltx
 .xps
 .yaml
-.yml

@@ -17,6 +17,12 @@ pass!               | 00!integration      | Viper               | guest3422!
 98989898            | zimbra@273          | Midnight1           | zxccvbnm321
 ```
 
+## Important
+
+If you want to get the latest files only ("a shallow clone with a history truncated to the specified number of commits"):
+
+    % git clone --depth 1 https://github.com/tasooshi/brutas.git
+
 ## Introduction
 
 ### `wordlists/passwords`
