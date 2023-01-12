@@ -1,6 +1,6 @@
 # brutas
 
-> Wordlists handcrafted with ♥
+> Wordlists handcrafted (and automated) with ♥
 
 A random passwords sample:
 
@@ -17,13 +17,91 @@ pass!               | 00!integration      | Viper               | guest3422!
 98989898            | zimbra@273          | Midnight1           | zxccvbnm321
 ```
 
-## Important
+Requirements:
+* Python 3.9, 3.10
+* `hashcat`
+* `hashcat-utils`
+* GNU tools: `cat`, `awk`, `comm`, `sort`, `uniq`
+* `wordz` (pypi)
+
+## Usage
+
+### Gotchas
+
+#### Save bandwidth
 
 If you want to get the latest files only ("a shallow clone with a history truncated to the specified number of commits"):
 
-    % git clone --depth 1 https://github.com/tasooshi/brutas.git
+```
+% git clone --depth 1 https://github.com/tasooshi/brutas.git
+```
+
+#### Kali Linux hashcat-utils
+
+The hashcat utilities are located at `/usr/lib/hashcat-utils/`, you need to add this `$PATH` to your `.zshrc`.
+
+#### Missing OpenCL / non-GPU setup
+
+In case you are not going to use GPUs (`No OpenCL, HIP or CUDA compatible platform found`), you may find this one helpful:
+
+```
+# apt install pocl-opencl-icd
+```
+
+### Installation
+
+You need to install `wordz` (the wordlist automation framework) first:
+
+```
+% pip install wordz
+```
+
+The build process is automated and handled by the scripts located in the root of the project. You may want to keep the temporary files, sometimes they work pretty well on their own, so you don't have to launch the full attack. The following will produce `1-6-*.txt` passwords, as well as subdomains and basic HTTP lists:
+
+```
+~/brutas:% ./compile.sh
+```
+
+For the rest (`7-xxl.txt` and all HTTP paths) run:
+
+```
+~/brutas:% ./huge.sh -t /media/user/ExternalDrive/tmp
+```
+
+If you want to generate a custom wordlist (`wordlists/passwords/custom.txt`) based on keywords in `src/keywords/custom.txt`, use the following:
+
+```
+~/brutas:% ./custom.sh -t /media/user/ExternalDrive/tmp -o /media/users/AnotherDrive/new
+```
+
+Be aware that building a custom list with 5.5k of lines generates approx. 560GB of data and requires around 680GB for temporary files (an extra drive is recommended due to heavy I/O).
+
+### Using specific language
+
+There are two options:
+1) either overwrite `lang-int-*.txt` files;
+2) or use the `CustomPasswords` class with keywords copied to `src/keywords/custom.txt`.
+
+The first one would cause the build to use the specific language as the base, while other languages would still be used (starting with `wordlists/passwords/6-xl.txt` list). The second option would ignore the normal build process and use the full set of rules on the `src/keywords/custom.txt` file. You should expect a massive output in that case.
+
+### Building
+
+**NOTE: Due to Github limits not all lists are precompiled.** You need to run the build scripts yourself to generate the complete set (`compile.sh` and `huge.sh`).
+
+The compiled sets are also hosted here:
+- [brutas-passwords-5-l.zip](https://drive.proton.me/urls/5ESDFTKQVC#pTokh18bYyfN) [updated 2022/08/31] (37,011,021 lines - 419M decompressed)
+- [brutas-passwords-6-xl.zip](https://drive.proton.me/urls/Z586VGA1BW#k2mwYceQIJYA) [updated 2022/08/31] (172,460,416 lines - 2.3GB decompressed)
+- [brutas-passwords-7-xxl.zip](https://drive.proton.me/urls/HP5SGW9YEC#ZfdCr6PItCyP) [updated 2022/07/30] (9,048,350,542 lines - 114GB decompressed)
+- [brutas-http-paths-all.zip](https://drive.proton.me/urls/FKQVMNNQK0#uofhr9x4pDlA) [updated 2022/07/16]
 
 ## Introduction
+
+Why these password lists are different? The goal here is not to crack every password possible, it is to move forward inside a network. And if cracking is really needed then the bigger lists can be used. However, the assumption here is that it will be done in a reasonable time span and with limited resources (like a VM, hijacked host etc).
+
+A brief introduction to password lists:
+* the number of passwords grows with the consecutive file number;
+* passwords are not sorted according to the probability, they are combined into groups of probability instead;
+* each consecutive file **does not** contain passwords from any of the previous sets.
 
 ### `wordlists/passwords`
 
@@ -47,67 +125,8 @@ If you want to get the latest files only ("a shallow clone with a history trunca
 
 *) Some of the pairs in these lists are duplicates or make no sense (e.g. `postsPosts` or `syndication-editor`, although you never know...) This is an expected trade-off. Considering the number of requests usually sent, this is acceptable for now.
 
-## Building
 
-**NOTE: Due to Github limits not all lists are precompiled.** You need to run the build scripts yourself to generate the complete set (`compile.sh` and `huge.sh`).
-
-The compiled sets are also hosted here (may not be up to date):
-- [brutas-passwords-5-l.zip](https://drive.proton.me/urls/5ESDFTKQVC#pTokh18bYyfN) [updated 2022/08/31] (37,011,021 lines - 419M decompressed)
-- [brutas-passwords-6-xl.zip](https://drive.proton.me/urls/Z586VGA1BW#k2mwYceQIJYA) [updated 2022/08/31] (172,460,416 lines - 2.3GB decompressed)
-- [brutas-passwords-7-xxl.zip](https://drive.proton.me/urls/HP5SGW9YEC#ZfdCr6PItCyP) [updated 2022/07/30] (9,048,350,542 lines - 114GB decompressed)
-- [brutas-http-paths-all.zip](https://drive.proton.me/urls/FKQVMNNQK0#uofhr9x4pDlA) [updated 2022/07/16]
-
-Requirements:
-* Python 3.9, 3.10
-* `hashcat`
-* `hashcat-utils`
-* GNU tools: `cat`, `awk`, `comm`, `sort`, `uniq`
-* `wordz` (pypi)
-
-You need to install `wordz` first (what used to be the `scripts` part of this project):
-
-```
-% pip install wordz
-```
-
-The build process is automated and handled by the script located in the root of the project. You may want to keep the temporary files, sometimes they work pretty well on their own, so you don't have to launch the full attack. The following will produce `1-6-*.txt` passwords, as well as subdomains and basic HTTP lists:
-
-```
-~/brutas:% ./compile.sh
-```
-
-For the rest (`7-xxl.txt` and all HTTP paths) run:
-
-```
-~/brutas:% ./huge.sh
-```
-
-If you want to generate a custom wordlist (`wordlists/passwords/custom.txt`) based on keywords in `src/keywords/custom.txt`, use the following:
-
-```
-~/brutas:% ./custom.sh
-```
-
-Be aware that building a custom list with 5.5k of lines generates approx. 560GB of data and requires around 680GB for temporary files (an extra drive is recommended due to heavy I/O).
-
-### Using specific language
-
-There are two options:
-1) either overwrite `lang-int-*.txt` files;
-2) or use the `CustomPasswords` class with keywords copied to `src/keywords/custom.txt`.
-
-The first one would cause the build to use the specific language as the base, while other languages would still be used (starting with `wordlists/passwords/6-xl.txt` list). The second option would ignore the normal build process and use the full set of rules on the `src/keywords/custom.txt` file. You should expect a massive output in that case.
-
-## Passwords
-
-Why these password lists are different? The goal here is not to crack every password possible, it is to move forward inside a network. And if cracking is really needed then the bigger lists can be used, however, the assumption here is that it will be done in a reasonable time span and with limited resources (like a VM, hijacked host etc).
-
-A brief introduction to password lists:
-* the number of passwords grows with the consecutive file number;
-* passwords are not sorted according to the probability, they are combined into groups of probability instead;
-* each consecutive file **does not** contain passwords from any of the previous sets.
-
-### Basic usage
+### Recommendations
 
 The combined lists `{1,2,3,4}-*.txt` seem to be most effective for general purpose and reasonably fast password cracking. Start with the smallest one and move forward. The lists `{1,2}-*.txt` are designed for a quick win in large networks. If you need something really minimalistic, try using `1-xxs.txt` solely - my highly opinionated view of the top 100.
 
