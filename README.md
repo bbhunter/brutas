@@ -26,7 +26,23 @@ Requirements:
 
 ## Usage
 
-### Gotchas
+### Precompiled
+
+The precompiled lists are located at:
+
+    brutas/wordlists/dns
+    brutas/wordlists/http
+    brutas/wordlists/passwords
+    brutas/wordlists/ports
+    brutas/wordlists/usernames
+
+**NOTE: Due to Github limits only the "reasonably" sized lists are precompiled.** You need to run the build scripts yourself to generate the complete set (`compile.sh` and `huge.sh`).
+
+The lists which are not included in this repository are hosted here and get updated occassionally:
+- [brutas-passwords-5-l.zip](https://drive.proton.me/urls/5ESDFTKQVC#pTokh18bYyfN) [updated 2022/08/31] (37,011,021 lines - 419M decompressed)
+- [brutas-passwords-6-xl.zip](https://drive.proton.me/urls/Z586VGA1BW#k2mwYceQIJYA) [updated 2022/08/31] (172,460,416 lines - 2.3GB decompressed)
+- [brutas-passwords-7-xxl.zip](https://drive.proton.me/urls/HP5SGW9YEC#ZfdCr6PItCyP) [updated 2022/07/30] (9,048,350,542 lines - 114GB decompressed)
+- [brutas-http-paths-all.zip](https://drive.proton.me/urls/FKQVMNNQK0#uofhr9x4pDlA) [updated 2022/07/16]
 
 #### Save bandwidth
 
@@ -36,19 +52,7 @@ If you want to get the latest files only ("a shallow clone with a history trunca
 % git clone --depth 1 https://github.com/tasooshi/brutas.git
 ```
 
-#### Kali Linux hashcat-utils
-
-The hashcat utilities are located at `/usr/lib/hashcat-utils/`, you need to add this `$PATH` to your `.zshrc`.
-
-#### Missing OpenCL / non-GPU setup
-
-In case you are not going to use GPUs (`No OpenCL, HIP or CUDA compatible platform found`), you may find this one helpful:
-
-```
-# apt install pocl-opencl-icd
-```
-
-### Installation
+### Building
 
 You need to install `wordz` (the wordlist automation framework) first:
 
@@ -76,7 +80,7 @@ If you want to generate a custom wordlist (`wordlists/passwords/custom.txt`) bas
 
 Be aware that building a custom list with 5.5k of lines generates approx. 560GB of data and requires around 680GB for temporary files (an extra drive is recommended due to heavy I/O).
 
-### Using specific language
+#### Using specific language
 
 There are two options:
 1) either overwrite `lang-int-*.txt` files;
@@ -84,15 +88,19 @@ There are two options:
 
 The first one would cause the build to use the specific language as the base, while other languages would still be used (starting with `wordlists/passwords/6-xl.txt` list). The second option would ignore the normal build process and use the full set of rules on the `src/keywords/custom.txt` file. You should expect a massive output in that case.
 
-### Building
+#### Common problems
 
-**NOTE: Due to Github limits not all lists are precompiled.** You need to run the build scripts yourself to generate the complete set (`compile.sh` and `huge.sh`).
+##### Kali Linux hashcat-utils
 
-The compiled sets are also hosted here:
-- [brutas-passwords-5-l.zip](https://drive.proton.me/urls/5ESDFTKQVC#pTokh18bYyfN) [updated 2022/08/31] (37,011,021 lines - 419M decompressed)
-- [brutas-passwords-6-xl.zip](https://drive.proton.me/urls/Z586VGA1BW#k2mwYceQIJYA) [updated 2022/08/31] (172,460,416 lines - 2.3GB decompressed)
-- [brutas-passwords-7-xxl.zip](https://drive.proton.me/urls/HP5SGW9YEC#ZfdCr6PItCyP) [updated 2022/07/30] (9,048,350,542 lines - 114GB decompressed)
-- [brutas-http-paths-all.zip](https://drive.proton.me/urls/FKQVMNNQK0#uofhr9x4pDlA) [updated 2022/07/16]
+The hashcat utilities are located at `/usr/lib/hashcat-utils/`, you need to add this `$PATH` to your `.zshrc`.
+
+##### Missing OpenCL / non-GPU setup
+
+In case you are not going to use GPUs (`No OpenCL, HIP or CUDA compatible platform found`), you may find this one helpful:
+
+```
+# apt install pocl-opencl-icd
+```
 
 ## Introduction
 
