@@ -260,6 +260,8 @@ Changeme_123
 changemenow
 changepassword
 changethis
+dbadmin
+dbroot
 default
 DEFAULT
 demodemo
@@ -291,8 +293,10 @@ fall2022!
 Fall2022@
 fall2022@
 ftp
+ftpadmin
 ftpdata
 ftpftp
+ftproot
 ftpuser
 gpadmin
 guest
@@ -321,6 +325,8 @@ lol12345
 lol123456
 mypassword
 myroot
+mysqladmin
+mysqlroot
 new
 newadmin
 newpass
@@ -1011,6 +1017,7 @@ rootpwd
 rootroot
 rootroot123
 rootrootroot
+rootssh
 roottoor
 rootuser
 S#CR#T
@@ -1051,7 +1058,10 @@ Spring2022!
 spring2022!
 Spring2022@
 spring2022@
+sqladmin
 sqlpassword
+sshadmin
+sshroot
 Summer2019
 summer2019
 Summer2019!

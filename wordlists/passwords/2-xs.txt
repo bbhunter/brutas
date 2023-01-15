@@ -2834,6 +2834,7 @@ asda
 asdas
 ASDASD
 ASDasd
+asdASD
 asdasd
 ASDasd1
 asdasd1
@@ -3163,7 +3164,10 @@ audit
 auth
 author
 avygjfu
+AWDawd
 awdawd
+awdAWDs
+awdawds
 awdrg
 awtjuzu
 awverjn
@@ -3404,6 +3408,7 @@ dbadmin
 dbnfkbq
 dbrnjh
 dbrnjhbz
+dbroot
 dbuser
 dbzdbz
 dbzgt
@@ -3607,6 +3612,7 @@ ftpftp
 ftpguest
 ftphome
 ftpmail
+ftproot
 ftpsecure
 ftptest
 ftpuser
@@ -3959,6 +3965,8 @@ mosdx
 mypassword
 myroot
 mysql
+mysqladmin
+mysqlroot
 mznx
 n123456
 nagios
@@ -5031,6 +5039,11 @@ Qwaszx123
 qwaszx123
 QWAszxqwaszx
 qwaszxqwaszx
+QWDqwd
+qwdQWD
+qwdqwd
+qwdQWDs
+qwdqwds
 QWE!23
 Qwe!23
 qwe!23
@@ -6064,6 +6077,7 @@ rootpassword
 rootpwd
 rootroot123
 rootrootroot
+rootssh
 roottoor
 rootuser
 root_123
@@ -6176,6 +6190,7 @@ spring2022!
 Spring2022@
 spring2022@
 sqaxjlv
+sqladmin
 sqlpassword
 sqluser
 squid
@@ -6185,8 +6200,10 @@ squirreluser
 ssaa
 ssdd
 ssff
+sshadmin
 sshd
 sshduser
+sshroot
 sshuser
 ssladmin
 ssnswcl

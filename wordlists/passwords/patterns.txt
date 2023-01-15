@@ -2785,6 +2785,7 @@ asdas
 asdasd
 ASDASD
 ASDasd
+asdASD
 asdasd1
 ASDasd1
 asdasd11
@@ -3112,6 +3113,9 @@ aswert
 aszx
 avygjfu
 awdawd
+AWDawd
+awdawds
+awdAWDs
 awdrg
 awtjuzu
 awverjn
@@ -4390,6 +4394,11 @@ qwaszx123
 QWAszx123
 qwaszxqwaszx
 QWAszxqwaszx
+qwdqwd
+QWDqwd
+qwdQWD
+qwdqwds
+qwdQWDs
 Qwe
 qwe
 QWE

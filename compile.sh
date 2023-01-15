@@ -4,7 +4,7 @@ TMP_DIR='tmp'
 OUT_DIR='.'
 
 show_help() {
-    echo -e "usage: $(basename "$0") [-h] [-t]\n\nOptional arguments:\n\t-h\t\tShow this help message and exit\n\t-t\t\tTemporary directory path [Default: $TMP_DIR]-o\t\tOutput directory path [Default: $OUT_DIR]"
+    echo -e "usage: $(basename "$0") [-h] [-t]\n\nOptional arguments:\n\t-h\t\tShow this help message and exit\n\t-t\t\tTemporary directory path [Default: $TMP_DIR]\n\t-o\t\tOutput directory path [Default: $OUT_DIR]"
 }
 
 while getopts "t:o:h" opt; do

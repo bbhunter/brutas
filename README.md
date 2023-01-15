@@ -24,6 +24,9 @@ Requirements:
 * GNU tools: `cat`, `awk`, `comm`, `sort`, `uniq`
 * `wordz` (pypi)
 
+Recommended:
+* `lzop`
+
 ## Usage
 
 ### Precompiled
@@ -72,13 +75,19 @@ For the rest (`7-xxl.txt` and all HTTP paths) run:
 ~/brutas:% ./huge.sh -t /media/user/ExternalDrive/tmp
 ```
 
+#### Custom wordlists (all batteries-included)
+
 If you want to generate a custom wordlist (`wordlists/passwords/custom.txt`) based on keywords in `src/keywords/custom.txt`, use the following:
 
 ```
 ~/brutas:% ./custom.sh -t /media/user/ExternalDrive/tmp -o /media/users/AnotherDrive/new
 ```
 
-Be aware that building a custom list with 5.5k of lines generates approx. 560GB of data and requires around 680GB for temporary files (an extra drive is recommended due to heavy I/O).
+Be aware that building a custom list with 5.5k of lines generates approx. 560GB of data and requires around 680GB for temporary files (an extra drive is recommended due to heavy I/O). If you'd like to see what kind of results you may expect, check out the following file based on a single word `love`:
+
+```
+wordlists/passwords/custom.txt
+```
 
 #### Using specific language
 
