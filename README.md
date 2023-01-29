@@ -75,7 +75,9 @@ For the rest (`7-xxl.txt` and all HTTP paths) run:
 ~/brutas:% ./huge.sh -t /media/user/ExternalDrive/tmp
 ```
 
-#### Custom wordlists (all batteries-included)
+#### Custom wordlists
+
+##### All batteries-included
 
 If you want to generate a custom wordlist (`wordlists/passwords/custom.txt`) based on keywords in `src/keywords/custom.txt`, use the following:
 
@@ -87,6 +89,20 @@ Be aware that building a custom list with 5.5k of lines generates approx. 560GB 
 
 ```
 wordlists/passwords/custom.txt
+```
+
+##### Optimized for specific targets
+
+You can also generate a custom wordlist optimized for the name of the targeted organization (put the name in `src/keywords/custom.txt`), using the following class:
+
+```
+~/brutas:% wordz -p src/classes/passwords.py::OrganizationNamePasswords
+```
+
+There's also another version of the class that works well for product names, brands etc:
+
+```
+~/brutas:% wordz -p src/classes/passwords.py::OrganizationKeywordsPasswords
 ```
 
 #### Using specific language

@@ -465,6 +465,58 @@ class CustomPasswords(Passwords):
         )
 
 
+class OrganizationNamePasswords(Passwords):
+
+    wordlists = (
+        'src/keywords/custom.txt',
+    )
+    rules = (
+        'src/rules/simple.rule',
+    )
+
+    def process(self):
+        self.merge(
+            self.output('wordlists/passwords/custom.txt'),
+            (
+                self.left(self.temp('simple-keywords-custom.txt'), self.base('src/bits/extra-basic.txt')),
+                self.left(self.temp('simple-keywords-custom.txt'), self.base('src/bits/functional.txt')),
+                self.left(self.temp('simple-keywords-custom.txt'), self.base('src/bits/months.txt')),
+                self.left(self.temp('simple-keywords-custom.txt'), self.base('src/bits/numbers-basic.txt')),
+                self.left(self.temp('simple-keywords-custom.txt'), self.base('src/bits/years-current.txt')),
+                self.right(self.temp('simple-keywords-custom.txt'), self.base('src/bits/extra-basic.txt')),
+                self.right(self.temp('simple-keywords-custom.txt'), self.base('src/bits/functional.txt')),
+                self.right(self.temp('simple-keywords-custom.txt'), self.base('src/bits/months.txt')),
+                self.right(self.temp('simple-keywords-custom.txt'), self.base('src/bits/numbers-basic.txt')),
+                self.right(self.temp('simple-keywords-custom.txt'), self.base('src/bits/years-current.txt')),
+                self.temp('simple-keywords-custom.txt'),
+            )
+        )
+
+
+class OrganizationKeywordsPasswords(Passwords):
+
+    wordlists = (
+        'src/keywords/custom.txt',
+    )
+    rules = (
+        'src/rules/simple.rule',
+    )
+
+    def process(self):
+        self.merge(
+            self.output('wordlists/passwords/custom.txt'),
+            (
+                self.left(self.temp('simple-keywords-custom.txt'), self.base('src/bits/extra-basic.txt')),
+                self.left(self.temp('simple-keywords-custom.txt'), self.base('src/bits/numbers-basic.txt')),
+                self.left(self.temp('simple-keywords-custom.txt'), self.base('src/bits/years-current.txt')),
+                self.right(self.temp('simple-keywords-custom.txt'), self.base('src/bits/extra-basic.txt')),
+                self.right(self.temp('simple-keywords-custom.txt'), self.base('src/bits/numbers-basic.txt')),
+                self.right(self.temp('simple-keywords-custom.txt'), self.base('src/bits/years-current.txt')),
+                self.temp('simple-keywords-custom.txt'),
+            )
+        )
+
+
 class MergeAll(Combinator):
 
     def process(self):
