@@ -90,6 +90,7 @@ activate-admin
 activate-administrator
 activate-all
 activate-api
+activate-asset
 activate-attachment
 activate-author
 activate-authorized
@@ -103,6 +104,7 @@ activate-company
 activate-complete
 activate-completed
 activate-config
+activate-configuration
 activate-console
 activate-cookie
 activate-count
@@ -167,6 +169,7 @@ activate-page
 activate-password
 activate-path
 activate-permission
+activate-photo
 activate-picture
 activate-post
 activate-profile
@@ -216,6 +219,7 @@ active-account
 active-admin
 active-administrator
 active-api
+active-asset
 active-attachment
 active-author
 active-avatar
@@ -225,6 +229,7 @@ active-category
 active-comment
 active-company
 active-config
+active-configuration
 active-console
 active-cookie
 active-customer
@@ -272,6 +277,7 @@ active-page
 active-password
 active-path
 active-permission
+active-photo
 active-picture
 active-post
 active-profile
@@ -313,6 +319,7 @@ add-admin
 add-administrator
 add-all
 add-api
+add-asset
 add-attachment
 add-author
 add-authorized
@@ -326,6 +333,7 @@ add-company
 add-complete
 add-completed
 add-config
+add-configuration
 add-console
 add-cookie
 add-count
@@ -390,6 +398,7 @@ add-page
 add-password
 add-path
 add-permission
+add-photo
 add-picture
 add-post
 add-profile
@@ -608,6 +617,7 @@ all-account
 all-admin
 all-administrator
 all-api
+all-asset
 all-attachment
 all-author
 all-avatar
@@ -617,6 +627,7 @@ all-category
 all-comment
 all-company
 all-config
+all-configuration
 all-console
 all-cookie
 all-customer
@@ -664,6 +675,7 @@ all-page
 all-password
 all-path
 all-permission
+all-photo
 all-picture
 all-post
 all-profile
@@ -783,6 +795,91 @@ api-verify
 api-view
 api-visible
 api-write
+asset
+asset-activate
+asset-active
+asset-add
+asset-all
+asset-authorized
+asset-browse
+asset-change
+asset-changed
+asset-check
+asset-close
+asset-complete
+asset-completed
+asset-copy
+asset-count
+asset-create
+asset-created
+asset-current
+asset-default
+asset-delete
+asset-detail
+asset-details
+asset-disable
+asset-download
+asset-edit
+asset-enable
+asset-enabled
+asset-export
+asset-exported
+asset-fetch
+asset-filter
+asset-find
+asset-finished
+asset-get
+asset-hidden
+asset-import
+asset-imported
+asset-include
+asset-includes
+asset-is
+asset-last
+asset-list
+asset-load
+asset-login
+asset-main
+asset-manage
+asset-modified
+asset-modify
+asset-new
+asset-number
+asset-open
+asset-preview
+asset-print
+asset-public
+asset-published
+asset-query
+asset-read
+asset-ready
+asset-recent
+asset-refresh
+asset-registered
+asset-remove
+asset-return
+asset-save
+asset-search
+asset-select
+asset-send
+asset-set
+asset-show
+asset-size
+asset-sort
+asset-start
+asset-stop
+asset-store
+asset-submit
+asset-test
+asset-update
+asset-updated
+asset-upload
+asset-valid
+asset-validate
+asset-verify
+asset-view
+asset-visible
+asset-write
 attachment
 attachment-activate
 attachment-active
@@ -958,6 +1055,7 @@ authorized-account
 authorized-admin
 authorized-administrator
 authorized-api
+authorized-asset
 authorized-attachment
 authorized-author
 authorized-avatar
@@ -967,6 +1065,7 @@ authorized-category
 authorized-comment
 authorized-company
 authorized-config
+authorized-configuration
 authorized-console
 authorized-cookie
 authorized-customer
@@ -1014,6 +1113,7 @@ authorized-page
 authorized-password
 authorized-path
 authorized-permission
+authorized-photo
 authorized-picture
 authorized-post
 authorized-profile
@@ -1226,6 +1326,7 @@ browse-admin
 browse-administrator
 browse-all
 browse-api
+browse-asset
 browse-attachment
 browse-author
 browse-authorized
@@ -1239,6 +1340,7 @@ browse-company
 browse-complete
 browse-completed
 browse-config
+browse-configuration
 browse-console
 browse-cookie
 browse-count
@@ -1303,6 +1405,7 @@ browse-page
 browse-password
 browse-path
 browse-permission
+browse-photo
 browse-picture
 browse-post
 browse-profile
@@ -1524,6 +1627,7 @@ change-admin
 change-administrator
 change-all
 change-api
+change-asset
 change-attachment
 change-author
 change-authorized
@@ -1537,6 +1641,7 @@ change-company
 change-complete
 change-completed
 change-config
+change-configuration
 change-console
 change-cookie
 change-count
@@ -1601,6 +1706,7 @@ change-page
 change-password
 change-path
 change-permission
+change-photo
 change-picture
 change-post
 change-profile
@@ -1650,6 +1756,7 @@ changed-account
 changed-admin
 changed-administrator
 changed-api
+changed-asset
 changed-attachment
 changed-author
 changed-avatar
@@ -1659,6 +1766,7 @@ changed-category
 changed-comment
 changed-company
 changed-config
+changed-configuration
 changed-console
 changed-cookie
 changed-customer
@@ -1706,6 +1814,7 @@ changed-page
 changed-password
 changed-path
 changed-permission
+changed-photo
 changed-picture
 changed-post
 changed-profile
@@ -1748,6 +1857,7 @@ check-admin
 check-administrator
 check-all
 check-api
+check-asset
 check-attachment
 check-author
 check-authorized
@@ -1761,6 +1871,7 @@ check-company
 check-complete
 check-completed
 check-config
+check-configuration
 check-console
 check-cookie
 check-count
@@ -1825,6 +1936,7 @@ check-page
 check-password
 check-path
 check-permission
+check-photo
 check-picture
 check-post
 check-profile
@@ -1876,6 +1988,7 @@ close-admin
 close-administrator
 close-all
 close-api
+close-asset
 close-attachment
 close-author
 close-authorized
@@ -1889,6 +2002,7 @@ close-company
 close-complete
 close-completed
 close-config
+close-configuration
 close-console
 close-cookie
 close-count
@@ -1953,6 +2067,7 @@ close-page
 close-password
 close-path
 close-permission
+close-photo
 close-picture
 close-post
 close-profile
@@ -2172,6 +2287,7 @@ complete-account
 complete-admin
 complete-administrator
 complete-api
+complete-asset
 complete-attachment
 complete-author
 complete-avatar
@@ -2181,6 +2297,7 @@ complete-category
 complete-comment
 complete-company
 complete-config
+complete-configuration
 complete-console
 complete-cookie
 complete-customer
@@ -2228,6 +2345,7 @@ complete-page
 complete-password
 complete-path
 complete-permission
+complete-photo
 complete-picture
 complete-post
 complete-profile
@@ -2268,6 +2386,7 @@ completed-account
 completed-admin
 completed-administrator
 completed-api
+completed-asset
 completed-attachment
 completed-author
 completed-avatar
@@ -2277,6 +2396,7 @@ completed-category
 completed-comment
 completed-company
 completed-config
+completed-configuration
 completed-console
 completed-cookie
 completed-customer
@@ -2324,6 +2444,7 @@ completed-page
 completed-password
 completed-path
 completed-permission
+completed-photo
 completed-picture
 completed-post
 completed-profile
@@ -2444,6 +2565,91 @@ config-verify
 config-view
 config-visible
 config-write
+configuration
+configuration-activate
+configuration-active
+configuration-add
+configuration-all
+configuration-authorized
+configuration-browse
+configuration-change
+configuration-changed
+configuration-check
+configuration-close
+configuration-complete
+configuration-completed
+configuration-copy
+configuration-count
+configuration-create
+configuration-created
+configuration-current
+configuration-default
+configuration-delete
+configuration-detail
+configuration-details
+configuration-disable
+configuration-download
+configuration-edit
+configuration-enable
+configuration-enabled
+configuration-export
+configuration-exported
+configuration-fetch
+configuration-filter
+configuration-find
+configuration-finished
+configuration-get
+configuration-hidden
+configuration-import
+configuration-imported
+configuration-include
+configuration-includes
+configuration-is
+configuration-last
+configuration-list
+configuration-load
+configuration-login
+configuration-main
+configuration-manage
+configuration-modified
+configuration-modify
+configuration-new
+configuration-number
+configuration-open
+configuration-preview
+configuration-print
+configuration-public
+configuration-published
+configuration-query
+configuration-read
+configuration-ready
+configuration-recent
+configuration-refresh
+configuration-registered
+configuration-remove
+configuration-return
+configuration-save
+configuration-search
+configuration-select
+configuration-send
+configuration-set
+configuration-show
+configuration-size
+configuration-sort
+configuration-start
+configuration-stop
+configuration-store
+configuration-submit
+configuration-test
+configuration-update
+configuration-updated
+configuration-upload
+configuration-valid
+configuration-validate
+configuration-verify
+configuration-view
+configuration-visible
+configuration-write
 console
 console-activate
 console-active
@@ -2621,6 +2827,7 @@ copy-admin
 copy-administrator
 copy-all
 copy-api
+copy-asset
 copy-attachment
 copy-author
 copy-authorized
@@ -2634,6 +2841,7 @@ copy-company
 copy-complete
 copy-completed
 copy-config
+copy-configuration
 copy-console
 copy-cookie
 copy-count
@@ -2698,6 +2906,7 @@ copy-page
 copy-password
 copy-path
 copy-permission
+copy-photo
 copy-picture
 copy-post
 copy-profile
@@ -2747,6 +2956,7 @@ count-account
 count-admin
 count-administrator
 count-api
+count-asset
 count-attachment
 count-author
 count-avatar
@@ -2756,6 +2966,7 @@ count-category
 count-comment
 count-company
 count-config
+count-configuration
 count-console
 count-cookie
 count-customer
@@ -2803,6 +3014,7 @@ count-page
 count-password
 count-path
 count-permission
+count-photo
 count-picture
 count-post
 count-profile
@@ -2845,6 +3057,7 @@ create-admin
 create-administrator
 create-all
 create-api
+create-asset
 create-attachment
 create-author
 create-authorized
@@ -2858,6 +3071,7 @@ create-company
 create-complete
 create-completed
 create-config
+create-configuration
 create-console
 create-cookie
 create-count
@@ -2922,6 +3136,7 @@ create-page
 create-password
 create-path
 create-permission
+create-photo
 create-picture
 create-post
 create-profile
@@ -2971,6 +3186,7 @@ created-account
 created-admin
 created-administrator
 created-api
+created-asset
 created-attachment
 created-author
 created-avatar
@@ -2980,6 +3196,7 @@ created-category
 created-comment
 created-company
 created-config
+created-configuration
 created-console
 created-cookie
 created-customer
@@ -3027,6 +3244,7 @@ created-page
 created-password
 created-path
 created-permission
+created-photo
 created-picture
 created-post
 created-profile
@@ -3067,6 +3285,7 @@ current-account
 current-admin
 current-administrator
 current-api
+current-asset
 current-attachment
 current-author
 current-avatar
@@ -3076,6 +3295,7 @@ current-category
 current-comment
 current-company
 current-config
+current-configuration
 current-console
 current-cookie
 current-customer
@@ -3123,6 +3343,7 @@ current-page
 current-password
 current-path
 current-permission
+current-photo
 current-picture
 current-post
 current-profile
@@ -3588,6 +3809,7 @@ default-account
 default-admin
 default-administrator
 default-api
+default-asset
 default-attachment
 default-author
 default-avatar
@@ -3597,6 +3819,7 @@ default-category
 default-comment
 default-company
 default-config
+default-configuration
 default-console
 default-cookie
 default-customer
@@ -3644,6 +3867,7 @@ default-page
 default-password
 default-path
 default-permission
+default-photo
 default-picture
 default-post
 default-profile
@@ -3686,6 +3910,7 @@ delete-admin
 delete-administrator
 delete-all
 delete-api
+delete-asset
 delete-attachment
 delete-author
 delete-authorized
@@ -3699,6 +3924,7 @@ delete-company
 delete-complete
 delete-completed
 delete-config
+delete-configuration
 delete-console
 delete-cookie
 delete-count
@@ -3763,6 +3989,7 @@ delete-page
 delete-password
 delete-path
 delete-permission
+delete-photo
 delete-picture
 delete-post
 delete-profile
@@ -3897,6 +4124,7 @@ detail-account
 detail-admin
 detail-administrator
 detail-api
+detail-asset
 detail-attachment
 detail-author
 detail-avatar
@@ -3906,6 +4134,7 @@ detail-category
 detail-comment
 detail-company
 detail-config
+detail-configuration
 detail-console
 detail-cookie
 detail-customer
@@ -3953,6 +4182,7 @@ detail-page
 detail-password
 detail-path
 detail-permission
+detail-photo
 detail-picture
 detail-post
 detail-profile
@@ -3993,6 +4223,7 @@ details-account
 details-admin
 details-administrator
 details-api
+details-asset
 details-attachment
 details-author
 details-avatar
@@ -4002,6 +4233,7 @@ details-category
 details-comment
 details-company
 details-config
+details-configuration
 details-console
 details-cookie
 details-customer
@@ -4049,6 +4281,7 @@ details-page
 details-password
 details-path
 details-permission
+details-photo
 details-picture
 details-post
 details-profile
@@ -4176,6 +4409,7 @@ disable-admin
 disable-administrator
 disable-all
 disable-api
+disable-asset
 disable-attachment
 disable-author
 disable-authorized
@@ -4189,6 +4423,7 @@ disable-company
 disable-complete
 disable-completed
 disable-config
+disable-configuration
 disable-console
 disable-cookie
 disable-count
@@ -4253,6 +4488,7 @@ disable-page
 disable-password
 disable-path
 disable-permission
+disable-photo
 disable-picture
 disable-post
 disable-profile
@@ -4391,6 +4627,7 @@ download-admin
 download-administrator
 download-all
 download-api
+download-asset
 download-attachment
 download-author
 download-authorized
@@ -4408,6 +4645,7 @@ download-company
 download-complete
 download-completed
 download-config
+download-configuration
 download-console
 download-cookie
 download-copy
@@ -4489,6 +4727,7 @@ download-page
 download-password
 download-path
 download-permission
+download-photo
 download-picture
 download-post
 download-preview
@@ -4645,6 +4884,7 @@ edit-admin
 edit-administrator
 edit-all
 edit-api
+edit-asset
 edit-attachment
 edit-author
 edit-authorized
@@ -4658,6 +4898,7 @@ edit-company
 edit-complete
 edit-completed
 edit-config
+edit-configuration
 edit-console
 edit-cookie
 edit-count
@@ -4722,6 +4963,7 @@ edit-page
 edit-password
 edit-path
 edit-permission
+edit-photo
 edit-picture
 edit-post
 edit-profile
@@ -4943,6 +5185,7 @@ enable-admin
 enable-administrator
 enable-all
 enable-api
+enable-asset
 enable-attachment
 enable-author
 enable-authorized
@@ -4956,6 +5199,7 @@ enable-company
 enable-complete
 enable-completed
 enable-config
+enable-configuration
 enable-console
 enable-cookie
 enable-count
@@ -5020,6 +5264,7 @@ enable-page
 enable-password
 enable-path
 enable-permission
+enable-photo
 enable-picture
 enable-post
 enable-profile
@@ -5069,6 +5314,7 @@ enabled-account
 enabled-admin
 enabled-administrator
 enabled-api
+enabled-asset
 enabled-attachment
 enabled-author
 enabled-avatar
@@ -5078,6 +5324,7 @@ enabled-category
 enabled-comment
 enabled-company
 enabled-config
+enabled-configuration
 enabled-console
 enabled-cookie
 enabled-customer
@@ -5125,6 +5372,7 @@ enabled-page
 enabled-password
 enabled-path
 enabled-permission
+enabled-photo
 enabled-picture
 enabled-post
 enabled-profile
@@ -5167,6 +5415,7 @@ export-admin
 export-administrator
 export-all
 export-api
+export-asset
 export-attachment
 export-author
 export-authorized
@@ -5180,6 +5429,7 @@ export-company
 export-complete
 export-completed
 export-config
+export-configuration
 export-console
 export-cookie
 export-count
@@ -5244,6 +5494,7 @@ export-page
 export-password
 export-path
 export-permission
+export-photo
 export-picture
 export-post
 export-profile
@@ -5293,6 +5544,7 @@ exported-account
 exported-admin
 exported-administrator
 exported-api
+exported-asset
 exported-attachment
 exported-author
 exported-avatar
@@ -5302,6 +5554,7 @@ exported-category
 exported-comment
 exported-company
 exported-config
+exported-configuration
 exported-console
 exported-cookie
 exported-customer
@@ -5349,6 +5602,7 @@ exported-page
 exported-password
 exported-path
 exported-permission
+exported-photo
 exported-picture
 exported-post
 exported-profile
@@ -5391,6 +5645,7 @@ fetch-admin
 fetch-administrator
 fetch-all
 fetch-api
+fetch-asset
 fetch-attachment
 fetch-author
 fetch-authorized
@@ -5404,6 +5659,7 @@ fetch-company
 fetch-complete
 fetch-completed
 fetch-config
+fetch-configuration
 fetch-console
 fetch-cookie
 fetch-count
@@ -5468,6 +5724,7 @@ fetch-page
 fetch-password
 fetch-path
 fetch-permission
+fetch-photo
 fetch-picture
 fetch-post
 fetch-profile
@@ -5691,6 +5948,7 @@ filter-admin
 filter-administrator
 filter-all
 filter-api
+filter-asset
 filter-attachment
 filter-author
 filter-authorized
@@ -5708,6 +5966,7 @@ filter-company
 filter-complete
 filter-completed
 filter-config
+filter-configuration
 filter-console
 filter-cookie
 filter-copy
@@ -5789,6 +6048,7 @@ filter-page
 filter-password
 filter-path
 filter-permission
+filter-photo
 filter-picture
 filter-post
 filter-preview
@@ -5860,6 +6120,7 @@ find-admin
 find-administrator
 find-all
 find-api
+find-asset
 find-attachment
 find-author
 find-authorized
@@ -5873,6 +6134,7 @@ find-company
 find-complete
 find-completed
 find-config
+find-configuration
 find-console
 find-cookie
 find-count
@@ -5937,6 +6199,7 @@ find-page
 find-password
 find-path
 find-permission
+find-photo
 find-picture
 find-post
 find-profile
@@ -5986,6 +6249,7 @@ finished-account
 finished-admin
 finished-administrator
 finished-api
+finished-asset
 finished-attachment
 finished-author
 finished-avatar
@@ -5995,6 +6259,7 @@ finished-category
 finished-comment
 finished-company
 finished-config
+finished-configuration
 finished-console
 finished-cookie
 finished-customer
@@ -6042,6 +6307,7 @@ finished-page
 finished-password
 finished-path
 finished-permission
+finished-photo
 finished-picture
 finished-post
 finished-profile
@@ -6168,6 +6434,7 @@ get-admin
 get-administrator
 get-all
 get-api
+get-asset
 get-attachment
 get-author
 get-authorized
@@ -6181,6 +6448,7 @@ get-company
 get-complete
 get-completed
 get-config
+get-configuration
 get-console
 get-cookie
 get-count
@@ -6245,6 +6513,7 @@ get-page
 get-password
 get-path
 get-permission
+get-photo
 get-picture
 get-post
 get-profile
@@ -6379,6 +6648,7 @@ hidden-account
 hidden-admin
 hidden-administrator
 hidden-api
+hidden-asset
 hidden-attachment
 hidden-author
 hidden-avatar
@@ -6388,6 +6658,7 @@ hidden-category
 hidden-comment
 hidden-company
 hidden-config
+hidden-configuration
 hidden-console
 hidden-cookie
 hidden-customer
@@ -6435,6 +6706,7 @@ hidden-page
 hidden-password
 hidden-path
 hidden-permission
+hidden-photo
 hidden-picture
 hidden-post
 hidden-profile
@@ -6731,6 +7003,7 @@ import-admin
 import-administrator
 import-all
 import-api
+import-asset
 import-attachment
 import-author
 import-authorized
@@ -6744,6 +7017,7 @@ import-company
 import-complete
 import-completed
 import-config
+import-configuration
 import-console
 import-cookie
 import-count
@@ -6808,6 +7082,7 @@ import-page
 import-password
 import-path
 import-permission
+import-photo
 import-picture
 import-post
 import-profile
@@ -6857,6 +7132,7 @@ imported-account
 imported-admin
 imported-administrator
 imported-api
+imported-asset
 imported-attachment
 imported-author
 imported-avatar
@@ -6866,6 +7142,7 @@ imported-category
 imported-comment
 imported-company
 imported-config
+imported-configuration
 imported-console
 imported-cookie
 imported-customer
@@ -6913,6 +7190,7 @@ imported-page
 imported-password
 imported-path
 imported-permission
+imported-photo
 imported-picture
 imported-post
 imported-profile
@@ -6955,6 +7233,7 @@ include-admin
 include-administrator
 include-all
 include-api
+include-asset
 include-attachment
 include-author
 include-authorized
@@ -6968,6 +7247,7 @@ include-company
 include-complete
 include-completed
 include-config
+include-configuration
 include-console
 include-cookie
 include-count
@@ -7032,6 +7312,7 @@ include-page
 include-password
 include-path
 include-permission
+include-photo
 include-picture
 include-post
 include-profile
@@ -7083,6 +7364,7 @@ includes-admin
 includes-administrator
 includes-all
 includes-api
+includes-asset
 includes-attachment
 includes-author
 includes-authorized
@@ -7096,6 +7378,7 @@ includes-company
 includes-complete
 includes-completed
 includes-config
+includes-configuration
 includes-console
 includes-cookie
 includes-count
@@ -7160,6 +7443,7 @@ includes-page
 includes-password
 includes-path
 includes-permission
+includes-photo
 includes-picture
 includes-post
 includes-profile
@@ -7295,6 +7579,7 @@ is-admin
 is-administrator
 is-all
 is-api
+is-asset
 is-attachment
 is-author
 is-authorized
@@ -7308,6 +7593,7 @@ is-company
 is-complete
 is-completed
 is-config
+is-configuration
 is-console
 is-cookie
 is-count
@@ -7372,6 +7658,7 @@ is-page
 is-password
 is-path
 is-permission
+is-photo
 is-picture
 is-post
 is-profile
@@ -7675,6 +7962,7 @@ last-account
 last-admin
 last-administrator
 last-api
+last-asset
 last-attachment
 last-author
 last-avatar
@@ -7684,6 +7972,7 @@ last-category
 last-comment
 last-company
 last-config
+last-configuration
 last-console
 last-cookie
 last-customer
@@ -7731,6 +8020,7 @@ last-page
 last-password
 last-path
 last-permission
+last-photo
 last-picture
 last-post
 last-profile
@@ -7945,6 +8235,7 @@ list-admin
 list-administrator
 list-all
 list-api
+list-asset
 list-attachment
 list-author
 list-authorized
@@ -7962,6 +8253,7 @@ list-company
 list-complete
 list-completed
 list-config
+list-configuration
 list-console
 list-cookie
 list-copy
@@ -8043,6 +8335,7 @@ list-page
 list-password
 list-path
 list-permission
+list-photo
 list-picture
 list-post
 list-preview
@@ -8114,6 +8407,7 @@ load-admin
 load-administrator
 load-all
 load-api
+load-asset
 load-attachment
 load-author
 load-authorized
@@ -8127,6 +8421,7 @@ load-company
 load-complete
 load-completed
 load-config
+load-configuration
 load-console
 load-cookie
 load-count
@@ -8191,6 +8486,7 @@ load-page
 load-password
 load-path
 load-permission
+load-photo
 load-picture
 load-post
 load-profile
@@ -8329,6 +8625,7 @@ login-admin
 login-administrator
 login-all
 login-api
+login-asset
 login-attachment
 login-author
 login-authorized
@@ -8346,6 +8643,7 @@ login-company
 login-complete
 login-completed
 login-config
+login-configuration
 login-console
 login-cookie
 login-copy
@@ -8427,6 +8725,7 @@ login-page
 login-password
 login-path
 login-permission
+login-photo
 login-picture
 login-post
 login-preview
@@ -8581,6 +8880,7 @@ main-account
 main-admin
 main-administrator
 main-api
+main-asset
 main-attachment
 main-author
 main-avatar
@@ -8590,6 +8890,7 @@ main-category
 main-comment
 main-company
 main-config
+main-configuration
 main-console
 main-cookie
 main-customer
@@ -8637,6 +8938,7 @@ main-page
 main-password
 main-path
 main-permission
+main-photo
 main-picture
 main-post
 main-profile
@@ -8679,6 +8981,7 @@ manage-admin
 manage-administrator
 manage-all
 manage-api
+manage-asset
 manage-attachment
 manage-author
 manage-authorized
@@ -8692,6 +8995,7 @@ manage-company
 manage-complete
 manage-completed
 manage-config
+manage-configuration
 manage-console
 manage-cookie
 manage-count
@@ -8756,6 +9060,7 @@ manage-page
 manage-password
 manage-path
 manage-permission
+manage-photo
 manage-picture
 manage-post
 manage-profile
@@ -9400,6 +9705,7 @@ modified-account
 modified-admin
 modified-administrator
 modified-api
+modified-asset
 modified-attachment
 modified-author
 modified-avatar
@@ -9409,6 +9715,7 @@ modified-category
 modified-comment
 modified-company
 modified-config
+modified-configuration
 modified-console
 modified-cookie
 modified-customer
@@ -9456,6 +9763,7 @@ modified-page
 modified-password
 modified-path
 modified-permission
+modified-photo
 modified-picture
 modified-post
 modified-profile
@@ -9498,6 +9806,7 @@ modify-admin
 modify-administrator
 modify-all
 modify-api
+modify-asset
 modify-attachment
 modify-author
 modify-authorized
@@ -9511,6 +9820,7 @@ modify-company
 modify-complete
 modify-completed
 modify-config
+modify-configuration
 modify-console
 modify-cookie
 modify-count
@@ -9575,6 +9885,7 @@ modify-page
 modify-password
 modify-path
 modify-permission
+modify-photo
 modify-picture
 modify-post
 modify-profile
@@ -9793,6 +10104,7 @@ new-account
 new-admin
 new-administrator
 new-api
+new-asset
 new-attachment
 new-author
 new-avatar
@@ -9802,6 +10114,7 @@ new-category
 new-comment
 new-company
 new-config
+new-configuration
 new-console
 new-cookie
 new-customer
@@ -9849,6 +10162,7 @@ new-page
 new-password
 new-path
 new-permission
+new-photo
 new-picture
 new-post
 new-profile
@@ -9889,6 +10203,7 @@ number-account
 number-admin
 number-administrator
 number-api
+number-asset
 number-attachment
 number-author
 number-avatar
@@ -9898,6 +10213,7 @@ number-category
 number-comment
 number-company
 number-config
+number-configuration
 number-console
 number-cookie
 number-customer
@@ -9945,6 +10261,7 @@ number-page
 number-password
 number-path
 number-permission
+number-photo
 number-picture
 number-post
 number-profile
@@ -10072,6 +10389,7 @@ open-admin
 open-administrator
 open-all
 open-api
+open-asset
 open-attachment
 open-author
 open-authorized
@@ -10085,6 +10403,7 @@ open-company
 open-complete
 open-completed
 open-config
+open-configuration
 open-console
 open-cookie
 open-count
@@ -10149,6 +10468,7 @@ open-page
 open-password
 open-path
 open-permission
+open-photo
 open-picture
 open-post
 open-profile
@@ -10618,6 +10938,91 @@ permission-verify
 permission-view
 permission-visible
 permission-write
+photo
+photo-activate
+photo-active
+photo-add
+photo-all
+photo-authorized
+photo-browse
+photo-change
+photo-changed
+photo-check
+photo-close
+photo-complete
+photo-completed
+photo-copy
+photo-count
+photo-create
+photo-created
+photo-current
+photo-default
+photo-delete
+photo-detail
+photo-details
+photo-disable
+photo-download
+photo-edit
+photo-enable
+photo-enabled
+photo-export
+photo-exported
+photo-fetch
+photo-filter
+photo-find
+photo-finished
+photo-get
+photo-hidden
+photo-import
+photo-imported
+photo-include
+photo-includes
+photo-is
+photo-last
+photo-list
+photo-load
+photo-login
+photo-main
+photo-manage
+photo-modified
+photo-modify
+photo-new
+photo-number
+photo-open
+photo-preview
+photo-print
+photo-public
+photo-published
+photo-query
+photo-read
+photo-ready
+photo-recent
+photo-refresh
+photo-registered
+photo-remove
+photo-return
+photo-save
+photo-search
+photo-select
+photo-send
+photo-set
+photo-show
+photo-size
+photo-sort
+photo-start
+photo-stop
+photo-store
+photo-submit
+photo-test
+photo-update
+photo-updated
+photo-upload
+photo-valid
+photo-validate
+photo-verify
+photo-view
+photo-visible
+photo-write
 picture
 picture-activate
 picture-active
@@ -10795,6 +11200,7 @@ preview-admin
 preview-administrator
 preview-all
 preview-api
+preview-asset
 preview-attachment
 preview-author
 preview-authorized
@@ -10808,6 +11214,7 @@ preview-company
 preview-complete
 preview-completed
 preview-config
+preview-configuration
 preview-console
 preview-cookie
 preview-count
@@ -10872,6 +11279,7 @@ preview-page
 preview-password
 preview-path
 preview-permission
+preview-photo
 preview-picture
 preview-post
 preview-profile
@@ -10923,6 +11331,7 @@ print-admin
 print-administrator
 print-all
 print-api
+print-asset
 print-attachment
 print-author
 print-authorized
@@ -10936,6 +11345,7 @@ print-company
 print-complete
 print-completed
 print-config
+print-configuration
 print-console
 print-cookie
 print-count
@@ -11000,6 +11410,7 @@ print-page
 print-password
 print-path
 print-permission
+print-photo
 print-picture
 print-post
 print-profile
@@ -11219,6 +11630,7 @@ public-account
 public-admin
 public-administrator
 public-api
+public-asset
 public-attachment
 public-author
 public-avatar
@@ -11228,6 +11640,7 @@ public-category
 public-comment
 public-company
 public-config
+public-configuration
 public-console
 public-cookie
 public-customer
@@ -11275,6 +11688,7 @@ public-page
 public-password
 public-path
 public-permission
+public-photo
 public-picture
 public-post
 public-profile
@@ -11315,6 +11729,7 @@ published-account
 published-admin
 published-administrator
 published-api
+published-asset
 published-attachment
 published-author
 published-avatar
@@ -11324,6 +11739,7 @@ published-category
 published-comment
 published-company
 published-config
+published-configuration
 published-console
 published-cookie
 published-customer
@@ -11371,6 +11787,7 @@ published-page
 published-password
 published-path
 published-permission
+published-photo
 published-picture
 published-post
 published-profile
@@ -11499,6 +11916,7 @@ query-admin
 query-administrator
 query-all
 query-api
+query-asset
 query-attachment
 query-author
 query-authorized
@@ -11516,6 +11934,7 @@ query-company
 query-complete
 query-completed
 query-config
+query-configuration
 query-console
 query-cookie
 query-copy
@@ -11597,6 +12016,7 @@ query-page
 query-password
 query-path
 query-permission
+query-photo
 query-picture
 query-post
 query-preview
@@ -11668,6 +12088,7 @@ read-admin
 read-administrator
 read-all
 read-api
+read-asset
 read-attachment
 read-author
 read-authorized
@@ -11681,6 +12102,7 @@ read-company
 read-complete
 read-completed
 read-config
+read-configuration
 read-console
 read-cookie
 read-count
@@ -11745,6 +12167,7 @@ read-page
 read-password
 read-path
 read-permission
+read-photo
 read-picture
 read-post
 read-profile
@@ -11794,6 +12217,7 @@ ready-account
 ready-admin
 ready-administrator
 ready-api
+ready-asset
 ready-attachment
 ready-author
 ready-avatar
@@ -11803,6 +12227,7 @@ ready-category
 ready-comment
 ready-company
 ready-config
+ready-configuration
 ready-console
 ready-cookie
 ready-customer
@@ -11850,6 +12275,7 @@ ready-page
 ready-password
 ready-path
 ready-permission
+ready-photo
 ready-picture
 ready-post
 ready-profile
@@ -11890,6 +12316,7 @@ recent-account
 recent-admin
 recent-administrator
 recent-api
+recent-asset
 recent-attachment
 recent-author
 recent-avatar
@@ -11899,6 +12326,7 @@ recent-category
 recent-comment
 recent-company
 recent-config
+recent-configuration
 recent-console
 recent-cookie
 recent-customer
@@ -11946,6 +12374,7 @@ recent-page
 recent-password
 recent-path
 recent-permission
+recent-photo
 recent-picture
 recent-post
 recent-profile
@@ -12073,6 +12502,7 @@ refresh-admin
 refresh-administrator
 refresh-all
 refresh-api
+refresh-asset
 refresh-attachment
 refresh-author
 refresh-authorized
@@ -12086,6 +12516,7 @@ refresh-company
 refresh-complete
 refresh-completed
 refresh-config
+refresh-configuration
 refresh-console
 refresh-cookie
 refresh-count
@@ -12150,6 +12581,7 @@ refresh-page
 refresh-password
 refresh-path
 refresh-permission
+refresh-photo
 refresh-picture
 refresh-post
 refresh-profile
@@ -12199,6 +12631,7 @@ registered-account
 registered-admin
 registered-administrator
 registered-api
+registered-asset
 registered-attachment
 registered-author
 registered-avatar
@@ -12208,6 +12641,7 @@ registered-category
 registered-comment
 registered-company
 registered-config
+registered-configuration
 registered-console
 registered-cookie
 registered-customer
@@ -12255,6 +12689,7 @@ registered-page
 registered-password
 registered-path
 registered-permission
+registered-photo
 registered-picture
 registered-post
 registered-profile
@@ -12297,6 +12732,7 @@ remove-admin
 remove-administrator
 remove-all
 remove-api
+remove-asset
 remove-attachment
 remove-author
 remove-authorized
@@ -12310,6 +12746,7 @@ remove-company
 remove-complete
 remove-completed
 remove-config
+remove-configuration
 remove-console
 remove-cookie
 remove-count
@@ -12374,6 +12811,7 @@ remove-page
 remove-password
 remove-path
 remove-permission
+remove-photo
 remove-picture
 remove-post
 remove-profile
@@ -12765,6 +13203,7 @@ return-admin
 return-administrator
 return-all
 return-api
+return-asset
 return-attachment
 return-author
 return-authorized
@@ -12778,6 +13217,7 @@ return-company
 return-complete
 return-completed
 return-config
+return-configuration
 return-console
 return-cookie
 return-count
@@ -12842,6 +13282,7 @@ return-page
 return-password
 return-path
 return-permission
+return-photo
 return-picture
 return-post
 return-profile
@@ -12978,6 +13419,7 @@ save-admin
 save-administrator
 save-all
 save-api
+save-asset
 save-attachment
 save-author
 save-authorized
@@ -12991,6 +13433,7 @@ save-company
 save-complete
 save-completed
 save-config
+save-configuration
 save-console
 save-cookie
 save-count
@@ -13055,6 +13498,7 @@ save-page
 save-password
 save-path
 save-permission
+save-photo
 save-picture
 save-post
 save-profile
@@ -13108,6 +13552,7 @@ search-admin
 search-administrator
 search-all
 search-api
+search-asset
 search-attachment
 search-author
 search-authorized
@@ -13125,6 +13570,7 @@ search-company
 search-complete
 search-completed
 search-config
+search-configuration
 search-console
 search-cookie
 search-copy
@@ -13206,6 +13652,7 @@ search-page
 search-password
 search-path
 search-permission
+search-photo
 search-picture
 search-post
 search-preview
@@ -13277,6 +13724,7 @@ select-admin
 select-administrator
 select-all
 select-api
+select-asset
 select-attachment
 select-author
 select-authorized
@@ -13290,6 +13738,7 @@ select-company
 select-complete
 select-completed
 select-config
+select-configuration
 select-console
 select-cookie
 select-count
@@ -13354,6 +13803,7 @@ select-page
 select-password
 select-path
 select-permission
+select-photo
 select-picture
 select-post
 select-profile
@@ -13405,6 +13855,7 @@ send-admin
 send-administrator
 send-all
 send-api
+send-asset
 send-attachment
 send-author
 send-authorized
@@ -13418,6 +13869,7 @@ send-company
 send-complete
 send-completed
 send-config
+send-configuration
 send-console
 send-cookie
 send-count
@@ -13482,6 +13934,7 @@ send-page
 send-password
 send-path
 send-permission
+send-photo
 send-picture
 send-post
 send-profile
@@ -13702,6 +14155,7 @@ set-admin
 set-administrator
 set-all
 set-api
+set-asset
 set-attachment
 set-author
 set-authorized
@@ -13715,6 +14169,7 @@ set-company
 set-complete
 set-completed
 set-config
+set-configuration
 set-console
 set-cookie
 set-count
@@ -13779,6 +14234,7 @@ set-page
 set-password
 set-path
 set-permission
+set-photo
 set-picture
 set-post
 set-profile
@@ -14000,6 +14456,7 @@ show-admin
 show-administrator
 show-all
 show-api
+show-asset
 show-attachment
 show-author
 show-authorized
@@ -14013,6 +14470,7 @@ show-company
 show-complete
 show-completed
 show-config
+show-configuration
 show-console
 show-cookie
 show-count
@@ -14077,6 +14535,7 @@ show-page
 show-password
 show-path
 show-permission
+show-photo
 show-picture
 show-post
 show-profile
@@ -14126,6 +14585,7 @@ size-account
 size-admin
 size-administrator
 size-api
+size-asset
 size-attachment
 size-author
 size-avatar
@@ -14135,6 +14595,7 @@ size-category
 size-comment
 size-company
 size-config
+size-configuration
 size-console
 size-cookie
 size-customer
@@ -14182,6 +14643,7 @@ size-page
 size-password
 size-path
 size-permission
+size-photo
 size-picture
 size-post
 size-profile
@@ -14224,6 +14686,7 @@ sort-admin
 sort-administrator
 sort-all
 sort-api
+sort-asset
 sort-attachment
 sort-author
 sort-authorized
@@ -14237,6 +14700,7 @@ sort-company
 sort-complete
 sort-completed
 sort-config
+sort-configuration
 sort-console
 sort-cookie
 sort-count
@@ -14301,6 +14765,7 @@ sort-page
 sort-password
 sort-path
 sort-permission
+sort-photo
 sort-picture
 sort-post
 sort-profile
@@ -14521,6 +14986,7 @@ start-admin
 start-administrator
 start-all
 start-api
+start-asset
 start-attachment
 start-author
 start-authorized
@@ -14534,6 +15000,7 @@ start-company
 start-complete
 start-completed
 start-config
+start-configuration
 start-console
 start-cookie
 start-count
@@ -14598,6 +15065,7 @@ start-page
 start-password
 start-path
 start-permission
+start-photo
 start-picture
 start-post
 start-profile
@@ -14734,6 +15202,7 @@ stop-admin
 stop-administrator
 stop-all
 stop-api
+stop-asset
 stop-attachment
 stop-author
 stop-authorized
@@ -14747,6 +15216,7 @@ stop-company
 stop-complete
 stop-completed
 stop-config
+stop-configuration
 stop-console
 stop-cookie
 stop-count
@@ -14811,6 +15281,7 @@ stop-page
 stop-password
 stop-path
 stop-permission
+stop-photo
 stop-picture
 stop-post
 stop-profile
@@ -14862,6 +15333,7 @@ store-admin
 store-administrator
 store-all
 store-api
+store-asset
 store-attachment
 store-author
 store-authorized
@@ -14875,6 +15347,7 @@ store-company
 store-complete
 store-completed
 store-config
+store-configuration
 store-console
 store-cookie
 store-count
@@ -14939,6 +15412,7 @@ store-page
 store-password
 store-path
 store-permission
+store-photo
 store-picture
 store-post
 store-profile
@@ -14990,6 +15464,7 @@ submit-admin
 submit-administrator
 submit-all
 submit-api
+submit-asset
 submit-attachment
 submit-author
 submit-authorized
@@ -15003,6 +15478,7 @@ submit-company
 submit-complete
 submit-completed
 submit-config
+submit-configuration
 submit-console
 submit-cookie
 submit-count
@@ -15067,6 +15543,7 @@ submit-page
 submit-password
 submit-path
 submit-permission
+submit-photo
 submit-picture
 submit-post
 submit-profile
@@ -15628,6 +16105,7 @@ test-admin
 test-administrator
 test-all
 test-api
+test-asset
 test-attachment
 test-author
 test-authorized
@@ -15641,6 +16119,7 @@ test-company
 test-complete
 test-completed
 test-config
+test-configuration
 test-console
 test-cookie
 test-count
@@ -15705,6 +16184,7 @@ test-page
 test-password
 test-path
 test-permission
+test-photo
 test-picture
 test-post
 test-profile
@@ -16013,6 +16493,7 @@ update-admin
 update-administrator
 update-all
 update-api
+update-asset
 update-attachment
 update-author
 update-authorized
@@ -16030,6 +16511,7 @@ update-company
 update-complete
 update-completed
 update-config
+update-configuration
 update-console
 update-cookie
 update-copy
@@ -16111,6 +16593,7 @@ update-page
 update-password
 update-path
 update-permission
+update-photo
 update-picture
 update-post
 update-preview
@@ -16180,6 +16663,7 @@ updated-account
 updated-admin
 updated-administrator
 updated-api
+updated-asset
 updated-attachment
 updated-author
 updated-avatar
@@ -16189,6 +16673,7 @@ updated-category
 updated-comment
 updated-company
 updated-config
+updated-configuration
 updated-console
 updated-cookie
 updated-customer
@@ -16236,6 +16721,7 @@ updated-page
 updated-password
 updated-path
 updated-permission
+updated-photo
 updated-picture
 updated-post
 updated-profile
@@ -16280,6 +16766,7 @@ upload-admin
 upload-administrator
 upload-all
 upload-api
+upload-asset
 upload-attachment
 upload-author
 upload-authorized
@@ -16297,6 +16784,7 @@ upload-company
 upload-complete
 upload-completed
 upload-config
+upload-configuration
 upload-console
 upload-cookie
 upload-copy
@@ -16378,6 +16866,7 @@ upload-page
 upload-password
 upload-path
 upload-permission
+upload-photo
 upload-picture
 upload-post
 upload-preview
@@ -16616,6 +17105,7 @@ valid-account
 valid-admin
 valid-administrator
 valid-api
+valid-asset
 valid-attachment
 valid-author
 valid-avatar
@@ -16625,6 +17115,7 @@ valid-category
 valid-comment
 valid-company
 valid-config
+valid-configuration
 valid-console
 valid-cookie
 valid-customer
@@ -16672,6 +17163,7 @@ valid-page
 valid-password
 valid-path
 valid-permission
+valid-photo
 valid-picture
 valid-post
 valid-profile
@@ -16714,6 +17206,7 @@ validate-admin
 validate-administrator
 validate-all
 validate-api
+validate-asset
 validate-attachment
 validate-author
 validate-authorized
@@ -16727,6 +17220,7 @@ validate-company
 validate-complete
 validate-completed
 validate-config
+validate-configuration
 validate-console
 validate-cookie
 validate-count
@@ -16791,6 +17285,7 @@ validate-page
 validate-password
 validate-path
 validate-permission
+validate-photo
 validate-picture
 validate-post
 validate-profile
@@ -16842,6 +17337,7 @@ verify-admin
 verify-administrator
 verify-all
 verify-api
+verify-asset
 verify-attachment
 verify-author
 verify-authorized
@@ -16855,6 +17351,7 @@ verify-company
 verify-complete
 verify-completed
 verify-config
+verify-configuration
 verify-console
 verify-cookie
 verify-count
@@ -16919,6 +17416,7 @@ verify-page
 verify-password
 verify-path
 verify-permission
+verify-photo
 verify-picture
 verify-post
 verify-profile
@@ -17057,6 +17555,7 @@ view-admin
 view-administrator
 view-all
 view-api
+view-asset
 view-attachment
 view-author
 view-authorized
@@ -17074,6 +17573,7 @@ view-company
 view-complete
 view-completed
 view-config
+view-configuration
 view-console
 view-cookie
 view-copy
@@ -17155,6 +17655,7 @@ view-page
 view-password
 view-path
 view-permission
+view-photo
 view-picture
 view-post
 view-preview
@@ -17224,6 +17725,7 @@ visible-account
 visible-admin
 visible-administrator
 visible-api
+visible-asset
 visible-attachment
 visible-author
 visible-avatar
@@ -17233,6 +17735,7 @@ visible-category
 visible-comment
 visible-company
 visible-config
+visible-configuration
 visible-console
 visible-cookie
 visible-customer
@@ -17280,6 +17783,7 @@ visible-page
 visible-password
 visible-path
 visible-permission
+visible-photo
 visible-picture
 visible-post
 visible-profile
@@ -17322,6 +17826,7 @@ write-admin
 write-administrator
 write-all
 write-api
+write-asset
 write-attachment
 write-author
 write-authorized
@@ -17335,6 +17840,7 @@ write-company
 write-complete
 write-completed
 write-config
+write-configuration
 write-console
 write-cookie
 write-count
@@ -17399,6 +17905,7 @@ write-page
 write-password
 write-path
 write-permission
+write-photo
 write-picture
 write-post
 write-profile

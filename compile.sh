@@ -22,5 +22,6 @@ wordz -p src/classes/passwords.py::ExtendedPasswords -t $TMP_DIR -o $OUT_DIR && 
 wordz -p src/classes/dns.py::Subdomains -t $TMP_DIR -o $OUT_DIR && \
 wordz -p src/classes/http.py::FileExtensions -t $TMP_DIR -o $OUT_DIR && \
 wordz -p src/classes/http.py::HttpWordsPlainCommon -t $TMP_DIR -o $OUT_DIR && \
+wordz -p src/classes/http.py::HttpWordsObjectsCommon -t $TMP_DIR -o $OUT_DIR && \
 wordz -p src/classes/http.py::HttpWordsSuffixesCommon -t $TMP_DIR -o $OUT_DIR && \
 wordz -p src/classes/http.py::HttpWordsDoubleCommon -t $TMP_DIR -o $OUT_DIR

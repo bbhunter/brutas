@@ -2,6 +2,7 @@ account
 admin
 administrator
 API
+asset
 attachment
 author
 avatar
@@ -11,6 +12,7 @@ category
 comment
 company
 config
+configuration
 console
 cookie
 customer
@@ -58,6 +60,7 @@ page
 password
 path
 permission
+photo
 picture
 post
 profile

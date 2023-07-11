@@ -19,5 +19,6 @@ done
 mkdir -p $TMP_DIR $OUT_DIR
 wordz -p src/classes/passwords.py::BigPasswords -t $TMP_DIR -o $OUT_DIR && \
 wordz -p src/classes/http.py::HttpWordsPlainAll -t $TMP_DIR -o $OUT_DIR && \
+wordz -p src/classes/http.py::HttpWordsObjectsAll -t $TMP_DIR -o $OUT_DIR && \
 wordz -p src/classes/http.py::HttpWordsSuffixesAll -t $TMP_DIR -o $OUT_DIR && \
 wordz -p src/classes/http.py::HttpWordsDoubleAll -t $TMP_DIR -o $OUT_DIR

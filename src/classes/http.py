@@ -137,6 +137,63 @@ class HttpWordsPlain(HttpWords):
         )
 
 
+class HttpWordsObjects(HttpWords):
+
+    def process(self):
+        lowercase_nouns = self.temp(f'lowercase-paths-nouns-{self.group_name}.txt')
+
+        # NOTE: lowercase paths
+        self.merge(
+            self.output(f'wordlists/http/paths/lowercase/objects-{self.group_name}.txt'),
+            (
+                lowercase_nouns,
+                self.right(lowercase_nouns, lowercase_nouns),
+            )
+        )
+
+        nouns_sep = self.right(lowercase_nouns, self.base('src/bits/separators-dash.txt'))
+
+        # NOTE: dash-case paths
+        self.merge(
+            self.output(f'wordlists/http/paths/dash/objects-{self.group_name}.txt'),
+            (
+                lowercase_nouns,
+                self.right(nouns_sep, lowercase_nouns),
+            )
+        )
+
+        nouns_sep = self.right(lowercase_nouns, self.base('src/bits/separators-underscore.txt'))
+
+        # NOTE: snake_case paths
+        self.merge(
+            self.output(f'wordlists/http/paths/underscore/objects-{self.group_name}.txt'),
+            (
+                lowercase_nouns,
+                self.right(nouns_sep, lowercase_nouns),
+            )
+        )
+
+        capitalize_nouns = self.temp(f'capitalize-paths-nouns-{self.group_name}.txt')
+
+        # NOTE: CamelCase paths
+        self.merge(
+            self.output(f'wordlists/http/paths/camelcase/objects-{self.group_name}.txt'),
+            (
+                capitalize_nouns,
+                self.right(capitalize_nouns, capitalize_nouns),
+            )
+        )
+
+        # NOTE: lowerCamelCase paths
+        self.merge(
+            self.output(f'wordlists/http/paths/lowercamelcase/objects-{self.group_name}.txt'),
+            (
+                lowercase_nouns,
+                self.right(lowercase_nouns, capitalize_nouns),
+            )
+        )
+
+
 class HttpWordsSuffixes(HttpWords):
 
     def process(self):
@@ -218,7 +275,6 @@ class HttpWordsDouble(HttpWords):
         )
 
         verbs_sep = self.right(lowercase_verbs, self.base('src/bits/separators-dash.txt'))
-        nouns_sep = self.right(lowercase_nouns, self.base('src/bits/separators-dash.txt'))
         aads_sep = self.right(lowercase_aads, self.base('src/bits/separators-dash.txt'))
         aads_nouns = self.right(aads_sep, lowercase_nouns)
 
@@ -231,7 +287,6 @@ class HttpWordsDouble(HttpWords):
         )
 
         verbs_sep = self.right(lowercase_verbs, self.base('src/bits/separators-underscore.txt'))
-        nouns_sep = self.right(lowercase_nouns, self.base('src/bits/separators-underscore.txt'))
         aads_sep = self.right(lowercase_aads, self.base('src/bits/separators-underscore.txt'))
         aads_nouns = self.right(aads_sep, lowercase_nouns)
 
@@ -270,6 +325,11 @@ class HttpWordsPlainCommon(HttpWordsPlain):
     group_name = 'basic'
 
 
+class HttpWordsObjectsCommon(HttpWordsObjects):
+
+    group_name = 'basic'
+
+
 class HttpWordsSuffixesCommon(HttpWordsSuffixes):
 
     group_name = 'basic'
@@ -281,6 +341,11 @@ class HttpWordsDoubleCommon(HttpWordsDouble):
 
 
 class HttpWordsPlainAll(HttpWordsPlain):
+
+    group_name = 'all'
+
+
+class HttpWordsObjectsAll(HttpWordsObjects):
 
     group_name = 'all'
 

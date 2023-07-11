@@ -44,7 +44,6 @@ archives
 array
 article
 articles
-asset
 assets
 attachments
 attribute
@@ -171,7 +170,6 @@ conf
 conference
 conferences
 configs
-configuration
 confirmation
 connection
 connections
@@ -570,7 +568,6 @@ person
 persons
 pg
 phone
-photo
 photos
 phrase
 picker

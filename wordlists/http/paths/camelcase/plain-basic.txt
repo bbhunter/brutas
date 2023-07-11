@@ -90,6 +90,7 @@ ActivateAdmin
 ActivateAdministrator
 ActivateAll
 ActivateApi
+ActivateAsset
 ActivateAttachment
 ActivateAuthor
 ActivateAuthorized
@@ -103,6 +104,7 @@ ActivateCompany
 ActivateComplete
 ActivateCompleted
 ActivateConfig
+ActivateConfiguration
 ActivateConsole
 ActivateCookie
 ActivateCount
@@ -167,6 +169,7 @@ ActivatePage
 ActivatePassword
 ActivatePath
 ActivatePermission
+ActivatePhoto
 ActivatePicture
 ActivatePost
 ActivateProfile
@@ -216,6 +219,7 @@ ActiveAccount
 ActiveAdmin
 ActiveAdministrator
 ActiveApi
+ActiveAsset
 ActiveAttachment
 ActiveAuthor
 ActiveAvatar
@@ -225,6 +229,7 @@ ActiveCategory
 ActiveComment
 ActiveCompany
 ActiveConfig
+ActiveConfiguration
 ActiveConsole
 ActiveCookie
 ActiveCustomer
@@ -272,6 +277,7 @@ ActivePage
 ActivePassword
 ActivePath
 ActivePermission
+ActivePhoto
 ActivePicture
 ActivePost
 ActiveProfile
@@ -313,6 +319,7 @@ AddAdmin
 AddAdministrator
 AddAll
 AddApi
+AddAsset
 AddAttachment
 AddAuthor
 AddAuthorized
@@ -326,6 +333,7 @@ AddCompany
 AddComplete
 AddCompleted
 AddConfig
+AddConfiguration
 AddConsole
 AddCookie
 AddCount
@@ -390,6 +398,7 @@ AddPage
 AddPassword
 AddPath
 AddPermission
+AddPhoto
 AddPicture
 AddPost
 AddProfile
@@ -608,6 +617,7 @@ AllAccount
 AllAdmin
 AllAdministrator
 AllApi
+AllAsset
 AllAttachment
 AllAuthor
 AllAvatar
@@ -617,6 +627,7 @@ AllCategory
 AllComment
 AllCompany
 AllConfig
+AllConfiguration
 AllConsole
 AllCookie
 AllCustomer
@@ -664,6 +675,7 @@ AllPage
 AllPassword
 AllPath
 AllPermission
+AllPhoto
 AllPicture
 AllPost
 AllProfile
@@ -783,6 +795,91 @@ ApiVerify
 ApiView
 ApiVisible
 ApiWrite
+Asset
+AssetActivate
+AssetActive
+AssetAdd
+AssetAll
+AssetAuthorized
+AssetBrowse
+AssetChange
+AssetChanged
+AssetCheck
+AssetClose
+AssetComplete
+AssetCompleted
+AssetCopy
+AssetCount
+AssetCreate
+AssetCreated
+AssetCurrent
+AssetDefault
+AssetDelete
+AssetDetail
+AssetDetails
+AssetDisable
+AssetDownload
+AssetEdit
+AssetEnable
+AssetEnabled
+AssetExport
+AssetExported
+AssetFetch
+AssetFilter
+AssetFind
+AssetFinished
+AssetGet
+AssetHidden
+AssetImport
+AssetImported
+AssetInclude
+AssetIncludes
+AssetIs
+AssetLast
+AssetList
+AssetLoad
+AssetLogin
+AssetMain
+AssetManage
+AssetModified
+AssetModify
+AssetNew
+AssetNumber
+AssetOpen
+AssetPreview
+AssetPrint
+AssetPublic
+AssetPublished
+AssetQuery
+AssetRead
+AssetReady
+AssetRecent
+AssetRefresh
+AssetRegistered
+AssetRemove
+AssetReturn
+AssetSave
+AssetSearch
+AssetSelect
+AssetSend
+AssetSet
+AssetShow
+AssetSize
+AssetSort
+AssetStart
+AssetStop
+AssetStore
+AssetSubmit
+AssetTest
+AssetUpdate
+AssetUpdated
+AssetUpload
+AssetValid
+AssetValidate
+AssetVerify
+AssetView
+AssetVisible
+AssetWrite
 Attachment
 AttachmentActivate
 AttachmentActive
@@ -913,6 +1010,7 @@ AuthorizedAccount
 AuthorizedAdmin
 AuthorizedAdministrator
 AuthorizedApi
+AuthorizedAsset
 AuthorizedAttachment
 AuthorizedAuthor
 AuthorizedAvatar
@@ -922,6 +1020,7 @@ AuthorizedCategory
 AuthorizedComment
 AuthorizedCompany
 AuthorizedConfig
+AuthorizedConfiguration
 AuthorizedConsole
 AuthorizedCookie
 AuthorizedCustomer
@@ -969,6 +1068,7 @@ AuthorizedPage
 AuthorizedPassword
 AuthorizedPath
 AuthorizedPermission
+AuthorizedPhoto
 AuthorizedPicture
 AuthorizedPost
 AuthorizedProfile
@@ -1226,6 +1326,7 @@ BrowseAdmin
 BrowseAdministrator
 BrowseAll
 BrowseApi
+BrowseAsset
 BrowseAttachment
 BrowseAuthor
 BrowseAuthorized
@@ -1239,6 +1340,7 @@ BrowseCompany
 BrowseComplete
 BrowseCompleted
 BrowseConfig
+BrowseConfiguration
 BrowseConsole
 BrowseCookie
 BrowseCount
@@ -1303,6 +1405,7 @@ BrowsePage
 BrowsePassword
 BrowsePath
 BrowsePermission
+BrowsePhoto
 BrowsePicture
 BrowsePost
 BrowseProfile
@@ -1524,6 +1627,7 @@ ChangeAdmin
 ChangeAdministrator
 ChangeAll
 ChangeApi
+ChangeAsset
 ChangeAttachment
 ChangeAuthor
 ChangeAuthorized
@@ -1537,6 +1641,7 @@ ChangeCompany
 ChangeComplete
 ChangeCompleted
 ChangeConfig
+ChangeConfiguration
 ChangeConsole
 ChangeCookie
 ChangeCount
@@ -1548,6 +1653,7 @@ ChangedAccount
 ChangedAdmin
 ChangedAdministrator
 ChangedApi
+ChangedAsset
 ChangeData
 ChangeDatabase
 ChangeDate
@@ -1560,6 +1666,7 @@ ChangedCategory
 ChangedComment
 ChangedCompany
 ChangedConfig
+ChangedConfiguration
 ChangedConsole
 ChangedCookie
 ChangedCustomer
@@ -1615,6 +1722,7 @@ ChangedPage
 ChangedPassword
 ChangedPath
 ChangedPermission
+ChangedPhoto
 ChangedPicture
 ChangedPost
 ChangedProfile
@@ -1697,6 +1805,7 @@ ChangePage
 ChangePassword
 ChangePath
 ChangePermission
+ChangePhoto
 ChangePicture
 ChangePost
 ChangeProfile
@@ -1748,6 +1857,7 @@ CheckAdmin
 CheckAdministrator
 CheckAll
 CheckApi
+CheckAsset
 CheckAttachment
 CheckAuthor
 CheckAuthorized
@@ -1761,6 +1871,7 @@ CheckCompany
 CheckComplete
 CheckCompleted
 CheckConfig
+CheckConfiguration
 CheckConsole
 CheckCookie
 CheckCount
@@ -1825,6 +1936,7 @@ CheckPage
 CheckPassword
 CheckPath
 CheckPermission
+CheckPhoto
 CheckPicture
 CheckPost
 CheckProfile
@@ -1876,6 +1988,7 @@ CloseAdmin
 CloseAdministrator
 CloseAll
 CloseApi
+CloseAsset
 CloseAttachment
 CloseAuthor
 CloseAuthorized
@@ -1889,6 +2002,7 @@ CloseCompany
 CloseComplete
 CloseCompleted
 CloseConfig
+CloseConfiguration
 CloseConsole
 CloseCookie
 CloseCount
@@ -1953,6 +2067,7 @@ ClosePage
 ClosePassword
 ClosePath
 ClosePermission
+ClosePhoto
 ClosePicture
 ClosePost
 CloseProfile
@@ -2172,6 +2287,7 @@ CompleteAccount
 CompleteAdmin
 CompleteAdministrator
 CompleteApi
+CompleteAsset
 CompleteAttachment
 CompleteAuthor
 CompleteAvatar
@@ -2181,6 +2297,7 @@ CompleteCategory
 CompleteComment
 CompleteCompany
 CompleteConfig
+CompleteConfiguration
 CompleteConsole
 CompleteCookie
 CompleteCustomer
@@ -2189,6 +2306,7 @@ CompletedAccount
 CompletedAdmin
 CompletedAdministrator
 CompletedApi
+CompletedAsset
 CompleteData
 CompleteDatabase
 CompleteDate
@@ -2201,6 +2319,7 @@ CompletedCategory
 CompletedComment
 CompletedCompany
 CompletedConfig
+CompletedConfiguration
 CompletedConsole
 CompletedCookie
 CompletedCustomer
@@ -2253,6 +2372,7 @@ CompletedPage
 CompletedPassword
 CompletedPath
 CompletedPermission
+CompletedPhoto
 CompletedPicture
 CompletedPost
 CompletedProfile
@@ -2324,6 +2444,7 @@ CompletePage
 CompletePassword
 CompletePath
 CompletePermission
+CompletePhoto
 CompletePicture
 CompletePost
 CompleteProfile
@@ -2438,6 +2559,91 @@ ConfigTest
 ConfigUpdate
 ConfigUpdated
 ConfigUpload
+Configuration
+ConfigurationActivate
+ConfigurationActive
+ConfigurationAdd
+ConfigurationAll
+ConfigurationAuthorized
+ConfigurationBrowse
+ConfigurationChange
+ConfigurationChanged
+ConfigurationCheck
+ConfigurationClose
+ConfigurationComplete
+ConfigurationCompleted
+ConfigurationCopy
+ConfigurationCount
+ConfigurationCreate
+ConfigurationCreated
+ConfigurationCurrent
+ConfigurationDefault
+ConfigurationDelete
+ConfigurationDetail
+ConfigurationDetails
+ConfigurationDisable
+ConfigurationDownload
+ConfigurationEdit
+ConfigurationEnable
+ConfigurationEnabled
+ConfigurationExport
+ConfigurationExported
+ConfigurationFetch
+ConfigurationFilter
+ConfigurationFind
+ConfigurationFinished
+ConfigurationGet
+ConfigurationHidden
+ConfigurationImport
+ConfigurationImported
+ConfigurationInclude
+ConfigurationIncludes
+ConfigurationIs
+ConfigurationLast
+ConfigurationList
+ConfigurationLoad
+ConfigurationLogin
+ConfigurationMain
+ConfigurationManage
+ConfigurationModified
+ConfigurationModify
+ConfigurationNew
+ConfigurationNumber
+ConfigurationOpen
+ConfigurationPreview
+ConfigurationPrint
+ConfigurationPublic
+ConfigurationPublished
+ConfigurationQuery
+ConfigurationRead
+ConfigurationReady
+ConfigurationRecent
+ConfigurationRefresh
+ConfigurationRegistered
+ConfigurationRemove
+ConfigurationReturn
+ConfigurationSave
+ConfigurationSearch
+ConfigurationSelect
+ConfigurationSend
+ConfigurationSet
+ConfigurationShow
+ConfigurationSize
+ConfigurationSort
+ConfigurationStart
+ConfigurationStop
+ConfigurationStore
+ConfigurationSubmit
+ConfigurationTest
+ConfigurationUpdate
+ConfigurationUpdated
+ConfigurationUpload
+ConfigurationValid
+ConfigurationValidate
+ConfigurationVerify
+ConfigurationView
+ConfigurationVisible
+ConfigurationWrite
 ConfigValid
 ConfigValidate
 ConfigVerify
@@ -2621,6 +2827,7 @@ CopyAdmin
 CopyAdministrator
 CopyAll
 CopyApi
+CopyAsset
 CopyAttachment
 CopyAuthor
 CopyAuthorized
@@ -2634,6 +2841,7 @@ CopyCompany
 CopyComplete
 CopyCompleted
 CopyConfig
+CopyConfiguration
 CopyConsole
 CopyCookie
 CopyCount
@@ -2698,6 +2906,7 @@ CopyPage
 CopyPassword
 CopyPath
 CopyPermission
+CopyPhoto
 CopyPicture
 CopyPost
 CopyProfile
@@ -2747,6 +2956,7 @@ CountAccount
 CountAdmin
 CountAdministrator
 CountApi
+CountAsset
 CountAttachment
 CountAuthor
 CountAvatar
@@ -2756,6 +2966,7 @@ CountCategory
 CountComment
 CountCompany
 CountConfig
+CountConfiguration
 CountConsole
 CountCookie
 CountCustomer
@@ -2803,6 +3014,7 @@ CountPage
 CountPassword
 CountPath
 CountPermission
+CountPhoto
 CountPicture
 CountPost
 CountProfile
@@ -2845,6 +3057,7 @@ CreateAdmin
 CreateAdministrator
 CreateAll
 CreateApi
+CreateAsset
 CreateAttachment
 CreateAuthor
 CreateAuthorized
@@ -2858,6 +3071,7 @@ CreateCompany
 CreateComplete
 CreateCompleted
 CreateConfig
+CreateConfiguration
 CreateConsole
 CreateCookie
 CreateCount
@@ -2869,6 +3083,7 @@ CreatedAccount
 CreatedAdmin
 CreatedAdministrator
 CreatedApi
+CreatedAsset
 CreateData
 CreateDatabase
 CreateDate
@@ -2881,6 +3096,7 @@ CreatedCategory
 CreatedComment
 CreatedCompany
 CreatedConfig
+CreatedConfiguration
 CreatedConsole
 CreatedCookie
 CreatedCustomer
@@ -2936,6 +3152,7 @@ CreatedPage
 CreatedPassword
 CreatedPath
 CreatedPermission
+CreatedPhoto
 CreatedPicture
 CreatedPost
 CreatedProfile
@@ -3018,6 +3235,7 @@ CreatePage
 CreatePassword
 CreatePath
 CreatePermission
+CreatePhoto
 CreatePicture
 CreatePost
 CreateProfile
@@ -3067,6 +3285,7 @@ CurrentAccount
 CurrentAdmin
 CurrentAdministrator
 CurrentApi
+CurrentAsset
 CurrentAttachment
 CurrentAuthor
 CurrentAvatar
@@ -3076,6 +3295,7 @@ CurrentCategory
 CurrentComment
 CurrentCompany
 CurrentConfig
+CurrentConfiguration
 CurrentConsole
 CurrentCookie
 CurrentCustomer
@@ -3123,6 +3343,7 @@ CurrentPage
 CurrentPassword
 CurrentPath
 CurrentPermission
+CurrentPhoto
 CurrentPicture
 CurrentPost
 CurrentProfile
@@ -3588,6 +3809,7 @@ DefaultAccount
 DefaultAdmin
 DefaultAdministrator
 DefaultApi
+DefaultAsset
 DefaultAttachment
 DefaultAuthor
 DefaultAvatar
@@ -3597,6 +3819,7 @@ DefaultCategory
 DefaultComment
 DefaultCompany
 DefaultConfig
+DefaultConfiguration
 DefaultConsole
 DefaultCookie
 DefaultCustomer
@@ -3644,6 +3867,7 @@ DefaultPage
 DefaultPassword
 DefaultPath
 DefaultPermission
+DefaultPhoto
 DefaultPicture
 DefaultPost
 DefaultProfile
@@ -3686,6 +3910,7 @@ DeleteAdmin
 DeleteAdministrator
 DeleteAll
 DeleteApi
+DeleteAsset
 DeleteAttachment
 DeleteAuthor
 DeleteAuthorized
@@ -3699,6 +3924,7 @@ DeleteCompany
 DeleteComplete
 DeleteCompleted
 DeleteConfig
+DeleteConfiguration
 DeleteConsole
 DeleteCookie
 DeleteCount
@@ -3763,6 +3989,7 @@ DeletePage
 DeletePassword
 DeletePath
 DeletePermission
+DeletePhoto
 DeletePicture
 DeletePost
 DeleteProfile
@@ -3897,6 +4124,7 @@ DetailAccount
 DetailAdmin
 DetailAdministrator
 DetailApi
+DetailAsset
 DetailAttachment
 DetailAuthor
 DetailAvatar
@@ -3906,6 +4134,7 @@ DetailCategory
 DetailComment
 DetailCompany
 DetailConfig
+DetailConfiguration
 DetailConsole
 DetailCookie
 DetailCustomer
@@ -3953,6 +4182,7 @@ DetailPage
 DetailPassword
 DetailPath
 DetailPermission
+DetailPhoto
 DetailPicture
 DetailPost
 DetailProfile
@@ -3970,6 +4200,7 @@ DetailsAccount
 DetailsAdmin
 DetailsAdministrator
 DetailsApi
+DetailsAsset
 DetailsAttachment
 DetailsAuthor
 DetailsAvatar
@@ -3979,6 +4210,7 @@ DetailsCategory
 DetailsComment
 DetailsCompany
 DetailsConfig
+DetailsConfiguration
 DetailsConsole
 DetailsCookie
 DetailsCustomer
@@ -4032,6 +4264,7 @@ DetailsPage
 DetailsPassword
 DetailsPath
 DetailsPermission
+DetailsPhoto
 DetailsPicture
 DetailsPost
 DetailsProfile
@@ -4176,6 +4409,7 @@ DisableAdmin
 DisableAdministrator
 DisableAll
 DisableApi
+DisableAsset
 DisableAttachment
 DisableAuthor
 DisableAuthorized
@@ -4189,6 +4423,7 @@ DisableCompany
 DisableComplete
 DisableCompleted
 DisableConfig
+DisableConfiguration
 DisableConsole
 DisableCookie
 DisableCount
@@ -4253,6 +4488,7 @@ DisablePage
 DisablePassword
 DisablePath
 DisablePermission
+DisablePhoto
 DisablePicture
 DisablePost
 DisableProfile
@@ -4391,6 +4627,7 @@ DownloadAdmin
 DownloadAdministrator
 DownloadAll
 DownloadApi
+DownloadAsset
 DownloadAttachment
 DownloadAuthor
 DownloadAuthorized
@@ -4408,6 +4645,7 @@ DownloadCompany
 DownloadComplete
 DownloadCompleted
 DownloadConfig
+DownloadConfiguration
 DownloadConsole
 DownloadCookie
 DownloadCopy
@@ -4489,6 +4727,7 @@ DownloadPage
 DownloadPassword
 DownloadPath
 DownloadPermission
+DownloadPhoto
 DownloadPicture
 DownloadPost
 DownloadPreview
@@ -4645,6 +4884,7 @@ EditAdmin
 EditAdministrator
 EditAll
 EditApi
+EditAsset
 EditAttachment
 EditAuthor
 EditAuthorized
@@ -4658,6 +4898,7 @@ EditCompany
 EditComplete
 EditCompleted
 EditConfig
+EditConfiguration
 EditConsole
 EditCookie
 EditCount
@@ -4722,6 +4963,7 @@ EditPage
 EditPassword
 EditPath
 EditPermission
+EditPhoto
 EditPicture
 EditPost
 EditProfile
@@ -4943,6 +5185,7 @@ EnableAdmin
 EnableAdministrator
 EnableAll
 EnableApi
+EnableAsset
 EnableAttachment
 EnableAuthor
 EnableAuthorized
@@ -4956,6 +5199,7 @@ EnableCompany
 EnableComplete
 EnableCompleted
 EnableConfig
+EnableConfiguration
 EnableConsole
 EnableCookie
 EnableCount
@@ -4967,6 +5211,7 @@ EnabledAccount
 EnabledAdmin
 EnabledAdministrator
 EnabledApi
+EnabledAsset
 EnableData
 EnableDatabase
 EnableDate
@@ -4979,6 +5224,7 @@ EnabledCategory
 EnabledComment
 EnabledCompany
 EnabledConfig
+EnabledConfiguration
 EnabledConsole
 EnabledCookie
 EnabledCustomer
@@ -5034,6 +5280,7 @@ EnabledPage
 EnabledPassword
 EnabledPath
 EnabledPermission
+EnabledPhoto
 EnabledPicture
 EnabledPost
 EnabledProfile
@@ -5116,6 +5363,7 @@ EnablePage
 EnablePassword
 EnablePath
 EnablePermission
+EnablePhoto
 EnablePicture
 EnablePost
 EnableProfile
@@ -5167,6 +5415,7 @@ ExportAdmin
 ExportAdministrator
 ExportAll
 ExportApi
+ExportAsset
 ExportAttachment
 ExportAuthor
 ExportAuthorized
@@ -5180,6 +5429,7 @@ ExportCompany
 ExportComplete
 ExportCompleted
 ExportConfig
+ExportConfiguration
 ExportConsole
 ExportCookie
 ExportCount
@@ -5203,6 +5453,7 @@ ExportedAccount
 ExportedAdmin
 ExportedAdministrator
 ExportedApi
+ExportedAsset
 ExportedAttachment
 ExportedAuthor
 ExportedAvatar
@@ -5212,6 +5463,7 @@ ExportedCategory
 ExportedComment
 ExportedCompany
 ExportedConfig
+ExportedConfiguration
 ExportedConsole
 ExportedCookie
 ExportedCustomer
@@ -5259,6 +5511,7 @@ ExportedPage
 ExportedPassword
 ExportedPath
 ExportedPermission
+ExportedPhoto
 ExportedPicture
 ExportedPost
 ExportedProfile
@@ -5340,6 +5593,7 @@ ExportPage
 ExportPassword
 ExportPath
 ExportPermission
+ExportPhoto
 ExportPicture
 ExportPost
 ExportProfile
@@ -5391,6 +5645,7 @@ FetchAdmin
 FetchAdministrator
 FetchAll
 FetchApi
+FetchAsset
 FetchAttachment
 FetchAuthor
 FetchAuthorized
@@ -5404,6 +5659,7 @@ FetchCompany
 FetchComplete
 FetchCompleted
 FetchConfig
+FetchConfiguration
 FetchConsole
 FetchCookie
 FetchCount
@@ -5468,6 +5724,7 @@ FetchPage
 FetchPassword
 FetchPath
 FetchPermission
+FetchPhoto
 FetchPicture
 FetchPost
 FetchProfile
@@ -5691,6 +5948,7 @@ FilterAdmin
 FilterAdministrator
 FilterAll
 FilterApi
+FilterAsset
 FilterAttachment
 FilterAuthor
 FilterAuthorized
@@ -5708,6 +5966,7 @@ FilterCompany
 FilterComplete
 FilterCompleted
 FilterConfig
+FilterConfiguration
 FilterConsole
 FilterCookie
 FilterCopy
@@ -5789,6 +6048,7 @@ FilterPage
 FilterPassword
 FilterPath
 FilterPermission
+FilterPhoto
 FilterPicture
 FilterPost
 FilterPreview
@@ -5860,6 +6120,7 @@ FindAdmin
 FindAdministrator
 FindAll
 FindApi
+FindAsset
 FindAttachment
 FindAuthor
 FindAuthorized
@@ -5873,6 +6134,7 @@ FindCompany
 FindComplete
 FindCompleted
 FindConfig
+FindConfiguration
 FindConsole
 FindCookie
 FindCount
@@ -5937,6 +6199,7 @@ FindPage
 FindPassword
 FindPath
 FindPermission
+FindPhoto
 FindPicture
 FindPost
 FindProfile
@@ -5986,6 +6249,7 @@ FinishedAccount
 FinishedAdmin
 FinishedAdministrator
 FinishedApi
+FinishedAsset
 FinishedAttachment
 FinishedAuthor
 FinishedAvatar
@@ -5995,6 +6259,7 @@ FinishedCategory
 FinishedComment
 FinishedCompany
 FinishedConfig
+FinishedConfiguration
 FinishedConsole
 FinishedCookie
 FinishedCustomer
@@ -6042,6 +6307,7 @@ FinishedPage
 FinishedPassword
 FinishedPath
 FinishedPermission
+FinishedPhoto
 FinishedPicture
 FinishedPost
 FinishedProfile
@@ -6168,6 +6434,7 @@ GetAdmin
 GetAdministrator
 GetAll
 GetApi
+GetAsset
 GetAttachment
 GetAuthor
 GetAuthorized
@@ -6181,6 +6448,7 @@ GetCompany
 GetComplete
 GetCompleted
 GetConfig
+GetConfiguration
 GetConsole
 GetCookie
 GetCount
@@ -6245,6 +6513,7 @@ GetPage
 GetPassword
 GetPath
 GetPermission
+GetPhoto
 GetPicture
 GetPost
 GetProfile
@@ -6379,6 +6648,7 @@ HiddenAccount
 HiddenAdmin
 HiddenAdministrator
 HiddenApi
+HiddenAsset
 HiddenAttachment
 HiddenAuthor
 HiddenAvatar
@@ -6388,6 +6658,7 @@ HiddenCategory
 HiddenComment
 HiddenCompany
 HiddenConfig
+HiddenConfiguration
 HiddenConsole
 HiddenCookie
 HiddenCustomer
@@ -6435,6 +6706,7 @@ HiddenPage
 HiddenPassword
 HiddenPath
 HiddenPermission
+HiddenPhoto
 HiddenPicture
 HiddenPost
 HiddenProfile
@@ -6731,6 +7003,7 @@ ImportAdmin
 ImportAdministrator
 ImportAll
 ImportApi
+ImportAsset
 ImportAttachment
 ImportAuthor
 ImportAuthorized
@@ -6744,6 +7017,7 @@ ImportCompany
 ImportComplete
 ImportCompleted
 ImportConfig
+ImportConfiguration
 ImportConsole
 ImportCookie
 ImportCount
@@ -6767,6 +7041,7 @@ ImportedAccount
 ImportedAdmin
 ImportedAdministrator
 ImportedApi
+ImportedAsset
 ImportedAttachment
 ImportedAuthor
 ImportedAvatar
@@ -6776,6 +7051,7 @@ ImportedCategory
 ImportedComment
 ImportedCompany
 ImportedConfig
+ImportedConfiguration
 ImportedConsole
 ImportedCookie
 ImportedCustomer
@@ -6823,6 +7099,7 @@ ImportedPage
 ImportedPassword
 ImportedPath
 ImportedPermission
+ImportedPhoto
 ImportedPicture
 ImportedPost
 ImportedProfile
@@ -6904,6 +7181,7 @@ ImportPage
 ImportPassword
 ImportPath
 ImportPermission
+ImportPhoto
 ImportPicture
 ImportPost
 ImportProfile
@@ -6955,6 +7233,7 @@ IncludeAdmin
 IncludeAdministrator
 IncludeAll
 IncludeApi
+IncludeAsset
 IncludeAttachment
 IncludeAuthor
 IncludeAuthorized
@@ -6968,6 +7247,7 @@ IncludeCompany
 IncludeComplete
 IncludeCompleted
 IncludeConfig
+IncludeConfiguration
 IncludeConsole
 IncludeCookie
 IncludeCount
@@ -7032,6 +7312,7 @@ IncludePage
 IncludePassword
 IncludePath
 IncludePermission
+IncludePhoto
 IncludePicture
 IncludePost
 IncludeProfile
@@ -7056,6 +7337,7 @@ IncludesAdmin
 IncludesAdministrator
 IncludesAll
 IncludesApi
+IncludesAsset
 IncludesAttachment
 IncludesAuthor
 IncludesAuthorized
@@ -7069,6 +7351,7 @@ IncludesCompany
 IncludesComplete
 IncludesCompleted
 IncludesConfig
+IncludesConfiguration
 IncludesConsole
 IncludesCookie
 IncludesCount
@@ -7140,6 +7423,7 @@ IncludesPage
 IncludesPassword
 IncludesPath
 IncludesPermission
+IncludesPhoto
 IncludesPicture
 IncludesPost
 IncludesProfile
@@ -7295,6 +7579,7 @@ IsAdmin
 IsAdministrator
 IsAll
 IsApi
+IsAsset
 IsAttachment
 IsAuthor
 IsAuthorized
@@ -7308,6 +7593,7 @@ IsCompany
 IsComplete
 IsCompleted
 IsConfig
+IsConfiguration
 IsConsole
 IsCookie
 IsCount
@@ -7372,6 +7658,7 @@ IsPage
 IsPassword
 IsPath
 IsPermission
+IsPhoto
 IsPicture
 IsPost
 IsProfile
@@ -7675,6 +7962,7 @@ LastAccount
 LastAdmin
 LastAdministrator
 LastApi
+LastAsset
 LastAttachment
 LastAuthor
 LastAvatar
@@ -7684,6 +7972,7 @@ LastCategory
 LastComment
 LastCompany
 LastConfig
+LastConfiguration
 LastConsole
 LastCookie
 LastCustomer
@@ -7731,6 +8020,7 @@ LastPage
 LastPassword
 LastPath
 LastPermission
+LastPhoto
 LastPicture
 LastPost
 LastProfile
@@ -7945,6 +8235,7 @@ ListAdmin
 ListAdministrator
 ListAll
 ListApi
+ListAsset
 ListAttachment
 ListAuthor
 ListAuthorized
@@ -7962,6 +8253,7 @@ ListCompany
 ListComplete
 ListCompleted
 ListConfig
+ListConfiguration
 ListConsole
 ListCookie
 ListCopy
@@ -8043,6 +8335,7 @@ ListPage
 ListPassword
 ListPath
 ListPermission
+ListPhoto
 ListPicture
 ListPost
 ListPreview
@@ -8114,6 +8407,7 @@ LoadAdmin
 LoadAdministrator
 LoadAll
 LoadApi
+LoadAsset
 LoadAttachment
 LoadAuthor
 LoadAuthorized
@@ -8127,6 +8421,7 @@ LoadCompany
 LoadComplete
 LoadCompleted
 LoadConfig
+LoadConfiguration
 LoadConsole
 LoadCookie
 LoadCount
@@ -8191,6 +8486,7 @@ LoadPage
 LoadPassword
 LoadPath
 LoadPermission
+LoadPhoto
 LoadPicture
 LoadPost
 LoadProfile
@@ -8329,6 +8625,7 @@ LoginAdmin
 LoginAdministrator
 LoginAll
 LoginApi
+LoginAsset
 LoginAttachment
 LoginAuthor
 LoginAuthorized
@@ -8346,6 +8643,7 @@ LoginCompany
 LoginComplete
 LoginCompleted
 LoginConfig
+LoginConfiguration
 LoginConsole
 LoginCookie
 LoginCopy
@@ -8427,6 +8725,7 @@ LoginPage
 LoginPassword
 LoginPath
 LoginPermission
+LoginPhoto
 LoginPicture
 LoginPost
 LoginPreview
@@ -8581,6 +8880,7 @@ MainAccount
 MainAdmin
 MainAdministrator
 MainApi
+MainAsset
 MainAttachment
 MainAuthor
 MainAvatar
@@ -8590,6 +8890,7 @@ MainCategory
 MainComment
 MainCompany
 MainConfig
+MainConfiguration
 MainConsole
 MainCookie
 MainCustomer
@@ -8637,6 +8938,7 @@ MainPage
 MainPassword
 MainPath
 MainPermission
+MainPhoto
 MainPicture
 MainPost
 MainProfile
@@ -8679,6 +8981,7 @@ ManageAdmin
 ManageAdministrator
 ManageAll
 ManageApi
+ManageAsset
 ManageAttachment
 ManageAuthor
 ManageAuthorized
@@ -8692,6 +8995,7 @@ ManageCompany
 ManageComplete
 ManageCompleted
 ManageConfig
+ManageConfiguration
 ManageConsole
 ManageCookie
 ManageCount
@@ -8756,6 +9060,7 @@ ManagePage
 ManagePassword
 ManagePath
 ManagePermission
+ManagePhoto
 ManagePicture
 ManagePost
 ManageProfile
@@ -9400,6 +9705,7 @@ ModifiedAccount
 ModifiedAdmin
 ModifiedAdministrator
 ModifiedApi
+ModifiedAsset
 ModifiedAttachment
 ModifiedAuthor
 ModifiedAvatar
@@ -9409,6 +9715,7 @@ ModifiedCategory
 ModifiedComment
 ModifiedCompany
 ModifiedConfig
+ModifiedConfiguration
 ModifiedConsole
 ModifiedCookie
 ModifiedCustomer
@@ -9456,6 +9763,7 @@ ModifiedPage
 ModifiedPassword
 ModifiedPath
 ModifiedPermission
+ModifiedPhoto
 ModifiedPicture
 ModifiedPost
 ModifiedProfile
@@ -9498,6 +9806,7 @@ ModifyAdmin
 ModifyAdministrator
 ModifyAll
 ModifyApi
+ModifyAsset
 ModifyAttachment
 ModifyAuthor
 ModifyAuthorized
@@ -9511,6 +9820,7 @@ ModifyCompany
 ModifyComplete
 ModifyCompleted
 ModifyConfig
+ModifyConfiguration
 ModifyConsole
 ModifyCookie
 ModifyCount
@@ -9575,6 +9885,7 @@ ModifyPage
 ModifyPassword
 ModifyPath
 ModifyPermission
+ModifyPhoto
 ModifyPicture
 ModifyPost
 ModifyProfile
@@ -9793,6 +10104,7 @@ NewAccount
 NewAdmin
 NewAdministrator
 NewApi
+NewAsset
 NewAttachment
 NewAuthor
 NewAvatar
@@ -9802,6 +10114,7 @@ NewCategory
 NewComment
 NewCompany
 NewConfig
+NewConfiguration
 NewConsole
 NewCookie
 NewCustomer
@@ -9849,6 +10162,7 @@ NewPage
 NewPassword
 NewPath
 NewPermission
+NewPhoto
 NewPicture
 NewPost
 NewProfile
@@ -9889,6 +10203,7 @@ NumberAccount
 NumberAdmin
 NumberAdministrator
 NumberApi
+NumberAsset
 NumberAttachment
 NumberAuthor
 NumberAvatar
@@ -9898,6 +10213,7 @@ NumberCategory
 NumberComment
 NumberCompany
 NumberConfig
+NumberConfiguration
 NumberConsole
 NumberCookie
 NumberCustomer
@@ -9945,6 +10261,7 @@ NumberPage
 NumberPassword
 NumberPath
 NumberPermission
+NumberPhoto
 NumberPicture
 NumberPost
 NumberProfile
@@ -10072,6 +10389,7 @@ OpenAdmin
 OpenAdministrator
 OpenAll
 OpenApi
+OpenAsset
 OpenAttachment
 OpenAuthor
 OpenAuthorized
@@ -10085,6 +10403,7 @@ OpenCompany
 OpenComplete
 OpenCompleted
 OpenConfig
+OpenConfiguration
 OpenConsole
 OpenCookie
 OpenCount
@@ -10149,6 +10468,7 @@ OpenPage
 OpenPassword
 OpenPath
 OpenPermission
+OpenPhoto
 OpenPicture
 OpenPost
 OpenProfile
@@ -10618,6 +10938,91 @@ PermissionVerify
 PermissionView
 PermissionVisible
 PermissionWrite
+Photo
+PhotoActivate
+PhotoActive
+PhotoAdd
+PhotoAll
+PhotoAuthorized
+PhotoBrowse
+PhotoChange
+PhotoChanged
+PhotoCheck
+PhotoClose
+PhotoComplete
+PhotoCompleted
+PhotoCopy
+PhotoCount
+PhotoCreate
+PhotoCreated
+PhotoCurrent
+PhotoDefault
+PhotoDelete
+PhotoDetail
+PhotoDetails
+PhotoDisable
+PhotoDownload
+PhotoEdit
+PhotoEnable
+PhotoEnabled
+PhotoExport
+PhotoExported
+PhotoFetch
+PhotoFilter
+PhotoFind
+PhotoFinished
+PhotoGet
+PhotoHidden
+PhotoImport
+PhotoImported
+PhotoInclude
+PhotoIncludes
+PhotoIs
+PhotoLast
+PhotoList
+PhotoLoad
+PhotoLogin
+PhotoMain
+PhotoManage
+PhotoModified
+PhotoModify
+PhotoNew
+PhotoNumber
+PhotoOpen
+PhotoPreview
+PhotoPrint
+PhotoPublic
+PhotoPublished
+PhotoQuery
+PhotoRead
+PhotoReady
+PhotoRecent
+PhotoRefresh
+PhotoRegistered
+PhotoRemove
+PhotoReturn
+PhotoSave
+PhotoSearch
+PhotoSelect
+PhotoSend
+PhotoSet
+PhotoShow
+PhotoSize
+PhotoSort
+PhotoStart
+PhotoStop
+PhotoStore
+PhotoSubmit
+PhotoTest
+PhotoUpdate
+PhotoUpdated
+PhotoUpload
+PhotoValid
+PhotoValidate
+PhotoVerify
+PhotoView
+PhotoVisible
+PhotoWrite
 Picture
 PictureActivate
 PictureActive
@@ -10795,6 +11200,7 @@ PreviewAdmin
 PreviewAdministrator
 PreviewAll
 PreviewApi
+PreviewAsset
 PreviewAttachment
 PreviewAuthor
 PreviewAuthorized
@@ -10808,6 +11214,7 @@ PreviewCompany
 PreviewComplete
 PreviewCompleted
 PreviewConfig
+PreviewConfiguration
 PreviewConsole
 PreviewCookie
 PreviewCount
@@ -10872,6 +11279,7 @@ PreviewPage
 PreviewPassword
 PreviewPath
 PreviewPermission
+PreviewPhoto
 PreviewPicture
 PreviewPost
 PreviewProfile
@@ -10923,6 +11331,7 @@ PrintAdmin
 PrintAdministrator
 PrintAll
 PrintApi
+PrintAsset
 PrintAttachment
 PrintAuthor
 PrintAuthorized
@@ -10936,6 +11345,7 @@ PrintCompany
 PrintComplete
 PrintCompleted
 PrintConfig
+PrintConfiguration
 PrintConsole
 PrintCookie
 PrintCount
@@ -11000,6 +11410,7 @@ PrintPage
 PrintPassword
 PrintPath
 PrintPermission
+PrintPhoto
 PrintPicture
 PrintPost
 PrintProfile
@@ -11219,6 +11630,7 @@ PublicAccount
 PublicAdmin
 PublicAdministrator
 PublicApi
+PublicAsset
 PublicAttachment
 PublicAuthor
 PublicAvatar
@@ -11228,6 +11640,7 @@ PublicCategory
 PublicComment
 PublicCompany
 PublicConfig
+PublicConfiguration
 PublicConsole
 PublicCookie
 PublicCustomer
@@ -11275,6 +11688,7 @@ PublicPage
 PublicPassword
 PublicPath
 PublicPermission
+PublicPhoto
 PublicPicture
 PublicPost
 PublicProfile
@@ -11315,6 +11729,7 @@ PublishedAccount
 PublishedAdmin
 PublishedAdministrator
 PublishedApi
+PublishedAsset
 PublishedAttachment
 PublishedAuthor
 PublishedAvatar
@@ -11324,6 +11739,7 @@ PublishedCategory
 PublishedComment
 PublishedCompany
 PublishedConfig
+PublishedConfiguration
 PublishedConsole
 PublishedCookie
 PublishedCustomer
@@ -11371,6 +11787,7 @@ PublishedPage
 PublishedPassword
 PublishedPath
 PublishedPermission
+PublishedPhoto
 PublishedPicture
 PublishedPost
 PublishedProfile
@@ -11499,6 +11916,7 @@ QueryAdmin
 QueryAdministrator
 QueryAll
 QueryApi
+QueryAsset
 QueryAttachment
 QueryAuthor
 QueryAuthorized
@@ -11516,6 +11934,7 @@ QueryCompany
 QueryComplete
 QueryCompleted
 QueryConfig
+QueryConfiguration
 QueryConsole
 QueryCookie
 QueryCopy
@@ -11597,6 +12016,7 @@ QueryPage
 QueryPassword
 QueryPath
 QueryPermission
+QueryPhoto
 QueryPicture
 QueryPost
 QueryPreview
@@ -11668,6 +12088,7 @@ ReadAdmin
 ReadAdministrator
 ReadAll
 ReadApi
+ReadAsset
 ReadAttachment
 ReadAuthor
 ReadAuthorized
@@ -11681,6 +12102,7 @@ ReadCompany
 ReadComplete
 ReadCompleted
 ReadConfig
+ReadConfiguration
 ReadConsole
 ReadCookie
 ReadCount
@@ -11745,6 +12167,7 @@ ReadPage
 ReadPassword
 ReadPath
 ReadPermission
+ReadPhoto
 ReadPicture
 ReadPost
 ReadProfile
@@ -11794,6 +12217,7 @@ ReadyAccount
 ReadyAdmin
 ReadyAdministrator
 ReadyApi
+ReadyAsset
 ReadyAttachment
 ReadyAuthor
 ReadyAvatar
@@ -11803,6 +12227,7 @@ ReadyCategory
 ReadyComment
 ReadyCompany
 ReadyConfig
+ReadyConfiguration
 ReadyConsole
 ReadyCookie
 ReadyCustomer
@@ -11850,6 +12275,7 @@ ReadyPage
 ReadyPassword
 ReadyPath
 ReadyPermission
+ReadyPhoto
 ReadyPicture
 ReadyPost
 ReadyProfile
@@ -11890,6 +12316,7 @@ RecentAccount
 RecentAdmin
 RecentAdministrator
 RecentApi
+RecentAsset
 RecentAttachment
 RecentAuthor
 RecentAvatar
@@ -11899,6 +12326,7 @@ RecentCategory
 RecentComment
 RecentCompany
 RecentConfig
+RecentConfiguration
 RecentConsole
 RecentCookie
 RecentCustomer
@@ -11946,6 +12374,7 @@ RecentPage
 RecentPassword
 RecentPath
 RecentPermission
+RecentPhoto
 RecentPicture
 RecentPost
 RecentProfile
@@ -12073,6 +12502,7 @@ RefreshAdmin
 RefreshAdministrator
 RefreshAll
 RefreshApi
+RefreshAsset
 RefreshAttachment
 RefreshAuthor
 RefreshAuthorized
@@ -12086,6 +12516,7 @@ RefreshCompany
 RefreshComplete
 RefreshCompleted
 RefreshConfig
+RefreshConfiguration
 RefreshConsole
 RefreshCookie
 RefreshCount
@@ -12150,6 +12581,7 @@ RefreshPage
 RefreshPassword
 RefreshPath
 RefreshPermission
+RefreshPhoto
 RefreshPicture
 RefreshPost
 RefreshProfile
@@ -12199,6 +12631,7 @@ RegisteredAccount
 RegisteredAdmin
 RegisteredAdministrator
 RegisteredApi
+RegisteredAsset
 RegisteredAttachment
 RegisteredAuthor
 RegisteredAvatar
@@ -12208,6 +12641,7 @@ RegisteredCategory
 RegisteredComment
 RegisteredCompany
 RegisteredConfig
+RegisteredConfiguration
 RegisteredConsole
 RegisteredCookie
 RegisteredCustomer
@@ -12255,6 +12689,7 @@ RegisteredPage
 RegisteredPassword
 RegisteredPath
 RegisteredPermission
+RegisteredPhoto
 RegisteredPicture
 RegisteredPost
 RegisteredProfile
@@ -12297,6 +12732,7 @@ RemoveAdmin
 RemoveAdministrator
 RemoveAll
 RemoveApi
+RemoveAsset
 RemoveAttachment
 RemoveAuthor
 RemoveAuthorized
@@ -12310,6 +12746,7 @@ RemoveCompany
 RemoveComplete
 RemoveCompleted
 RemoveConfig
+RemoveConfiguration
 RemoveConsole
 RemoveCookie
 RemoveCount
@@ -12374,6 +12811,7 @@ RemovePage
 RemovePassword
 RemovePath
 RemovePermission
+RemovePhoto
 RemovePicture
 RemovePost
 RemoveProfile
@@ -12765,6 +13203,7 @@ ReturnAdmin
 ReturnAdministrator
 ReturnAll
 ReturnApi
+ReturnAsset
 ReturnAttachment
 ReturnAuthor
 ReturnAuthorized
@@ -12778,6 +13217,7 @@ ReturnCompany
 ReturnComplete
 ReturnCompleted
 ReturnConfig
+ReturnConfiguration
 ReturnConsole
 ReturnCookie
 ReturnCount
@@ -12842,6 +13282,7 @@ ReturnPage
 ReturnPassword
 ReturnPath
 ReturnPermission
+ReturnPhoto
 ReturnPicture
 ReturnPost
 ReturnProfile
@@ -12978,6 +13419,7 @@ SaveAdmin
 SaveAdministrator
 SaveAll
 SaveApi
+SaveAsset
 SaveAttachment
 SaveAuthor
 SaveAuthorized
@@ -12991,6 +13433,7 @@ SaveCompany
 SaveComplete
 SaveCompleted
 SaveConfig
+SaveConfiguration
 SaveConsole
 SaveCookie
 SaveCount
@@ -13055,6 +13498,7 @@ SavePage
 SavePassword
 SavePath
 SavePermission
+SavePhoto
 SavePicture
 SavePost
 SaveProfile
@@ -13108,6 +13552,7 @@ SearchAdmin
 SearchAdministrator
 SearchAll
 SearchApi
+SearchAsset
 SearchAttachment
 SearchAuthor
 SearchAuthorized
@@ -13125,6 +13570,7 @@ SearchCompany
 SearchComplete
 SearchCompleted
 SearchConfig
+SearchConfiguration
 SearchConsole
 SearchCookie
 SearchCopy
@@ -13206,6 +13652,7 @@ SearchPage
 SearchPassword
 SearchPath
 SearchPermission
+SearchPhoto
 SearchPicture
 SearchPost
 SearchPreview
@@ -13277,6 +13724,7 @@ SelectAdmin
 SelectAdministrator
 SelectAll
 SelectApi
+SelectAsset
 SelectAttachment
 SelectAuthor
 SelectAuthorized
@@ -13290,6 +13738,7 @@ SelectCompany
 SelectComplete
 SelectCompleted
 SelectConfig
+SelectConfiguration
 SelectConsole
 SelectCookie
 SelectCount
@@ -13354,6 +13803,7 @@ SelectPage
 SelectPassword
 SelectPath
 SelectPermission
+SelectPhoto
 SelectPicture
 SelectPost
 SelectProfile
@@ -13405,6 +13855,7 @@ SendAdmin
 SendAdministrator
 SendAll
 SendApi
+SendAsset
 SendAttachment
 SendAuthor
 SendAuthorized
@@ -13418,6 +13869,7 @@ SendCompany
 SendComplete
 SendCompleted
 SendConfig
+SendConfiguration
 SendConsole
 SendCookie
 SendCount
@@ -13482,6 +13934,7 @@ SendPage
 SendPassword
 SendPath
 SendPermission
+SendPhoto
 SendPicture
 SendPost
 SendProfile
@@ -13702,6 +14155,7 @@ SetAdmin
 SetAdministrator
 SetAll
 SetApi
+SetAsset
 SetAttachment
 SetAuthor
 SetAuthorized
@@ -13715,6 +14169,7 @@ SetCompany
 SetComplete
 SetCompleted
 SetConfig
+SetConfiguration
 SetConsole
 SetCookie
 SetCount
@@ -13779,6 +14234,7 @@ SetPage
 SetPassword
 SetPath
 SetPermission
+SetPhoto
 SetPicture
 SetPost
 SetProfile
@@ -14000,6 +14456,7 @@ ShowAdmin
 ShowAdministrator
 ShowAll
 ShowApi
+ShowAsset
 ShowAttachment
 ShowAuthor
 ShowAuthorized
@@ -14013,6 +14470,7 @@ ShowCompany
 ShowComplete
 ShowCompleted
 ShowConfig
+ShowConfiguration
 ShowConsole
 ShowCookie
 ShowCount
@@ -14077,6 +14535,7 @@ ShowPage
 ShowPassword
 ShowPath
 ShowPermission
+ShowPhoto
 ShowPicture
 ShowPost
 ShowProfile
@@ -14126,6 +14585,7 @@ SizeAccount
 SizeAdmin
 SizeAdministrator
 SizeApi
+SizeAsset
 SizeAttachment
 SizeAuthor
 SizeAvatar
@@ -14135,6 +14595,7 @@ SizeCategory
 SizeComment
 SizeCompany
 SizeConfig
+SizeConfiguration
 SizeConsole
 SizeCookie
 SizeCustomer
@@ -14182,6 +14643,7 @@ SizePage
 SizePassword
 SizePath
 SizePermission
+SizePhoto
 SizePicture
 SizePost
 SizeProfile
@@ -14224,6 +14686,7 @@ SortAdmin
 SortAdministrator
 SortAll
 SortApi
+SortAsset
 SortAttachment
 SortAuthor
 SortAuthorized
@@ -14237,6 +14700,7 @@ SortCompany
 SortComplete
 SortCompleted
 SortConfig
+SortConfiguration
 SortConsole
 SortCookie
 SortCount
@@ -14301,6 +14765,7 @@ SortPage
 SortPassword
 SortPath
 SortPermission
+SortPhoto
 SortPicture
 SortPost
 SortProfile
@@ -14521,6 +14986,7 @@ StartAdmin
 StartAdministrator
 StartAll
 StartApi
+StartAsset
 StartAttachment
 StartAuthor
 StartAuthorized
@@ -14534,6 +15000,7 @@ StartCompany
 StartComplete
 StartCompleted
 StartConfig
+StartConfiguration
 StartConsole
 StartCookie
 StartCount
@@ -14598,6 +15065,7 @@ StartPage
 StartPassword
 StartPath
 StartPermission
+StartPhoto
 StartPicture
 StartPost
 StartProfile
@@ -14734,6 +15202,7 @@ StopAdmin
 StopAdministrator
 StopAll
 StopApi
+StopAsset
 StopAttachment
 StopAuthor
 StopAuthorized
@@ -14747,6 +15216,7 @@ StopCompany
 StopComplete
 StopCompleted
 StopConfig
+StopConfiguration
 StopConsole
 StopCookie
 StopCount
@@ -14811,6 +15281,7 @@ StopPage
 StopPassword
 StopPath
 StopPermission
+StopPhoto
 StopPicture
 StopPost
 StopProfile
@@ -14862,6 +15333,7 @@ StoreAdmin
 StoreAdministrator
 StoreAll
 StoreApi
+StoreAsset
 StoreAttachment
 StoreAuthor
 StoreAuthorized
@@ -14875,6 +15347,7 @@ StoreCompany
 StoreComplete
 StoreCompleted
 StoreConfig
+StoreConfiguration
 StoreConsole
 StoreCookie
 StoreCount
@@ -14939,6 +15412,7 @@ StorePage
 StorePassword
 StorePath
 StorePermission
+StorePhoto
 StorePicture
 StorePost
 StoreProfile
@@ -14990,6 +15464,7 @@ SubmitAdmin
 SubmitAdministrator
 SubmitAll
 SubmitApi
+SubmitAsset
 SubmitAttachment
 SubmitAuthor
 SubmitAuthorized
@@ -15003,6 +15478,7 @@ SubmitCompany
 SubmitComplete
 SubmitCompleted
 SubmitConfig
+SubmitConfiguration
 SubmitConsole
 SubmitCookie
 SubmitCount
@@ -15067,6 +15543,7 @@ SubmitPage
 SubmitPassword
 SubmitPath
 SubmitPermission
+SubmitPhoto
 SubmitPicture
 SubmitPost
 SubmitProfile
@@ -15628,6 +16105,7 @@ TestAdmin
 TestAdministrator
 TestAll
 TestApi
+TestAsset
 TestAttachment
 TestAuthor
 TestAuthorized
@@ -15641,6 +16119,7 @@ TestCompany
 TestComplete
 TestCompleted
 TestConfig
+TestConfiguration
 TestConsole
 TestCookie
 TestCount
@@ -15705,6 +16184,7 @@ TestPage
 TestPassword
 TestPath
 TestPermission
+TestPhoto
 TestPicture
 TestPost
 TestProfile
@@ -16013,6 +16493,7 @@ UpdateAdmin
 UpdateAdministrator
 UpdateAll
 UpdateApi
+UpdateAsset
 UpdateAttachment
 UpdateAuthor
 UpdateAuthorized
@@ -16030,6 +16511,7 @@ UpdateCompany
 UpdateComplete
 UpdateCompleted
 UpdateConfig
+UpdateConfiguration
 UpdateConsole
 UpdateCookie
 UpdateCopy
@@ -16043,6 +16525,7 @@ UpdatedAccount
 UpdatedAdmin
 UpdatedAdministrator
 UpdatedApi
+UpdatedAsset
 UpdateData
 UpdateDatabase
 UpdateDate
@@ -16055,6 +16538,7 @@ UpdatedCategory
 UpdatedComment
 UpdatedCompany
 UpdatedConfig
+UpdatedConfiguration
 UpdatedConsole
 UpdatedCookie
 UpdatedCustomer
@@ -16112,6 +16596,7 @@ UpdatedPage
 UpdatedPassword
 UpdatedPath
 UpdatedPermission
+UpdatedPhoto
 UpdatedPicture
 UpdatedPost
 UpdatedProfile
@@ -16207,6 +16692,7 @@ UpdatePage
 UpdatePassword
 UpdatePath
 UpdatePermission
+UpdatePhoto
 UpdatePicture
 UpdatePost
 UpdatePreview
@@ -16280,6 +16766,7 @@ UploadAdmin
 UploadAdministrator
 UploadAll
 UploadApi
+UploadAsset
 UploadAttachment
 UploadAuthor
 UploadAuthorized
@@ -16297,6 +16784,7 @@ UploadCompany
 UploadComplete
 UploadCompleted
 UploadConfig
+UploadConfiguration
 UploadConsole
 UploadCookie
 UploadCopy
@@ -16378,6 +16866,7 @@ UploadPage
 UploadPassword
 UploadPath
 UploadPermission
+UploadPhoto
 UploadPicture
 UploadPost
 UploadPreview
@@ -16616,6 +17105,7 @@ ValidAccount
 ValidAdmin
 ValidAdministrator
 ValidApi
+ValidAsset
 Validate
 ValidateAccount
 ValidateActive
@@ -16623,6 +17113,7 @@ ValidateAdmin
 ValidateAdministrator
 ValidateAll
 ValidateApi
+ValidateAsset
 ValidateAttachment
 ValidateAuthor
 ValidateAuthorized
@@ -16636,6 +17127,7 @@ ValidateCompany
 ValidateComplete
 ValidateCompleted
 ValidateConfig
+ValidateConfiguration
 ValidateConsole
 ValidateCookie
 ValidateCount
@@ -16700,6 +17192,7 @@ ValidatePage
 ValidatePassword
 ValidatePath
 ValidatePermission
+ValidatePhoto
 ValidatePicture
 ValidatePost
 ValidateProfile
@@ -16753,6 +17246,7 @@ ValidCategory
 ValidComment
 ValidCompany
 ValidConfig
+ValidConfiguration
 ValidConsole
 ValidCookie
 ValidCustomer
@@ -16800,6 +17294,7 @@ ValidPage
 ValidPassword
 ValidPath
 ValidPermission
+ValidPhoto
 ValidPicture
 ValidPost
 ValidProfile
@@ -16842,6 +17337,7 @@ VerifyAdmin
 VerifyAdministrator
 VerifyAll
 VerifyApi
+VerifyAsset
 VerifyAttachment
 VerifyAuthor
 VerifyAuthorized
@@ -16855,6 +17351,7 @@ VerifyCompany
 VerifyComplete
 VerifyCompleted
 VerifyConfig
+VerifyConfiguration
 VerifyConsole
 VerifyCookie
 VerifyCount
@@ -16919,6 +17416,7 @@ VerifyPage
 VerifyPassword
 VerifyPath
 VerifyPermission
+VerifyPhoto
 VerifyPicture
 VerifyPost
 VerifyProfile
@@ -17057,6 +17555,7 @@ ViewAdmin
 ViewAdministrator
 ViewAll
 ViewApi
+ViewAsset
 ViewAttachment
 ViewAuthor
 ViewAuthorized
@@ -17074,6 +17573,7 @@ ViewCompany
 ViewComplete
 ViewCompleted
 ViewConfig
+ViewConfiguration
 ViewConsole
 ViewCookie
 ViewCopy
@@ -17155,6 +17655,7 @@ ViewPage
 ViewPassword
 ViewPath
 ViewPermission
+ViewPhoto
 ViewPicture
 ViewPost
 ViewPreview
@@ -17224,6 +17725,7 @@ VisibleAccount
 VisibleAdmin
 VisibleAdministrator
 VisibleApi
+VisibleAsset
 VisibleAttachment
 VisibleAuthor
 VisibleAvatar
@@ -17233,6 +17735,7 @@ VisibleCategory
 VisibleComment
 VisibleCompany
 VisibleConfig
+VisibleConfiguration
 VisibleConsole
 VisibleCookie
 VisibleCustomer
@@ -17280,6 +17783,7 @@ VisiblePage
 VisiblePassword
 VisiblePath
 VisiblePermission
+VisiblePhoto
 VisiblePicture
 VisiblePost
 VisibleProfile
@@ -17322,6 +17826,7 @@ WriteAdmin
 WriteAdministrator
 WriteAll
 WriteApi
+WriteAsset
 WriteAttachment
 WriteAuthor
 WriteAuthorized
@@ -17335,6 +17840,7 @@ WriteCompany
 WriteComplete
 WriteCompleted
 WriteConfig
+WriteConfiguration
 WriteConsole
 WriteCookie
 WriteCount
@@ -17399,6 +17905,7 @@ WritePage
 WritePassword
 WritePath
 WritePermission
+WritePhoto
 WritePicture
 WritePost
 WriteProfile

@@ -90,6 +90,7 @@ activateadmin
 activateadministrator
 activateall
 activateapi
+activateasset
 activateattachment
 activateauthor
 activateauthorized
@@ -103,6 +104,7 @@ activatecompany
 activatecomplete
 activatecompleted
 activateconfig
+activateconfiguration
 activateconsole
 activatecookie
 activatecount
@@ -167,6 +169,7 @@ activatepage
 activatepassword
 activatepath
 activatepermission
+activatephoto
 activatepicture
 activatepost
 activateprofile
@@ -216,6 +219,7 @@ activeaccount
 activeadmin
 activeadministrator
 activeapi
+activeasset
 activeattachment
 activeauthor
 activeavatar
@@ -225,6 +229,7 @@ activecategory
 activecomment
 activecompany
 activeconfig
+activeconfiguration
 activeconsole
 activecookie
 activecustomer
@@ -272,6 +277,7 @@ activepage
 activepassword
 activepath
 activepermission
+activephoto
 activepicture
 activepost
 activeprofile
@@ -313,6 +319,7 @@ addadmin
 addadministrator
 addall
 addapi
+addasset
 addattachment
 addauthor
 addauthorized
@@ -326,6 +333,7 @@ addcompany
 addcomplete
 addcompleted
 addconfig
+addconfiguration
 addconsole
 addcookie
 addcount
@@ -390,6 +398,7 @@ addpage
 addpassword
 addpath
 addpermission
+addphoto
 addpicture
 addpost
 addprofile
@@ -608,6 +617,7 @@ allaccount
 alladmin
 alladministrator
 allapi
+allasset
 allattachment
 allauthor
 allavatar
@@ -617,6 +627,7 @@ allcategory
 allcomment
 allcompany
 allconfig
+allconfiguration
 allconsole
 allcookie
 allcustomer
@@ -664,6 +675,7 @@ allpage
 allpassword
 allpath
 allpermission
+allphoto
 allpicture
 allpost
 allprofile
@@ -783,6 +795,91 @@ apiverify
 apiview
 apivisible
 apiwrite
+asset
+assetactivate
+assetactive
+assetadd
+assetall
+assetauthorized
+assetbrowse
+assetchange
+assetchanged
+assetcheck
+assetclose
+assetcomplete
+assetcompleted
+assetcopy
+assetcount
+assetcreate
+assetcreated
+assetcurrent
+assetdefault
+assetdelete
+assetdetail
+assetdetails
+assetdisable
+assetdownload
+assetedit
+assetenable
+assetenabled
+assetexport
+assetexported
+assetfetch
+assetfilter
+assetfind
+assetfinished
+assetget
+assethidden
+assetimport
+assetimported
+assetinclude
+assetincludes
+assetis
+assetlast
+assetlist
+assetload
+assetlogin
+assetmain
+assetmanage
+assetmodified
+assetmodify
+assetnew
+assetnumber
+assetopen
+assetpreview
+assetprint
+assetpublic
+assetpublished
+assetquery
+assetread
+assetready
+assetrecent
+assetrefresh
+assetregistered
+assetremove
+assetreturn
+assetsave
+assetsearch
+assetselect
+assetsend
+assetset
+assetshow
+assetsize
+assetsort
+assetstart
+assetstop
+assetstore
+assetsubmit
+assettest
+assetupdate
+assetupdated
+assetupload
+assetvalid
+assetvalidate
+assetverify
+assetview
+assetvisible
+assetwrite
 attachment
 attachmentactivate
 attachmentactive
@@ -913,6 +1010,7 @@ authorizedaccount
 authorizedadmin
 authorizedadministrator
 authorizedapi
+authorizedasset
 authorizedattachment
 authorizedauthor
 authorizedavatar
@@ -922,6 +1020,7 @@ authorizedcategory
 authorizedcomment
 authorizedcompany
 authorizedconfig
+authorizedconfiguration
 authorizedconsole
 authorizedcookie
 authorizedcustomer
@@ -969,6 +1068,7 @@ authorizedpage
 authorizedpassword
 authorizedpath
 authorizedpermission
+authorizedphoto
 authorizedpicture
 authorizedpost
 authorizedprofile
@@ -1226,6 +1326,7 @@ browseadmin
 browseadministrator
 browseall
 browseapi
+browseasset
 browseattachment
 browseauthor
 browseauthorized
@@ -1239,6 +1340,7 @@ browsecompany
 browsecomplete
 browsecompleted
 browseconfig
+browseconfiguration
 browseconsole
 browsecookie
 browsecount
@@ -1303,6 +1405,7 @@ browsepage
 browsepassword
 browsepath
 browsepermission
+browsephoto
 browsepicture
 browsepost
 browseprofile
@@ -1524,6 +1627,7 @@ changeadmin
 changeadministrator
 changeall
 changeapi
+changeasset
 changeattachment
 changeauthor
 changeauthorized
@@ -1537,6 +1641,7 @@ changecompany
 changecomplete
 changecompleted
 changeconfig
+changeconfiguration
 changeconsole
 changecookie
 changecount
@@ -1548,6 +1653,7 @@ changedaccount
 changedadmin
 changedadministrator
 changedapi
+changedasset
 changedata
 changedatabase
 changedate
@@ -1560,6 +1666,7 @@ changedcategory
 changedcomment
 changedcompany
 changedconfig
+changedconfiguration
 changedconsole
 changedcookie
 changedcustomer
@@ -1615,6 +1722,7 @@ changedpage
 changedpassword
 changedpath
 changedpermission
+changedphoto
 changedpicture
 changedpost
 changedprofile
@@ -1697,6 +1805,7 @@ changepage
 changepassword
 changepath
 changepermission
+changephoto
 changepicture
 changepost
 changeprofile
@@ -1748,6 +1857,7 @@ checkadmin
 checkadministrator
 checkall
 checkapi
+checkasset
 checkattachment
 checkauthor
 checkauthorized
@@ -1761,6 +1871,7 @@ checkcompany
 checkcomplete
 checkcompleted
 checkconfig
+checkconfiguration
 checkconsole
 checkcookie
 checkcount
@@ -1825,6 +1936,7 @@ checkpage
 checkpassword
 checkpath
 checkpermission
+checkphoto
 checkpicture
 checkpost
 checkprofile
@@ -1876,6 +1988,7 @@ closeadmin
 closeadministrator
 closeall
 closeapi
+closeasset
 closeattachment
 closeauthor
 closeauthorized
@@ -1889,6 +2002,7 @@ closecompany
 closecomplete
 closecompleted
 closeconfig
+closeconfiguration
 closeconsole
 closecookie
 closecount
@@ -1953,6 +2067,7 @@ closepage
 closepassword
 closepath
 closepermission
+closephoto
 closepicture
 closepost
 closeprofile
@@ -2172,6 +2287,7 @@ completeaccount
 completeadmin
 completeadministrator
 completeapi
+completeasset
 completeattachment
 completeauthor
 completeavatar
@@ -2181,6 +2297,7 @@ completecategory
 completecomment
 completecompany
 completeconfig
+completeconfiguration
 completeconsole
 completecookie
 completecustomer
@@ -2189,6 +2306,7 @@ completedaccount
 completedadmin
 completedadministrator
 completedapi
+completedasset
 completedata
 completedatabase
 completedate
@@ -2201,6 +2319,7 @@ completedcategory
 completedcomment
 completedcompany
 completedconfig
+completedconfiguration
 completedconsole
 completedcookie
 completedcustomer
@@ -2253,6 +2372,7 @@ completedpage
 completedpassword
 completedpath
 completedpermission
+completedphoto
 completedpicture
 completedpost
 completedprofile
@@ -2324,6 +2444,7 @@ completepage
 completepassword
 completepath
 completepermission
+completephoto
 completepicture
 completepost
 completeprofile
@@ -2438,6 +2559,91 @@ configtest
 configupdate
 configupdated
 configupload
+configuration
+configurationactivate
+configurationactive
+configurationadd
+configurationall
+configurationauthorized
+configurationbrowse
+configurationchange
+configurationchanged
+configurationcheck
+configurationclose
+configurationcomplete
+configurationcompleted
+configurationcopy
+configurationcount
+configurationcreate
+configurationcreated
+configurationcurrent
+configurationdefault
+configurationdelete
+configurationdetail
+configurationdetails
+configurationdisable
+configurationdownload
+configurationedit
+configurationenable
+configurationenabled
+configurationexport
+configurationexported
+configurationfetch
+configurationfilter
+configurationfind
+configurationfinished
+configurationget
+configurationhidden
+configurationimport
+configurationimported
+configurationinclude
+configurationincludes
+configurationis
+configurationlast
+configurationlist
+configurationload
+configurationlogin
+configurationmain
+configurationmanage
+configurationmodified
+configurationmodify
+configurationnew
+configurationnumber
+configurationopen
+configurationpreview
+configurationprint
+configurationpublic
+configurationpublished
+configurationquery
+configurationread
+configurationready
+configurationrecent
+configurationrefresh
+configurationregistered
+configurationremove
+configurationreturn
+configurationsave
+configurationsearch
+configurationselect
+configurationsend
+configurationset
+configurationshow
+configurationsize
+configurationsort
+configurationstart
+configurationstop
+configurationstore
+configurationsubmit
+configurationtest
+configurationupdate
+configurationupdated
+configurationupload
+configurationvalid
+configurationvalidate
+configurationverify
+configurationview
+configurationvisible
+configurationwrite
 configvalid
 configvalidate
 configverify
@@ -2621,6 +2827,7 @@ copyadmin
 copyadministrator
 copyall
 copyapi
+copyasset
 copyattachment
 copyauthor
 copyauthorized
@@ -2634,6 +2841,7 @@ copycompany
 copycomplete
 copycompleted
 copyconfig
+copyconfiguration
 copyconsole
 copycookie
 copycount
@@ -2698,6 +2906,7 @@ copypage
 copypassword
 copypath
 copypermission
+copyphoto
 copypicture
 copypost
 copyprofile
@@ -2747,6 +2956,7 @@ countaccount
 countadmin
 countadministrator
 countapi
+countasset
 countattachment
 countauthor
 countavatar
@@ -2756,6 +2966,7 @@ countcategory
 countcomment
 countcompany
 countconfig
+countconfiguration
 countconsole
 countcookie
 countcustomer
@@ -2803,6 +3014,7 @@ countpage
 countpassword
 countpath
 countpermission
+countphoto
 countpicture
 countpost
 countprofile
@@ -2845,6 +3057,7 @@ createadmin
 createadministrator
 createall
 createapi
+createasset
 createattachment
 createauthor
 createauthorized
@@ -2858,6 +3071,7 @@ createcompany
 createcomplete
 createcompleted
 createconfig
+createconfiguration
 createconsole
 createcookie
 createcount
@@ -2869,6 +3083,7 @@ createdaccount
 createdadmin
 createdadministrator
 createdapi
+createdasset
 createdata
 createdatabase
 createdate
@@ -2881,6 +3096,7 @@ createdcategory
 createdcomment
 createdcompany
 createdconfig
+createdconfiguration
 createdconsole
 createdcookie
 createdcustomer
@@ -2936,6 +3152,7 @@ createdpage
 createdpassword
 createdpath
 createdpermission
+createdphoto
 createdpicture
 createdpost
 createdprofile
@@ -3018,6 +3235,7 @@ createpage
 createpassword
 createpath
 createpermission
+createphoto
 createpicture
 createpost
 createprofile
@@ -3067,6 +3285,7 @@ currentaccount
 currentadmin
 currentadministrator
 currentapi
+currentasset
 currentattachment
 currentauthor
 currentavatar
@@ -3076,6 +3295,7 @@ currentcategory
 currentcomment
 currentcompany
 currentconfig
+currentconfiguration
 currentconsole
 currentcookie
 currentcustomer
@@ -3123,6 +3343,7 @@ currentpage
 currentpassword
 currentpath
 currentpermission
+currentphoto
 currentpicture
 currentpost
 currentprofile
@@ -3588,6 +3809,7 @@ defaultaccount
 defaultadmin
 defaultadministrator
 defaultapi
+defaultasset
 defaultattachment
 defaultauthor
 defaultavatar
@@ -3597,6 +3819,7 @@ defaultcategory
 defaultcomment
 defaultcompany
 defaultconfig
+defaultconfiguration
 defaultconsole
 defaultcookie
 defaultcustomer
@@ -3644,6 +3867,7 @@ defaultpage
 defaultpassword
 defaultpath
 defaultpermission
+defaultphoto
 defaultpicture
 defaultpost
 defaultprofile
@@ -3686,6 +3910,7 @@ deleteadmin
 deleteadministrator
 deleteall
 deleteapi
+deleteasset
 deleteattachment
 deleteauthor
 deleteauthorized
@@ -3699,6 +3924,7 @@ deletecompany
 deletecomplete
 deletecompleted
 deleteconfig
+deleteconfiguration
 deleteconsole
 deletecookie
 deletecount
@@ -3763,6 +3989,7 @@ deletepage
 deletepassword
 deletepath
 deletepermission
+deletephoto
 deletepicture
 deletepost
 deleteprofile
@@ -3897,6 +4124,7 @@ detailaccount
 detailadmin
 detailadministrator
 detailapi
+detailasset
 detailattachment
 detailauthor
 detailavatar
@@ -3906,6 +4134,7 @@ detailcategory
 detailcomment
 detailcompany
 detailconfig
+detailconfiguration
 detailconsole
 detailcookie
 detailcustomer
@@ -3953,6 +4182,7 @@ detailpage
 detailpassword
 detailpath
 detailpermission
+detailphoto
 detailpicture
 detailpost
 detailprofile
@@ -3970,6 +4200,7 @@ detailsaccount
 detailsadmin
 detailsadministrator
 detailsapi
+detailsasset
 detailsattachment
 detailsauthor
 detailsavatar
@@ -3979,6 +4210,7 @@ detailscategory
 detailscomment
 detailscompany
 detailsconfig
+detailsconfiguration
 detailsconsole
 detailscookie
 detailscustomer
@@ -4032,6 +4264,7 @@ detailspage
 detailspassword
 detailspath
 detailspermission
+detailsphoto
 detailspicture
 detailspost
 detailsprofile
@@ -4176,6 +4409,7 @@ disableadmin
 disableadministrator
 disableall
 disableapi
+disableasset
 disableattachment
 disableauthor
 disableauthorized
@@ -4189,6 +4423,7 @@ disablecompany
 disablecomplete
 disablecompleted
 disableconfig
+disableconfiguration
 disableconsole
 disablecookie
 disablecount
@@ -4253,6 +4488,7 @@ disablepage
 disablepassword
 disablepath
 disablepermission
+disablephoto
 disablepicture
 disablepost
 disableprofile
@@ -4391,6 +4627,7 @@ downloadadmin
 downloadadministrator
 downloadall
 downloadapi
+downloadasset
 downloadattachment
 downloadauthor
 downloadauthorized
@@ -4408,6 +4645,7 @@ downloadcompany
 downloadcomplete
 downloadcompleted
 downloadconfig
+downloadconfiguration
 downloadconsole
 downloadcookie
 downloadcopy
@@ -4489,6 +4727,7 @@ downloadpage
 downloadpassword
 downloadpath
 downloadpermission
+downloadphoto
 downloadpicture
 downloadpost
 downloadpreview
@@ -4645,6 +4884,7 @@ editadmin
 editadministrator
 editall
 editapi
+editasset
 editattachment
 editauthor
 editauthorized
@@ -4658,6 +4898,7 @@ editcompany
 editcomplete
 editcompleted
 editconfig
+editconfiguration
 editconsole
 editcookie
 editcount
@@ -4722,6 +4963,7 @@ editpage
 editpassword
 editpath
 editpermission
+editphoto
 editpicture
 editpost
 editprofile
@@ -4943,6 +5185,7 @@ enableadmin
 enableadministrator
 enableall
 enableapi
+enableasset
 enableattachment
 enableauthor
 enableauthorized
@@ -4956,6 +5199,7 @@ enablecompany
 enablecomplete
 enablecompleted
 enableconfig
+enableconfiguration
 enableconsole
 enablecookie
 enablecount
@@ -4967,6 +5211,7 @@ enabledaccount
 enabledadmin
 enabledadministrator
 enabledapi
+enabledasset
 enabledata
 enabledatabase
 enabledate
@@ -4979,6 +5224,7 @@ enabledcategory
 enabledcomment
 enabledcompany
 enabledconfig
+enabledconfiguration
 enabledconsole
 enabledcookie
 enabledcustomer
@@ -5034,6 +5280,7 @@ enabledpage
 enabledpassword
 enabledpath
 enabledpermission
+enabledphoto
 enabledpicture
 enabledpost
 enabledprofile
@@ -5116,6 +5363,7 @@ enablepage
 enablepassword
 enablepath
 enablepermission
+enablephoto
 enablepicture
 enablepost
 enableprofile
@@ -5167,6 +5415,7 @@ exportadmin
 exportadministrator
 exportall
 exportapi
+exportasset
 exportattachment
 exportauthor
 exportauthorized
@@ -5180,6 +5429,7 @@ exportcompany
 exportcomplete
 exportcompleted
 exportconfig
+exportconfiguration
 exportconsole
 exportcookie
 exportcount
@@ -5203,6 +5453,7 @@ exportedaccount
 exportedadmin
 exportedadministrator
 exportedapi
+exportedasset
 exportedattachment
 exportedauthor
 exportedavatar
@@ -5212,6 +5463,7 @@ exportedcategory
 exportedcomment
 exportedcompany
 exportedconfig
+exportedconfiguration
 exportedconsole
 exportedcookie
 exportedcustomer
@@ -5259,6 +5511,7 @@ exportedpage
 exportedpassword
 exportedpath
 exportedpermission
+exportedphoto
 exportedpicture
 exportedpost
 exportedprofile
@@ -5340,6 +5593,7 @@ exportpage
 exportpassword
 exportpath
 exportpermission
+exportphoto
 exportpicture
 exportpost
 exportprofile
@@ -5391,6 +5645,7 @@ fetchadmin
 fetchadministrator
 fetchall
 fetchapi
+fetchasset
 fetchattachment
 fetchauthor
 fetchauthorized
@@ -5404,6 +5659,7 @@ fetchcompany
 fetchcomplete
 fetchcompleted
 fetchconfig
+fetchconfiguration
 fetchconsole
 fetchcookie
 fetchcount
@@ -5468,6 +5724,7 @@ fetchpage
 fetchpassword
 fetchpath
 fetchpermission
+fetchphoto
 fetchpicture
 fetchpost
 fetchprofile
@@ -5691,6 +5948,7 @@ filteradmin
 filteradministrator
 filterall
 filterapi
+filterasset
 filterattachment
 filterauthor
 filterauthorized
@@ -5708,6 +5966,7 @@ filtercompany
 filtercomplete
 filtercompleted
 filterconfig
+filterconfiguration
 filterconsole
 filtercookie
 filtercopy
@@ -5789,6 +6048,7 @@ filterpage
 filterpassword
 filterpath
 filterpermission
+filterphoto
 filterpicture
 filterpost
 filterpreview
@@ -5860,6 +6120,7 @@ findadmin
 findadministrator
 findall
 findapi
+findasset
 findattachment
 findauthor
 findauthorized
@@ -5873,6 +6134,7 @@ findcompany
 findcomplete
 findcompleted
 findconfig
+findconfiguration
 findconsole
 findcookie
 findcount
@@ -5937,6 +6199,7 @@ findpage
 findpassword
 findpath
 findpermission
+findphoto
 findpicture
 findpost
 findprofile
@@ -5986,6 +6249,7 @@ finishedaccount
 finishedadmin
 finishedadministrator
 finishedapi
+finishedasset
 finishedattachment
 finishedauthor
 finishedavatar
@@ -5995,6 +6259,7 @@ finishedcategory
 finishedcomment
 finishedcompany
 finishedconfig
+finishedconfiguration
 finishedconsole
 finishedcookie
 finishedcustomer
@@ -6042,6 +6307,7 @@ finishedpage
 finishedpassword
 finishedpath
 finishedpermission
+finishedphoto
 finishedpicture
 finishedpost
 finishedprofile
@@ -6168,6 +6434,7 @@ getadmin
 getadministrator
 getall
 getapi
+getasset
 getattachment
 getauthor
 getauthorized
@@ -6181,6 +6448,7 @@ getcompany
 getcomplete
 getcompleted
 getconfig
+getconfiguration
 getconsole
 getcookie
 getcount
@@ -6245,6 +6513,7 @@ getpage
 getpassword
 getpath
 getpermission
+getphoto
 getpicture
 getpost
 getprofile
@@ -6379,6 +6648,7 @@ hiddenaccount
 hiddenadmin
 hiddenadministrator
 hiddenapi
+hiddenasset
 hiddenattachment
 hiddenauthor
 hiddenavatar
@@ -6388,6 +6658,7 @@ hiddencategory
 hiddencomment
 hiddencompany
 hiddenconfig
+hiddenconfiguration
 hiddenconsole
 hiddencookie
 hiddencustomer
@@ -6435,6 +6706,7 @@ hiddenpage
 hiddenpassword
 hiddenpath
 hiddenpermission
+hiddenphoto
 hiddenpicture
 hiddenpost
 hiddenprofile
@@ -6731,6 +7003,7 @@ importadmin
 importadministrator
 importall
 importapi
+importasset
 importattachment
 importauthor
 importauthorized
@@ -6744,6 +7017,7 @@ importcompany
 importcomplete
 importcompleted
 importconfig
+importconfiguration
 importconsole
 importcookie
 importcount
@@ -6767,6 +7041,7 @@ importedaccount
 importedadmin
 importedadministrator
 importedapi
+importedasset
 importedattachment
 importedauthor
 importedavatar
@@ -6776,6 +7051,7 @@ importedcategory
 importedcomment
 importedcompany
 importedconfig
+importedconfiguration
 importedconsole
 importedcookie
 importedcustomer
@@ -6823,6 +7099,7 @@ importedpage
 importedpassword
 importedpath
 importedpermission
+importedphoto
 importedpicture
 importedpost
 importedprofile
@@ -6904,6 +7181,7 @@ importpage
 importpassword
 importpath
 importpermission
+importphoto
 importpicture
 importpost
 importprofile
@@ -6955,6 +7233,7 @@ includeadmin
 includeadministrator
 includeall
 includeapi
+includeasset
 includeattachment
 includeauthor
 includeauthorized
@@ -6968,6 +7247,7 @@ includecompany
 includecomplete
 includecompleted
 includeconfig
+includeconfiguration
 includeconsole
 includecookie
 includecount
@@ -7032,6 +7312,7 @@ includepage
 includepassword
 includepath
 includepermission
+includephoto
 includepicture
 includepost
 includeprofile
@@ -7056,6 +7337,7 @@ includesadmin
 includesadministrator
 includesall
 includesapi
+includesasset
 includesattachment
 includesauthor
 includesauthorized
@@ -7069,6 +7351,7 @@ includescompany
 includescomplete
 includescompleted
 includesconfig
+includesconfiguration
 includesconsole
 includescookie
 includescount
@@ -7140,6 +7423,7 @@ includespage
 includespassword
 includespath
 includespermission
+includesphoto
 includespicture
 includespost
 includesprofile
@@ -7295,6 +7579,7 @@ isadmin
 isadministrator
 isall
 isapi
+isasset
 isattachment
 isauthor
 isauthorized
@@ -7308,6 +7593,7 @@ iscompany
 iscomplete
 iscompleted
 isconfig
+isconfiguration
 isconsole
 iscookie
 iscount
@@ -7372,6 +7658,7 @@ ispage
 ispassword
 ispath
 ispermission
+isphoto
 ispicture
 ispost
 isprofile
@@ -7675,6 +7962,7 @@ lastaccount
 lastadmin
 lastadministrator
 lastapi
+lastasset
 lastattachment
 lastauthor
 lastavatar
@@ -7684,6 +7972,7 @@ lastcategory
 lastcomment
 lastcompany
 lastconfig
+lastconfiguration
 lastconsole
 lastcookie
 lastcustomer
@@ -7731,6 +8020,7 @@ lastpage
 lastpassword
 lastpath
 lastpermission
+lastphoto
 lastpicture
 lastpost
 lastprofile
@@ -7945,6 +8235,7 @@ listadmin
 listadministrator
 listall
 listapi
+listasset
 listattachment
 listauthor
 listauthorized
@@ -7962,6 +8253,7 @@ listcompany
 listcomplete
 listcompleted
 listconfig
+listconfiguration
 listconsole
 listcookie
 listcopy
@@ -8043,6 +8335,7 @@ listpage
 listpassword
 listpath
 listpermission
+listphoto
 listpicture
 listpost
 listpreview
@@ -8114,6 +8407,7 @@ loadadmin
 loadadministrator
 loadall
 loadapi
+loadasset
 loadattachment
 loadauthor
 loadauthorized
@@ -8127,6 +8421,7 @@ loadcompany
 loadcomplete
 loadcompleted
 loadconfig
+loadconfiguration
 loadconsole
 loadcookie
 loadcount
@@ -8191,6 +8486,7 @@ loadpage
 loadpassword
 loadpath
 loadpermission
+loadphoto
 loadpicture
 loadpost
 loadprofile
@@ -8329,6 +8625,7 @@ loginadmin
 loginadministrator
 loginall
 loginapi
+loginasset
 loginattachment
 loginauthor
 loginauthorized
@@ -8346,6 +8643,7 @@ logincompany
 logincomplete
 logincompleted
 loginconfig
+loginconfiguration
 loginconsole
 logincookie
 logincopy
@@ -8427,6 +8725,7 @@ loginpage
 loginpassword
 loginpath
 loginpermission
+loginphoto
 loginpicture
 loginpost
 loginpreview
@@ -8581,6 +8880,7 @@ mainaccount
 mainadmin
 mainadministrator
 mainapi
+mainasset
 mainattachment
 mainauthor
 mainavatar
@@ -8590,6 +8890,7 @@ maincategory
 maincomment
 maincompany
 mainconfig
+mainconfiguration
 mainconsole
 maincookie
 maincustomer
@@ -8637,6 +8938,7 @@ mainpage
 mainpassword
 mainpath
 mainpermission
+mainphoto
 mainpicture
 mainpost
 mainprofile
@@ -8679,6 +8981,7 @@ manageadmin
 manageadministrator
 manageall
 manageapi
+manageasset
 manageattachment
 manageauthor
 manageauthorized
@@ -8692,6 +8995,7 @@ managecompany
 managecomplete
 managecompleted
 manageconfig
+manageconfiguration
 manageconsole
 managecookie
 managecount
@@ -8756,6 +9060,7 @@ managepage
 managepassword
 managepath
 managepermission
+managephoto
 managepicture
 managepost
 manageprofile
@@ -9400,6 +9705,7 @@ modifiedaccount
 modifiedadmin
 modifiedadministrator
 modifiedapi
+modifiedasset
 modifiedattachment
 modifiedauthor
 modifiedavatar
@@ -9409,6 +9715,7 @@ modifiedcategory
 modifiedcomment
 modifiedcompany
 modifiedconfig
+modifiedconfiguration
 modifiedconsole
 modifiedcookie
 modifiedcustomer
@@ -9456,6 +9763,7 @@ modifiedpage
 modifiedpassword
 modifiedpath
 modifiedpermission
+modifiedphoto
 modifiedpicture
 modifiedpost
 modifiedprofile
@@ -9498,6 +9806,7 @@ modifyadmin
 modifyadministrator
 modifyall
 modifyapi
+modifyasset
 modifyattachment
 modifyauthor
 modifyauthorized
@@ -9511,6 +9820,7 @@ modifycompany
 modifycomplete
 modifycompleted
 modifyconfig
+modifyconfiguration
 modifyconsole
 modifycookie
 modifycount
@@ -9575,6 +9885,7 @@ modifypage
 modifypassword
 modifypath
 modifypermission
+modifyphoto
 modifypicture
 modifypost
 modifyprofile
@@ -9793,6 +10104,7 @@ newaccount
 newadmin
 newadministrator
 newapi
+newasset
 newattachment
 newauthor
 newavatar
@@ -9802,6 +10114,7 @@ newcategory
 newcomment
 newcompany
 newconfig
+newconfiguration
 newconsole
 newcookie
 newcustomer
@@ -9849,6 +10162,7 @@ newpage
 newpassword
 newpath
 newpermission
+newphoto
 newpicture
 newpost
 newprofile
@@ -9889,6 +10203,7 @@ numberaccount
 numberadmin
 numberadministrator
 numberapi
+numberasset
 numberattachment
 numberauthor
 numberavatar
@@ -9898,6 +10213,7 @@ numbercategory
 numbercomment
 numbercompany
 numberconfig
+numberconfiguration
 numberconsole
 numbercookie
 numbercustomer
@@ -9945,6 +10261,7 @@ numberpage
 numberpassword
 numberpath
 numberpermission
+numberphoto
 numberpicture
 numberpost
 numberprofile
@@ -10072,6 +10389,7 @@ openadmin
 openadministrator
 openall
 openapi
+openasset
 openattachment
 openauthor
 openauthorized
@@ -10085,6 +10403,7 @@ opencompany
 opencomplete
 opencompleted
 openconfig
+openconfiguration
 openconsole
 opencookie
 opencount
@@ -10149,6 +10468,7 @@ openpage
 openpassword
 openpath
 openpermission
+openphoto
 openpicture
 openpost
 openprofile
@@ -10618,6 +10938,91 @@ permissionverify
 permissionview
 permissionvisible
 permissionwrite
+photo
+photoactivate
+photoactive
+photoadd
+photoall
+photoauthorized
+photobrowse
+photochange
+photochanged
+photocheck
+photoclose
+photocomplete
+photocompleted
+photocopy
+photocount
+photocreate
+photocreated
+photocurrent
+photodefault
+photodelete
+photodetail
+photodetails
+photodisable
+photodownload
+photoedit
+photoenable
+photoenabled
+photoexport
+photoexported
+photofetch
+photofilter
+photofind
+photofinished
+photoget
+photohidden
+photoimport
+photoimported
+photoinclude
+photoincludes
+photois
+photolast
+photolist
+photoload
+photologin
+photomain
+photomanage
+photomodified
+photomodify
+photonew
+photonumber
+photoopen
+photopreview
+photoprint
+photopublic
+photopublished
+photoquery
+photoread
+photoready
+photorecent
+photorefresh
+photoregistered
+photoremove
+photoreturn
+photosave
+photosearch
+photoselect
+photosend
+photoset
+photoshow
+photosize
+photosort
+photostart
+photostop
+photostore
+photosubmit
+phototest
+photoupdate
+photoupdated
+photoupload
+photovalid
+photovalidate
+photoverify
+photoview
+photovisible
+photowrite
 picture
 pictureactivate
 pictureactive
@@ -10795,6 +11200,7 @@ previewadmin
 previewadministrator
 previewall
 previewapi
+previewasset
 previewattachment
 previewauthor
 previewauthorized
@@ -10808,6 +11214,7 @@ previewcompany
 previewcomplete
 previewcompleted
 previewconfig
+previewconfiguration
 previewconsole
 previewcookie
 previewcount
@@ -10872,6 +11279,7 @@ previewpage
 previewpassword
 previewpath
 previewpermission
+previewphoto
 previewpicture
 previewpost
 previewprofile
@@ -10923,6 +11331,7 @@ printadmin
 printadministrator
 printall
 printapi
+printasset
 printattachment
 printauthor
 printauthorized
@@ -10936,6 +11345,7 @@ printcompany
 printcomplete
 printcompleted
 printconfig
+printconfiguration
 printconsole
 printcookie
 printcount
@@ -11000,6 +11410,7 @@ printpage
 printpassword
 printpath
 printpermission
+printphoto
 printpicture
 printpost
 printprofile
@@ -11219,6 +11630,7 @@ publicaccount
 publicadmin
 publicadministrator
 publicapi
+publicasset
 publicattachment
 publicauthor
 publicavatar
@@ -11228,6 +11640,7 @@ publiccategory
 publiccomment
 publiccompany
 publicconfig
+publicconfiguration
 publicconsole
 publiccookie
 publiccustomer
@@ -11275,6 +11688,7 @@ publicpage
 publicpassword
 publicpath
 publicpermission
+publicphoto
 publicpicture
 publicpost
 publicprofile
@@ -11315,6 +11729,7 @@ publishedaccount
 publishedadmin
 publishedadministrator
 publishedapi
+publishedasset
 publishedattachment
 publishedauthor
 publishedavatar
@@ -11324,6 +11739,7 @@ publishedcategory
 publishedcomment
 publishedcompany
 publishedconfig
+publishedconfiguration
 publishedconsole
 publishedcookie
 publishedcustomer
@@ -11371,6 +11787,7 @@ publishedpage
 publishedpassword
 publishedpath
 publishedpermission
+publishedphoto
 publishedpicture
 publishedpost
 publishedprofile
@@ -11499,6 +11916,7 @@ queryadmin
 queryadministrator
 queryall
 queryapi
+queryasset
 queryattachment
 queryauthor
 queryauthorized
@@ -11516,6 +11934,7 @@ querycompany
 querycomplete
 querycompleted
 queryconfig
+queryconfiguration
 queryconsole
 querycookie
 querycopy
@@ -11597,6 +12016,7 @@ querypage
 querypassword
 querypath
 querypermission
+queryphoto
 querypicture
 querypost
 querypreview
@@ -11668,6 +12088,7 @@ readadmin
 readadministrator
 readall
 readapi
+readasset
 readattachment
 readauthor
 readauthorized
@@ -11681,6 +12102,7 @@ readcompany
 readcomplete
 readcompleted
 readconfig
+readconfiguration
 readconsole
 readcookie
 readcount
@@ -11745,6 +12167,7 @@ readpage
 readpassword
 readpath
 readpermission
+readphoto
 readpicture
 readpost
 readprofile
@@ -11794,6 +12217,7 @@ readyaccount
 readyadmin
 readyadministrator
 readyapi
+readyasset
 readyattachment
 readyauthor
 readyavatar
@@ -11803,6 +12227,7 @@ readycategory
 readycomment
 readycompany
 readyconfig
+readyconfiguration
 readyconsole
 readycookie
 readycustomer
@@ -11850,6 +12275,7 @@ readypage
 readypassword
 readypath
 readypermission
+readyphoto
 readypicture
 readypost
 readyprofile
@@ -11890,6 +12316,7 @@ recentaccount
 recentadmin
 recentadministrator
 recentapi
+recentasset
 recentattachment
 recentauthor
 recentavatar
@@ -11899,6 +12326,7 @@ recentcategory
 recentcomment
 recentcompany
 recentconfig
+recentconfiguration
 recentconsole
 recentcookie
 recentcustomer
@@ -11946,6 +12374,7 @@ recentpage
 recentpassword
 recentpath
 recentpermission
+recentphoto
 recentpicture
 recentpost
 recentprofile
@@ -12073,6 +12502,7 @@ refreshadmin
 refreshadministrator
 refreshall
 refreshapi
+refreshasset
 refreshattachment
 refreshauthor
 refreshauthorized
@@ -12086,6 +12516,7 @@ refreshcompany
 refreshcomplete
 refreshcompleted
 refreshconfig
+refreshconfiguration
 refreshconsole
 refreshcookie
 refreshcount
@@ -12150,6 +12581,7 @@ refreshpage
 refreshpassword
 refreshpath
 refreshpermission
+refreshphoto
 refreshpicture
 refreshpost
 refreshprofile
@@ -12199,6 +12631,7 @@ registeredaccount
 registeredadmin
 registeredadministrator
 registeredapi
+registeredasset
 registeredattachment
 registeredauthor
 registeredavatar
@@ -12208,6 +12641,7 @@ registeredcategory
 registeredcomment
 registeredcompany
 registeredconfig
+registeredconfiguration
 registeredconsole
 registeredcookie
 registeredcustomer
@@ -12255,6 +12689,7 @@ registeredpage
 registeredpassword
 registeredpath
 registeredpermission
+registeredphoto
 registeredpicture
 registeredpost
 registeredprofile
@@ -12297,6 +12732,7 @@ removeadmin
 removeadministrator
 removeall
 removeapi
+removeasset
 removeattachment
 removeauthor
 removeauthorized
@@ -12310,6 +12746,7 @@ removecompany
 removecomplete
 removecompleted
 removeconfig
+removeconfiguration
 removeconsole
 removecookie
 removecount
@@ -12374,6 +12811,7 @@ removepage
 removepassword
 removepath
 removepermission
+removephoto
 removepicture
 removepost
 removeprofile
@@ -12765,6 +13203,7 @@ returnadmin
 returnadministrator
 returnall
 returnapi
+returnasset
 returnattachment
 returnauthor
 returnauthorized
@@ -12778,6 +13217,7 @@ returncompany
 returncomplete
 returncompleted
 returnconfig
+returnconfiguration
 returnconsole
 returncookie
 returncount
@@ -12842,6 +13282,7 @@ returnpage
 returnpassword
 returnpath
 returnpermission
+returnphoto
 returnpicture
 returnpost
 returnprofile
@@ -12978,6 +13419,7 @@ saveadmin
 saveadministrator
 saveall
 saveapi
+saveasset
 saveattachment
 saveauthor
 saveauthorized
@@ -12991,6 +13433,7 @@ savecompany
 savecomplete
 savecompleted
 saveconfig
+saveconfiguration
 saveconsole
 savecookie
 savecount
@@ -13055,6 +13498,7 @@ savepage
 savepassword
 savepath
 savepermission
+savephoto
 savepicture
 savepost
 saveprofile
@@ -13108,6 +13552,7 @@ searchadmin
 searchadministrator
 searchall
 searchapi
+searchasset
 searchattachment
 searchauthor
 searchauthorized
@@ -13125,6 +13570,7 @@ searchcompany
 searchcomplete
 searchcompleted
 searchconfig
+searchconfiguration
 searchconsole
 searchcookie
 searchcopy
@@ -13206,6 +13652,7 @@ searchpage
 searchpassword
 searchpath
 searchpermission
+searchphoto
 searchpicture
 searchpost
 searchpreview
@@ -13277,6 +13724,7 @@ selectadmin
 selectadministrator
 selectall
 selectapi
+selectasset
 selectattachment
 selectauthor
 selectauthorized
@@ -13290,6 +13738,7 @@ selectcompany
 selectcomplete
 selectcompleted
 selectconfig
+selectconfiguration
 selectconsole
 selectcookie
 selectcount
@@ -13354,6 +13803,7 @@ selectpage
 selectpassword
 selectpath
 selectpermission
+selectphoto
 selectpicture
 selectpost
 selectprofile
@@ -13405,6 +13855,7 @@ sendadmin
 sendadministrator
 sendall
 sendapi
+sendasset
 sendattachment
 sendauthor
 sendauthorized
@@ -13418,6 +13869,7 @@ sendcompany
 sendcomplete
 sendcompleted
 sendconfig
+sendconfiguration
 sendconsole
 sendcookie
 sendcount
@@ -13482,6 +13934,7 @@ sendpage
 sendpassword
 sendpath
 sendpermission
+sendphoto
 sendpicture
 sendpost
 sendprofile
@@ -13702,6 +14155,7 @@ setadmin
 setadministrator
 setall
 setapi
+setasset
 setattachment
 setauthor
 setauthorized
@@ -13715,6 +14169,7 @@ setcompany
 setcomplete
 setcompleted
 setconfig
+setconfiguration
 setconsole
 setcookie
 setcount
@@ -13779,6 +14234,7 @@ setpage
 setpassword
 setpath
 setpermission
+setphoto
 setpicture
 setpost
 setprofile
@@ -14000,6 +14456,7 @@ showadmin
 showadministrator
 showall
 showapi
+showasset
 showattachment
 showauthor
 showauthorized
@@ -14013,6 +14470,7 @@ showcompany
 showcomplete
 showcompleted
 showconfig
+showconfiguration
 showconsole
 showcookie
 showcount
@@ -14077,6 +14535,7 @@ showpage
 showpassword
 showpath
 showpermission
+showphoto
 showpicture
 showpost
 showprofile
@@ -14126,6 +14585,7 @@ sizeaccount
 sizeadmin
 sizeadministrator
 sizeapi
+sizeasset
 sizeattachment
 sizeauthor
 sizeavatar
@@ -14135,6 +14595,7 @@ sizecategory
 sizecomment
 sizecompany
 sizeconfig
+sizeconfiguration
 sizeconsole
 sizecookie
 sizecustomer
@@ -14182,6 +14643,7 @@ sizepage
 sizepassword
 sizepath
 sizepermission
+sizephoto
 sizepicture
 sizepost
 sizeprofile
@@ -14224,6 +14686,7 @@ sortadmin
 sortadministrator
 sortall
 sortapi
+sortasset
 sortattachment
 sortauthor
 sortauthorized
@@ -14237,6 +14700,7 @@ sortcompany
 sortcomplete
 sortcompleted
 sortconfig
+sortconfiguration
 sortconsole
 sortcookie
 sortcount
@@ -14301,6 +14765,7 @@ sortpage
 sortpassword
 sortpath
 sortpermission
+sortphoto
 sortpicture
 sortpost
 sortprofile
@@ -14521,6 +14986,7 @@ startadmin
 startadministrator
 startall
 startapi
+startasset
 startattachment
 startauthor
 startauthorized
@@ -14534,6 +15000,7 @@ startcompany
 startcomplete
 startcompleted
 startconfig
+startconfiguration
 startconsole
 startcookie
 startcount
@@ -14598,6 +15065,7 @@ startpage
 startpassword
 startpath
 startpermission
+startphoto
 startpicture
 startpost
 startprofile
@@ -14734,6 +15202,7 @@ stopadmin
 stopadministrator
 stopall
 stopapi
+stopasset
 stopattachment
 stopauthor
 stopauthorized
@@ -14747,6 +15216,7 @@ stopcompany
 stopcomplete
 stopcompleted
 stopconfig
+stopconfiguration
 stopconsole
 stopcookie
 stopcount
@@ -14811,6 +15281,7 @@ stoppage
 stoppassword
 stoppath
 stoppermission
+stopphoto
 stoppicture
 stoppost
 stopprofile
@@ -14862,6 +15333,7 @@ storeadmin
 storeadministrator
 storeall
 storeapi
+storeasset
 storeattachment
 storeauthor
 storeauthorized
@@ -14875,6 +15347,7 @@ storecompany
 storecomplete
 storecompleted
 storeconfig
+storeconfiguration
 storeconsole
 storecookie
 storecount
@@ -14939,6 +15412,7 @@ storepage
 storepassword
 storepath
 storepermission
+storephoto
 storepicture
 storepost
 storeprofile
@@ -14990,6 +15464,7 @@ submitadmin
 submitadministrator
 submitall
 submitapi
+submitasset
 submitattachment
 submitauthor
 submitauthorized
@@ -15003,6 +15478,7 @@ submitcompany
 submitcomplete
 submitcompleted
 submitconfig
+submitconfiguration
 submitconsole
 submitcookie
 submitcount
@@ -15067,6 +15543,7 @@ submitpage
 submitpassword
 submitpath
 submitpermission
+submitphoto
 submitpicture
 submitpost
 submitprofile
@@ -15628,6 +16105,7 @@ testadmin
 testadministrator
 testall
 testapi
+testasset
 testattachment
 testauthor
 testauthorized
@@ -15641,6 +16119,7 @@ testcompany
 testcomplete
 testcompleted
 testconfig
+testconfiguration
 testconsole
 testcookie
 testcount
@@ -15705,6 +16184,7 @@ testpage
 testpassword
 testpath
 testpermission
+testphoto
 testpicture
 testpost
 testprofile
@@ -16013,6 +16493,7 @@ updateadmin
 updateadministrator
 updateall
 updateapi
+updateasset
 updateattachment
 updateauthor
 updateauthorized
@@ -16030,6 +16511,7 @@ updatecompany
 updatecomplete
 updatecompleted
 updateconfig
+updateconfiguration
 updateconsole
 updatecookie
 updatecopy
@@ -16043,6 +16525,7 @@ updatedaccount
 updatedadmin
 updatedadministrator
 updatedapi
+updatedasset
 updatedata
 updatedatabase
 updatedate
@@ -16055,6 +16538,7 @@ updatedcategory
 updatedcomment
 updatedcompany
 updatedconfig
+updatedconfiguration
 updatedconsole
 updatedcookie
 updatedcustomer
@@ -16112,6 +16596,7 @@ updatedpage
 updatedpassword
 updatedpath
 updatedpermission
+updatedphoto
 updatedpicture
 updatedpost
 updatedprofile
@@ -16207,6 +16692,7 @@ updatepage
 updatepassword
 updatepath
 updatepermission
+updatephoto
 updatepicture
 updatepost
 updatepreview
@@ -16280,6 +16766,7 @@ uploadadmin
 uploadadministrator
 uploadall
 uploadapi
+uploadasset
 uploadattachment
 uploadauthor
 uploadauthorized
@@ -16297,6 +16784,7 @@ uploadcompany
 uploadcomplete
 uploadcompleted
 uploadconfig
+uploadconfiguration
 uploadconsole
 uploadcookie
 uploadcopy
@@ -16378,6 +16866,7 @@ uploadpage
 uploadpassword
 uploadpath
 uploadpermission
+uploadphoto
 uploadpicture
 uploadpost
 uploadpreview
@@ -16616,6 +17105,7 @@ validaccount
 validadmin
 validadministrator
 validapi
+validasset
 validate
 validateaccount
 validateactive
@@ -16623,6 +17113,7 @@ validateadmin
 validateadministrator
 validateall
 validateapi
+validateasset
 validateattachment
 validateauthor
 validateauthorized
@@ -16636,6 +17127,7 @@ validatecompany
 validatecomplete
 validatecompleted
 validateconfig
+validateconfiguration
 validateconsole
 validatecookie
 validatecount
@@ -16700,6 +17192,7 @@ validatepage
 validatepassword
 validatepath
 validatepermission
+validatephoto
 validatepicture
 validatepost
 validateprofile
@@ -16753,6 +17246,7 @@ validcategory
 validcomment
 validcompany
 validconfig
+validconfiguration
 validconsole
 validcookie
 validcustomer
@@ -16800,6 +17294,7 @@ validpage
 validpassword
 validpath
 validpermission
+validphoto
 validpicture
 validpost
 validprofile
@@ -16842,6 +17337,7 @@ verifyadmin
 verifyadministrator
 verifyall
 verifyapi
+verifyasset
 verifyattachment
 verifyauthor
 verifyauthorized
@@ -16855,6 +17351,7 @@ verifycompany
 verifycomplete
 verifycompleted
 verifyconfig
+verifyconfiguration
 verifyconsole
 verifycookie
 verifycount
@@ -16919,6 +17416,7 @@ verifypage
 verifypassword
 verifypath
 verifypermission
+verifyphoto
 verifypicture
 verifypost
 verifyprofile
@@ -17057,6 +17555,7 @@ viewadmin
 viewadministrator
 viewall
 viewapi
+viewasset
 viewattachment
 viewauthor
 viewauthorized
@@ -17074,6 +17573,7 @@ viewcompany
 viewcomplete
 viewcompleted
 viewconfig
+viewconfiguration
 viewconsole
 viewcookie
 viewcopy
@@ -17155,6 +17655,7 @@ viewpage
 viewpassword
 viewpath
 viewpermission
+viewphoto
 viewpicture
 viewpost
 viewpreview
@@ -17224,6 +17725,7 @@ visibleaccount
 visibleadmin
 visibleadministrator
 visibleapi
+visibleasset
 visibleattachment
 visibleauthor
 visibleavatar
@@ -17233,6 +17735,7 @@ visiblecategory
 visiblecomment
 visiblecompany
 visibleconfig
+visibleconfiguration
 visibleconsole
 visiblecookie
 visiblecustomer
@@ -17280,6 +17783,7 @@ visiblepage
 visiblepassword
 visiblepath
 visiblepermission
+visiblephoto
 visiblepicture
 visiblepost
 visibleprofile
@@ -17322,6 +17826,7 @@ writeadmin
 writeadministrator
 writeall
 writeapi
+writeasset
 writeattachment
 writeauthor
 writeauthorized
@@ -17335,6 +17840,7 @@ writecompany
 writecomplete
 writecompleted
 writeconfig
+writeconfiguration
 writeconsole
 writecookie
 writecount
@@ -17399,6 +17905,7 @@ writepage
 writepassword
 writepath
 writepermission
+writephoto
 writepicture
 writepost
 writeprofile
